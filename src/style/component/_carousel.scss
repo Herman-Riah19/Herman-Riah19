@@ -1,0 +1,35 @@
+.carousel {
+    margin-bottom: 4rem;
+
+    .carousel-item {
+        height: 25rem;
+        background-color: #777;
+
+        & > img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            background-size: cover;
+            height: 32rem;
+            overflow: hidden;
+            justify-items: center;
+
+            &::before {
+                content: "";
+                background: rgba(9, 69, 182, 0.404);
+                color: white;
+                position: absolute;
+                bottom: 0;
+                top: 0;
+                left: 0;
+                right: 0;
+            }
+        }
+        
+        .carousel-caption {
+            bottom: 3rem;
+            z-index: 10;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+
+    .skill {
+        padding: 10px 0;
+        margin: 0;
+        text-transform: uppercase;
+        display: block;
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
+        color: $primary;
+
+        .val {
+            float: right;
+            font-style: normal;
+        }
+    }
+
+    .progress-bar-wrap {
+        background: $four;
+    }
+
+    .progress-bar {
+        width: 1px;
+        height: 10px;
+        transition: .9s;
+        background-color: $secondary;
+    }
+}

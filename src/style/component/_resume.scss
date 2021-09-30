@@ -1,0 +1,83 @@
+.resume {
+    .resume-title {
+        font-size: 26px;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: rgba(42, 68, 182, 0.822);
+    }
+
+    .resume-item {
+        padding: 0 0 20px 20px;
+        margin-top: -2px;
+        border-left: 5px solid rgba(21, 87, 230, 0.959);
+        position: relative;
+
+        h4, h5 {
+            line-height: 20px;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: $primary;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+
+        .title {
+            line-height: 20px;
+            font-size: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: $primary;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+
+        .date {
+            font-size: 16px;
+            color: rgba(19, 40, 87, 0.938);
+            padding: 5px 15px;
+            display: inline-block;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 15px;
+            text-align: justify;
+            padding-left: 20px;
+
+            em {
+                font-size: 17px;
+                font-style: italic;
+                font-weight: 400;
+            }
+        }
+
+        ul {
+            padding-left: 20px;
+
+            li {
+                padding-bottom: 10px;
+            }
+        }
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            border-radius: 20px;
+            left: -11px;
+            top: 0;
+            background: $four;
+            border: 2px solid rgba(15, 83, 228, 0.938);
+        }
+    }
+}

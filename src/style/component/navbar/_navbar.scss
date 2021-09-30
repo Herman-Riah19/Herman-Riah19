@@ -1,0 +1,135 @@
+.navbar {
+    background: #fff !important;
+    padding: 0;
+    height: 65px;
+
+    .navbar-toggler {
+        position: fixed;
+        top: 10px;
+        right: 15px;
+        width: 50px;
+        height: 40px;
+        align-items: center;
+        background: $three;
+        cursor: pointer;
+        z-index: 999;
+    
+        i {
+            font-size: 30px;
+            color: rgba(16, 68, 240, 0.801);
+            margin: auto;
+        }
+    }
+
+    .navbar-brand {
+        color: $text-color;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-transform: uppercase;
+    }
+
+    .navbar-nav {
+        margin-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        > ul > li {
+            position: relative;
+            white-space: nowrap;
+        }
+
+        .nav-link, .nav-link:focus {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: $text-color;
+            padding: 15px 20px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-right: 10px;
+            transition: 0.3s;
+            font-size: 15px;
+            border-radius: 35px;
+            background: $five;
+            height: 56px;
+            width: 100%;
+            overflow: hidden;
+            transition: 0.3s;
+
+            i { font-size: 20px; }
+
+            span {
+                padding: 0 5px 0 7px;
+                color: $text-color;
+            }
+
+            &:hover, li:hover > .nav-link {
+                color: #fff;
+                background: $three;
+                width: 100%;
+
+                span {
+                    color: #fff;
+                    display: block;
+                }
+            }
+        }
+
+        .active, .active:focus {
+            width: 100%;
+            color: #fff;
+            background: $three;
+
+            & li:hover > .active {
+                width: 100%;
+                color: #fff;
+            }
+
+            span {
+                color: #fff;
+                display: block;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .nav-link, .nav-link:focus { 
+                width: 56px; 
+
+                span {
+                    display: none;
+                    color: #fff;
+                }
+            }
+
+            .active, .active:focus{
+                width: 100%; 
+
+                span {
+                    display: block;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 100px) {
+        .navbar-nav {
+            height: 25rem;
+            background: #fff;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .navbar-nav {
+            height: 75px;
+            background: transparent;
+        }
+    }
+}

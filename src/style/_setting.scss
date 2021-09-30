@@ -1,0 +1,99 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+  
+a {
+    color: $secondary;
+    text-decoration: none;
+    &::hover {
+        color: $secondary;
+        text-decoration: none;
+    }
+}
+  
+li {
+    list-style-type: none;
+}
+  
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+small,
+.small {
+  font-size: 80%;
+  font-weight: 400;
+}
+
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container, .container-sm {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container, .container-sm, .container-md {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container, .container-sm, .container-md, .container-lg {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1140px;
+  }
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9997;
+    transition: all 0.5s;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+  
+@media (max-width: 992px) {
+    #header {
+        width: 300px;
+        background: #fff;
+        border-right: 1px solid #e6e9ec;
+        left: -300px;
+    }
+}
+  
+@media (min-width: 992px) {
+    #main {
+        margin-left: 100px;
+    }
+}
