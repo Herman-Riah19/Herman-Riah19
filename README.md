@@ -16,7 +16,7 @@ Front End Scripting:
 = > Cross Browser Compatibility
 
 Backend: 
-= > Typescript / Adonis.JS / Nest.JS / Loopback 4 / Node.JS
+= > Typescript / Adonis.JS / Nest.JS / Loopback 4 / Node.JS \n
 = > Python / Django
 
 
