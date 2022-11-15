@@ -1,4 +1,4 @@
-Hi,
+Hi, <br/>
 
 I'm a full stack Developper specialized in a TypeScript/JavaScript language.
 TypeScript/JavaScript is really close to my heart and I spent most of my time working with it. 
@@ -9,13 +9,13 @@ So I can definitely help you in this project and can start right now once you hi
 <br/>
 My Expertise:
 <br/>
-Front End Scripting:
+Front End Scripting: <br/>
 = > React.JS / Vue.JS / Angular <br/>
 = > Next.JS / Node.JS <br/>
 = > HTML 5 / CSS 3 / SCSS / Tailwind.CSS <br/>
 = > Cross Browser Compatibility <br/>
 
-Backend: 
+Backend: <br/>
 = > Typescript / Adonis.JS / Nest.JS / Loopback 4 / Node.JS <br/>
 = > Python / Django <br/><br/>
 
@@ -36,3 +36,5 @@ Other Expertise: <br/>
 = > Push notification, Google map integration. <br/>
 
 Please let me know when we can begin with it. <br/>
+<br/>
+My Web site: https://hermannchristian.netlify.app/
