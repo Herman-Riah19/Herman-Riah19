@@ -1,0 +1,10 @@
+{
+    "Navbar": {
+    "Home": "Accueil",
+    "About": "A propos",
+    "Technologie": "Technologies",
+    "Services": "Services",
+    "Resume": "Expérience",
+    "Contact": "Contact"
+  }
+}
