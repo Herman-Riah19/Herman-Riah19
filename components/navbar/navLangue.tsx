@@ -20,8 +20,8 @@ const NavLangue = () => {
         </SelectTrigger>
         <SelectContent>
           <SelectGroup>
-            <SelectItem value="fr">Francais</SelectItem>
-            <SelectItem value="en">English</SelectItem>
+            <SelectItem value="fr" className='text-primary'>Francais</SelectItem>
+            <SelectItem value="en" className='text-primary'>English</SelectItem>
           </SelectGroup>
         </SelectContent>
       </Select>

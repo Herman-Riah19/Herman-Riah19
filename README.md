@@ -1,8 +1,12 @@
 # Hi, I'm Hermann Riah
 
 ## A Full Stack Developer Specializing in TypeScript/JavaScript
+## A Full Stack Developer Specializing in TypeScript/JavaScript
 
-TypeScript and JavaScript are really close to my heart, and I spend most of my time working with these technologies. I can realize your project using specific programs like the **AdonisJS** framework, which has an architecture similar to the **Laravel Framework** but runs in TypeScript. Additionally, I can merge it with **InertiaJS** to render the front end in **ReactJS**. I'm ready to help you with your project and can start right away once you hire me.
+With a deep passion for TypeScript and JavaScript, I have honed my skills as a Full Stack Developer by working extensively with these technologies. My expertise spans across modern frameworks and libraries, ensuring efficient and high-quality development. Whether it's building scalable applications with **Next.js**, crafting dynamic user interfaces with **ReactJS**, or developing robust backend solutions with **AdonisJS**, I bring a wealth of experience to every project. Additionally, my proficiency in **Angular** allows me to deliver seamless and responsive front-end experiences.
+
+I'm committed to bringing your vision to life with a perfect blend of technical proficiency and creativity. Let's start your project and turn your ideas into reality.
+
 
 ---
 

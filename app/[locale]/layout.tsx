@@ -29,7 +29,7 @@ export default function RootLayout({
     <html lang={locale}>
       <head>
         <meta name="google-site-verification" content="E28uHybi33uoxITvAn5NzpOUu3aZiCoBxQMf-ukGXo0" />
-        <title>Tiresias: Optimizing Crypto Industry Arbitrage Trading with Neural Technology</title>
+        <title>Herman Riah: Portfolio</title>
       </head>
       <body className={cn(
           "min-h-screen bg-background font-sans antialiased",

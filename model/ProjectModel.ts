@@ -1,6 +1,4 @@
-import Rainbow from "../assets/image/raimbow1.png"
-import Jupiter from "../assets/image/Jupiter.png"
-import Trink from "../assets/image/1676461341750.png"
+
 export interface Model {
     id: number;
     title: string;
@@ -17,7 +15,7 @@ export let ProjectModel: Array<Model> = [
     id: 1,
     title: "Jupiter",
     type: "Application de Crowfunding",
-    img: `${Jupiter}`,
+    img: `/assets/image/Jupiter.png`,
     link: "http://jupiter.fr",
     description:
       "C'est un application web qui sert à achéter/transferer des forfaits et aussi les transferts d'argent avec les Mobile Money",
@@ -28,7 +26,7 @@ export let ProjectModel: Array<Model> = [
     id: 2,
     title: "TryInk",
     type: "Réseau Social",
-    img: `${Trink}`,
+    img: `/assets/image/1676461341750.png`,
     link: "https://github.com/Herman-Riah19/TryInc",
     description:
       "Cette application est un réseau social destiné aux dessinateurs numériques et générateurs d'images par IA, mettant en avant leur talent.",
@@ -39,7 +37,7 @@ export let ProjectModel: Array<Model> = [
     id: 3,
     title: "Rainbow",
     type: "Fashion E-Commerce",
-    img: `${Rainbow}`,
+    img: `/assets/image/raimbow1.png`,
     link: "https://github.com/Herman-Riah19/TryInc",
     description: "C'est un application de vente en ligne pour le compte d'un distributeur des vêtements artisanals pour les Femmes",
     date: "Novembre 2020",

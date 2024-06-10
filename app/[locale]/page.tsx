@@ -1,4 +1,5 @@
 import Navbar from '@/components/navbar/navbar'
+import Welcome from '@/components/welcome'
 import { NextIntlClientProvider, useMessages } from 'next-intl'
 import React from 'react'
 
@@ -10,6 +11,9 @@ const HermanPage = () => {
       <NextIntlClientProvider messages={message}>
         <Navbar />
       </NextIntlClientProvider>
+      <main role='main'>
+        <Welcome />
+      </main>
     </div>
   )
 }
