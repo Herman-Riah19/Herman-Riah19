@@ -30,7 +30,7 @@ const AnimateFeature: React.FC<AnimateProps> = ({ children }) => {
     <div ref={ref} style={{ position: "relative" }} >
       <motion.div
         style={{ x }}
-        className='flex gap-4 space-x-4'
+        className='flex gap-2 space-x-4'
       >
         {children}
       </motion.div>

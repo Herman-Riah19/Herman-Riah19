@@ -15,7 +15,7 @@ const Welcome = () => {
             <div className="grid grid-cols-5 sm:block lg:grid gap-5 m-2">
                 <div className='col-span-3 md:mb-2'>
                     <Card className='h-[40vw]'>
-                        <CardHeader className='m-5'>
+                        <CardHeader className='m-2 mb-20'>
                             <Badge className='w-32 m-2'>
                                 {t('Based')}
                             </Badge>
@@ -26,10 +26,10 @@ const Welcome = () => {
                                 {t('Prompt')}
                             </CardDescription>
                         </CardHeader>
-                        <CardContent>
+                        <CardContent className='m-2'>
                             <ScrollArea>
                                 <AnimateFeature>
-                                    <div className='flex gap-2 w-max space-x-4 p-4'>
+                                    <div className='flex gap-2 w-max'>
                                         {TechnologieModel.map(tech => (
                                             <CardTechnologie
                                                 id={tech.id} 
