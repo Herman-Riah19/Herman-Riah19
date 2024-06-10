@@ -18,7 +18,7 @@ const CardTechnologie: React.FC<Techno> = ({ id, name, language, type, icon, sta
             <CardFooter className='flex gap-2'>
                 {[1,2,3,4,5].map(item => (
                     <div>
-                        {item <= star ?  <Star fill="yellow" strokeWidth={0} /> : <Star fill="#111" strokeWidth={0} /> }
+                        {item <= star ?  <Star fill="#2462EA" strokeWidth={0} /> : <Star fill="#111" strokeWidth={0} /> }
                     </div>
                 ))}
             </CardFooter>
