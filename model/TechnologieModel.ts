@@ -30,7 +30,7 @@ const VsCode = "/assets/icon/vscode-dark.svg";
 const MaterialUI = "/assets/icon/materialui.svg";
 
 
-export interface Model{
+export interface Techno{
     id: number;
     name: string;
     language: string;
@@ -61,7 +61,7 @@ export const LanguagesModel: Array<Language> = [
     },
 ]
 
-export const Database: Array<Model> = [
+export const Database: Array<Techno> = [
   {
     id: 1,
     name: "Firebase",
@@ -104,28 +104,28 @@ export const Database: Array<Model> = [
   },
 ];
 
-export const Tools: Array<Model> = [
+export const Tools: Array<Techno> = [
   {
     id: 1,
     name: "Node",
-    language: "Compilateur",
-    type: "Systemde d'Exploitation",
+    language: "TypeScript / JavaScript",
+    type: "Compilateur",
     icon: `${Node}`,
     star: 3,
   },
   {
     id: 2,
     name: "Vite JS",
-    language: "Builder",
-    type: "Systemde d'Exploitation",
+    language: "TypeScript / JavaScript",
+    type: "Builder",
     icon: `${Vite}`,
     star: 4,
   },
   {
     id: 3,
     name: "Webpack",
-    language: "Builder",
-    type: "Systemde d'Exploitation",
+    language: "TypeScript",
+    type: "Builder",
     icon: `${Webpack}`,
     star: 3,
   },
@@ -133,7 +133,7 @@ export const Tools: Array<Model> = [
     id: 4,
     name: "Git",
     language: "Versionning",
-    type: "Systemde d'Exploitation",
+    type: "Versionning",
     icon: `${Git}`,
     star: 3,
   },
@@ -141,7 +141,7 @@ export const Tools: Array<Model> = [
     id: 5,
     name: "Github",
     language: "Versionning",
-    type: "Systemde d'Exploitation",
+    type: "Repository",
     icon: `${Github}`,
     star: 4,
   },
@@ -149,7 +149,7 @@ export const Tools: Array<Model> = [
     id: 6,
     name: "Figma",
     language: "Design UI/UX",
-    type: "Systemde d'Exploitation",
+    type: "Logiciel",
     icon: `${Figma}`,
     star: 3,
   },
@@ -157,22 +157,22 @@ export const Tools: Array<Model> = [
     id: 7,
     name: "Apache",
     language: "Serveur",
-    type: "Systemde d'Exploitation",
+    type: "Serveur",
     icon: `${Apache}`,
     star: 3,
   },
   {
     id: 8,
     name: "Material UI",
-    language: "UI Kit",
-    type: "Systemde d'Exploitation",
+    language: "TypeScript / JavaScript",
+    type: "UI Kit",
     icon: `${MaterialUI}`,
     star: 4,
   },
 ];
 
 
-export const TechnologieModel: Array<Model> = [
+export const TechnologieModel: Array<Techno> = [
   {
     id: 1,
     name: "Flask",
@@ -193,7 +193,7 @@ export const TechnologieModel: Array<Model> = [
     id: 3,
     name: "React",
     language: "TypeScript",
-    type: "Framework Front-End",
+    type: "Framework Front End",
     icon: `${React}`,
     star: 4,
   },
@@ -203,7 +203,23 @@ export const TechnologieModel: Array<Model> = [
     language: "TypeScript",
     type: "Framework Rendering",
     icon: `${Nextjs}`,
-    star: 4,
+    star: 5,
+  },
+  {
+    id: 5,
+    name: "Angular",
+    language: "TypeScript",
+    type: "Framework Front End",
+    icon: `${Angular}`,
+    star: 3,
+  },
+  {
+    id: 6,
+    name: "Svelt",
+    language: "TypeScript",
+    type: "Framework Front End",
+    icon: `${Svelte}`,
+    star: 2,
   },
   
 ];
