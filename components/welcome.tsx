@@ -20,17 +20,22 @@ const Welcome = () => {
                 <div className='md:mb-2'>
                     <Card className='h-[40vw]'>
                         <CardHeader className='m-2'>
-                            <Badge className='w-32 m-2'>
-                                {t('Based')}
-                            </Badge>
+                            <div className="h-20 w-20 mb-1">
+                                <Card 
+                                    className="h-full lg:col-span-3 rounded-[20vw] bg-secondary"
+                                    style={{ background: `url('/assets/image/profile.jpg') no-repeat center / cover` }} >
+                                    
+                                </Card>
+                            </div>
                             <CardTitle className="sm:text-[3vw] lg:text-[4vw] 2xl:text-[3vw] text-indent font-normal uppercase m-2">
                                 {t('Introduction')}
                             </CardTitle>
-                            <CardDescription className='sm:text-[3vw] lg:text-[4vw] 2xl:text-[3vw] font-normal uppercase mt-10 text-secondary'>
+                            <span className='sm:text-[3vw] lg:text-[4vw] 2xl:text-[3vw] font-bold uppercase text-secondary'>
                                 {t('Developper')}
-                            </CardDescription>
+                            </span>
                         </CardHeader>
-                        <CardContent className='m-2'>
+                        <CardContent className='m-1'>
+                            
                             <ul className='grid grid-cols-2 gap-1 m-2'>
                                 <li>
                                     <Button variant="outline" className='flex gap-4 bg-transparent w-full'>
