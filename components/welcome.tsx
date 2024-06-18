@@ -6,7 +6,6 @@ import { TechnologieModel } from '@/model/TechnologieModel'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import AnimateFeature from './animation/animateFeature'
 import CardButtonTech from './card/cardButtonTech'
-import CardInfoContact from './card/cardInfoContact'
 import { EnvelopeClosedIcon } from '@radix-ui/react-icons'
 import { Github, Twitter, Instagram, Facebook, FacebookIcon } from 'lucide-react'
 import { Button } from './ui/button'
@@ -16,15 +15,15 @@ const Welcome = () => {
     const locale = useLocale()
     return (
         <div className=' m-2'>
-            <div className="grid grid-cols-2 sm:block lg:grid gap-5 m-2">
-                <div className='md:mb-2'>
+            <div className="grid grid-cols-3 sm:block lg:grid gap-5 m-2">
+                <div className='md:mb-2 col-span-2'>
                     <Card className='h-[40vw]'>
                         <CardHeader className='m-2'>
                             <div className="h-20 w-20 mb-1">
-                                <Card 
+                                <Card
                                     className="h-full lg:col-span-3 rounded-[20vw] bg-secondary"
                                     style={{ background: `url('/assets/image/profile.jpg') no-repeat center / cover` }} >
-                                    
+
                                 </Card>
                             </div>
                             <CardTitle className="sm:text-[3vw] lg:text-[4vw] 2xl:text-[3vw] text-indent font-normal uppercase m-2">
@@ -35,7 +34,20 @@ const Welcome = () => {
                             </span>
                         </CardHeader>
                         <CardContent className='m-1'>
-                            
+                            <div className='grid grid-cols-3'>
+                                <Card className='h-20 text-center bg-primary text-muted'>
+                                    <CardTitle className='font-bold text-center text-lg uppercase'>Experiences</CardTitle>
+                                    <CardDescription className='text-lg m-1'>3 ans</CardDescription>
+                                </Card>
+                                <Card className='h-20 text-center bg-primary text-muted'>
+                                    <CardTitle className='font-bold text-center text-lg uppercase'>Projets</CardTitle>
+                                    <CardDescription className='text-lg m-1'>5</CardDescription>
+                                </Card>
+                                <Card className='h-20 text-center bg-primary text-muted'>
+                                    <CardTitle className='font-bold text-center text-lg uppercase'>Satify customer</CardTitle>
+                                    <CardDescription className='text-lg m-1'>5</CardDescription>
+                                </Card>
+                            </div>
                             <ul className='grid grid-cols-2 gap-1 m-2'>
                                 <li>
                                     <Button variant="outline" className='flex gap-4 bg-transparent w-full'>
@@ -83,26 +95,12 @@ const Welcome = () => {
                     </Card>
                 </div>
                 <div className='sm:hidden md:block'>
-                    <div className='grid grid-cols-3'>
-                        <div className='col-span-1 flex flex-col'>
-                            <Card className="h-full lg:col-span-3 mr-2 rounded-[2vw]">
-                                <CardContent
-                                    className="lg:h-[20vw] sm:h-full w-full rounded"
-                                    style={{ background: `url('/assets/image/raimbow.png') no-repeat center / cover` }} />
-                            </Card>
-                            <Card className="h-full lg:col-span-3 mr-2 rounded-[2vw]">
-                                <CardContent
-                                    className="lg:h-[20vw] sm:h-full w-full rounded"
-                                    style={{ background: `url('/assets/image/profile.jpg') no-repeat center / cover` }} />
-                            </Card>
-                        </div>
-                        <div className='col-span-2'>
-                            <Card className="h-full lg:col-span-3 rounded-[2vw] bg-secondary">
-                                <CardContent
-                                    className="lg:h-[40vw] sm:h-full w-full rounded"
-                                    style={{ background: `url('/assets/image/profile-remove.png') no-repeat center / cover` }} />
-                            </Card>
-                        </div>
+                    <div className='grid'>
+                        <Card className="h-full lg:col-span-3 rounded-[0px] bg-secondary">
+                            <CardContent
+                                className="lg:h-[40vw] sm:h-full w-full rounded"
+                                style={{ background: `url('/assets/image/profile-remove.png') no-repeat center / cover` }} />
+                        </Card>
                     </div>
                 </div>
             </div>

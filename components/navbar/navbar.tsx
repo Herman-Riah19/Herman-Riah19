@@ -1,5 +1,4 @@
 import React from "react";
-import DarkTheme from "@/components/dark-theme";
 import Link from "next/link";
 import NavbarSheet from "./navbar-sheet";
 import NavLangue from "./navLangue";
@@ -60,8 +59,6 @@ const Navbar: React.FC = async () => {
 
       <div className="flex w-full justify-end gap-4 md:ml-auto md:gap-2 lg:gap-4">
         <NavLangue />
-
-        <DarkTheme />
       </div>
     </header>
   );
