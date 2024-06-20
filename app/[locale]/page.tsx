@@ -1,3 +1,4 @@
+import Footer from '@/components/footer'
 import Navbar from '@/components/navbar/navbar'
 import Welcome from '@/components/welcome'
 import { NextIntlClientProvider, useMessages } from 'next-intl'
@@ -14,6 +15,7 @@ const HermanPage = () => {
       <main role='main'>
         <Welcome />
       </main>
+      <Footer  />
     </div>
   )
 }
