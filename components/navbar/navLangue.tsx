@@ -12,7 +12,7 @@ const NavLangue = () => {
   return (
     <div className="items-center justify-end mt-6 space-y-6 md:flex md:mt-0">
       <div
-        className="flex items-center justify-center gap-x-1 py-3 px-4 text-white font-medium transform-gpu dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#8686f01f_inset] rounded-full md:inline-flex "
+        className="flex items-center justify-center gap-x-1 px-4 text-white font-medium transform-gpu dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#8686f01f_inset] rounded-full md:inline-flex "
       >
         <Select
           onValueChange={(e) => startTransition(() => route.replace(`/${e}`))}
