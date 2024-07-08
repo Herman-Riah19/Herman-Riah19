@@ -22,11 +22,8 @@ const HermanPage = () => {
       </NextIntlClientProvider>
       <section>
         <Welcome />
-        <Presentation />
         <Hero />
-        <div className='flex flex-col align-items-center'>
-        <CloudDemo />
-        </div>
+        <Features />
       </section>
       <Footer />
     </div>

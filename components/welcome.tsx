@@ -3,6 +3,7 @@ import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
 import { useLocale, useTranslations } from 'next-intl'
 import InfoContact from './container/info-contact'
 import { CloudDemo } from './container/tech/cloud'
+import Presentation from './container/presentation'
 
 const Welcome = () => {
     const t = useTranslations('Welcome')
@@ -11,24 +12,16 @@ const Welcome = () => {
         <div>
             <div className="grid grid-cols-5 sm:block lg:grid gap-5 m-2">
                 <div className='col-span-3 md:mb-2'>
-                    <Card className='xl:h-[30.5vw] lg:h-[41vw]'>
-                        <CardHeader className='m-2'>
-                            <div className="h-20 w-20 mb-1">
-                                <Card
-                                    className="h-full lg:col-span-3 rounded-[20vw] bg-secondary"
-                                    style={{ background: `url('/assets/image/profile.jpg') no-repeat center / cover` }} >
+                    <Card className='xl:h-[30.5vw] lg:h-[41vw] border-none'>
+                        <CardHeader className='m-2 flex flex-col text-center'>
+                            <Card
+                                className=" h-20 w-20 lg:col-span-3 rounded-[20vw] bg-secondary"
+                                style={{ background: `url('/assets/image/profile.jpg') no-repeat center / cover` }} >
+                            </Card>
 
-                                </Card>
-                            </div>
-                            <CardTitle className="sm:text-[3vw] lg:text-[4vw] 2xl:text-[3vw] text-indent font-normal uppercase m-2">
-                                {t('Introduction')}
-                            </CardTitle>
-                            <span className='sm:text-[3vw] lg:text-[4vw] 2xl:text-[3vw] font-bold uppercase text-secondary'>
-                                {t('Developper')}
-                            </span>
                         </CardHeader>
                         <CardContent>
-                            <InfoContact />
+                            <Presentation />
                         </CardContent>
                     </Card>
                 </div>
@@ -40,8 +33,8 @@ const Welcome = () => {
                     </Card>
                 </div>
             </div>
-            
-        </div>
+
+        </div >
     )
 }
 
