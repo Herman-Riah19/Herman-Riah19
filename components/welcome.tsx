@@ -3,6 +3,7 @@ import React from 'react'
 import { Card, CardHeader, CardContent } from '@/components/ui/card'
 import { useLocale, useTranslations } from 'next-intl'
 import Technologie from "@/markdown/technologie.mdx";
+import InfoContact from './container/info-contact';
 
 const Welcome = () => {
     const t = useTranslations('Welcome')
@@ -18,6 +19,7 @@ const Welcome = () => {
                             <p className='text-left text-md text-primary m-2'>{t('Prompt')}</p>
                         </CardHeader>
                         <CardContent >
+                            <InfoContact />
                             <Technologie />
                         </CardContent>
                     </Card>
