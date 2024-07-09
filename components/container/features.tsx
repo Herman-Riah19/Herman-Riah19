@@ -126,11 +126,7 @@ export default function Features() {
 
   return (
     <section className="py-14 relative">
-      <img
-        src="https://tailwindcss.com/_next/static/media/docs@30.8b9a76a2.avif"
-        className="absolute z-2 -top-0 left-10"
-      />
-      <div className="max-w-screen-xl mx-auto px-4 text-gray-400 md:px-8">
+      <div className="mx-auto px-4 text-gray-400 md:px-8">
         <div className="relative max-w-2xl mx-auto sm:text-center">
           <div className="relative z-10">
             <h3 className="text-gray-200 mt-4 text-3xl font-normal font-geist tracking-tighter md:text-5xl sm:text-4xl">

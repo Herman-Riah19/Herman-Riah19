@@ -3,6 +3,7 @@ import { Inter as FontSans } from "next/font/google"
 import { cn } from '@/lib/utils';
 import { ThemeProvider } from "next-themes";
 import "@/styles/globals.css";
+import { NextIntlClientProvider, useMessages } from "next-intl";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -25,6 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
   params: {locale: string};
 }>) {
+  const message = useMessages()
   return (
     <html lang={locale}>
       <head>
@@ -41,7 +43,9 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-              {children}                    
+            <NextIntlClientProvider messages={message}>
+              {children}   
+            </NextIntlClientProvider>  
           </ThemeProvider>
       </body>
     </html>
