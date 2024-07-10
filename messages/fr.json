@@ -3,21 +3,8 @@
     "Based": "Basé de Next JS",
     "Developper": "Développeur Web",
     "Introduction": "Hermann Christian RAZAFINDRANAIVO",
-    "Prompt": "Passionné par TypeScript et JavaScript, j'ai perfectionné mes compétences en tant que développeur Full Stack en travaillant intensivement avec ces technologies. Mon expertise s'étend sur les frameworks et bibliothèques modernes, garantissant un développement efficace et de haute qualité.",
-    "Generate": "Commencer maintenant",
-    "SaveTime": "Gagnez du temps en utilisant le contenu généré par l'IA",
-    "Goal": "Visez le meilleur contenu artistique",
-    "ChooseTool": "Choisissez les différents paramètres de Génération",
-    "Feature": "Nos différents services de génération",
-    "Tool": "Outils",
-    "Image": "Image",
-    "Drawing": "Dessine",
-    "Resize": "Redimensionner",
-    "Coloring": "Colorer",
-    "Background":"Arrière-plan",
-    "Upscaling": "Montée en qualité",
-    "Structure": "Structure",
-    "Change": "Remplacer"
+    "Prompt": "Passionné par TypeScript et JavaScript, j'ai perfectionné mes compétences en tant que développeur Full Stack en travaillant intensivement avec ces technologies.",
+    "About": "Mon expertise s'étend sur les frameworks et bibliothèques modernes, garantissant un développement efficace et de haute qualité. Qu'il s'agisse de créer des applications évolutives avec **Next.js**, de créer des interfaces utilisateur dynamiques avec **ReactJS** ou de développer des solutions backend robustes avec **AdonisJS**, j'apporte une richesse d'expérience à chaque projet. De plus, ma maîtrise de **Angular** me permet de proposer des expériences front-end transparentes et réactives."
   },
   "Navbar": {
     "Home": "Accueil",

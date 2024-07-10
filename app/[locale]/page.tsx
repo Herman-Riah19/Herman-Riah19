@@ -1,21 +1,17 @@
 
-import Features from '@/components/container/features'
-import Hero from '@/components/container/hero'
+import About from '@/components/container/about'
 import Footer from '@/components/footer'
 import Navbar from '@/components/navbar/navbar'
-import Welcome from '@/components/welcome'
+import Welcome from '@/components/container/welcome'
 import React from 'react'
 
 const HermanPage = () => {
   return (
     <div>
-      
         <Navbar />
-
         <section>
           <Welcome />
-          <Hero />
-          <Features />
+          <About />
         </section>
         <Footer />
     </div>

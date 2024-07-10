@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils';
 import { ThemeProvider } from "next-themes";
 import "@/styles/globals.css";
 import { NextIntlClientProvider, useMessages } from "next-intl";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -34,7 +35,7 @@ export default function RootLayout({
         <title>Herman Riah: Portfolio</title>
       </head>
       <body className={cn(
-          "min-h-screen bg-background font-sans antialiased",
+          "min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6",
           fontSans.variable
         )} >
           <ThemeProvider
@@ -44,7 +45,9 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <NextIntlClientProvider messages={message}>
-              {children}   
+              <TooltipProvider>
+                {children}  
+              </TooltipProvider>
             </NextIntlClientProvider>  
           </ThemeProvider>
       </body>
