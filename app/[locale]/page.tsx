@@ -1,4 +1,4 @@
-
+"use client"
 import About from '@/components/container/about'
 import Footer from '@/components/footer'
 import Navbar from '@/components/navbar/navbar'
@@ -8,20 +8,23 @@ import ListTech from '@/components/container/listTech'
 import InfoContact from '@/components/container/info-contact'
 import Resume from '@/components/container/resume'
 import Education from '@/components/container/education'
+import { Projects } from '@/components/container/project'
 
 const HermanPage = () => {
+  
   return (
     <div>
-        <Navbar />
-        <section>
-          <Welcome />
-          <About />
-          <InfoContact />
-          <Resume />
-          <Education />
-          <ListTech />
-        </section>
-        <Footer />
+      <Navbar />
+      <section id="home">
+        <Welcome />
+        <About />
+        <InfoContact />
+        <Resume />
+        <Education />
+        <ListTech />
+        <Projects />
+      </section>
+      <Footer />
     </div>
   )
 }

@@ -6,7 +6,7 @@ import BlurFade from './blur-fade'
 
 const Education = () => {
   return (
-    <section id="work">
+    <section id="education">
         <div className="flex min-h-0 flex-col gap-y-3 mt-4">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <h2 className="text-xl font-bold">Educations</h2>

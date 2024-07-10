@@ -1,6 +1,7 @@
 
 export interface Model {
     id: number;
+    href: string;
     title: string;
     type: string;
     img: string;
@@ -13,6 +14,7 @@ export interface Model {
 export let ProjectModel: Array<Model> = [
   {
     id: 1,
+    href: "/",
     title: "Jupiter",
     type: "Application de Crowfunding",
     img: `/assets/image/Jupiter.png`,
@@ -24,9 +26,22 @@ export let ProjectModel: Array<Model> = [
   },
   {
     id: 2,
+    href: "/",
+    title: "Image Upscaler",
+    type: "Generateur image",
+    img: `/assets/image/upscaler.png`,
+    link: "http://jupiter.fr",
+    description:
+      "C'est un application web qui permet de générer des images et aussi modifier certains images à partir d'un Intelligence Artificiel de génération",
+    date: "Juillet 2023 - Aout 2023",
+    technology: "Flask/ReactJs/MaterialUI/Firebase",
+  },
+  {
+    id: 2,
+    href: "/",
     title: "TryInk",
     type: "Réseau Social",
-    img: `/assets/image/1676461341750.png`,
+    img: `/assets/image/trink.png`,
     link: "https://github.com/Herman-Riah19/TryInc",
     description:
       "Cette application est un réseau social destiné aux dessinateurs numériques et générateurs d'images par IA, mettant en avant leur talent.",
@@ -35,6 +50,7 @@ export let ProjectModel: Array<Model> = [
   },
   {
     id: 3,
+    href: "/",
     title: "Rainbow",
     type: "Fashion E-Commerce",
     img: `/assets/image/raimbow1.png`,

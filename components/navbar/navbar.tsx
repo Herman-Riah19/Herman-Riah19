@@ -1,22 +1,43 @@
-import React from "react";
+"use client"
+import React, { useEffect } from "react";
 import DarkTheme from "@/components/dark-theme";
 import Link from "next/link";
 import NavLangue from "./navLangue";
 import { getLocale, getTranslations } from 'next-intl/server';
 import { Dock, DockIcon } from "../container/dock";
 import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
-import { CodeIcon, HomeIcon, NotebookIcon, PencilLine } from "lucide-react";
+import { CodeIcon, FileQuestion, HomeIcon, NotebookIcon, PencilLine, Workflow } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Separator } from "@/components/ui/separator";
+import { useTranslations } from "next-intl";
 
-const Navbar: React.FC = async () => {
-  const t = await getTranslations('Navbar');
+const Navbar: React.FC = () => {
+  const t = useTranslations('Navbar');
+
+  useEffect(() => {
+    const links = document.querySelectorAll('.nav-link');
+
+    links.forEach(link => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+
+        const targetId = link.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  }, []);
 
   const pages = [
-    { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "#", icon: NotebookIcon, label: "Resume" },
-    { href: "#", icon: CodeIcon, label: "Projects" },
+    { href: "#home", icon: HomeIcon, label: "Home" },
+    { href: "#about", icon: FileQuestion, label: "About" },
+    { href: "#resume", icon: Workflow, label: "Resume" },
+    { href: "#education", icon: NotebookIcon, label: "Education" },
+    { href: "#projects", icon: CodeIcon, label: "Projects" },
     { href: "#", icon: PencilLine, label: "Notes" },
   ];
 
@@ -32,7 +53,7 @@ const Navbar: React.FC = async () => {
                   href={item.href}
                   className={cn(
                     buttonVariants({ variant: "ghost", size: "icon" }),
-                    "size-12"
+                    "size-12 nav-link"
                   )}
                 >
                   <item.icon className="m-1 size-4" />

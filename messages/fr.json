@@ -13,5 +13,10 @@
     "Services": "Services",
     "Resume": "Expérience",
     "Contact": "Contact"
+  },
+  "Project": {
+    "Title": "Mes Projects",
+    "Checkout": "Découvrez mon dernier travail",
+    "Description": "J'ai travaillé sur une variété de projets, allant des simples sites Web aux applications Web complexes. Voici quelques un de mes préférés."
   }
 }

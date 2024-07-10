@@ -1,4 +1,6 @@
+import { BLUR_FADE_DELAY } from '@/lib/constant'
 import React from 'react'
+import BlurFade from './container/blur-fade'
 
 interface NavigationItem {
   name: string
@@ -7,15 +9,8 @@ interface NavigationItem {
 }
 
 const navigation: {
-  main: NavigationItem[]
   social: NavigationItem[]
 } = {
-  main: [
-    { name: 'About', href: '#' },
-    { name: 'Blog', href: '#' },
-    { name: 'Careers', href: '#' },
-    { name: 'Learn', href: '#' },
-  ],
   social: [
     {
       name: 'Twitter',
@@ -58,37 +53,34 @@ const navigation: {
 const Footer: React.FC = () => {
   return (
     <footer className="w-full">
-      <div className="mx-auto w-full max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
-        <nav className="flex flex-wrap justify-center">
-          {navigation.main.map((item) => (
-            <div key={item.name} className="px-5 py-2">
-              <a
-                href={item.href}
-                className="text-sm text-gray-600 hover:text-gray-800 dark:text-gray-100"
-              >
-                {item.name}
-              </a>
+      <section id="contact">
+        <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
+          <BlurFade delay={BLUR_FADE_DELAY * 16}>
+            <div className="space-y-3">
+              <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                Contact
+              </div>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                Get in Touch
+              </h2>
+              <div className="mt-5 flex justify-center space-x-6">
+                {navigation.social.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="text-gray-600 hover:text-gray-800 dark:text-gray-100"
+                  >
+                    <span className="sr-only">{item.name}</span>
+                    {item.icon && (
+                      <item.icon className="h-5 w-5" aria-hidden="true" />
+                    )}
+                  </a>
+                ))}
+              </div>
             </div>
-          ))}
-        </nav>
-        <div className="mt-5 flex justify-center space-x-6">
-          {navigation.social.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className="text-gray-600 hover:text-gray-800 dark:text-gray-100"
-            >
-              <span className="sr-only">{item.name}</span>
-              {item.icon && (
-                <item.icon className="h-5 w-5" aria-hidden="true" />
-              )}
-            </a>
-          ))}
+          </BlurFade>
         </div>
-        <p className="mt-6 text-center text-sm text-gray-600 dark:text-gray-100">
-          &copy; {new Date().getFullYear()} Herman Riah19. All rights reserved.
-        </p>
-      </div>
+      </section>
     </footer>
   )
 }
