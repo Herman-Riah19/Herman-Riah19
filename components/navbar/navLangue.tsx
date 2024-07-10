@@ -1,13 +1,11 @@
 "use client"
-import React, { useTransition } from 'react'
-import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from '../ui/select'
+import React from 'react'
 import { useRouter } from 'next/navigation';
 import { useLocale } from "next-intl";
 import { Button } from '../ui/button';
 import { Globe } from 'lucide-react';
 
 const NavLangue = () => {
-  const [isPending, startTransition] = useTransition();
   const route = useRouter();
   const localActive = useLocale();
 

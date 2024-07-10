@@ -2,6 +2,8 @@
 
 import { cn } from "@/lib/utils";
 import { AnimatedList } from "@/components/animation/animatedList";
+import { Code, Folder, Globe, WashingMachine,  } from "lucide-react";
+import { DesktopIcon } from "@radix-ui/react-icons";
 
 interface Item {
   name: string;
@@ -13,32 +15,38 @@ interface Item {
 
 let notifications = [
   {
-    name: "Payment received",
-    description: "Magic UI",
-    time: "15m ago",
-
-    icon: "💸",
+    name: "AdonisJS",
+    description: "APIs / RESTful APIs development and integration",
+    time: "3 years",
+    icon: <Code />,
     color: "#00C9A7",
   },
   {
-    name: "User signed up",
-    description: "Magic UI",
-    time: "10m ago",
-    icon: "👤",
+    name: "AdonisJS and NextJS",
+    description: "Full stack application and integration",
+    time: "3 years",
+    icon: <Globe />,
     color: "#FFB800",
   },
   {
-    name: "New message",
-    description: "Magic UI",
+    name: "Next JS",
+    description: "Responsive design",
     time: "5m ago",
-    icon: "💬",
+    icon: <DesktopIcon />,
     color: "#FF3D71",
   },
   {
-    name: "New event",
-    description: "Magic UI",
+    name: "Next-auth",
+    description: "Google Authentication integrations",
     time: "2m ago",
-    icon: "🗞️",
+    icon: <Folder />,
+    color: "#1E86FF",
+  },
+  {
+    name: "Stable Diffusion",
+    description: "Generative AI APIs for text and image",
+    time: "2m ago",
+    icon: <WashingMachine />,
     color: "#1E86FF",
   },
 ];

@@ -1,26 +1,23 @@
-import { TechnologieModel } from '@/model/TechnologieModel'
-import { ScrollArea } from '@radix-ui/react-scroll-area'
+
 import React from 'react'
-import AnimateFeature from '@/components/animation/animateFeature'
-import CardTechnologie from '@/components/card/card-techno'
+import TechnologieEn from "@/markdown/technologie_en.mdx"
+import TechnologieFr from "@/markdown/technologie_fr.mdx"
+import { useLocale } from 'next-intl'
+import BlurFade from '@/components/container/blur-fade'
+import { BLUR_FADE_DELAY } from '@/lib/constant'
 
 const ListTech = () => {
+    const local = useLocale()
     return (
-        <ScrollArea>
-            <AnimateFeature>
-                <div className='flex gap-2 w-max'>
-                    {TechnologieModel.map(tech => (
-                        <CardTechnologie
-                            id={tech.id}
-                            name={tech.name}
-                            language={tech.language}
-                            type={tech.type}
-                            icon={tech.icon}
-                            star={tech.star} />
-                    ))}
-                </div>
-            </AnimateFeature>
-        </ScrollArea>
+        <section id="about" className='mt-2'>
+            <BlurFade delay={BLUR_FADE_DELAY * 3}>
+                <h2 className="text-xl font-bold">Skill</h2>
+            </BlurFade>
+            <div className='prose max-w-full text-pretty font-sans text-md text-muted-foreground dark:prose-invert'>
+                {local === "fr" ? <TechnologieFr /> : <TechnologieEn />}
+            </div>
+        </section>
+
     )
 }
 
