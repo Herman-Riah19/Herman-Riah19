@@ -45,12 +45,12 @@ export const CardResume = ({
       onClick={handleClick}
     >
       <Card className="flex">
-        <div className="flex-none">
-          <Avatar className="border size-12 m-auto bg-muted-background dark:bg-foreground">
+        <div className="flex-none mt-5 ml-5">
+          <Avatar className="border size-12 m-auto bg-primary dark:bg-foreground">
             <AvatarImage
               src={logoUrl}
               alt={altText}
-              className="object-contain"
+              className="object-contain h-full w-full"
             />
             <AvatarFallback>{altText[0]}</AvatarFallback>
           </Avatar>
