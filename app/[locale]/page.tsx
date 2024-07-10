@@ -17,9 +17,9 @@ const HermanPage = () => {
           <Welcome />
           <About />
           <InfoContact />
-          <ListTech />
           <Resume />
           <Education />
+          <ListTech />
         </section>
         <Footer />
     </div>

@@ -70,7 +70,7 @@ const diplome: Array<ResumeModel> = [
 
 const experience: Array<ResumeModel> = [
   {
-    title: "Lead Développeur Python",
+    title: "Développeur Python",
     start: "Août 2023",
     end: "Octobre 2023",
     badges: [],
@@ -79,10 +79,10 @@ const experience: Array<ResumeModel> = [
     company: "Quantium",
     location: "Faravohitra, Antananarivo",
     description:
-      "En tant que Lead Développeur en Python, j'ai dirigé une équipe de développeurs chez Quantium pour :<ul><li>Programmer un script de génération de leads pour améliorer le référencement d'un site</li>" +
-      "<li>Écrire des scripts de web scraping pour la collecte de données de clients potentiels</li>" +
-      "<li>Analyser et vérifier des listes d'emails clients obtenus pour l'envoi de spam publicitaire</li>" +
-      "<li>Développer une application SaaS pour la gestion des données dans un commerce</li>" +
+      "En tant que Développeur en Python, j'ai travaillé avec une équipe de développeurs chez Quantium pour :<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Programmer un script de génération de leads pour améliorer le référencement d'un site</li>" +
+      "<li className='text-lg font-regular text-justify list-disc'>Écrire des scripts de web scraping pour la collecte de données de clients potentiels</li>" +
+      "<li className='text-lg font-regular text-justify list-disc'>Analyser et vérifier des listes d'emails clients obtenus pour l'envoi de spam publicitaire</li>" +
+      "<li className='text-lg font-regular text-justify list-disc'>Développer une application SaaS pour la gestion des données dans un commerce</li>" +
       "</ul>"
   },
   {
@@ -95,8 +95,8 @@ const experience: Array<ResumeModel> = [
     company: "Fpay",
     location: "Andohalo, Antananarivo",
     description:
-      "En tant que développeur Fullstack chez Fpay, j'ai contribué à la réalisation de projets en utilisant Flask pour le backend et React pour le frontend :<ul><li>Conception d'une plateforme de crowdfunding [Flask, ReactJS et Firebase], intégration de l'authentification, des offres forfaitaires des opérateurs mobiles, et des codes USSD sous forme d'API pour des transactions mobiles comme l'achat de forfaits internet, transfert d'argent via Mobile Money, et paiement des abonnements Canal+.</li>" +
-      "<li>Refonte d'une application de gestion d'agence développée en Flask et réécrite en Next JS pour améliorer les performances utilisateur.</li>" +
+      "En tant que développeur Fullstack chez Fpay, j'ai contribué à la réalisation de projets en utilisant Flask pour le backend et React pour le frontend :<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Conception d'une plateforme de crowdfunding [Flask, ReactJS et Firebase], intégration de l'authentification, des offres forfaitaires des opérateurs mobiles, et des codes USSD sous forme d'API pour des transactions mobiles comme l'achat de forfaits internet, transfert d'argent via Mobile Money, et paiement des abonnements Canal+.</li>" +
+      "<li className='text-lg font-regular text-justify list-disc'>Refonte d'une application de gestion d'agence développée en Flask et réécrite en Next JS pour améliorer les performances utilisateur.</li>" +
       "</ul>"
   },
   {
@@ -109,9 +109,9 @@ const experience: Array<ResumeModel> = [
     company: "Projet Personnel",
     location: "Imeritsiatosika, Antananarivo",
     description:
-      "J'ai utilisé mes compétences en AdonisJS, React et Inertia JS pour :<ul>" +
-      "<li>Créer un réseau social pour les dessinateurs numériques et générateurs d'images par IA, mettant en avant leur talent et leur spécialité tout en protégeant leurs droits. <a href='https://github.com/Herman-Riah19/TryInc'>Code source</a></li>" +
-      "<li>Développer une application de galerie de photos locale. <a href='https://github.com/Herman-Riah19/LoopbackReactProject'>Code source</a></li>" +
+      "J'ai utilisé mes compétences en AdonisJS, React et Inertia JS pour :<ul className='list-disc'>" +
+      "<li className='text-lg font-regular text-justify list-disc'>Créer un réseau social pour les dessinateurs numériques et générateurs d'images par IA, mettant en avant leur talent et leur spécialité tout en protégeant leurs droits. <a href='https://github.com/Herman-Riah19/TryInc'>Code source</a></li>" +
+      "<li className='text-lg font-regular text-justify list-disc'>Développer une application de galerie de photos locale. <a href='https://github.com/Herman-Riah19/LoopbackReactProject'>Code source</a></li>" +
       "</ul>"
   },
   {
@@ -136,10 +136,10 @@ const experience: Array<ResumeModel> = [
     company: "Bureau Église Évangélique Shine",
     location: "Andravoahangy, Antananarivo",
     description:
-      "Durant 2 ans en tant que bénévole au sein de l'Église Évangélique Shine, j'ai assuré plusieurs tâches en tant que technicien informatique et multimédia :<ul><li>Maintenance des appareils informatiques et vérification des installations réseaux pour assurer leur fonctionnalité durant les jours de travail</li>" +
-      "<li>Montage vidéo des prêches du pasteur et conception des jaquettes et stickers pour représenter les supports en DVD</li>" +
-      "<li>Création de supports multimédias tels que les flyers, les cartes de vœux et les couvertures de la Bible pour les événements religieux</li>" +
-      "<li>Développement d'un générateur de QR Code pour les invitations lors des événements religieux en utilisant AdonisJS pour vérifier la validité des QR codes scannés. <a href='https://github.com/Herman-Riah19/QRCodeGenerate'>Source code</a></li>" +
+      "Durant 2 ans en tant que bénévole au sein de l'Église Évangélique Shine, j'ai assuré plusieurs tâches en tant que technicien informatique et multimédia :<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Maintenance des appareils informatiques et vérification des installations réseaux pour assurer leur fonctionnalité durant les jours de travail</li>" +
+      "<li className='text-lg font-regular text-justify list-disc'>Montage vidéo des prêches du pasteur et conception des jaquettes et stickers pour représenter les supports en DVD</li>" +
+      "<li className='text-lg font-regular text-justify list-disc'>Création de supports multimédias tels que les flyers, les cartes de vœux et les couvertures de la Bible pour les événements religieux</li>" +
+      "<li className='text-lg font-regular text-justify list-disc'>Développement d'un générateur de QR Code pour les invitations lors des événements religieux en utilisant AdonisJS pour vérifier la validité des QR codes scannés. <a href='https://github.com/Herman-Riah19/QRCodeGenerate'>Source code</a></li>" +
       "</ul>"
   },
   {
@@ -177,8 +177,8 @@ const experience: Array<ResumeModel> = [
       "Ministère de l'Enseignement Technique et de la Formation Professionnelle",
     location: "Ampefiloha, Antananarivo",
     description:
-      "Durant mon stage au Ministère de l'Enseignement Technique et de la Formation Professionnelle, dans le département de l'information (INFor), j'ai participé à :<ul><li>Développement d'une application web de bibliothèque en ligne [PHP, MySQL, Bootstrap], intégration des vidéos du Ministère via des liens YouTube, et déploiement du site sur un serveur</li>" +
-      "<li>Installation d'un pare-feu avec PfSense et Debian pour filtrer la connexion sur le site, intégration de la sécurité d'authentification pour que seuls les employés puissent se connecter à internet, et blocage de certains sites web pendant les heures de travail.</li>" +
+      "Durant mon stage au Ministère de l'Enseignement Technique et de la Formation Professionnelle, dans le département de l'information (INFor), j'ai participé à :<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Développement d'une application web de bibliothèque en ligne [PHP, MySQL, Bootstrap], intégration des vidéos du Ministère via des liens YouTube, et déploiement du site sur un serveur</li>" +
+      "<li className='text-lg font-regular text-justify list-disc'>Installation d'un pare-feu avec PfSense et Debian pour filtrer la connexion sur le site, intégration de la sécurité d'authentification pour que seuls les employés puissent se connecter à internet, et blocage de certains sites web pendant les heures de travail.</li>" +
       "</ul>"
   },
   {
@@ -203,9 +203,9 @@ const experience: Array<ResumeModel> = [
     company: "GSI",
     location: "Analakely, Antananarivo",
     description:
-      "Durant mes études à l'université GSI, j'ai réalisé plusieurs projets personnels pour améliorer mes compétences en développement et me préparer au monde professionnel. Voici quelques projets marquants :<ul><li>Développement d'une application web dynamique avec PHP/MySQL pour la gestion des listes de voitures à vendre, en tenant compte des différentes catégories et prix des voitures.</li>" +
-      "<li>Développement d'un site web statique résumant les différents cours appris à l'université GSI, en tant qu'exercice d'intégration avec HTML, CSS et JavaScript.</li>" +
-      "<li>Pour mon projet de fin d'études, développement d'un logiciel de dimensionnement des réseaux de télécommunication 4G utilisant C++ et le framework Qt, pour calculer et planifier la capacité de fréquence et le nombre de pylônes à installer selon l'environnement.</li>" +
+      "Durant mes études à l'université GSI, j'ai réalisé plusieurs projets personnels pour améliorer mes compétences en développement et me préparer au monde professionnel. Voici quelques projets marquants :<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Développement d'une application web dynamique avec PHP/MySQL pour la gestion des listes de voitures à vendre, en tenant compte des différentes catégories et prix des voitures.</li>" +
+      "<li className='text-lg font-regular text-justify list-disc'>Développement d'un site web statique résumant les différents cours appris à l'université GSI, en tant qu'exercice d'intégration avec HTML, CSS et JavaScript.</li>" +
+      "<li className='text-lg font-regular text-justify list-disc'>Pour mon projet de fin d'études, développement d'un logiciel de dimensionnement des réseaux de télécommunication 4G utilisant C++ et le framework Qt, pour calculer et planifier la capacité de fréquence et le nombre de pylônes à installer selon l'environnement.</li>" +
       "</ul>"
   },
 ];

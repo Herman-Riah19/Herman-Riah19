@@ -91,7 +91,6 @@ export const CardResume = ({
               initial={{ opacity: 0, height: 0 }}
               animate={{
                 opacity: isExpanded ? 1 : 0,
-
                 height: isExpanded ? "auto" : 0,
               }}
               transition={{
@@ -99,9 +98,9 @@ export const CardResume = ({
                 ease: [0.16, 1, 0.3, 1],
               }}
               className="mt-2 text-xs sm:text-sm"
-            >
-              {description}
-            </motion.div>
+              dangerouslySetInnerHTML={{ __html: description }}
+            />
+
           )}
         </div>
       </Card>
