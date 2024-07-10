@@ -8,6 +8,7 @@ import ListTech from '@/components/container/listTech'
 import InfoContact from '@/components/container/info-contact'
 import { AnimatedListDemo } from '@/components/container/listTechAnimate'
 import Resume from '@/components/container/resume'
+import Education from '@/components/container/education'
 
 const HermanPage = () => {
   return (
@@ -20,6 +21,7 @@ const HermanPage = () => {
           <ListTech />
           <AnimatedListDemo />
           <Resume />
+          <Education />
         </section>
         <Footer />
     </div>

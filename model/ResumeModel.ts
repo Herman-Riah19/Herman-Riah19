@@ -23,31 +23,6 @@ const diplome: Array<ResumeModel> = [
     description: "Spécialisé en informatique et réseaux de télécommunications, avec des connaissances en programmation d'applications de bureau et web. Configuration et dépannage des réseaux informatiques fonctionnant sur des infrastructures GNU/Linux."
   },
   {
-    title: "Baccalauréat Technique en Management",
-    start: "2016",
-    end: "2017",
-    badges: [],
-    href: "/",
-    logoUrl: "/assets",
-    company: "Institut d'Enseignement Technique",
-    location: "Amboanjombe, Antananarivo",
-    description: "Spécialisé en gestion d'entreprise, finance et comptabilité, avec pour objectif de se lancer dans le domaine de l'entrepreneuriat et de la comptabilité. Ce parcours a été suivi au niveau secondaire pour intégrer un institut supérieur."
-  },
-  {
-    title: "Brevet d'Études Professionnelles en Management",
-    start: "2015",
-    end: "2016",
-    badges: [],
-    href: "/",
-    logoUrl: "/assets",
-    company: "Institut d'Enseignement Technique",
-    location: "Amboanjombe, Antananarivo",
-    description: "Ce diplôme équivaut à un Diplôme Technique Supérieur, mais au niveau secondaire, axé sur la gestion et l'informatique de base (bureautique, Word, Excel, PowerPoint). Formation inter-lycées pour intégrer les étudiants dans le marché du travail."
-  },
-];
-
-const formation: Array<ResumeModel> = [
-  {
     title: "Formation de base en programmation",
     start: "2018",
     end: "2019",
@@ -68,7 +43,29 @@ const formation: Array<ResumeModel> = [
     company: "Stem for Good",
     location: "Ankorondrano, Antananarivo",
     description: "Cours d'apprentissage de création de robots et de domotique en utilisant des Arduinos et divers matériels électroniques."
-  }
+  },
+  {
+    title: "Baccalauréat Technique en Management",
+    start: "2016",
+    end: "2017",
+    badges: [],
+    href: "/",
+    logoUrl: "/assets/icon/METFP.jpg",
+    company: "Institut d'Enseignement Technique",
+    location: "Amboanjombe, Antananarivo",
+    description: "Spécialisé en gestion d'entreprise, finance et comptabilité, avec pour objectif de se lancer dans le domaine de l'entrepreneuriat et de la comptabilité. Ce parcours a été suivi au niveau secondaire pour intégrer un institut supérieur."
+  },
+  {
+    title: "Brevet d'Études Professionnelles en Management",
+    start: "2015",
+    end: "2016",
+    badges: [],
+    href: "/",
+    logoUrl: "/assets/icon/METFP.jpg",
+    company: "Institut d'Enseignement Technique",
+    location: "Amboanjombe, Antananarivo",
+    description: "Ce diplôme équivaut à un Diplôme Technique Supérieur, mais au niveau secondaire, axé sur la gestion et l'informatique de base (bureautique, Word, Excel, PowerPoint). Formation inter-lycées pour intégrer les étudiants dans le marché du travail."
+  },
 ];
 
 const experience: Array<ResumeModel> = [
@@ -213,4 +210,4 @@ const experience: Array<ResumeModel> = [
   },
 ];
 
-export { type ResumeModel, diplome, formation, experience }
+export { type ResumeModel, diplome, experience }
