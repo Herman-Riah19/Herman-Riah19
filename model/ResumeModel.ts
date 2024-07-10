@@ -70,6 +70,22 @@ const diplome: Array<ResumeModel> = [
 
 const experience: Array<ResumeModel> = [
   {
+    title: "Développeur Full stack",
+    start: "Février 2024",
+    end: "Août 2024",
+    badges: [],
+    href: "/",
+    logoUrl: "/assets",
+    company: "Synergy Mad",
+    location: "Full remote",
+    description:
+      "En tant que Développeur web Full stack, j'ai travaillé avec une équipe de développeurs chez Synergie Mad pour :<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Développer un application de discussion avec un IA pour traitement des corpus utilisateurs ou dédier</li>" +
+      "<li className='text-lg font-regular text-justify list-disc'>Développer un application de générateurs Image par IA avec l'API Stable Diffusion</li>" +
+      "<li className='text-lg font-regular text-justify list-disc'>Intégration des landing pages de divers sites</li>" +
+      "<li className='text-lg font-regular text-justify list-disc'>Participe au développement d'un application de simulation de la Bible en 3D</li>" +
+      "</ul>"
+  },
+  {
     title: "Développeur Python",
     start: "Août 2023",
     end: "Octobre 2023",
