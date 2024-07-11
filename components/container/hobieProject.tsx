@@ -36,6 +36,7 @@ const HobieProject = () => {
                         </div>
                     </div>
                 </BlurFade>
+                <ul className='mb-4 ml-4 divide-y divide-dashed border-l'>
                 {localHobies.map((work, id) => (
                     <BlurFade
                         key={work.company}
@@ -52,6 +53,7 @@ const HobieProject = () => {
                         />
                     </BlurFade>
                 ))}
+                </ul>
             </div>
         </section>
     )
