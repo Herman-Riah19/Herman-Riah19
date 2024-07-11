@@ -22,6 +22,7 @@ I'm committed to bringing your vision to life with a perfect blend of technical 
     <img src="https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white&style=flat-square" alt="Figma" />
 </div>
 <br />
+
 ### Back end:
 <div style={{display : "flex", flexWrap : "wrap", gap: 10}}>
     <img src="https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white&style=flat-square" alt="TypeScript" />
@@ -38,6 +39,7 @@ I'm committed to bringing your vision to life with a perfect blend of technical 
     <img src="https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white&style=flat-square" alt="Flask" />
 </div>
 <br />
+
 ### Database:
 <div style={{display : "flex", flexWrap : "wrap", gap: 10}}>
     <img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white&style=flat-square" alt="MySQL" />
@@ -53,7 +55,8 @@ I'm committed to bringing your vision to life with a perfect blend of technical 
     <img src="https://img.shields.io/badge/Strapi-2E7EEA?logo=strapi&logoColor=white&style=flat-square" alt="Strapi" />
 </div>
 <br />
-`Server:`
+
+### Server:
 <div style={{display : "flex", flexWrap : "wrap", gap: 10}}>
     <img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black&style=flat-square" alt="Linux" />
     <img src="https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white&style=flat-square" alt="Vercel" />
