@@ -11,7 +11,7 @@ I'm committed to bringing your vision to life with a perfect blend of technical 
 
 ### My Expertise:
 
-`Front End`:
+### Front end:
 <div style={{display : "flex", flexWrap : "wrap", gap: 10}}>
     <img src="https://img.shields.io/badge/ReactJS-61DAFB?logo=react&logoColor=white&style=flat-square" alt="React" />
     <img src="https://img.shields.io/badge/Angular-DD0031?logo=angular&logoColor=white&style=flat-square" alt="Angulaire" />
@@ -22,7 +22,7 @@ I'm committed to bringing your vision to life with a perfect blend of technical 
     <img src="https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white&style=flat-square" alt="Figma" />
 </div>
 <br />
-`Backend:`
+### Back end:
 <div style={{display : "flex", flexWrap : "wrap", gap: 10}}>
     <img src="https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white&style=flat-square" alt="TypeScript" />
     <img src="https://img.shields.io/badge/AdonisJS-220052?logo=adonisjs&logoColor=white&style=flat-square" alt="AdonisJS" />
@@ -38,7 +38,7 @@ I'm committed to bringing your vision to life with a perfect blend of technical 
     <img src="https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white&style=flat-square" alt="Flask" />
 </div>
 <br />
-`Database:`
+### Database:
 <div style={{display : "flex", flexWrap : "wrap", gap: 10}}>
     <img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white&style=flat-square" alt="MySQL" />
     <img src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white&style=flat-square" alt="MongoDB" />
