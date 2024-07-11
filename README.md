@@ -21,7 +21,6 @@ I'm committed to bringing your vision to life with a perfect blend of technical 
     <img src="https://img.shields.io/badge/Framer_Motion-0055FF?logo=framer&logoColor=white&style=flat-square" alt="Framer Motion" />
     <img src="https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white&style=flat-square" alt="Figma" />
 </div>
-<br />
 
 ### Back end:
 <div style={{display : "flex", flexWrap : "wrap", gap: 10}}>
@@ -38,7 +37,6 @@ I'm committed to bringing your vision to life with a perfect blend of technical 
     <img src="https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white&style=flat-square" alt="Django" />
     <img src="https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white&style=flat-square" alt="Flask" />
 </div>
-<br />
 
 ### Database:
 <div style={{display : "flex", flexWrap : "wrap", gap: 10}}>
@@ -48,13 +46,12 @@ I'm committed to bringing your vision to life with a perfect blend of technical 
     <img src="https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white&style=flat-square" alt="PostgreSQL" />
     <img src="https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white&style=flat-square" alt="Prisma" />
 </div>
-<br />
-`CMS:`
+
+### CMS:
 <div style={{display : "flex", flexWrap : "wrap", gap: 10}}>
     <img src="https://img.shields.io/badge/Directus-263238?logo=directus&logoColor=white&style=flat-square" alt="Directus" />
     <img src="https://img.shields.io/badge/Strapi-2E7EEA?logo=strapi&logoColor=white&style=flat-square" alt="Strapi" />
 </div>
-<br />
 
 ### Server:
 <div style={{display : "flex", flexWrap : "wrap", gap: 10}}>
