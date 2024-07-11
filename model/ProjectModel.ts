@@ -15,18 +15,6 @@ export let ProjectModel: Array<Model> = [
   {
     id: 1,
     href: "/",
-    title: "Jupiter",
-    type: "Application de Crowfunding",
-    img: `/assets/image/Jupiter.png`,
-    link: "http://jupiter.fr",
-    description:
-      "C'est un application web qui sert à achéter/transferer des forfaits et aussi les transferts d'argent avec les Mobile Money",
-    date: "Juillet 2023 - Aout 2023",
-    technology: "Flask/ReactJs/MaterialUI/Firebase",
-  },
-  {
-    id: 2,
-    href: "/",
     title: "Image Upscaler",
     type: "Generateur image",
     img: `/assets/image/upscaler.png`,
@@ -39,6 +27,18 @@ export let ProjectModel: Array<Model> = [
   {
     id: 2,
     href: "/",
+    title: "Jupiter",
+    type: "Application de Crowfunding",
+    img: `/assets/image/Jupiter.png`,
+    link: "http://jupiter.fr",
+    description:
+      "C'est un application web qui sert à achéter/transferer des forfaits et aussi les transferts d'argent avec les Mobile Money",
+    date: "Juillet 2023 - Aout 2023",
+    technology: "Flask/ReactJs/MaterialUI/Firebase",
+  },
+  {
+    id: 3,
+    href: "/",
     title: "TryInk",
     type: "Réseau Social",
     img: `/assets/image/trink.png`,
@@ -49,7 +49,7 @@ export let ProjectModel: Array<Model> = [
     technology: "AdonisJS/ReactJS/MaterialUI/Sqlite",
   },
   {
-    id: 3,
+    id: 4,
     href: "/",
     title: "Rainbow",
     type: "Fashion E-Commerce",
