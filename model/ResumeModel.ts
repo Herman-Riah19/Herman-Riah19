@@ -2,7 +2,7 @@ interface ResumeModel {
   title: string;
   start: string;
   end: string;
-  badges: string[],
+  badges: string[];
   href: string;
   logoUrl: string;
   company: string;
@@ -10,7 +10,7 @@ interface ResumeModel {
   description: string;
 }
 
-const diplome: Array<ResumeModel> = [
+const diplomes: Array<ResumeModel> = [
   {
     title: "Licence en Informatique, Électronique et Télécommunications",
     start: "2017",
@@ -68,7 +68,7 @@ const diplome: Array<ResumeModel> = [
   },
 ];
 
-const experience: Array<ResumeModel> = [
+const experiences: Array<ResumeModel> = [
   {
     title: "Développeur Full stack",
     start: "Février 2024",
@@ -79,10 +79,10 @@ const experience: Array<ResumeModel> = [
     company: "Synergy Mad",
     location: "Full remote",
     description:
-      "En tant que Développeur web Full stack, j'ai travaillé avec une équipe de développeurs chez Synergie Mad pour :<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Développer un application de discussion avec un IA pour traitement des corpus utilisateurs ou dédier</li>" +
-      "<li className='text-lg font-regular text-justify list-disc'>Développer un application de générateurs Image par IA avec l'API Stable Diffusion</li>" +
-      "<li className='text-lg font-regular text-justify list-disc'>Intégration des landing pages de divers sites</li>" +
-      "<li className='text-lg font-regular text-justify list-disc'>Participe au développement d'un application de simulation de la Bible en 3D</li>" +
+      "En tant que Développeur web Full stack chez Synergy Mad, j'ai travaillé avec une équipe de développeurs pour :<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Développer une application de discussion avec une IA pour le traitement des corpus utilisateurs</li>" +
+      "<li className='text-lg font-regular text-justify list-disc'>Développer une application de génération d'images par IA avec l'API Stable Diffusion</li>" +
+      "<li className='text-lg font-regular text-justify list-disc'>Intégrer des landing pages pour divers sites</li>" +
+      "<li className='text-lg font-regular text-justify list-disc'>Participer au développement d'une application de simulation biblique en 3D</li>" +
       "</ul>"
   },
   {
@@ -95,7 +95,7 @@ const experience: Array<ResumeModel> = [
     company: "Quantium",
     location: "Faravohitra, Antananarivo",
     description:
-      "En tant que Développeur en Python, j'ai travaillé avec une équipe de développeurs chez Quantium pour :<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Programmer un script de génération de leads pour améliorer le référencement d'un site</li>" +
+      "En tant que Développeur Python chez Quantium, j'ai travaillé avec une équipe de développeurs pour :<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Programmer un script de génération de leads pour améliorer le référencement d'un site</li>" +
       "<li className='text-lg font-regular text-justify list-disc'>Écrire des scripts de web scraping pour la collecte de données de clients potentiels</li>" +
       "<li className='text-lg font-regular text-justify list-disc'>Analyser et vérifier des listes d'emails clients obtenus pour l'envoi de spam publicitaire</li>" +
       "<li className='text-lg font-regular text-justify list-disc'>Développer une application SaaS pour la gestion des données dans un commerce</li>" +
@@ -111,7 +111,7 @@ const experience: Array<ResumeModel> = [
     company: "Fpay",
     location: "Andohalo, Antananarivo",
     description:
-      "En tant que développeur Fullstack chez Fpay, j'ai contribué à la réalisation de projets en utilisant Flask pour le backend et React pour le frontend :<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Conception d'une plateforme de crowdfunding [Flask, ReactJS et Firebase], intégration de l'authentification, des offres forfaitaires des opérateurs mobiles, et des codes USSD sous forme d'API pour des transactions mobiles comme l'achat de forfaits internet, transfert d'argent via Mobile Money, et paiement des abonnements Canal+.</li>" +
+      "En tant que développeur Fullstack chez Fpay, j'ai contribué à la réalisation de projets en utilisant Flask pour le backend et React pour le frontend :<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Conception d'une plateforme de crowdfunding [Flask, ReactJS et Firebase], intégration de l'authentification, des offres forfaitaires des opérateurs mobiles, et des codes USSD sous forme d'API pour des transactions mobiles comme l'achat de forfaits internet, transfert d'argent via Mobile Money, et paiement des abonnements Canal+</li>" +
       "<li className='text-lg font-regular text-justify list-disc'>Refonte d'une application de gestion d'agence développée en Flask et réécrite en Next JS pour améliorer les performances utilisateur.</li>" +
       "</ul>"
   },
@@ -125,10 +125,10 @@ const experience: Array<ResumeModel> = [
     company: "Bureau Église Évangélique Shine",
     location: "Andravoahangy, Antananarivo",
     description:
-      "Durant 2 ans en tant que bénévole au sein de l'Église Évangélique Shine, j'ai assuré plusieurs tâches en tant que technicien informatique et multimédia :<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Maintenance des appareils informatiques et vérification des installations réseaux pour assurer leur fonctionnalité durant les jours de travail</li>" +
-      "<li className='text-lg font-regular text-justify list-disc'>Montage vidéo des prêches du pasteur et conception des jaquettes et stickers pour représenter les supports en DVD</li>" +
-      "<li className='text-lg font-regular text-justify list-disc'>Création de supports multimédias tels que les flyers, les cartes de vœux et les couvertures de la Bible pour les événements religieux</li>" +
-      "<li className='text-lg font-regular text-justify list-disc'>Développement d'un générateur de QR Code pour les invitations lors des événements religieux en utilisant AdonisJS pour vérifier la validité des QR codes scannés. <a href='https://github.com/Herman-Riah19/QRCodeGenerate'>Source code</a></li>" +
+      "Pendant 2 ans en tant que bénévole à l'Église Évangélique Shine, j'ai assuré plusieurs tâches en tant que technicien informatique et multimédia :<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Maintenance des appareils informatiques et vérification des installations réseau pour assurer leur bon fonctionnement lors des jours de culte</li>" +
+      "<li className='text-lg font-regular text-justify list-disc'>Montage vidéo des prêches du pasteur et conception des jaquettes et stickers pour les supports DVD</li>" +
+      "<li className='text-lg font-regular text-justify list-disc'>Création de supports multimédias tels que des flyers, cartes de vœux et couvertures de la Bible pour les événements religieux</li>" +
+      "<li className='text-lg font-regular text-justify list-disc'>Développement d'un générateur de QR Code pour les invitations aux événements religieux en utilisant AdonisJS pour vérifier la validité des QR codes scannés. <a href='https://github.com/Herman-Riah19/QRCodeGenerate'>Code source</a></li>" +
       "</ul>"
   },
   {
@@ -142,7 +142,7 @@ const experience: Array<ResumeModel> = [
       "Ministère de l'Enseignement Technique et de la Formation Professionnelle",
     location: "Ampefiloha, Antananarivo",
     description:
-      "Durant mon stage au Ministère de l'Enseignement Technique et de la Formation Professionnelle, dans le département de l'information (INFor), j'ai participé à :<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Développement d'une application web de bibliothèque en ligne [PHP, MySQL, Bootstrap], intégration des vidéos du Ministère via des liens YouTube, et déploiement du site sur un serveur</li>" +
+      "Pendant mon stage au Ministère de l'Enseignement Technique et de la Formation Professionnelle, au département de l'information (INFor), j'ai participé à :<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Développement d'une application web de bibliothèque en ligne [PHP, MySQL, Bootstrap], intégration des vidéos du Ministère via des liens YouTube, et déploiement du site sur un serveur</li>" +
       "<li className='text-lg font-regular text-justify list-disc'>Installation d'un pare-feu avec PfSense et Debian pour filtrer la connexion sur le site, intégration de la sécurité d'authentification pour que seuls les employés puissent se connecter à internet, et blocage de certains sites web pendant les heures de travail.</li>" +
       "</ul>"
   },
@@ -156,18 +156,18 @@ const experience: Array<ResumeModel> = [
     company: "STEM for Good",
     location: "Ankorondrano, Antananarivo",
     description:
-      "Durant mon stage chez STEM for Good, j'ai été formé au développement de plusieurs projets domotiques, notamment un robot équilibrant avec Arduino et C++, ainsi qu'un générateur de son avec Arduino jouant la musique 'Tia Zaza' en jouant avec les fréquences sonores."
+      "Pendant mon stage chez STEM for Good, j'ai été formé au développement de plusieurs projets domotiques, notamment un robot équilibrant avec Arduino et C++, ainsi qu'un générateur de son avec Arduino jouant la musique 'Tia Zaza' en jouant avec les fréquences sonores."
   },
 ];
 
-const hobies = [
+const hobbies: Array<ResumeModel> = [
   {
     title: "Développeur Fullstack",
     start: "Août 2021",
     end: "Octobre 2023",
     badges: [],
     href: "/",
-    logoUrl: "/assets/icon/nft.png",
+    logoUrl: "/assets/icon/trinkz.svg",
     company: "Projet Personnel",
     location: "Imeritsiatosika, Antananarivo",
     description:
@@ -227,6 +227,6 @@ const hobies = [
       "<li className='text-lg font-regular text-justify list-disc'>Pour mon projet de fin d'études, développement d'un logiciel de dimensionnement des réseaux de télécommunication 4G utilisant C++ et le framework Qt, pour calculer et planifier la capacité de fréquence et le nombre de pylônes à installer selon l'environnement.</li>" +
       "</ul>"
   },
-]
+];
 
-export { type ResumeModel, diplome, experience, hobies }
+export { type ResumeModel, diplomes , experiences, hobbies };

@@ -1,14 +1,25 @@
 import { BLUR_FADE_DELAY } from '@/lib/constant'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import BlurFade from './blur-fade'
-import { hobies } from '@/model/ResumeModel'
-import { CardResume } from '../card/card-resume'
-import { useTranslations } from 'next-intl'
+import { hobbies, ResumeModel } from '@/model/ResumeModel'
+import { useLocale, useTranslations } from 'next-intl'
+import { CardHackathon } from '../card/card-hackathon'
+import { hobbiesEn } from '@/model/resumeModelEn'
 
 const HobieProject = () => {
     const t = useTranslations('Hobies')
+    const local = useLocale();
+    const [localHobies, setLocalHobies] = useState<ResumeModel[]>([])
+
+    useEffect(() => {
+        if (local === "fr") {
+            setLocalHobies(hobbies)
+        } else {
+            setLocalHobies(hobbiesEn)
+        }
+    }, [local])
     return (
-        <section id="resume">
+        <section id="hobbies">
             <div className="flex min-h-0 flex-col gap-y-3 mt-4">
                 <BlurFade delay={BLUR_FADE_DELAY * 13}>
                     <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -17,7 +28,7 @@ const HobieProject = () => {
                                 {t('SideProject')}
                             </div>
                             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                               {t('Intro')}
+                                {t('Intro')}
                             </h2>
                             <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                                 {t('Description')}
@@ -25,20 +36,18 @@ const HobieProject = () => {
                         </div>
                     </div>
                 </BlurFade>
-                {hobies.map((work, id) => (
+                {localHobies.map((work, id) => (
                     <BlurFade
                         key={work.company}
                         delay={BLUR_FADE_DELAY * 6 + id * 0.05}
                     >
-                        <CardResume
+                        <CardHackathon
                             key={work.company}
-                            logoUrl={work.logoUrl}
-                            altText={work.company}
-                            title={work.company}
-                            subtitle={work.title}
-                            href={work.href}
-                            badges={work.badges}
-                            period={`${work.start} - ${work.end ?? "Present"}`}
+                            image={work.logoUrl}
+                            location={work.company}
+                            title={work.title}
+                            links={work.href}
+                            dates={`${work.start} - ${work.end ?? "Present"}`}
                             description={work.description}
                         />
                     </BlurFade>

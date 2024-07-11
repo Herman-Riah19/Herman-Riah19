@@ -6,7 +6,7 @@ import NavLangue from "./navLangue";
 import { getLocale, getTranslations } from 'next-intl/server';
 import { Dock, DockIcon } from "../container/dock";
 import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
-import { CodeIcon, FileQuestion, HomeIcon, NotebookIcon, PencilLine, Workflow } from "lucide-react";
+import { CodeIcon, FileQuestion, HomeIcon, Lightbulb, NotebookIcon, PencilLine, Workflow } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Separator } from "@/components/ui/separator";
@@ -38,6 +38,7 @@ const Navbar: React.FC = () => {
     { href: "#resume", icon: Workflow, label: "Resume" },
     { href: "#education", icon: NotebookIcon, label: "Education" },
     { href: "#projects", icon: CodeIcon, label: "Projects" },
+    { href: "#hobbies", icon: Lightbulb, label: "Hobbies" },
     { href: "#contact", icon: PencilLine, label: "Notes" },
   ];
 
