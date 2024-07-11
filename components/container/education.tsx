@@ -26,11 +26,10 @@ const Education = () => {
           </BlurFade>
           {localDiplomes.map((work, id) => (
             <BlurFade
-              key={work.company}
+              key={id}
               delay={BLUR_FADE_DELAY * 6 + id * 0.05}
             >
               <CardResume
-                key={work.company}
                 logoUrl={work.logoUrl}
                 altText={work.company}
                 title={work.company}
@@ -38,7 +37,7 @@ const Education = () => {
                 href={work.href}
                 badges={work.badges}
                 period={`${work.start} - ${work.end ?? "Present"}`}
-                description={work.description}
+                // description={work.description}
               />
             </BlurFade>
           ))}
