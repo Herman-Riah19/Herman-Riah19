@@ -35,7 +35,7 @@ export const Projects = () => {
               </div>
             </div>
           </BlurFade>
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
+          <div className="grid md:grid-cols-2 gap-3 sm:grid-cols-1 max-w-[800px] mx-auto">
             {localProjects.map((project, id) => (
               <BlurFade
                 key={project.title}
