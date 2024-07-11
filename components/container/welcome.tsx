@@ -27,7 +27,7 @@ const Welcome = () => {
           </div>
           <BlurFade delay={BLUR_FADE_DELAY} className='m-2 flex items-center justify-center'>
             <Avatar className="size-28 sm:size-48 md:size-28 border">
-              <AvatarImage alt={'herman'} src={"/assets/image/Profile.jpg"} />
+              <AvatarImage alt={'herman'} src={"/assets/image/profile.jpg"} />
               <AvatarFallback>{"HR"}</AvatarFallback>
             </Avatar>
           </BlurFade>
