@@ -61,7 +61,7 @@ const Navbar: React.FC = () => {
                   )}
                   target={item.label === "Download" ? "_blank" : ""}
                 >
-                  <item.icon className="m-1 size-4" />
+                  <item.icon className="size-4 ml-4" />
                 </Link>
               </TooltipTrigger>
               <TooltipContent>
@@ -79,7 +79,7 @@ const Navbar: React.FC = () => {
                   className={cn( "size-12 nav-link" )}
                   onClick={handleDownload}
                 >
-                  <Download className="m-1 size-4" />
+                  <Download className="size-4 ml-4" />
                 </Button>
               </TooltipTrigger>
               <TooltipContent>
