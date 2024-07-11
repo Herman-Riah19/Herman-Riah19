@@ -21,7 +21,7 @@ export let ProjectModel: Array<Model> = [
     link: "http://jupiter.fr",
     description:
       "C'est un application web qui permet de générer des images et aussi modifier certains images à partir d'un Intelligence Artificiel de génération",
-    date: "Juillet 2023 - Aout 2023",
+    date: "Mars 2024 - Mai 2024",
     technology: "Flask/ReactJs/MaterialUI/Firebase",
   },
   {
