@@ -44,7 +44,6 @@ export function CardHackathon({
       <div className="mt-2 flex flex-row flex-wrap items-start gap-2">
         <Link href={links} >
           <Badge title="Source code" className="flex gap-2">
-
             Source code
           </Badge>
         </Link>

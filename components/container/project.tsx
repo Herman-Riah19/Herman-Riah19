@@ -1,12 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { BLUR_FADE_DELAY } from '@/lib/constant';
 import BlurFade from './blur-fade';
 import { CardProject } from '../card/cardProject';
-import { ProjectModel } from '@/model/ProjectModel';
-import { useTranslations } from 'next-intl';
+import { ProjectModelFr, ProjectModelEn, Model } from '@/model/ProjectModel';
+import { useLocale, useTranslations } from 'next-intl';
 
 export const Projects = () => {
   const t = useTranslations('Project')
+  const local = useLocale();
+  const [localProjects, setLocalProject] = useState<Model[]>([])
+
+  useEffect(() => {
+    if(local === "fr") {
+      setLocalProject(ProjectModelFr)
+    } else {
+      setLocalProject(ProjectModelEn)
+    }
+  }, [local])
   return (
     <section id="projects">
         <div className="space-y-12 w-full py-12">
@@ -26,7 +36,7 @@ export const Projects = () => {
             </div>
           </BlurFade>
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
-            {ProjectModel.map((project, id) => (
+            {localProjects.map((project, id) => (
               <BlurFade
                 key={project.title}
                 delay={BLUR_FADE_DELAY * 12 + id * 0.05}
