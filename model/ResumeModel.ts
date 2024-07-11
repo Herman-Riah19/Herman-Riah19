@@ -116,33 +116,6 @@ const experience: Array<ResumeModel> = [
       "</ul>"
   },
   {
-    title: "Développeur Fullstack",
-    start: "Août 2021",
-    end: "Octobre 2023",
-    badges: [],
-    href: "/",
-    logoUrl: "/assets/icon/nft.png",
-    company: "Projet Personnel",
-    location: "Imeritsiatosika, Antananarivo",
-    description:
-      "J'ai utilisé mes compétences en AdonisJS, React et Inertia JS pour :<ul className='list-disc'>" +
-      "<li className='text-lg font-regular text-justify list-disc'>Créer un réseau social pour les dessinateurs numériques et générateurs d'images par IA, mettant en avant leur talent et leur spécialité tout en protégeant leurs droits. <a href='https://github.com/Herman-Riah19/TryInc'>Code source</a></li>" +
-      "<li className='text-lg font-regular text-justify list-disc'>Développer une application de galerie de photos locale. <a href='https://github.com/Herman-Riah19/LoopbackReactProject'>Code source</a></li>" +
-      "</ul>"
-  },
-  {
-    title: "Intégrateur React JS",
-    start: "Mars 2023",
-    end: "Mars 2023",
-    badges: [],
-    href: "/",
-    logoUrl: "/assets/icon/nft.png",
-    company: "Freelance",
-    location: "Andravoahangy, Antananarivo",
-    description:
-      "Lors d'une mission freelance, j'ai intégré une application de vente de NFT de jeux vidéos japonais en utilisant ReactJS et Material UI, en assurant la page de dashboard de l'application selon les détails du design fourni par le client. <a href='https://dash-dark-game.netlify.app'>Site</a>"
-  },
-  {
     title: "Bénévolat en Technicien informatique et multimédia",
     start: "Septembre 2021",
     end: "Juin 2023",
@@ -157,30 +130,6 @@ const experience: Array<ResumeModel> = [
       "<li className='text-lg font-regular text-justify list-disc'>Création de supports multimédias tels que les flyers, les cartes de vœux et les couvertures de la Bible pour les événements religieux</li>" +
       "<li className='text-lg font-regular text-justify list-disc'>Développement d'un générateur de QR Code pour les invitations lors des événements religieux en utilisant AdonisJS pour vérifier la validité des QR codes scannés. <a href='https://github.com/Herman-Riah19/QRCodeGenerate'>Source code</a></li>" +
       "</ul>"
-  },
-  {
-    title: "Développeur Wordpress",
-    start: "Août 2021",
-    end: "Août 2021",
-    badges: [],
-    href: "/",
-    logoUrl: "/assets/icon/nft.png",
-    company: "Freelance",
-    location: "67Ha, Antananarivo",
-    description:
-      "J'ai développé un site web multilingue pour un musicien en utilisant PHP et Wordpress, mettant en valeur son talent en guitare pour élargir son réseau de communication à l'international et obtenir une signature numérique avancée pour sa carrière musicale."
-  },
-  {
-    title: "Développeur Fullstack",
-    start: "Septembre 2020",
-    end: "Décembre 2020",
-    badges: [],
-    href: "/",
-    logoUrl: "/assets/icon/rainbow.jpg",
-    company: "Rainbow MDG By Pass",
-    location: "By Pass, Antananarivo",
-    description:
-      "J'ai été contacté par une agence de mode féminine pour développer un e-commerce en utilisant TypeScript, MySQL, Angular, Express et NodeJS pour leur permettre de vendre leurs produits depuis leur propre plateforme."
   },
   {
     title: "Stagiaire en Technicien informatique",
@@ -209,6 +158,60 @@ const experience: Array<ResumeModel> = [
     description:
       "Durant mon stage chez STEM for Good, j'ai été formé au développement de plusieurs projets domotiques, notamment un robot équilibrant avec Arduino et C++, ainsi qu'un générateur de son avec Arduino jouant la musique 'Tia Zaza' en jouant avec les fréquences sonores."
   },
+];
+
+const hobies = [
+  {
+    title: "Développeur Fullstack",
+    start: "Août 2021",
+    end: "Octobre 2023",
+    badges: [],
+    href: "/",
+    logoUrl: "/assets/icon/nft.png",
+    company: "Projet Personnel",
+    location: "Imeritsiatosika, Antananarivo",
+    description:
+      "J'ai utilisé mes compétences en AdonisJS, React et Inertia JS pour :<ul className='list-disc'>" +
+      "<li className='text-lg font-regular text-justify list-disc'>Créer un réseau social pour les dessinateurs numériques et générateurs d'images par IA, mettant en avant leur talent et leur spécialité tout en protégeant leurs droits. <a href='https://github.com/Herman-Riah19/TryInc'>Code source</a></li>" +
+      "<li className='text-lg font-regular text-justify list-disc'>Développer une application de galerie de photos locale. <a href='https://github.com/Herman-Riah19/LoopbackReactProject'>Code source</a></li>" +
+      "</ul>"
+  },
+  {
+    title: "Intégrateur React JS",
+    start: "Mars 2023",
+    end: "Mars 2023",
+    badges: [],
+    href: "/",
+    logoUrl: "/assets/icon/nft.png",
+    company: "Freelance",
+    location: "Andravoahangy, Antananarivo",
+    description:
+      "Lors d'une mission freelance, j'ai intégré une application de vente de NFT de jeux vidéos japonais en utilisant ReactJS et Material UI, en assurant la page de dashboard de l'application selon les détails du design fourni par le client. <a href='https://dash-dark-game.netlify.app'>Site</a>"
+  },
+  {
+    title: "Développeur Wordpress",
+    start: "Août 2021",
+    end: "Août 2021",
+    badges: [],
+    href: "/",
+    logoUrl: "/assets/icon/nft.png",
+    company: "Freelance",
+    location: "67Ha, Antananarivo",
+    description:
+      "J'ai développé un site web multilingue pour un musicien en utilisant PHP et Wordpress, mettant en valeur son talent en guitare pour élargir son réseau de communication à l'international et obtenir une signature numérique avancée pour sa carrière musicale."
+  },
+  {
+    title: "Développeur Fullstack",
+    start: "Septembre 2020",
+    end: "Décembre 2020",
+    badges: [],
+    href: "/",
+    logoUrl: "/assets/icon/rainbow.jpg",
+    company: "Rainbow MDG By Pass",
+    location: "By Pass, Antananarivo",
+    description:
+      "J'ai été contacté par une agence de mode féminine pour développer un e-commerce en utilisant TypeScript, MySQL, Angular, Express et NodeJS pour leur permettre de vendre leurs produits depuis leur propre plateforme."
+  },
   {
     title: "Développeur Fullstack",
     start: "2017",
@@ -224,6 +227,6 @@ const experience: Array<ResumeModel> = [
       "<li className='text-lg font-regular text-justify list-disc'>Pour mon projet de fin d'études, développement d'un logiciel de dimensionnement des réseaux de télécommunication 4G utilisant C++ et le framework Qt, pour calculer et planifier la capacité de fréquence et le nombre de pylônes à installer selon l'environnement.</li>" +
       "</ul>"
   },
-];
+]
 
-export { type ResumeModel, diplome, experience }
+export { type ResumeModel, diplome, experience, hobies }

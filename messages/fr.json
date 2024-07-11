@@ -18,5 +18,10 @@
     "Title": "Mes Projects",
     "Checkout": "Découvrez mon dernier travail",
     "Description": "J'ai travaillé sur une variété de projets, allant des simples sites Web aux applications Web complexes. Voici quelques un de mes préférés."
+  },
+  "Hobies": {
+    "SideProject": "Projet parallèle",
+    "Intro": "J'aime coder des choses",
+    "Description": "Pendant et après mes études universitaires, je me suis plongé dans la réalisation de divers projets passionnants tout en affinant mes compétences en développement. Chaque nouveau défi m'a permis d'explorer et d'approfondir mes connaissances, m'apportant une expérience précieuse et un enthousiasme grandissant pour l'innovation technologique."
   }
 }

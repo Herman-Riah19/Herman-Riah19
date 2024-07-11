@@ -9,6 +9,7 @@ import InfoContact from '@/components/container/info-contact'
 import Resume from '@/components/container/resume'
 import Education from '@/components/container/education'
 import { Projects } from '@/components/container/project'
+import HobieProject from '@/components/container/hobieProject'
 
 const HermanPage = () => {
   
@@ -23,6 +24,7 @@ const HermanPage = () => {
         <Education />
         <ListTech />
         <Projects />
+        <HobieProject />
       </section>
       <Footer />
     </div>
