@@ -7,7 +7,7 @@ import { getLocale, getTranslations } from 'next-intl/server';
 import { Dock, DockIcon } from "../container/dock";
 import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 import { CodeIcon, Download, FileQuestion, HomeIcon, Lightbulb, NotebookIcon, PencilLine, Workflow } from "lucide-react";
-import { buttonVariants } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Separator } from "@/components/ui/separator";
 import { useTranslations } from "next-intl";
@@ -39,9 +39,11 @@ const Navbar: React.FC = () => {
     { href: "#education", icon: NotebookIcon, label: "Education" },
     { href: "#projects", icon: CodeIcon, label: "Projects" },
     { href: "#hobbies", icon: Lightbulb, label: "Hobbies" },
-    { href: "#contact", icon: PencilLine, label: "Notes" },
-    { href: "/assets/cv_herman.pdf", icon: Download, label: "Download" },
   ];
+
+  const handleDownload = () => {
+    window.open('/assets/cv_herman.pdf', '_blank');
+  }
 
   return (
     <div className="pointer-events-none fixed inset-x-0 bottom-0 z-30 mx-auto mb-4 flex origin-bottom h-full max-h-14">
@@ -57,6 +59,7 @@ const Navbar: React.FC = () => {
                     buttonVariants({ variant: "ghost", size: "icon" }),
                     "size-12 nav-link"
                   )}
+                  target={item.label === "Download" ? "_blank" : ""}
                 >
                   <item.icon className="m-1 size-4" />
                 </Link>
@@ -67,6 +70,23 @@ const Navbar: React.FC = () => {
             </Tooltip>
           </DockIcon>
         ))}
+        <DockIcon>
+            <Tooltip>
+            <TooltipTrigger asChild>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className={cn( "size-12 nav-link" )}
+                  onClick={handleDownload}
+                >
+                  <Download className="m-1 size-4" />
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Download</p>
+              </TooltipContent>
+            </Tooltip>
+          </DockIcon>
          <Separator orientation="vertical" className="h-full py-2" />
         <DockIcon>
           <Tooltip>
