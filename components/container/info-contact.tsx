@@ -1,5 +1,5 @@
 import { EnvelopeClosedIcon } from '@radix-ui/react-icons'
-import { Github, Twitter, Instagram, FacebookIcon } from 'lucide-react'
+import { Github, Twitter, Instagram, FacebookIcon, Phone } from 'lucide-react'
 import React from 'react'
 import { Button } from '@/components/ui/button'
 import BlurFade from '@/components/container/blur-fade'
@@ -20,6 +20,12 @@ const InfoContact = () => {
                 </li>
                 <li>
                     <Button variant="secondary" className='w-full p-0 bg-secondary border-none gap-2 text-start'>
+                        <Phone className='m-2' />
+                        <span className='sm:text-[12px] md:text-md text-normal'>+261 38 97 480 81</span>
+                    </Button>
+                </li>
+                <li>
+                    <Button variant="secondary" className='w-full p-0 bg-secondary border-none gap-2 text-start'>
                         <Github className='m-2' />
                         <span className='sm:text-[12px] md:text-md text-normal'>Herman-Ria19</span>
                     </Button>
@@ -28,12 +34,6 @@ const InfoContact = () => {
                     <Button variant="secondary" className='w-full p-0 bg-secondary border-none gap-2 flex flex-row text-start'>
                         <Twitter className='m-2' />
                         <span className='sm:text-[12px] md:text-md text-normal'>@hermannriah</span>
-                    </Button>
-                </li>
-                <li>
-                    <Button variant="secondary" className='w-full p-0 bg-secondary border-none gap-2 text-start'>
-                        <Instagram className='m-2' />
-                        <span className='sm:text-[12px] md:text-md text-normal'>@HermanRiah</span>
                     </Button>
                 </li>
                 <li>
