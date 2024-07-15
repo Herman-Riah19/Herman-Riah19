@@ -72,7 +72,7 @@ const experiences: Array<ResumeModel> = [
   {
     title: "Développeur Full stack",
     start: "Février 2024",
-    end: "Août 2024",
+    end: "Maintenant",
     badges: [],
     href: "/",
     logoUrl: "/assets",

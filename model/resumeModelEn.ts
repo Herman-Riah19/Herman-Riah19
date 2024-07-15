@@ -72,7 +72,7 @@ interface ResumeModel {
     {
       title: "Full Stack Developer",
       start: "February 2024",
-      end: "August 2024",
+      end: "Now",
       badges: [],
       href: "/",
       logoUrl: "/assets",
