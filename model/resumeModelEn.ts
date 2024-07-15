@@ -88,10 +88,10 @@ interface ResumeModel {
     {
       title: "Python Developer",
       start: "August 2023",
-      end: "October 2023",
+      end: "December 2023",
       badges: [],
       href: "/",
-      logoUrl: "/assets",
+      logoUrl: "/assets/icon/quantium.png",
       company: "Quantium",
       location: "Faravohitra, Antananarivo",
       description:

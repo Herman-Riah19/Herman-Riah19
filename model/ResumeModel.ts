@@ -88,10 +88,10 @@ const experiences: Array<ResumeModel> = [
   {
     title: "Développeur Python",
     start: "Août 2023",
-    end: "Octobre 2023",
+    end: "Décembre 2023",
     badges: [],
     href: "/",
-    logoUrl: "/assets",
+    logoUrl: "/assets/icon/quantium.png",
     company: "Quantium",
     location: "Faravohitra, Antananarivo",
     description:
