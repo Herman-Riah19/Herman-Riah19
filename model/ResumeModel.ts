@@ -75,7 +75,7 @@ const experiences: Array<ResumeModel> = [
     end: "Maintenant",
     badges: [],
     href: "/",
-    logoUrl: "/assets",
+    logoUrl: "/assets/icon/synapse.jpg",
     company: "Synergy Mad",
     location: "Full remote",
     description:
