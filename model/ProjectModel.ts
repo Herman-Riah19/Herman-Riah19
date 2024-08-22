@@ -8,7 +8,7 @@ export interface Model {
     link: string;
     description: string;
     date: string;
-    technology: string;
+    technology: string[];
 }
 
 export let ProjectModelFr: Array<Model> = [
@@ -22,7 +22,7 @@ export let ProjectModelFr: Array<Model> = [
     description:
       "C'est un application web qui permet de générer des images et aussi modifier certains images à partir d'un Intelligence Artificiel de génération",
     date: "Mars 2024 - Mai 2024",
-    technology: "Flask/ReactJs/MaterialUI/Firebase",
+    technology: ["Flask", "ReactJs", "Shadcn UI", "Prisma", "Postgre SQL"],
   },
   {
     id: 2,
@@ -34,7 +34,7 @@ export let ProjectModelFr: Array<Model> = [
     description:
       "C'est un application web qui sert à achéter/transferer des forfaits et aussi les transferts d'argent avec les Mobile Money",
     date: "Juillet 2023 - Aout 2023",
-    technology: "Flask/ReactJs/MaterialUI/Firebase",
+    technology: ["Flask", "ReactJs", "MaterialUI", "Firebase"],
   },
   {
     id: 3,
@@ -46,7 +46,7 @@ export let ProjectModelFr: Array<Model> = [
     description:
       "Cette application est un réseau social destiné aux dessinateurs numériques et générateurs d'images par IA, mettant en avant leur talent.",
     date: "Septembre 2022 - Mai 2023",
-    technology: "AdonisJS/ReactJS/MaterialUI/Sqlite",
+    technology: ["AdonisJS", "ReactJS", "MaterialUI", "Sqlite"],
   },
   {
     id: 4,
@@ -57,7 +57,7 @@ export let ProjectModelFr: Array<Model> = [
     link: "/",
     description: "C'est un application de vente en ligne pour le compte d'un distributeur des vêtements artisanals pour les Femmes",
     date: "Novembre 2020",
-    technology: "NodeJS/Express/Angular/MySQL",
+    technology: ["TypeScript", "Express JS", "Angular", "MySQL"],
   },
 ];
 
@@ -72,7 +72,7 @@ export const ProjectModelEn: Array<Model> = [
     description:
       "This is a web application that allows generating images and also modifying certain images using an AI-based generation system.",
     date: "March 2024 - May 2024",
-    technology: "Flask/ReactJs/MaterialUI/Firebase",
+    technology: ["Flask", "ReactJs", "Shadcn UI", "Prisma", "Postgre SQL"],
   },
   {
     id: 2,
@@ -84,7 +84,7 @@ export const ProjectModelEn: Array<Model> = [
     description:
       "This is a web application for buying/transferring plans and also for transferring money using Mobile Money.",
     date: "July 2023 - August 2023",
-    technology: "Flask/ReactJs/MaterialUI/Firebase",
+    technology: ["Flask", "ReactJs", "MaterialUI", "Firebase"],
   },
   {
     id: 3,
@@ -96,7 +96,7 @@ export const ProjectModelEn: Array<Model> = [
     description:
       "This application is a social network designed for digital illustrators and AI image generators, showcasing their talent.",
     date: "September 2022 - May 2023",
-    technology: "AdonisJS/ReactJS/MaterialUI/Sqlite",
+    technology: ["AdonisJS", "ReactJS", "MaterialUI", "Sqlite"],
   },
   {
     id: 4,
@@ -107,6 +107,6 @@ export const ProjectModelEn: Array<Model> = [
     link: "/",
     description: "This is an online sales application for a distributor of handcrafted women's clothing.",
     date: "November 2020",
-    technology: "NodeJS/Express/Angular/MySQL",
+    technology: ["TypeScript", "Express JS", "Angular", "MySQL"],
   },
 ];

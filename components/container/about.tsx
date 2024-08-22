@@ -14,7 +14,7 @@ const About = () => {
         <h2 className="text-xl font-bold">{t('AboutTitle')}</h2>
       </BlurFade>
       <BlurFade delay={BLUR_FADE_DELAY * 4} className='text-justify'>
-        <Markdown className='prose max-w-full text-pretty font-sans text-lg text-muted-foreground dark:prose-invert'>
+        <Markdown className='prose max-w-full text-pretty font-sans text-lg text-primary dark:prose-invert'>
           {t('About')}
         </Markdown>
       </BlurFade>

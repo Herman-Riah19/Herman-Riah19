@@ -1,5 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
+import { Github } from "lucide-react";
 import Link from "next/link";
 
 interface Props {
@@ -44,6 +45,7 @@ export function CardHackathon({
       <div className="mt-2 flex flex-row flex-wrap items-start gap-2">
         <Link href={links} >
           <Badge title="Source code" className="flex gap-2">
+            <Github />
             Source code
           </Badge>
         </Link>
