@@ -1,6 +1,7 @@
 import { BLUR_FADE_DELAY } from '@/lib/constant'
 import React from 'react'
 import BlurFade from './container/blur-fade'
+import { Facebook } from 'lucide-react'
 
 interface NavigationItem {
   name: string
@@ -46,6 +47,11 @@ const navigation: {
           />
         </svg>
       ),
+    },
+    {
+      name: 'Facebook',
+      href: 'https://web.facebook.com/riah.hermann',
+      icon: (props: React.SVGProps<SVGSVGElement>) => <Facebook />,
     },
   ],
 }
