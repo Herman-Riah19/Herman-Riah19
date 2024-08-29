@@ -47,12 +47,6 @@ I'm committed to bringing your vision to life with a perfect blend of technical 
     <img src="https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white&style=flat-square" alt="Prisma" />
 </div>
 
-### CMS:
-<div style={{display : "flex", flexWrap : "wrap", gap: 10}}>
-    <img src="https://img.shields.io/badge/Directus-263238?logo=directus&logoColor=white&style=flat-square" alt="Directus" />
-    <img src="https://img.shields.io/badge/Strapi-2E7EEA?logo=strapi&logoColor=white&style=flat-square" alt="Strapi" />
-</div>
-
 ### Server:
 <div style={{display : "flex", flexWrap : "wrap", gap: 10}}>
     <img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black&style=flat-square" alt="Linux" />
