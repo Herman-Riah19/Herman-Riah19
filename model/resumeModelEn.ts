@@ -23,28 +23,6 @@ interface ResumeModel {
       description: "Specialized in computer and telecommunications networks, with knowledge in desktop and web application programming. Configuration and troubleshooting of computer networks running on GNU/Linux infrastructures."
     },
     {
-      title: "Basic Programming Foundation Course",
-      start: "2018",
-      end: "2019",
-      badges: [],
-      href: "https://www.sololearn.com/",
-      logoUrl: "/assets/icon/Sololearn.png",
-      company: "SoloLearn.com",
-      location: "Online",
-      description: "A distance learning course on the SoloLearn platform, where I deepened my knowledge in Python, C/C++, JavaScript, and Dart, with participation in various challenges and competitions within the community."
-    },
-    {
-      title: "Embedded Systems, Arduino Training",
-      start: "2018",
-      end: "2019",
-      badges: [],
-      href: "/",
-      logoUrl: "/assets/icon/stem.jpg",
-      company: "Stem for Good",
-      location: "Ankorondrano, Antananarivo",
-      description: "Training course on building robots and home automation using Arduinos and various electronic materials."
-    },
-    {
       title: "Technical Baccalaureate in Management",
       start: "2016",
       end: "2017",
@@ -157,6 +135,17 @@ interface ResumeModel {
       location: "Ankorondrano, Antananarivo",
       description:
         "During my internship at STEM for Good, I was trained in developing several home automation projects, including a balancing robot with Arduino and C++, as well as a sound generator with Arduino playing the 'Tia Zaza' music by playing with the sound frequencies."
+    },
+    {
+      title: "Basic Programming Foundation Course",
+      start: "2018",
+      end: "2019",
+      badges: [],
+      href: "https://www.sololearn.com/",
+      logoUrl: "/assets/icon/Sololearn.png",
+      company: "SoloLearn.com",
+      location: "Online",
+      description: "A distance learning course on the SoloLearn platform, where I deepened my knowledge in Python, C/C++, JavaScript, and Dart, with participation in various challenges and competitions within the community."
     },
   ];
   
