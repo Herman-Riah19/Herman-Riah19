@@ -23,28 +23,6 @@ const diplomes: Array<ResumeModel> = [
     description: "Spécialisé en informatique et réseaux de télécommunications, avec des connaissances en programmation d'applications de bureau et web. Configuration et dépannage des réseaux informatiques fonctionnant sur des infrastructures GNU/Linux."
   },
   {
-    title: "Formation de base en programmation",
-    start: "2018",
-    end: "2019",
-    badges: [],
-    href: "https://www.sololearn.com/",
-    logoUrl: "/assets/icon/Sololearn.png",
-    company: "SoloLearn.com",
-    location: "En ligne",
-    description: "Un cours à distance sur la plateforme SoloLearn, où j'ai approfondi mes connaissances en Python, C/C++, JavaScript et Dart, avec la participation à divers challenges et compétitions régulières au sein de la communauté."
-  },
-  {
-    title: "Formation en systèmes embarqués, Arduino",
-    start: "2018",
-    end: "2019",
-    badges: [],
-    href: "/",
-    logoUrl: "/assets/icon/stem.jpg",
-    company: "Stem for Good",
-    location: "Ankorondrano, Antananarivo",
-    description: "Cours d'apprentissage de création de robots et de domotique en utilisant des Arduinos et divers matériels électroniques."
-  },
-  {
     title: "Baccalauréat Technique en Management",
     start: "2016",
     end: "2017",
@@ -157,6 +135,17 @@ const experiences: Array<ResumeModel> = [
     location: "Ankorondrano, Antananarivo",
     description:
       "Pendant mon stage chez STEM for Good, j'ai été formé au développement de plusieurs projets domotiques, notamment un robot équilibrant avec Arduino et C++, ainsi qu'un générateur de son avec Arduino jouant la musique 'Tia Zaza' en jouant avec les fréquences sonores."
+  },
+  {
+    title: "Formation de base en programmation",
+    start: "2018",
+    end: "2019",
+    badges: [],
+    href: "https://www.sololearn.com/",
+    logoUrl: "/assets/icon/Sololearn.png",
+    company: "SoloLearn.com",
+    location: "En ligne",
+    description: "Un cours à distance sur la plateforme SoloLearn, où j'ai approfondi mes connaissances en Python, C/C++, JavaScript et Dart, avec la participation à divers challenges et compétitions régulières au sein de la communauté."
   },
 ];
 
