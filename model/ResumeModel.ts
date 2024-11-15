@@ -58,9 +58,9 @@ const experiences: Array<ResumeModel> = [
     location: "Full remote",
     description:
       "En tant que Développeur web Full stack chez Synergy Mad, j'ai travaillé avec une équipe de développeurs pour :<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Développer une application de discussion avec une IA pour le traitement des corpus utilisateurs</li>" +
+      "<li className='text-lg font-regular text-justify list-disc'>Participer au développement d'une application de simulation biblique en 3D</li>" +
       "<li className='text-lg font-regular text-justify list-disc'>Développer une application de génération d'images par IA avec l'API Stable Diffusion</li>" +
       "<li className='text-lg font-regular text-justify list-disc'>Intégrer des landing pages pour divers sites</li>" +
-      "<li className='text-lg font-regular text-justify list-disc'>Participer au développement d'une application de simulation biblique en 3D</li>" +
       "</ul>"
   },
   {

@@ -53,14 +53,14 @@ interface ResumeModel {
       end: "Now",
       badges: [],
       href: "/",
-      logoUrl: "/assets",
+      logoUrl: "/assets/icon/synapse.jpg",
       company: "Synergy Mad",
       location: "Full remote",
       description:
         "As a Full Stack Web Developer at Synergy Mad, I worked with a team of developers to:<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Develop a chat application with an AI for processing user corpora</li>" +
+        "<li className='text-lg font-regular text-justify list-disc'>Participate in the development of a 3D biblical simulation application</li>" +
         "<li className='text-lg font-regular text-justify list-disc'>Develop an image generation application by AI with Stable Diffusion API</li>" +
         "<li className='text-lg font-regular text-justify list-disc'>Integrate landing pages for various websites</li>" +
-        "<li className='text-lg font-regular text-justify list-disc'>Participate in the development of a 3D biblical simulation application</li>" +
         "</ul>"
     },
     {
