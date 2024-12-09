@@ -17,15 +17,8 @@ interface BlurFadeTextProps {
   yOffset?: number;
   animateByCharacter?: boolean;
 }
-const BlurFadeText = ({
-  text,
-  className,
-  variant,
-  characterDelay = 0.03,
-  delay = 0,
-  yOffset = 8,
-  animateByCharacter = false,
-}: BlurFadeTextProps) => {
+
+const BlurFadeText = ({ text, className, variant, characterDelay = 0.03, delay = 0, yOffset = 8, animateByCharacter = false }: BlurFadeTextProps) => {
   const defaultVariants: Variants = {
     hidden: { y: yOffset, opacity: 0, filter: "blur(8px)" },
     visible: { y: -yOffset, opacity: 1, filter: "blur(0px)" },

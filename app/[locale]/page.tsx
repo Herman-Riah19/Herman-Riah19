@@ -10,6 +10,7 @@ import Resume from '@/components/container/resume'
 import Education from '@/components/container/education'
 import { Projects } from '@/components/container/project'
 import HobieProject from '@/components/container/hobieProject'
+import { AnimatedListDemo } from '@/components/container/listTechAnimate'
 
 const HermanPage = () => {
   
@@ -23,6 +24,7 @@ const HermanPage = () => {
         <Resume />
         <Education />
         <ListTech />
+        <AnimatedListDemo />
         <Projects />
         <HobieProject />
       </section>

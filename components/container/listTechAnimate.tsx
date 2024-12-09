@@ -2,58 +2,12 @@
 
 import { cn } from "@/lib/utils";
 import { AnimatedList } from "@/components/animation/animatedList";
-import { Code, Folder, Globe, WashingMachine,  } from "lucide-react";
-import { DesktopIcon } from "@radix-ui/react-icons";
+import { Techno, TechnologieModel } from "@/model/TechnologieModel";
+import Image from "next/image";
+import { BLUR_FADE_DELAY } from "@/lib/constant";
+import BlurFade from "./blur-fade";
 
-interface Item {
-  name: string;
-  description: string;
-  icon: string;
-  color: string;
-  time: string;
-}
-
-let notifications = [
-  {
-    name: "AdonisJS",
-    description: "APIs / RESTful APIs development and integration",
-    time: "3 years",
-    icon: <Code />,
-    color: "#00C9A7",
-  },
-  {
-    name: "AdonisJS and NextJS",
-    description: "Full stack application and integration",
-    time: "3 years",
-    icon: <Globe />,
-    color: "#FFB800",
-  },
-  {
-    name: "Next JS",
-    description: "Responsive design",
-    time: "5m ago",
-    icon: <DesktopIcon />,
-    color: "#FF3D71",
-  },
-  {
-    name: "Next-auth",
-    description: "Google Authentication integrations",
-    time: "2m ago",
-    icon: <Folder />,
-    color: "#1E86FF",
-  },
-  {
-    name: "Stable Diffusion",
-    description: "Generative AI APIs for text and image",
-    time: "2m ago",
-    icon: <WashingMachine />,
-    color: "#1E86FF",
-  },
-];
-
-notifications = Array.from({ length: 10 }, () => notifications).flat();
-
-const Notification = ({ name, description, icon, color, time }: Item) => {
+const Notification = ({ name, language, icon, type, star }: Techno) => {
   return (
     <figure
       className={cn(
@@ -69,20 +23,17 @@ const Notification = ({ name, description, icon, color, time }: Item) => {
       <div className="flex flex-row items-center gap-3">
         <div
           className="flex h-10 w-10 items-center justify-center rounded-2xl"
-          style={{
-            backgroundColor: color,
-          }}
         >
-          <span className="text-lg">{icon}</span>
+          <Image src={icon} alt={name} width={50} height={50} />
         </div>
         <div className="flex flex-col overflow-hidden">
           <figcaption className="flex flex-row items-center whitespace-pre text-lg font-medium dark:text-white ">
             <span className="text-sm sm:text-lg">{name}</span>
             <span className="mx-1">·</span>
-            <span className="text-xs text-gray-500">{time}</span>
+            <span className="text-xs text-gray-500">{star}</span>
           </figcaption>
           <p className="text-sm font-normal dark:text-white/60">
-            {description}
+            {language}
           </p>
         </div>
       </div>
@@ -92,9 +43,12 @@ const Notification = ({ name, description, icon, color, time }: Item) => {
 
 export function AnimatedListDemo() {
   return (
-    <div className="relative flex max-h-[400px] min-h-[400px] w-full max-w-[32rem] flex-col overflow-hidden rounded-lg border bg-background p-6 shadow-lg">
+    <div className="relative flex max-h-[400px] min-h-[400px] w-full  flex-col overflow-hidden rounded-lg border bg-background p-6 shadow-lg">
+      <BlurFade delay={BLUR_FADE_DELAY * 3}>
+        <h2 className="text-xl font-bold">Tools</h2>
+      </BlurFade>
       <AnimatedList>
-        {notifications.map((item, idx) => (
+        {TechnologieModel.map((item, idx) => (
           <Notification {...item} key={idx} />
         ))}
       </AnimatedList>
