@@ -24,7 +24,7 @@ const HermanPage = () => {
         <Resume />
         <Education />
         <ListTech />
-        <AnimatedListDemo />
+        {/* <AnimatedListDemo /> */}
         <Projects />
         <HobieProject />
       </section>
