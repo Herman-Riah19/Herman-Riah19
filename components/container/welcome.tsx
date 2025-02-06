@@ -19,11 +19,11 @@ const Welcome = () => {
               yOffset={8}
               text={`${t("Introduction")}`}
             />
-            <BlurFadeText
+            {/* <BlurFadeText
               className="max-w-[600px] md:text-xl text-justify"
               delay={BLUR_FADE_DELAY}
               text={t('Prompt')}
-            />
+            /> */}
           </div>
           <BlurFade delay={BLUR_FADE_DELAY} className='m-2 flex items-center justify-center'>
             <Avatar className="size-28 sm:size-48 md:size-28 border">
