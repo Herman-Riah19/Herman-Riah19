@@ -14,11 +14,11 @@ export interface Model {
 export let ProjectModelFr: Array<Model> = [
   {
     id: 1,
-    href: "/",
+    href: "https://midas-stability.vercel.app/fr",
     title: "Image Upscaler",
     type: "Generateur image",
     img: `/assets/image/upscaler.png`,
-    link: "/",
+    link: "https://midas-stability.vercel.app/fr",
     description:
       "C'est un application web qui permet de générer des images et aussi modifier certains images à partir d'un Intelligence Artificiel de génération",
     date: "Mars 2024 - Mai 2024",
@@ -38,7 +38,7 @@ export let ProjectModelFr: Array<Model> = [
   },
   {
     id: 3,
-    href: "/",
+    href: "https://github.com/Herman-Riah19/TryInc",
     title: "TryInk",
     type: "Réseau Social",
     img: `/assets/image/trink.png`,
@@ -64,11 +64,11 @@ export let ProjectModelFr: Array<Model> = [
 export const ProjectModelEn: Array<Model> = [
   {
     id: 1,
-    href: "/",
+    href: "https://midas-stability.vercel.app/fr",
     title: "Image Upscaler",
     type: "Image Generator",
     img: `/assets/image/upscaler.png`,
-    link: "/",
+    link: "https://midas-stability.vercel.app/fr",
     description:
       "This is a web application that allows generating images and also modifying certain images using an AI-based generation system.",
     date: "March 2024 - May 2024",
@@ -88,7 +88,7 @@ export const ProjectModelEn: Array<Model> = [
   },
   {
     id: 3,
-    href: "/",
+    href: "https://github.com/Herman-Riah19/TryInc",
     title: "TryInk",
     type: "Social Network",
     img: `/assets/image/trink.png`,
