@@ -21,6 +21,7 @@ I'm committed to bringing your vision to life with a perfect blend of technical 
     <img src="https://img.shields.io/badge/Framer_Motion-0055FF?logo=framer&logoColor=white&style=flat-square" alt="Framer Motion" />
 </div>
 <br />
+
 ### Back-end :
 <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
     <img src="https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=white&style=flat-square" alt="PHP" />
@@ -40,6 +41,7 @@ I'm committed to bringing your vision to life with a perfect blend of technical 
     <img src="https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white&style=flat-square" alt="Flask" />
 </div>
 <br />
+
 ### Database :
 <div style={{display : "flex", flexWrap : "wrap", gap: 10}}>
     <img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white&style=flat-square" alt="MySQL" />
@@ -51,6 +53,7 @@ I'm committed to bringing your vision to life with a perfect blend of technical 
 </div>
 
 <br />
+
 ### Server :
 <div style={{display : "flex", flexWrap : "wrap", gap: 10}}>
     <img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black&style=flat-square" alt="Linux" />
