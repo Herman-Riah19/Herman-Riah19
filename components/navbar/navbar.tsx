@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
   ];
 
   const handleDownload = () => {
-    window.open('/assets/CV-Hermann_Razafindranaivo.pdf', '_blank');
+    window.open('/assets/cv_herman.pdf', '_blank');
   }
 
   return (
