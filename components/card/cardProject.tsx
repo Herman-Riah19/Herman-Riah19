@@ -80,16 +80,18 @@ export function CardProject({
 
         </div>
       </CardContent>
-      <CardFooter className="px-2 pb-2">
-        <div className="flex flex-row flex-wrap items-start gap-1">
-          <Link href={links} target="_blank">
-            <Badge title="Source code" className="flex gap-2">
-              <Github />
-              Source code
-            </Badge>
-          </Link>
-        </div>
-      </CardFooter>
+      {links !== "" && (
+        <CardFooter className="px-2 pb-2">
+          <div className="flex flex-row flex-wrap items-start gap-1">
+            <Link href={links} target="_blank">
+              <Badge title="Source code" className="flex gap-2">
+                <Github />
+                Source code
+              </Badge>
+            </Link>
+          </div>
+        </CardFooter>
+      )}
     </Card>
   );
 }
