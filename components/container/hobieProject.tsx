@@ -36,7 +36,7 @@ const HobieProject = () => {
                         </div>
                     </div>
                 </BlurFade>
-                <ul className='mb-4 ml-4 divide-y divide-dashed border-l'>
+                <ul style={{listStyleType: "none"}} className='mb-4 ml-4 divide-y divide-dashed border-l'>
                 {localHobies.map((work, id) => (
                     <BlurFade
                         key={work.company}

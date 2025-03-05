@@ -18,7 +18,7 @@ const Resume = () => {
     }
   }, [local])
   return (
-    <section id="resume">
+    <section id="resume" className='mt-4'>
         <div className="flex min-h-0 flex-col gap-y-3 mt-4">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <h2 className="text-xl font-bold">Experiences</h2>

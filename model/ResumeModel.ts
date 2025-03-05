@@ -50,17 +50,17 @@ const experiences: Array<ResumeModel> = [
   {
     title: "Développeur Full stack",
     start: "Février 2024",
-    end: "Maintenant",
+    end: "Février 2025",
     badges: [],
     href: "/",
     logoUrl: "/assets/icon/synapse.jpg",
     company: "Synergy Mad",
     location: "Full remote",
     description:
-      "En tant que Développeur web Full stack chez Synergy Mad, j'ai travaillé avec une équipe de développeurs pour :<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Développer une application de discussion avec une IA pour le traitement des corpus utilisateurs</li>" +
-      "<li className='text-lg font-regular text-justify list-disc'>Participer au développement d'une application de simulation biblique en 3D</li>" +
-      "<li className='text-lg font-regular text-justify list-disc'>Développer une application de génération d'images par IA avec l'API Stable Diffusion</li>" +
-      "<li className='text-lg font-regular text-justify list-disc'>Intégrer des landing pages pour divers sites</li>" +
+      "En tant que Développeur web Full stack chez Synergy Mad, j'ai travaillé avec une équipe de développeurs pour :<ul class='list-disc'><li class='text-sm font-regular text-justify'>Développer une application de discussion avec une IA pour le traitement des corpus utilisateurs</li>" +
+      "<li class='text-sm font-regular text-justify list-disc'>Participer au développement d'une application de simulation biblique en 3D</li>" +
+      "<li class='text-sm font-regular text-justify list-disc'>Développer une application de génération d'images par IA avec l'API Stable Diffusion</li>" +
+      "<li class='text-sm font-regular text-justify list-disc'>Intégrer des landing pages pour divers sites</li>" +
       "</ul>"
   },
   {
@@ -73,10 +73,10 @@ const experiences: Array<ResumeModel> = [
     company: "Quantium",
     location: "Faravohitra, Antananarivo",
     description:
-      "En tant que Développeur Python chez Quantium, j'ai travaillé avec une équipe de développeurs pour :<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Programmer un script de génération de leads pour améliorer le référencement d'un site</li>" +
-      "<li className='text-lg font-regular text-justify list-disc'>Écrire des scripts de web scraping pour la collecte de données de clients potentiels</li>" +
-      "<li className='text-lg font-regular text-justify list-disc'>Analyser et vérifier des listes d'emails clients obtenus pour l'envoi de spam publicitaire</li>" +
-      "<li className='text-lg font-regular text-justify list-disc'>Développer une application SaaS pour la gestion des données dans un commerce</li>" +
+      "En tant que Développeur Python chez Quantium, j'ai travaillé avec une équipe de développeurs pour :<ul class='list-disc'><li class='text-sm font-regular text-justify list-disc'>Programmer un script de génération de leads pour améliorer le référencement d'un site</li>" +
+      "<li class='text-sm font-regular text-justify list-disc'>Écrire des scripts de web scraping pour la collecte de données de clients potentiels</li>" +
+      "<li class='text-sm font-regular text-justify list-disc'>Analyser et vérifier des listes d'emails clients obtenus pour l'envoi de spam publicitaire</li>" +
+      "<li class='text-sm font-regular text-justify list-disc'>Développer une application SaaS pour la gestion des données dans un commerce</li>" +
       "</ul>"
   },
   {
@@ -89,8 +89,8 @@ const experiences: Array<ResumeModel> = [
     company: "Fpay",
     location: "Andohalo, Antananarivo",
     description:
-      "En tant que développeur Fullstack chez Fpay, j'ai contribué à la réalisation de projets en utilisant Flask pour le backend et React pour le frontend :<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Conception d'une plateforme de crowdfunding [Flask, ReactJS et Firebase], intégration de l'authentification, des offres forfaitaires des opérateurs mobiles, et des codes USSD sous forme d'API pour des transactions mobiles comme l'achat de forfaits internet, transfert d'argent via Mobile Money, et paiement des abonnements Canal+</li>" +
-      "<li className='text-lg font-regular text-justify list-disc'>Refonte d'une application de gestion d'agence développée en Flask et réécrite en Next JS pour améliorer les performances utilisateur.</li>" +
+      "En tant que développeur Fullstack chez Fpay, j'ai contribué à la réalisation de projets en utilisant Flask pour le backend et React pour le frontend :<ul class='list-disc'><li class='text-sm font-regular text-justify list-disc'>Conception d'une plateforme de crowdfunding [Flask, ReactJS et Firebase], intégration de l'authentification, des offres forfaitaires des opérateurs mobiles, et des codes USSD sous forme d'API pour des transactions mobiles comme l'achat de forfaits internet, transfert d'argent via Mobile Money, et paiement des abonnements Canal+</li>" +
+      "<li class='text-sm font-regular text-justify list-disc'>Refonte d'une application de gestion d'agence développée en Flask et réécrite en Next JS pour améliorer les performances utilisateur.</li>" +
       "</ul>"
   },
   {
@@ -103,10 +103,10 @@ const experiences: Array<ResumeModel> = [
     company: "Bureau Église Évangélique Shine",
     location: "Andravoahangy, Antananarivo",
     description:
-      "Pendant 2 ans en tant que bénévole à l'Église Évangélique Shine, j'ai assuré plusieurs tâches en tant que technicien informatique et multimédia :<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Maintenance des appareils informatiques et vérification des installations réseau pour assurer leur bon fonctionnement lors des jours de culte</li>" +
-      "<li className='text-lg font-regular text-justify list-disc'>Montage vidéo des prêches du pasteur et conception des jaquettes et stickers pour les supports DVD</li>" +
-      "<li className='text-lg font-regular text-justify list-disc'>Création de supports multimédias tels que des flyers, cartes de vœux et couvertures de la Bible pour les événements religieux</li>" +
-      "<li className='text-lg font-regular text-justify list-disc'>Développement d'un générateur de QR Code pour les invitations aux événements religieux en utilisant AdonisJS pour vérifier la validité des QR codes scannés. <a href='https://github.com/Herman-Riah19/QRCodeGenerate'>Code source</a></li>" +
+      "Pendant 2 ans en tant que bénévole à l'Église Évangélique Shine, j'ai assuré plusieurs tâches en tant que technicien informatique et multimédia :<ul class='list-disc'><li class='text-sm font-regular text-justify list-disc'>Maintenance des appareils informatiques et vérification des installations réseau pour assurer leur bon fonctionnement lors des jours de culte</li>" +
+      "<li class='text-sm font-regular text-justify list-disc'>Montage vidéo des prêches du pasteur et conception des jaquettes et stickers pour les supports DVD</li>" +
+      "<li class='text-sm font-regular text-justify list-disc'>Création de supports multimédias tels que des flyers, cartes de vœux et couvertures de la Bible pour les événements religieux</li>" +
+      "<li class='text-sm font-regular text-justify list-disc'>Développement d'un générateur de QR Code pour les invitations aux événements religieux en utilisant AdonisJS pour vérifier la validité des QR codes scannés. <a href='https://github.com/Herman-Riah19/QRCodeGenerate'>Code source</a></li>" +
       "</ul>"
   },
   {
@@ -120,8 +120,8 @@ const experiences: Array<ResumeModel> = [
       "Ministère de l'Enseignement Technique et de la Formation Professionnelle",
     location: "Ampefiloha, Antananarivo",
     description:
-      "Pendant mon stage au Ministère de l'Enseignement Technique et de la Formation Professionnelle, au département de l'information (INFor), j'ai participé à :<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Développement d'une application web de bibliothèque en ligne [PHP, MySQL, Bootstrap], intégration des vidéos du Ministère via des liens YouTube, et déploiement du site sur un serveur</li>" +
-      "<li className='text-lg font-regular text-justify list-disc'>Installation d'un pare-feu avec PfSense et Debian pour filtrer la connexion sur le site, intégration de la sécurité d'authentification pour que seuls les employés puissent se connecter à internet, et blocage de certains sites web pendant les heures de travail.</li>" +
+      "Pendant mon stage au Ministère de l'Enseignement Technique et de la Formation Professionnelle, au département de l'information (INFor), j'ai participé à :<ul class='list-disc'><li class='text-sm font-regular text-justify list-disc'>Développement d'une application web de bibliothèque en ligne [PHP, MySQL, Bootstrap], intégration des vidéos du Ministère via des liens YouTube, et déploiement du site sur un serveur</li>" +
+      "<li class='text-sm font-regular text-justify list-disc'>Installation d'un pare-feu avec PfSense et Debian pour filtrer la connexion sur le site, intégration de la sécurité d'authentification pour que seuls les employés puissent se connecter à internet, et blocage de certains sites web pendant les heures de travail.</li>" +
       "</ul>"
   },
   {
@@ -160,9 +160,9 @@ const hobbies: Array<ResumeModel> = [
     company: "Projet Personnel",
     location: "Imeritsiatosika, Antananarivo",
     description:
-      "J'ai utilisé mes compétences en AdonisJS, React et Inertia JS pour :<ul className='list-disc'>" +
-      "<li className='text-lg font-regular text-justify list-disc'>Créer un réseau social pour les dessinateurs numériques et générateurs d'images par IA, mettant en avant leur talent et leur spécialité tout en protégeant leurs droits. <a href='https://github.com/Herman-Riah19/TryInc'>Code source</a></li>" +
-      "<li className='text-lg font-regular text-justify list-disc'>Développer une application de galerie de photos locale. <a href='https://github.com/Herman-Riah19/LoopbackReactProject'>Code source</a></li>" +
+      "J'ai utilisé mes compétences en AdonisJS, React et Inertia JS pour :<ul class='list-disc'>" +
+      "<li class='text-sm font-regular text-justify list-disc'>Créer un réseau social pour les dessinateurs numériques et générateurs d'images par IA, mettant en avant leur talent et leur spécialité tout en protégeant leurs droits. <a href='https://github.com/Herman-Riah19/TryInc'>Code source</a></li>" +
+      "<li class='text-sm font-regular text-justify list-disc'>Développer une application de galerie de photos locale. <a href='https://github.com/Herman-Riah19/LoopbackReactProject'>Code source</a></li>" +
       "</ul>"
   },
   {
@@ -211,9 +211,9 @@ const hobbies: Array<ResumeModel> = [
     company: "GSI",
     location: "Analakely, Antananarivo",
     description:
-      "Durant mes études à l'université GSI, j'ai réalisé plusieurs projets personnels pour améliorer mes compétences en développement et me préparer au monde professionnel. Voici quelques projets marquants :<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Développement d'une application web dynamique avec PHP/MySQL pour la gestion des listes de voitures à vendre, en tenant compte des différentes catégories et prix des voitures.</li>" +
-      "<li className='text-lg font-regular text-justify list-disc'>Développement d'un site web statique résumant les différents cours appris à l'université GSI, en tant qu'exercice d'intégration avec HTML, CSS et JavaScript.</li>" +
-      "<li className='text-lg font-regular text-justify list-disc'>Pour mon projet de fin d'études, développement d'un logiciel de dimensionnement des réseaux de télécommunication 4G utilisant C++ et le framework Qt, pour calculer et planifier la capacité de fréquence et le nombre de pylônes à installer selon l'environnement.</li>" +
+      "Durant mes études à l'université GSI, j'ai réalisé plusieurs projets personnels pour améliorer mes compétences en développement et me préparer au monde professionnel. Voici quelques projets marquants :<ul class='list-disc'><li class='text-sm font-regular text-justify list-disc'>Développement d'une application web dynamique avec PHP/MySQL pour la gestion des listes de voitures à vendre, en tenant compte des différentes catégories et prix des voitures.</li>" +
+      "<li class='text-sm font-regular text-justify list-disc'>Développement d'un site web statique résumant les différents cours appris à l'université GSI, en tant qu'exercice d'intégration avec HTML, CSS et JavaScript.</li>" +
+      "<li class='text-sm font-regular text-justify list-disc'>Pour mon projet de fin d'études, développement d'un logiciel de dimensionnement des réseaux de télécommunication 4G utilisant C++ et le framework Qt, pour calculer et planifier la capacité de fréquence et le nombre de pylônes à installer selon l'environnement.</li>" +
       "</ul>"
   },
 ];

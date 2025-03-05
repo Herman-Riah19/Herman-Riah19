@@ -9,7 +9,7 @@ import { BLUR_FADE_DELAY } from '@/lib/constant'
 const ListTech = () => {
     const local = useLocale()
     return (
-        <section id="about" className='mt-2'>
+        <section id="skill" className='mt-2'>
             <BlurFade delay={BLUR_FADE_DELAY * 3}>
                 <h2 className="text-xl font-bold">Skill</h2>
             </BlurFade>

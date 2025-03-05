@@ -29,24 +29,15 @@ export const CardResume = ({
   period,
   description,
 }: ResumeCardProps) => {
-  const [isExpanded, setIsExpanded] = React.useState(false);
-
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    if (description) {
-      e.preventDefault();
-      setIsExpanded(!isExpanded);
-    }
-  };
 
   return (
     <Link
       href={href || "#"}
       className="block cursor-pointer"
-      onClick={handleClick}
     >
-      <Card className="flex">
-        <div className="flex-none mt-5 ml-5">
-          <Avatar className="border size-12 m-auto bg-primary dark:bg-foreground">
+      <Card className="flex shadow-none border-none p-4">
+        <div className="flex-none mt-5 md:ml-5 sm:ml-0">
+          <Avatar className="border size-12 md:m-auto sm:m-0 bg-primary dark:bg-foreground">
             <AvatarImage
               src={logoUrl}
               alt={altText}
@@ -56,16 +47,16 @@ export const CardResume = ({
           </Avatar>
         </div>
         <div className="flex-grow ml-4 items-center flex-col group">
-          <CardHeader>
+          <CardHeader className="sm:m-0">
             <div className="flex items-center justify-between gap-x-2 text-base">
-              <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
-                {title}
+              <h3 className="inline-flex items-center justify-center font-bold leading-none">
+                <span className="text-xl">{title}</span>
                 {badges && (
                   <span className="inline-flex gap-x-1">
                     {badges.map((badge, index) => (
                       <Badge
                         variant="secondary"
-                        className="align-middle text-xs"
+                        className="align-middle text-lg"
                         key={index}
                       >
                         {badge}
@@ -73,14 +64,8 @@ export const CardResume = ({
                     ))}
                   </span>
                 )}
-                <ChevronRightIcon
-                  className={cn(
-                    "size-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100",
-                    isExpanded ? "rotate-90" : "rotate-0"
-                  )}
-                />
               </h3>
-              <div className="text-xs sm:text-sm tabular-nums text-muted-foreground text-right">
+              <div className="text-lg sm:text-sm tabular-nums text-muted-foreground text-right">
                 {period}
               </div>
             </div>
@@ -90,17 +75,16 @@ export const CardResume = ({
             <motion.div
               initial={{ opacity: 0, height: 0 }}
               animate={{
-                opacity: isExpanded ? 1 : 0,
-                height: isExpanded ? "auto" : 0,
+                opacity: 1,
+                height: "auto",
               }}
               transition={{
                 duration: 0.7,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="mt-2 text-md sm:text-sm text-muted-foreground dark:prose-invert"
+              className="mt-2 text-md sm:text-sm dark:prose-invert"
               dangerouslySetInnerHTML={{ __html: description }}
             />
-
           )}
         </div>
       </Card>

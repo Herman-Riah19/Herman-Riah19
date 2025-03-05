@@ -9,7 +9,7 @@ const About = () => {
   const t = useTranslations("Welcome");
 
   return (
-    <section id="about" className='mt-2'>
+    <section id="about" className='mt-4'>
       <BlurFade delay={BLUR_FADE_DELAY * 3}>
         <h2 className="text-xl font-bold">{t('AboutTitle')}</h2>
       </BlurFade>
