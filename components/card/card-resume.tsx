@@ -35,8 +35,8 @@ export const CardResume = ({
       href={href || "#"}
       className="block cursor-pointer"
     >
-      <Card className="flex shadow-none border-none p-2">
-        <div className="flex-none mt-5 md:ml-5 sm:ml-0">
+      <Card className="flex shadow-none border-none p-0 divide-y divide-dashed">
+        <div className="flex-none ml-0 mt-5">
           <Avatar className="border size-12 md:m-auto sm:m-0 bg-primary dark:bg-foreground">
             <AvatarImage
               src={logoUrl}
@@ -46,7 +46,7 @@ export const CardResume = ({
             <AvatarFallback>{altText[0]}</AvatarFallback>
           </Avatar>
         </div>
-        <div className="flex-grow ml-4 items-center flex-col group">
+        <div className="flex-grow ml-2 items-center flex-col group">
           <CardHeader className="sm:m-0">
             <div className="flex items-center justify-between gap-x-2 text-base">
               <h3 className="inline-flex items-center justify-center font-bold leading-none">
