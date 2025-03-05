@@ -18,7 +18,7 @@ const Welcome = () => {
             />
             <BlurFadeText
               delay={BLUR_FADE_DELAY}
-              className="text-xl font-semibold tracking-tighter sm:text-3xl xl:text-5xl/none"
+              className="text-xl font-thin tracking-tighter sm:text-3xl xl:text-5xl/none"
               yOffset={8}
               text={`${t("Developper")}`}
             />

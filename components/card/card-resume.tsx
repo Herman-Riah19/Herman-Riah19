@@ -35,7 +35,7 @@ export const CardResume = ({
       href={href || "#"}
       className="block cursor-pointer"
     >
-      <Card className="flex shadow-none border-none p-4">
+      <Card className="flex shadow-none border-none p-2">
         <div className="flex-none mt-5 md:ml-5 sm:ml-0">
           <Avatar className="border size-12 md:m-auto sm:m-0 bg-primary dark:bg-foreground">
             <AvatarImage
@@ -69,7 +69,7 @@ export const CardResume = ({
                 {period}
               </div>
             </div>
-            {subtitle && <div className="font-sans text-xs">{subtitle}</div>}
+            {subtitle && <div className="font-sans text-sm">{subtitle}</div>}
           </CardHeader>
           {description && (
             <motion.div
@@ -82,7 +82,7 @@ export const CardResume = ({
                 duration: 0.7,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="mt-2 text-md sm:text-sm dark:prose-invert"
+              className="mt-2 text-secondary/80 text-md sm:text-sm dark:prose-invert"
               dangerouslySetInnerHTML={{ __html: description }}
             />
           )}
