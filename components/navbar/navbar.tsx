@@ -14,7 +14,7 @@ import { cn } from "@/lib/utils";
 
 const Navbar: React.FC = () => {
   const handleDownload = () => {
-    window.open("/assets/cv_herman.pdf", "_blank");
+    window.open("/assets/cv_Hermann.pdf", "_blank");
   };
 
   return (
