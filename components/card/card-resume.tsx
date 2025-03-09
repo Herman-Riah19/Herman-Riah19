@@ -2,7 +2,7 @@
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import { Card, CardHeader } from "@/components/ui/card";
+import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { ChevronRightIcon } from "lucide-react";
@@ -51,19 +51,7 @@ export const CardResume = ({
             <div className="flex items-center justify-between gap-x-2 text-base">
               <h3 className="inline-flex items-center justify-center font-bold leading-none">
                 <span className="text-xl">{title}</span>
-                {badges && (
-                  <span className="inline-flex gap-x-1">
-                    {badges.map((badge, index) => (
-                      <Badge
-                        variant="secondary"
-                        className="align-middle text-lg"
-                        key={index}
-                      >
-                        {badge}
-                      </Badge>
-                    ))}
-                  </span>
-                )}
+                
               </h3>
               <div className="text-lg sm:text-sm tabular-nums text-muted-foreground text-right">
                 {period}
@@ -71,8 +59,9 @@ export const CardResume = ({
             </div>
             {subtitle && <div className="font-sans text-sm">{subtitle}</div>}
           </CardHeader>
-          {description && (
-            <motion.div
+          <CardContent>
+            {description && (
+              <motion.div
               initial={{ opacity: 0, height: 0 }}
               animate={{
                 opacity: 1,
@@ -84,8 +73,24 @@ export const CardResume = ({
               }}
               className="mt-2 text-secondary/80 text-md sm:text-sm dark:prose-invert"
               dangerouslySetInnerHTML={{ __html: description }}
-            />
-          )}
+              />
+            )}
+            </CardContent>
+            <CardFooter>
+            {badges && (
+                  <span className="inline-flex gap-x-1">
+                    {badges.map((badge, index) => (
+                      <Badge
+                        variant="secondary"
+                        className="align-middle text-xs"
+                        key={index}
+                      >
+                        {badge}
+                      </Badge>
+                    ))}
+                  </span>
+                )}
+            </CardFooter>
         </div>
       </Card>
     </Link>
