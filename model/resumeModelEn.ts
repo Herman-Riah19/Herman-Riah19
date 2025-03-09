@@ -51,7 +51,7 @@ interface ResumeModel {
       title: "Full Stack Developer",
       start: "February 2024",
       end: "Now",
-      badges: ["Python Flask", "OpenAI API", "Next JS(TypeScript)", "Postgre SQL", "Stripe", "Firebase", "Force graph 3d", "MapBox "],
+      badges: ["Python", "Flask", "OpenAI API", "Next JS", "TypeScript", "Postgre SQL", "Stripe", "Firebase", "Force graph 3d", "MapBox "],
       href: "/",
       logoUrl: "/assets/icon/synapse.jpg",
       company: "Synergy Mad",
