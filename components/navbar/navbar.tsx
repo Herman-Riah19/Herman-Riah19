@@ -11,10 +11,12 @@ import {
 import { Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { useLocale } from "next-intl";
 
 const Navbar: React.FC = () => {
+  const locale = useLocale();
   const handleDownload = () => {
-    window.open("/assets/cv_Hermann.pdf", "_blank");
+    window.open(locale === "fr" ? "/assets/cv_Hermann.pdf" : "/assets/cv_Hermann_English.pdf", "_blank");
   };
 
   return (

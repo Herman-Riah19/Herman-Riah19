@@ -2,7 +2,7 @@
 import React from 'react'
 import { useRouter } from 'next/navigation';
 import { useLocale } from "next-intl";
-import { Button } from '../ui/button';
+import { Button } from '@/components/ui/button';
 import { Globe } from 'lucide-react';
 
 const NavLangue = () => {
