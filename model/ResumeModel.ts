@@ -57,9 +57,9 @@ const experiences: Array<ResumeModel> = [
     company: "Synergy Mad",
     location: "Full remote",
     description:
-      "<ul class='list-disc'><li class='text-sm font-regular text-justify'>•	Conception de l’application Didache, une encyclopédie de l'Église, intégrant une frise chronologique, une carte interactive et un chat assisté par IA.</li>" +
-      "<li class='text-sm font-regular text-justify list-disc'>•	Développement de l’application web Gnose IA, une plateforme conversationnelle dotée d'une IA capable d’analyser des corpus soumis par les utilisateurs ou des fichiers PDF.</li>" +
-      "<li class='text-sm font-regular text-justify list-disc'>•	Participation à la réalisation de l’application OpenMyst, une plateforme simulant la vie de Jésus où j'intègre une carte en 3D, une frise chronologique et un arbre généalogique. </li>" +
+      "<ul class='list-disc'><li class='text-sm font-regular text-justify'>Conception de l’application Didache, une encyclopédie de l'Église, intégrant une frise chronologique, une carte interactive et un chat assisté par IA.</li>" +
+      "<li class='text-sm font-regular text-justify list-disc'>Développement de l’application web Gnose IA, une plateforme conversationnelle dotée d'une IA capable d’analyser des corpus soumis par les utilisateurs ou des fichiers PDF.</li>" +
+      "<li class='text-sm font-regular text-justify list-disc'>Participation à la réalisation de l’application OpenMyst, une plateforme simulant la vie de Jésus où j'intègre une carte en 3D, une frise chronologique et un arbre généalogique. </li>" +
       "</ul>"
   },
   {
@@ -87,8 +87,8 @@ const experiences: Array<ResumeModel> = [
     company: "Fpay",
     location: "Andohalo, Antananarivo",
     description:
-      "<ul class='list-disc'><li class='text-sm font-regular text-justify list-disc'>•	Contribuer sur le développement de Jupiter ou je travail sur l'authentification, la structuration des bases de données et l’intégration de ces derniers sur un Front. </li>" +
-      "<li class='text-sm font-regular text-justify list-disc'>•	Développement d’une API pour déclencher des codes USSD pour les transferts d'argent via mobile money, facilitant des transactions financières accessibles. </li>" +
+      "<ul class='list-disc'><li class='text-sm font-regular text-justify list-disc'>Contribuer sur le développement de Jupiter ou je travail sur l'authentification, la structuration des bases de données et l’intégration de ces derniers sur un Front. </li>" +
+      "<li class='text-sm font-regular text-justify list-disc'>Développement d’une API pour déclencher des codes USSD pour les transferts d'argent via mobile money, facilitant des transactions financières accessibles. </li>" +
       "</ul>"
   },
   {
@@ -119,7 +119,7 @@ const experiences: Array<ResumeModel> = [
     location: "Ampefiloha, Antananarivo",
     description:
       "<ul class='list-disc'><li class='text-sm font-regular text-justify list-disc'>Développement d’une bibliothèque en ligne, où j'intègre une page de cours vidéo et un lecteur PDF pour améliorer l’expérience utilisateur et l’accessibilité. </li>" +
-      "<li class='text-sm font-regular text-justify list-disc'>•	Mise en place d’un pare-feu avec authentification des employés via Active Directory, filtrage des connexions et déploiement de l’application en locale.</li>" +
+      "<li class='text-sm font-regular text-justify list-disc'>Mise en place d’un pare-feu avec authentification des employés via Active Directory, filtrage des connexions et déploiement de l’application en locale.</li>" +
       "</ul>"
   },
   {
