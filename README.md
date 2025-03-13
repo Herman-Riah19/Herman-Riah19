@@ -20,27 +20,25 @@ I'm committed to bringing your vision to life with a perfect blend of technical 
     <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white&style=flat-square" alt="Tailwind CSS" />
     <img src="https://img.shields.io/badge/Framer_Motion-0055FF?logo=framer&logoColor=white&style=flat-square" alt="Framer Motion" />
 </div>
-<br />
 
 ### Back-end :
 <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
     <img src="https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=white&style=flat-square" alt="PHP" />
     <img src="https://img.shields.io/badge/Laravel-FF2D20?logo=laravel&logoColor=white&style=flat-square" alt="Laravel" />
 </div>
-<br/>
+
 <div style={{display : "flex", flexWrap : "wrap", gap: 10}}>
     <img src="https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white&style=flat-square" alt="TypeScript" />
     <img src="https://img.shields.io/badge/AdonisJS-220052?logo=adonisjs&logoColor=white&style=flat-square" alt="AdonisJS" />
     <img src="https://img.shields.io/badge/Express.JS-000000?logo=express&logoColor=white&style=flat-square" alt="Express.js" />
     <img src="https://img.shields.io/badge/Node.JS-339933?logo=node.js&logoColor=white&style=flat-square" alt="Node.js" />
 </div>
-<br />
+
 <div style={{display : "flex", flexWrap : "wrap", gap: 10}}>
     <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=flat-square" alt="Python" />
     <img src="https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white&style=flat-square" alt="Django" />
     <img src="https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white&style=flat-square" alt="Flask" />
 </div>
-<br />
 
 ### Database :
 <div style={{display : "flex", flexWrap : "wrap", gap: 10}}>
@@ -52,19 +50,15 @@ I'm committed to bringing your vision to life with a perfect blend of technical 
     <img src="https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black&style=flat-square" alt="Firebase" />
 </div>
 
-<br />
-
 ### Server :
 <div style={{display : "flex", flexWrap : "wrap", gap: 10}}>
     <img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black&style=flat-square" alt="Linux" />
     <img src="https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white&style=flat-square" alt="Vercel" />
     <img src="https://img.shields.io/badge/AWS-232F3E?logo=amazon-aws&logoColor=white&style=flat-square" alt="AWS" />
-
 </div>
-<br />
 
 #### Other Expertise:
-- APIs / RESTful APIs development and integration (with Loopback 4, AdonisJS)
+- APIs / RESTful APIs development and integration (with Flask, AdonisJS)
 - Full stack application and integration (with AdonisJS and NextJS)
 - Responsive design
 - Google Authentication integrations
