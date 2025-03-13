@@ -51,16 +51,15 @@ interface ResumeModel {
       title: "Full Stack Developer",
       start: "February 2024",
       end: "Now",
-      badges: ["Python", "Flask", "OpenAI API", "Next JS", "TypeScript", "Postgre SQL", "Stripe", "Firebase", "Force graph 3d", "MapBox "],
+      badges: ["Python", "Flask", "OpenAI API", "Next JS", "TypeScript", "Postgre SQL", "Stripe", "Firebase", "Force graph 3d", "MapBox GL", "AWS"],
       href: "/",
       logoUrl: "/assets/icon/synapse.jpg",
       company: "Synergy Mad",
       location: "Full remote",
       description:
-        "As a Full Stack Web Developer at Synergy Mad, I worked with a team of developers to:<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Develop a chat application with an AI for processing user corpora</li>" +
-        "<li className='text-lg font-regular text-justify list-disc'>Participate in the development of a 3D biblical simulation application</li>" +
-        "<li className='text-lg font-regular text-justify list-disc'>Develop an image generation application by AI with Stable Diffusion API</li>" +
-        "<li className='text-lg font-regular text-justify list-disc'>Integrate landing pages for various websites</li>" +
+        "<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Designing the Didache application, an encyclopedia of the Church, where I integrate a timeline a dynamic map, and a chat interface powered by AI.</li>" +
+        "<li className='text-lg font-regular text-justify list-disc'>Developing the Gnose IA application, a conversational platform with AI that analyzes user-submitted corpora or PDF files</li>" +
+        "<li className='text-lg font-regular text-justify list-disc'>Contributing to the development of OpenMyst, a 3D platform that simulates the life of Jesus on a map, incorporating a timeline and a genealogical tree</li>" +
         "</ul>"
     },
     {
@@ -73,10 +72,9 @@ interface ResumeModel {
       company: "Quantium",
       location: "Faravohitra, Antananarivo",
       description:
-        "As a Python Developer at Quantium, I worked with a team of developers to:<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Program a lead generation script to improve SEO for a website</li>" +
-        "<li className='text-lg font-regular text-justify list-disc'>Write web scraping scripts for collecting data from potential clients</li>" +
+        "<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Developing a lead generation tool to facilitate prospecting and SEO optimization for Client websites, enhancing their online visibility and outreach.</li>" +
+        "<li className='text-lg font-regular text-justify list-disc'>Writing web scraping scripts for data collection, enabling automated extraction of relevant information to support business intelligence and marketing strategies</li>" +
         "<li className='text-lg font-regular text-justify list-disc'>Analyze and verify lists of client emails obtained for advertising spam</li>" +
-        "<li className='text-lg font-regular text-justify list-disc'>Develop a SaaS application for data management in a business</li>" +
         "</ul>"
     },
     {
@@ -88,9 +86,10 @@ interface ResumeModel {
       logoUrl: "/assets/icon/fpay.jpg",
       company: "Fpay",
       location: "Andohalo, Antananarivo",
-      description:
-        "As a Fullstack Developer at Fpay, I contributed to projects using Flask for backend and React for frontend:<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Design a crowdfunding platform [Flask, ReactJS, and Firebase], integration of authentication, flat offers from mobile operators, and USSD codes as APIs for mobile transactions like buying internet packages, money transfer via Mobile Money, and payment of Canal+ subscriptions.</li>" +
-        "<li className='text-lg font-regular text-justify list-disc'>Refactor an agency management application developed in Flask and rewrite it in Next JS to improve user performance.</li>" +
+      description: "<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Contributing to the design of Jupiter, a money transaction platform, ensuring secure and efficient financial operations</li>" +
+        "<li className='text-lg font-regular text-justify list-disc'>Working on authentication and database structuring, optimizing data integrity and Security to enhance system reliability</li>" +
+        "<li className='text-lg font-regular text-justify list-disc'>Developing an API to trigger USSD codes for money transfers via mobile money, enabling seamless and accessible financial transactions</li>" +
+        "<li className='text-lg font-regular text-justify list-disc'>Redesigning an agency management application, improving its architecture, user experience, and operational efficiency.</li>" +
         "</ul>"
     },
     {
@@ -103,10 +102,10 @@ interface ResumeModel {
       company: "Bureau Église Évangélique Shine",
       location: "Andravoahangy, Antananarivo",
       description:
-        "For 2 years as a volunteer at Église Évangélique Shine, I undertook several tasks as an IT technician and multimedia:<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Maintenance of IT devices and checking network installations to ensure they functioned properly on worship days</li>" +
+        "<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Developed a web application for generating QR codes for invitations</li>" +
+        "<li className='text-lg font-regular text-justify list-disc'>Performed maintenance on IT equipment within the organization</li>" +
         "<li className='text-lg font-regular text-justify list-disc'>Video editing of pastor's sermons and creation of DVD jacket covers and stickers for DVDs</li>" +
         "<li className='text-lg font-regular text-justify list-disc'>Creation of multimedia supports such as flyers, greeting cards, and Bible covers for religious events</li>" +
-        "<li className='text-lg font-regular text-justify list-disc'>Development of a QR Code generator for invitations to religious events using AdonisJS to verify the validity of scanned QR codes. <a href='https://github.com/Herman-Riah19/QRCodeGenerate'>Source code</a></li>" +
         "</ul>"
     },
     {
@@ -119,9 +118,8 @@ interface ResumeModel {
       company:
         "Ministry of Technical Education and Vocational Training",
       location: "Ampefiloha, Antananarivo",
-      description:
-        "During my internship at the Ministry of Technical Education and Vocational Training, in the information department (INFor), I participated in:<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Development of an online library web application [PHP, MySQL, Bootstrap], integration of Ministry videos via YouTube links, and deployment of the site on a server</li>" +
-        "<li className='text-lg font-regular text-justify list-disc'>Installation of a firewall with PfSense and Debian to filter connection on the site, integration of authentication security so only employees could connect to the internet, and blocking certain websites during work hours.</li>" +
+      description:"<ul className='list-disc'><li className='text-lg font-regular text-justify list-disc'>Developing a web application for an online library, where I integrated a page displaying video courses and a PDF reader within the app to enhance user experience and accessibility.</li>" +
+        "<li className='text-lg font-regular text-justify list-disc'>Setting up a firewall with employee authentication via Active Directory and connection filtering, ensuring secure access and network protection</li>" +
         "</ul>"
     },
     {

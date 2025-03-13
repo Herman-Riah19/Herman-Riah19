@@ -51,16 +51,15 @@ const experiences: Array<ResumeModel> = [
     title: "Développeur Full stack",
     start: "Février 2024",
     end: "Février 2025",
-    badges: ["Python", "Flask", "OpenAI API", "Next JS", "TypeScript", "Postgre SQL", "Stripe", "Firebase", "Force graph 3d", "MapBox "],
+    badges: ["Python", "Flask", "OpenAI API", "Next JS", "TypeScript", "Postgre SQL", "Stripe", "Firebase", "Force graph 3d", "MapBox GL", "AWS"],
     href: "/",
     logoUrl: "/assets/icon/synapse.jpg",
     company: "Synergy Mad",
     location: "Full remote",
     description:
-      "En tant que Développeur web Full stack chez Synergy Mad, j'ai travaillé avec une équipe de développeurs pour :<ul class='list-disc'><li class='text-sm font-regular text-justify'>Développer une application de discussion avec une IA pour le traitement des corpus utilisateurs</li>" +
-      "<li class='text-sm font-regular text-justify list-disc'>Participer au développement d'une application de simulation biblique en 3D</li>" +
-      "<li class='text-sm font-regular text-justify list-disc'>Développer une application de génération d'images par IA avec l'API Stable Diffusion</li>" +
-      "<li class='text-sm font-regular text-justify list-disc'>Intégrer des landing pages pour divers sites</li>" +
+      "<ul class='list-disc'><li class='text-sm font-regular text-justify'>•	Conception de l’application Didache, une encyclopédie de l'Église, intégrant une frise chronologique, une carte interactive et un chat assisté par IA.</li>" +
+      "<li class='text-sm font-regular text-justify list-disc'>•	Développement de l’application web Gnose IA, une plateforme conversationnelle dotée d'une IA capable d’analyser des corpus soumis par les utilisateurs ou des fichiers PDF.</li>" +
+      "<li class='text-sm font-regular text-justify list-disc'>•	Participation à la réalisation de l’application OpenMyst, une plateforme simulant la vie de Jésus où j'intègre une carte en 3D, une frise chronologique et un arbre généalogique. </li>" +
       "</ul>"
   },
   {
@@ -73,10 +72,9 @@ const experiences: Array<ResumeModel> = [
     company: "Quantium",
     location: "Faravohitra, Antananarivo",
     description:
-      "En tant que Développeur Python chez Quantium, j'ai travaillé avec une équipe de développeurs pour :<ul class='list-disc'><li class='text-sm font-regular text-justify list-disc'>Programmer un script de génération de leads pour améliorer le référencement d'un site</li>" +
-      "<li class='text-sm font-regular text-justify list-disc'>Écrire des scripts de web scraping pour la collecte de données de clients potentiels</li>" +
+      "<ul class='list-disc'><li class='text-sm font-regular text-justify list-disc'>Développement d’un outil de génération de leads pour faciliter la prospection et l’optimisation SEO des sites clients, améliorant leur visibilité en ligne. </li>" +
+      "<li class='text-sm font-regular text-justify list-disc'>Rédaction de scripts de web scraping pour la collecte automatisée de données pertinentes, soutenant l’intelligence économique et les stratégies marketing.</li>" +
       "<li class='text-sm font-regular text-justify list-disc'>Analyser et vérifier des listes d'emails clients obtenus pour l'envoi de spam publicitaire</li>" +
-      "<li class='text-sm font-regular text-justify list-disc'>Développer une application SaaS pour la gestion des données dans un commerce</li>" +
       "</ul>"
   },
   {
@@ -89,8 +87,8 @@ const experiences: Array<ResumeModel> = [
     company: "Fpay",
     location: "Andohalo, Antananarivo",
     description:
-      "En tant que développeur Fullstack chez Fpay, j'ai contribué à la réalisation de projets en utilisant Flask pour le backend et React pour le frontend :<ul class='list-disc'><li class='text-sm font-regular text-justify list-disc'>Conception d'une plateforme de crowdfunding [Flask, ReactJS et Firebase], intégration de l'authentification, des offres forfaitaires des opérateurs mobiles, et des codes USSD sous forme d'API pour des transactions mobiles comme l'achat de forfaits internet, transfert d'argent via Mobile Money, et paiement des abonnements Canal+</li>" +
-      "<li class='text-sm font-regular text-justify list-disc'>Refonte d'une application de gestion d'agence développée en Flask et réécrite en Next JS pour améliorer les performances utilisateur.</li>" +
+      "<ul class='list-disc'><li class='text-sm font-regular text-justify list-disc'>•	Contribuer sur le développement de Jupiter ou je travail sur l'authentification, la structuration des bases de données et l’intégration de ces derniers sur un Front. </li>" +
+      "<li class='text-sm font-regular text-justify list-disc'>•	Développement d’une API pour déclencher des codes USSD pour les transferts d'argent via mobile money, facilitant des transactions financières accessibles. </li>" +
       "</ul>"
   },
   {
@@ -103,10 +101,10 @@ const experiences: Array<ResumeModel> = [
     company: "Bureau Église Évangélique Shine",
     location: "Andravoahangy, Antananarivo",
     description:
-      "Pendant 2 ans en tant que bénévole à l'Église Évangélique Shine, j'ai assuré plusieurs tâches en tant que technicien informatique et multimédia :<ul class='list-disc'><li class='text-sm font-regular text-justify list-disc'>Maintenance des appareils informatiques et vérification des installations réseau pour assurer leur bon fonctionnement lors des jours de culte</li>" +
+      "<ul class='list-disc'><li class='text-sm font-regular text-justify list-disc'>Développement d'un générateur de QR Code pour les invitations aux événements religieux en utilisant AdonisJS pour vérifier la validité des QR codes scannés.</li>" +
+      "<li class='text-sm font-regular text-justify list-disc'>Maintenance des appareils informatiques et vérification des installations réseau pour assurer leur bon fonctionnement lors des jours de culte</li>" +
       "<li class='text-sm font-regular text-justify list-disc'>Montage vidéo des prêches du pasteur et conception des jaquettes et stickers pour les supports DVD</li>" +
       "<li class='text-sm font-regular text-justify list-disc'>Création de supports multimédias tels que des flyers, cartes de vœux et couvertures de la Bible pour les événements religieux</li>" +
-      "<li class='text-sm font-regular text-justify list-disc'>Développement d'un générateur de QR Code pour les invitations aux événements religieux en utilisant AdonisJS pour vérifier la validité des QR codes scannés. <a href='https://github.com/Herman-Riah19/QRCodeGenerate'>Code source</a></li>" +
       "</ul>"
   },
   {
@@ -120,8 +118,8 @@ const experiences: Array<ResumeModel> = [
       "Ministère de l'Enseignement Technique et de la Formation Professionnelle",
     location: "Ampefiloha, Antananarivo",
     description:
-      "Pendant mon stage au Ministère de l'Enseignement Technique et de la Formation Professionnelle, au département de l'information (INFor), j'ai participé à :<ul class='list-disc'><li class='text-sm font-regular text-justify list-disc'>Développement d'une application web de bibliothèque en ligne [PHP, MySQL, Bootstrap], intégration des vidéos du Ministère via des liens YouTube, et déploiement du site sur un serveur</li>" +
-      "<li class='text-sm font-regular text-justify list-disc'>Installation d'un pare-feu avec PfSense et Debian pour filtrer la connexion sur le site, intégration de la sécurité d'authentification pour que seuls les employés puissent se connecter à internet, et blocage de certains sites web pendant les heures de travail.</li>" +
+      "<ul class='list-disc'><li class='text-sm font-regular text-justify list-disc'>Développement d’une bibliothèque en ligne, où j'intègre une page de cours vidéo et un lecteur PDF pour améliorer l’expérience utilisateur et l’accessibilité. </li>" +
+      "<li class='text-sm font-regular text-justify list-disc'>•	Mise en place d’un pare-feu avec authentification des employés via Active Directory, filtrage des connexions et déploiement de l’application en locale.</li>" +
       "</ul>"
   },
   {

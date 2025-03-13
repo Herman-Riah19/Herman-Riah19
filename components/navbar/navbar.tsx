@@ -16,7 +16,7 @@ import { useLocale } from "next-intl";
 const Navbar: React.FC = () => {
   const locale = useLocale();
   const handleDownload = () => {
-    window.open(locale === "fr" ? "/assets/cv_Hermann.pdf" : "/assets/cv_Hermann_English.pdf", "_blank");
+    window.open(locale === "fr" ? "/assets/cv_Hermann.pdf" : "/assets/resume_Hermann_English.pdf", "_blank");
   };
 
   return (
