@@ -30,7 +30,7 @@ const HobieProject = () => {
                             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                                 {t('Intro')}
                             </h2>
-                            <p className="prose max-w-full text-pretty font-sans text-lg text-muted-foreground dark:prose-invert">
+                            <p className="prose max-w-full text-pretty font-sans text-lg text-secondary/80 dark:prose-invert">
                                 {t('Description')}
                             </p>
                         </div>

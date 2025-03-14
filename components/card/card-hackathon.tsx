@@ -30,15 +30,15 @@ export function CardHackathon({
       </div>
       <div className="flex flex-1 flex-col justify-start gap-1">
         {dates && (
-          <time className="text-xs text-muted-foreground">{dates}</time>
+          <time className="text-xs font-medium text-secondary/70">{dates}</time>
         )}
         <h2 className="font-semibold leading-none">{title}</h2>
         {location && (
-          <p className="text-sm text-muted-foreground">{location}</p>
+          <p className="text-sm font-medium text-secondary/70">{location}</p>
         )}
         {description && (
           <span 
-            className="prose dark:prose-invert text-sm text-muted-foreground"
+            className="prose dark:prose-invert text-sm text-secondary/80"
             dangerouslySetInnerHTML={{ __html: description }}/>
         )}
       </div>
