@@ -80,7 +80,7 @@ export function CardProject({
 
         </div>
       </CardContent>
-      {links !== "" && (
+      {/* {links !== "" && (
         <CardFooter className="px-2 pb-2">
           <div className="flex flex-row flex-wrap items-start gap-1">
             <Link href={links} target="_blank">
@@ -91,7 +91,7 @@ export function CardProject({
             </Link>
           </div>
         </CardFooter>
-      )}
+      )} */}
     </Card>
   );
 }

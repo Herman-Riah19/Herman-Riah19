@@ -9,8 +9,8 @@ import { Safari } from '@/components/magicui/safari';
 import { CardProfile } from '@/components/card/card-profile';
 import { DotPattern } from '@/components/magicui/dot-pattern';
 
-const languages = ["typescript", "javascript", "Python", "php", "html5","css3"];
-const frameworks = ["flask", "django", "nodedotjs", "adonisjs", "express", "nextdotjs","React", "laravel", "angular"]
+const languages = ["typescript", "javascript", "Python", "php", "html5", "css3"];
+const frameworks = ["flask", "django", "nodedotjs", "adonisjs", "express", "nextdotjs", "React", "laravel", "angular"]
 const databases = ["postgresql", "mysql", "firebase", "mongodb"]
 
 const PageHome = () => {
@@ -36,7 +36,7 @@ const PageHome = () => {
       cta: "hermanrazafinbdranaivo@gmail.com",
       background: (
         <div className="absolute left-14">
-        <CardProfile />
+          <CardProfile />
         </div>
       ),
     },
@@ -44,13 +44,13 @@ const PageHome = () => {
       // Icon: BellIcon,
       name: "",
       description: "",
-      href: `/${locale}/about/#skill`,
+      href: `/${locale}/about`,
       className: "col-span-3 lg:col-span-2 lg:row-span-1",
       cta: t("Cta"),
       background: (
         <div className="absolute flex h-[500px] w-full flex-col items-center justify-center overflow-hidden">
-          <span className="absolute top-0 pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
-          {t("Developper")}
+          <span className="absolute top-0 pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center sm:text-6xl lg:text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
+            {t("Developper")}
           </span>
           <OrbitingCircles iconSize={40}>
             {imagesLanguages.map(img => <img src={img} alt="language" width="200" height="200" />)}
@@ -68,7 +68,7 @@ const PageHome = () => {
       // Icon: "",
       name: t("Project"),
       description: t("Checkout"),
-      href:`/${locale}/about/#projects`,
+      href: `/${locale}/about/#projects`,
       className: "col-span-3 lg:col-span-1 lg:row-span-1",
       cta: t("Cta"),
       background: (
@@ -91,7 +91,7 @@ const PageHome = () => {
             className="size-60 absolute top-8 left-36 right-2"
             imageSrc="/assets/image/didache.PNG" />
         </div>
-    ),
+      ),
     },
     {
       // Icon: File,
