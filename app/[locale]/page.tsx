@@ -5,14 +5,12 @@ import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
 import {
   BellIcon,
   File,
-  Projector,
 } from "lucide-react";
-import { DotPattern } from "@/components/magicui/dot-pattern";
 import { cn } from "@/lib/utils";
-import { PersonIcon } from '@radix-ui/react-icons';
 import { Globe } from '@/components/ui/globe';
 import { OrbitingCircles } from '@/components/magicui/orbiting-circles';
 import { Safari } from '@/components/magicui/safari';
+import { CardProfile } from '@/components/card/card-profile';
 
 const languages = ["typescript", "javascript", "Python", "php", "html5","css3"];
 const frameworks = ["flask", "django", "nodedotjs", "adonisjs", "express", "nextdotjs","React", "laravel", "angular"]
@@ -36,10 +34,14 @@ const PageHome = () => {
       // Icon: "",
       name: t("Presentation"),
       description: t("Slogan"),
-      href: "",
+      href: "https://www.linkedin.com/in/hermann-razafindranaivo-174378237/",
       className: "col-span-3 lg:col-span-1 lg:row-span-2 h-[100vh] lg:h-full",
-      cta: t("Cta"),
-      background: <img src={"/assets/image/profile.jpg"} className="absolute -top-10 h-[80vh] w-full p-0 m-0" />,
+      cta: "Contact me in Linkedin",
+      background: (
+        <div className="absolute left-14">
+        <CardProfile />
+        </div>
+      ),
     },
     {
       Icon: BellIcon,

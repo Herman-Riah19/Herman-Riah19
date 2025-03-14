@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import { buttonVariants } from "@/components/ui/button";
 import {
@@ -9,30 +10,15 @@ import {
   CardFooter,
 } from "@/components/ui/card";
 import { Github, Linkedin } from "lucide-react";
-import { getTranslations } from 'next-intl/server';
+import { useTranslations } from 'next-intl';
 
-export const CardProfile = async () => {
-    const t = await getTranslations("Welcome");
+export const CardProfile = () => {
+    const t = useTranslations("Welcome");
   return (
-    <Card className="w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
-        <CardHeader className="mt-8 flex justify-center items-center pb-2">
-          <img
-            src={"/assets/image/profile.jpg"}
-            alt="user avatar"
-            className="absolute grayscale-[0%] -top-12 rounded-full w-24 h-24 aspect-square object-cover"
-          />
-          <CardTitle className="text-center">{t("Introduction")}</CardTitle>
-          <CardDescription className="font-normal text-primary">
-            {t("Developper")}
-          </CardDescription>
+    <Card className="flex flex-col justify-center items-center shadow-none border-none">
+        <CardHeader className="m-0 p-0 pb-2 flex justify-center items-center">
+          <img src={"/assets/image/profile.jpg"} className="h-[60vh] w-full p-0 m-0" />       
         </CardHeader>
-
-        <CardContent className="text-center pb-2">
-          <p>
-            {t("Slogan")}
-          </p>
-        </CardContent>
-
         <CardFooter>
           <div>
             <a
