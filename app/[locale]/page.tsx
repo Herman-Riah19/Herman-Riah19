@@ -12,6 +12,8 @@ import { cn } from "@/lib/utils";
 import { PersonIcon } from '@radix-ui/react-icons';
 import { Globe } from '@/components/ui/globe';
 import { OrbitingCircles } from '@/components/magicui/orbiting-circles';
+import { Card, CardContent, CardDescription } from '@/components/ui/card';
+import { Safari } from '@/components/magicui/safari';
 
 const languages = ["typescript", "javascript", "Python", "php", "html5","css3"];
 const frameworks = ["flask", "django", "nodedotjs", "express", "nextdotjs","React"]
@@ -32,7 +34,7 @@ const PageHome = () => {
 
   const features = [
     {
-      Icon: PersonIcon,
+      Icon: "",
       name: t("Presentation"),
       description: t("Slogan"),
       href: "",
@@ -62,18 +64,19 @@ const PageHome = () => {
       ),
     },
     {
-      Icon: Projector,
+      Icon: "",
       name: t("Project"),
       description: t("Checkout"),
       href:`/${locale}/about/#projects`,
       className: "col-span-3 lg:col-span-1 lg:row-span-1",
       cta: t("Cta"),
       background: (
-        <DotPattern
-        className={cn(
-          "[mask-image:radial-gradient(300px_circle_at_center,white,transparent)]"
-        )}
-      />),
+        <div className="absolute flex h-[300px] w-[320px] flex-col items-center justify-center overflow-hidden">
+          <Safari url="magicui.design"
+            className="size-full absolute left-8 right-2 bottom-10"
+            imageSrc="/assets/image/Jupiter.png" />
+        </div>
+    ),
     },
     {
       Icon: File,

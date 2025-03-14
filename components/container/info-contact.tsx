@@ -11,19 +11,19 @@ const InfoContact = () => {
                 <li>
                     <Link href="https://github.com/Herman-Riah19" className='w-full rounded-md flex flex-row p-0 bg-secondary border-none gap-2 text-start text-white dark:text-black'>
                         <Github className='m-2' />
-                        <span className='sm:text-md md:text-lg text-normal mt-2'>Herman-Ria19</span>
+                        <span className='sm:text-md md:text-md text-normal mt-2'>Herman-Ria19</span>
                     </Link>
                 </li>
                 <li >
                     <Link href="https://www.linkedin.com/in/hermann-razafindranaivo-174378237/" className='w-full rounded-md flex flex-row p-0 bg-secondary border-none gap-2 text-start text-white dark:text-black'>
                         <Linkedin className='m-2' />
-                        <span className='sm:text-md md:text-lg text-normal mt-2'>Hermann Razafindranaivo</span>
+                        <span className='sm:text-md md:text-md text-normal mt-2'>Hermann Razafindranaivo</span>
                     </Link>
                 </li>
                 <li>
                     <Link href="https://web.facebook.com/riah.hermann/" className='w-full rounded-md flex flex-row p-0 bg-secondary border-none gap-2 text-start text-white dark:text-black'>
                         <FacebookIcon className='m-2' />
-                        <span className='sm:text-md md:text-lg text-normal mt-2'>Herman Riah Christian</span>
+                        <span className='sm:text-md md:text-md text-normal mt-2'>Herman Riah Christian</span>
                     </Link>
                 </li>
             </ul>

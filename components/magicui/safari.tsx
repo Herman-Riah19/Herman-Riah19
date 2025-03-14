@@ -143,8 +143,8 @@ export function Safari({
             width="1200"
             height="700"
             x="1"
-            y="0"  
-            preserveAspectRatio="xMinYMin slice" 
+            y="52"
+            preserveAspectRatio="xMinYMin slice"
             clipPath="url(#roundedBottom)"
           />
         )}
