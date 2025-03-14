@@ -12,11 +12,10 @@ import { cn } from "@/lib/utils";
 import { PersonIcon } from '@radix-ui/react-icons';
 import { Globe } from '@/components/ui/globe';
 import { OrbitingCircles } from '@/components/magicui/orbiting-circles';
-import { Card, CardContent, CardDescription } from '@/components/ui/card';
 import { Safari } from '@/components/magicui/safari';
 
 const languages = ["typescript", "javascript", "Python", "php", "html5","css3"];
-const frameworks = ["flask", "django", "nodedotjs", "express", "nextdotjs","React"]
+const frameworks = ["flask", "django", "nodedotjs", "adonisjs", "express", "nextdotjs","React", "laravel", "angular"]
 const databases = ["postgresql", "mysql", "firebase", "mongodb"]
 
 const PageHome = () => {
