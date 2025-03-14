@@ -14,7 +14,7 @@ const Welcome = () => {
               delay={BLUR_FADE_DELAY}
               className="text-3xl font-bold sm:text-center md:text-start tracking-tighter sm:text-3xl xl:text-5xl/none"
               yOffset={8}
-              text={`${t("Introduction")}`}
+              text={`${t("Presentation")}`}
             />
             <BlurFadeText
               delay={BLUR_FADE_DELAY}
@@ -22,7 +22,6 @@ const Welcome = () => {
               yOffset={8}
               text={`${t("Developper")}`}
             />
-
         </div>
       </div>
     </section>

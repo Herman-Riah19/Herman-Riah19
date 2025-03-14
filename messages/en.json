@@ -1,10 +1,22 @@
 {
+  "Home": {
+    "Presentation": "Hermann Christian RAZAFINDRANAIVO",
+    "Slogan": "I am passionate about transforming my ideas into functional programs that exceed expectations.",
+    "Developper": "Full Stack Web Developer",
+    "Speciality": "I specialized in Next.js, TypeScript, Django and Flask",
+    "Cta": "Visit",
+    "Project": "My Projects",
+    "Checkout": "Check out my latest work",
+    "Resume": "Resume",
+    "Experiences": "Discover my professional information"
+  },
   "Welcome": {
     "Based": "Based in Nextjs",
     "Developper": "Full Stack Web Developper",
-    "Introduction": "Hermann Christian RAZAFINDRANAIVO",
+    "Presentation": "Hermann Christian RAZAFINDRANAIVO",
+    "Slogan": "I am passionately driven to transform my ideas into functional programs that exceed expectations.",
     "AboutTitle": "About",
-    "About": "Graduated in Telecommunications, but I chose to specialize in **Web Development**, using **TypeScript Next.js** for front-end and **Python Django/Flask** for back-end. I have solid experience in **API integration**, **database management**, and creating **interactive visualizations**, with a focus on **optimized and scalable solutions**. Driven by curiosity and always seeking improvement, I thrive on **new challenges** to refine my skills and provide tailored solutions for project needs. My goal is to **develop high-performance, intuitive applications**, while emphasizing effective collaboration within technical and product teams. I have a deep passion for **data structure** and **mathematical thinking**, leveraging them to build efficient systems and deliver impactful results."
+    "About": "🚀 **Welcome!**  \n 👋 I’m **Hermann Christian RAZAFINDRANAIVO**, a passionate **full-stack web developer** specialized in **Next.js, TypeScript, Django, and Flask**. With a background in **Telecommunications**, I have focused my career on building high-performance and scalable web solutions.  \n✨ **My approach?** Turning ideas into **intuitive, optimized, and robust applications**. I have experience in **API integration, database management, and interactive visualizations**. My goal is to combine **performance and usability** to deliver seamless experiences tailored to users' needs.  \n📌 Always looking for **new opportunities and challenges**, I am driven by continuous learning and skill enhancement.  \n💡 **Do you have a web project in mind?** Let’s discuss it and bring it to life together! 🚀"
   },
   "Navbar": {
     "Home": "Home",

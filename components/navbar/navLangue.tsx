@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import { useRouter } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { useLocale } from "next-intl";
 import { Button } from '@/components/ui/button';
 import { Globe } from 'lucide-react';
@@ -8,14 +8,13 @@ import { Globe } from 'lucide-react';
 const NavLangue = () => {
   const route = useRouter();
   const localActive = useLocale();
+  const path = usePathname();
 
   const handleClick = () => {
-    if(localActive === "fr") {
-      route.push("/en")
-    } else {
-      route.push("/fr")
-    }
-  }
+    const newLocale = localActive === "fr" ? "en" : "fr";
+    route.push(`/${newLocale}${path.substring(3)}`); 
+  };
+  
   return (
     <Button
       variant="ghost"

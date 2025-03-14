@@ -1,10 +1,22 @@
 {
+  "Home": {
+    "Presentation": "Hermann Christian RAZAFINDRANAIVO",
+    "Slogan": "J'aime passionnément transformer mes idées en programmes fonctionnels dépassant les attentes.",
+    "Developper": "Développeur Full Stack",
+    "Speciality": "Je me suis spécialisé en Next.js, TypeScript, Django et Flask",
+    "Cta": "Visiter",
+    "Project": "Mes Projects",
+    "Checkout": "Découvrez mon dernier travail",
+    "Resume": "CV",
+    "Experiences": "Découvrez mes informations professionnels"
+  },
   "Welcome": {
     "Based": "Basé de Next JS",
     "Developper": "Développeur Web Full Stack",
-    "Introduction": "Hermann Christian RAZAFINDRANAIVO",
+    "Presentation": "Hermann Christian RAZAFINDRANAIVO",
+    "Slogan": "J'aime passionnément transformer mes idées en programmes fonctionnels dépassant les attentes.",
     "AboutTitle": "A propos",
-    "About": "Diplômé en Télécommunications, j'ai choisi de me spécialiser dans le **développement web**, en utilisant **TypeScript Next.js** pour le front-end et **Python Django/Flask** pour le back-end. J'ai une solide expérience en **intégration d'API**, **gestion des bases de données** et création de **visualisations interactives**, avec un accent sur **des solutions optimisées et évolutives**. Animé par la curiosité et toujours en quête d'amélioration, je prends plaisir à relever **de nouveaux défis** pour affiner mes compétences et proposer des solutions adaptées aux besoins des projets. Mon objectif est de **développer des applications performantes et intuitives**, tout en favorisant une collaboration efficace au sein des équipes techniques et produit. Je suis passionné par la **structure des données** et la **pensée mathématique**, que j'exploite pour créer des systèmes efficaces et obtenir des résultats impactants."
+    "About": "🚀 Bienvenue !  \n 👋 Je suis **Hermann Christian RAZAFINDRANAIVO**, un développeur web full-stack passionné, spécialisé en **Next.js, TypeScript, Django et Flask**. Fort d’une formation en Télécommunications, j’ai orienté ma carrière vers la création de solutions web performantes et évolutives.  \n ✨ **Mon approche ?** Transformer **des idées en applications intuitives, optimisées et robustes**. Je suis expérimenté **en intégration d’API, gestion des bases de données, et visualisations interactives**. Mon objectif est d’allier performance et ergonomie pour offrir des expériences fluides et adaptées aux besoins des utilisateurs.  \n 📌 Toujours en quête de nouvelles opportunités et défis, je suis motivé par l’apprentissage continu et l’amélioration de mes compétences.  \n 💡 Vous avez un projet web en tête ? Discutons-en et donnons-lui vie ensemble !"
   },
   "Navbar": {
     "Home": "Accueil",
