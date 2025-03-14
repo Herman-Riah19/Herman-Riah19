@@ -34,7 +34,7 @@ const PageHome = () => {
 
   const features = [
     {
-      Icon: "",
+      // Icon: "",
       name: t("Presentation"),
       description: t("Slogan"),
       href: "",
@@ -64,7 +64,7 @@ const PageHome = () => {
       ),
     },
     {
-      Icon: "",
+      // Icon: "",
       name: t("Project"),
       description: t("Checkout"),
       href:`/${locale}/about/#projects`,
