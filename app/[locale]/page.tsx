@@ -34,9 +34,9 @@ const PageHome = () => {
       // Icon: "",
       name: t("Presentation"),
       description: t("Slogan"),
-      href: "https://www.linkedin.com/in/hermann-razafindranaivo-174378237/",
+      href: "mailto:hermanrazafinbdranaivo@gmail.com",
       className: "col-span-3 lg:col-span-1 lg:row-span-2 h-[100vh] lg:h-full",
-      cta: "Contact me in Linkedin",
+      cta: "hermanrazafinbdranaivo@gmail.com",
       background: (
         <div className="absolute left-14">
         <CardProfile />
