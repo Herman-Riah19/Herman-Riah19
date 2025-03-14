@@ -57,7 +57,7 @@ export const CardResume = ({
                 {period}
               </div>
             </div>
-            {subtitle && <div className="font-sans text-sm">{subtitle}</div>}
+            {subtitle && <div className="font-medium text-base">{subtitle}</div>}
           </CardHeader>
           <CardContent className="m-0 p-0">
             {description && (
