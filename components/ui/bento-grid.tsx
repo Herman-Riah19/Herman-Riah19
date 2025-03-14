@@ -62,14 +62,16 @@ const BentoCard = ({
           {name}
         </h3>
         <p className="max-w-lg text-neutral-400">{description}</p>
+        <div>
         {href !== "" && (
-          <Button variant="ghost" asChild size="sm" className="pointer-events-auto">
+          <Button variant="outline" asChild className="pointer-events-auto w-auto">
             <a href={href}>
               {cta}
               <ArrowRightIcon className="ms-2 h-4 w-4 rtl:rotate-180" />
             </a>
           </Button>
         )}
+        </div>
     </div>
   </div>
 );
