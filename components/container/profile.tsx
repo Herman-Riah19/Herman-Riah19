@@ -17,13 +17,13 @@ const Profile = () => {
             </Avatar>
             <ul style={{listStyleType: "none"}} className="flex flex-col m-0">
                 <li className='col-span-2'>
-                    <Button variant="outline" className='w-full p-0 shadow-none text-secondary border-none gap-2 text-start'>
+                    <Button variant="outline" className='w-full p-0 shadow-none bg-transparent text-secondary border-none gap-2 text-start'>
                         <EnvelopeClosedIcon className='size-4 m-1' />
                         <span className='sm:text-[12px] md:text-md text-normal'>hermanrazafinbdranaivo@gmail.com</span>
                     </Button>
                 </li>
                 <li>
-                    <Button variant="outline" className='w-full p-0 shadow-none text-secondary border-none gap-2 text-start'>
+                    <Button variant="outline" className='w-full p-0 shadow-none bg-transparent text-secondary border-none gap-2 text-start'>
                         <Phone className='size-4 m-1' />
                         <span className='sm:text-md md:text-lg font-normal'>+261 38 60 629 54</span>
                     </Button>

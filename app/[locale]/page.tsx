@@ -113,7 +113,7 @@ const PageHome = () => {
   ];
 
   return (
-    <BentoGrid className="grid w-full grid-cols-3 gap-2">
+    <BentoGrid className="grid w-full grid-cols-3 gap-2 overflow-y-hidden m-0 p-0">
       {features.map((feature, idx) => (
         <BentoCard key={idx} {...feature} />
       ))}

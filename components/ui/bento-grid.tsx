@@ -2,6 +2,7 @@ import { ComponentPropsWithoutRef, ReactNode } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { ArrowRightIcon } from "lucide-react";
+import { BorderBeam } from "@/components/magicui/border-beam";
 
 interface BentoGridProps extends ComponentPropsWithoutRef<"div"> {
   children: ReactNode;
@@ -73,6 +74,7 @@ const BentoCard = ({
         )}
         </div>
     </div>
+    <BorderBeam duration={8} size={100} />
   </div>
 );
 }
