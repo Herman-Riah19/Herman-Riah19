@@ -59,7 +59,7 @@ const BentoCard = ({
     <div className="z-0">{background}</div>
     <div className="pointer-events-none z-10 flex transform-gpu flex-col gap-1 p-6">
       {Icon && <Icon className="h-12 w-12 origin-left transform-gpu text-neutral-700" />}
-        <h3 className="text-xl font-semibold text-neutral-700 dark:text-neutral-300">
+        <h3 className="sm:text-lg lg:text-3xl font-bold bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-transparent dark:from-white dark:to-slate-900/10">
           {name}
         </h3>
         <p className="max-w-lg text-neutral-400">{description}</p>
