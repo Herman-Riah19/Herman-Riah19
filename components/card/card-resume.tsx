@@ -50,14 +50,14 @@ export const CardResume = ({
         <div className="flex-grow ml-2 items-center flex-col group">
           <CardHeader className="sm:m-0">
             <div className="flex items-center justify-between gap-x-2 text-base">
-              <h3 className="inline-flex items-center justify-center font-bold leading-none">
+              <h3 className="inline-flex items-center justify-center font-extrabold leading-none">
                 <span className="text-xl">{title}</span>
               </h3>
               <div className="text-lg sm:text-sm tabular-nums text-muted-foreground text-right">
                 {period}
               </div>
             </div>
-            {subtitle && <div className="font-medium text-base">{subtitle}</div>}
+            {subtitle && <div className="font-medium text-lg">{subtitle}</div>}
           </CardHeader>
           <CardContent className="m-0 p-0">
             {description && (
