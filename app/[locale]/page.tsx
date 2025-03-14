@@ -34,7 +34,7 @@ const PageHome = () => {
       // Icon: "",
       name: t("Presentation"),
       description: t("Slogan"),
-      href: "mailto:hermanrazafinbdranaivo@gmail.com",
+      href: "#",
       className: "col-span-3 lg:col-span-1 lg:row-span-2 h-[100vh] lg:h-full",
       cta: "hermanrazafinbdranaivo@gmail.com",
       background: (
