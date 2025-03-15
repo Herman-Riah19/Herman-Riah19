@@ -1,4 +1,13 @@
+import type { Metadata } from "next";
 import React from 'react'
+
+export const metadata: Metadata = {
+  title: "Projects - Herman Riah",
+  description: "All my projects",
+  icons: {
+    icon: 'next.svg'
+  }
+}
 
 const layout = ({children}: Readonly<{children: React.ReactNode;}>) => {
   return (
