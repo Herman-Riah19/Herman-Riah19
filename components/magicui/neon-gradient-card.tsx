@@ -123,7 +123,7 @@ export const NeonGradientCard: React.FC<NeonGradientCardProps> = ({
         } as CSSProperties
       }
       className={cn(
-        "relative size-full rounded-[var(--card-content-radius)] bg-gray-100 p-0",
+        "relative size-full rounded-[var(--card-content-radius)] bg-background/80 p-0",
           // "before:absolute before:-left-[var(--border-size)] before:-top-[var(--border-size)] before:-z-10 before:block",
           "before:h-[var(--pseudo-element-height)] before:w-[var(--pseudo-element-width)] before:rounded-[var(--border-radius)] before:content-['']",
           "before:bg-[linear-gradient(0deg,var(--neon-first-color),var(--neon-second-color))] before:bg-[length:100%_200%] before:opacity-80",
