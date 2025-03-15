@@ -70,7 +70,7 @@ const PageHome = () => {
       description: t("Checkout"),
       href: `/${locale}/projects`,
       className: "col-span-3 lg:col-span-1 lg:row-span-1",
-      cta: t("Cta"),
+      cta: t("Discover"),
       background: (
         <div className="absolute flex h-[300px] w-full min-w-[320px] flex-col items-center justify-center overflow-hidden">
           <DotPattern
