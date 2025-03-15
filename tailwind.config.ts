@@ -116,6 +116,11 @@ const config = {
   				'100%': {
   					backgroundPosition: 'bottom center'
   				}
+  			},
+  			gradient: {
+  				to: {
+  					backgroundPosition: 'var(--bg-size, 300%) 0'
+  				}
   			}
   		},
   		animation: {
@@ -124,7 +129,8 @@ const config = {
   			'shimmer-slide': 'shimmer-slide var(--speed) ease-in-out infinite alternate',
   			'spin-around': 'spin-around calc(var(--speed) * 2) infinite linear',
   			orbit: 'orbit calc(var(--duration)*1s) linear infinite',
-  			'background-position-spin': 'background-position-spin 3000ms infinite alternate'
+  			'background-position-spin': 'background-position-spin 3000ms infinite alternate',
+  			gradient: 'gradient 8s linear infinite'
   		}
   	}
   },

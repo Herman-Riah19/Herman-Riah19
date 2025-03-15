@@ -1,3 +1,4 @@
+"use client"
 import { BLUR_FADE_DELAY } from '@/lib/constant'
 import React, { useEffect, useState } from 'react'
 import BlurFade from './blur-fade'
@@ -18,6 +19,7 @@ const HobieProject = () => {
             setLocalHobies(hobbiesEn)
         }
     }, [local])
+
     return (
         <section id="hobbies">
             <div className="flex min-h-0 flex-col gap-y-3 mt-4">

@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect, useState } from 'react'
 import { BLUR_FADE_DELAY } from '@/lib/constant';
 import BlurFade from './blur-fade';
@@ -17,6 +18,7 @@ export const Projects = () => {
       setLocalProject(ProjectModelEn)
     }
   }, [local])
+
   return (
     <section id="projects" className='mt-4'>
         <div className="space-y-12 w-full py-12">

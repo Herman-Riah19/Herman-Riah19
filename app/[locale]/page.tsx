@@ -68,7 +68,7 @@ const PageHome = () => {
       // Icon: "",
       name: t("Project"),
       description: t("Checkout"),
-      href: `/${locale}/about/#projects`,
+      href: `/${locale}/projects`,
       className: "col-span-3 lg:col-span-1 lg:row-span-1",
       cta: t("Cta"),
       background: (

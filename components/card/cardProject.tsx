@@ -11,6 +11,7 @@ import { Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import { Lens } from "@/components/magicui/lens";
 
 interface Props {
   title: string;
@@ -46,17 +47,24 @@ export function CardProject({
         className={cn("block cursor-pointer", className)}
       >
         {image && (
-          <Image
-            src={image}
-            alt={title}
-            width={400}
-            height={200}
-            className="h-40 w-full overflow-hidden object-cover object-top"
-          />
+          <Lens
+            zoomFactor={2}
+            lensSize={100}
+            isStatic={false}
+            ariaLabel="Zoom Area"
+          >
+            <Image
+              src={image}
+              alt={title}
+              width={400}
+              height={300}
+              className="h-52 w-full overflow-hidden object-cover object-top"
+            />
+          </Lens>
         )}
       </Link>
-      <CardHeader className="px-2">
-        <div className="space-y-1">
+      <CardHeader className="p-0 m-0">
+        <div className="space-y-1 p-2">
           <CardTitle className="mt-1 text-lg">{title}</CardTitle>
           <time className="font-sans text-sm">{dates}</time>
           <div className="hidden font-sans text-xs underline print:visible">
