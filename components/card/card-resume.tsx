@@ -41,7 +41,7 @@ export const CardResume = ({
           <AvatarImage
             src={logoUrl}
             alt={altText}
-            className="object-contain h-full w-full"
+            className="object-contain object-center h-full w-full"
           />
           <AvatarFallback>{altText[0]}</AvatarFallback>
         </Avatar>
