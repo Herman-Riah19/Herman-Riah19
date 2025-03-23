@@ -49,7 +49,7 @@ export function CardProject({
         {image && (
           <Lens
             zoomFactor={2}
-            lensSize={100}
+            lensSize={200}
             isStatic={false}
             ariaLabel="Zoom Area"
           >
