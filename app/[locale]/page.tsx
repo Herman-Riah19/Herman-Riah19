@@ -82,16 +82,16 @@ const PageHome = () => {
             className="size-60 absolute -top-16 left-2 right-2"
             imageSrc="/assets/image/Jupiter.png" />
           <Safari url="magicui.design"
-            className="size-60 absolute -top-8 left-14 right-2"
+            className="size-60 absolute -top-6 left-14 right-2"
             imageSrc="/assets/image/trink.png" />
           <Safari url="magicui.design"
-            className="size-60 absolute -top-0 left-24 right-2"
+            className="size-60 absolute -top-4 left-24 right-2"
             imageSrc="/assets/image/ChatGnoseIA.png" />
           <Safari url="magicui.design"
-            className="size-60 absolute top-8 left-36 right-2"
+            className="size-60 absolute top-14 left-36 right-2"
             imageSrc="/assets/image/upscaler.png" />
           <Safari url="magicui.design"
-            className="size-60 absolute top-16 left-44 right-2"
+            className="size-60 absolute top-26 left-52 right-2"
             imageSrc="/assets/image/openmyst.PNG" />
         </div>
       ),
