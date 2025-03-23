@@ -91,7 +91,7 @@ const PageHome = () => {
             className="size-60 absolute top-14 left-36 right-2"
             imageSrc="/assets/image/upscaler.png" />
           <Safari url="magicui.design"
-            className="size-60 absolute top-26 left-52 right-2"
+            className="size-60 absolute top-28 left-52 right-2"
             imageSrc="/assets/image/openmyst.PNG" />
         </div>
       ),
