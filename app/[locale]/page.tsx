@@ -83,13 +83,13 @@ const PageHome = () => {
             imageSrc="/assets/image/Jupiter.png" />
           <Safari url="magicui.design"
             className="size-60 absolute -top-8 left-14 right-2"
-            imageSrc="/assets/image/trink.png" />
+            imageSrc="/assets/image/ChatGnoseIA.png" />
           <Safari url="magicui.design"
             className="size-60 absolute -top-0 left-24 right-2"
-            imageSrc="/assets/image/openmyst.PNG" />
+            imageSrc="/assets/image/didache.PNG" />
           <Safari url="magicui.design"
             className="size-60 absolute top-8 left-36 right-2"
-            imageSrc="/assets/image/didache.PNG" />
+            imageSrc="/assets/image/openmyst.PNG" />
         </div>
       ),
     },
