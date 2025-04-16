@@ -12,12 +12,6 @@ I'm committed to bringing your vision to life with a perfect blend of technical 
 
 ---
 
-## 📈 GitHub Stats
-
-![Herman-Riah19's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Herman-Riah19&show_icons=true&theme=radical)
-
----
-
 ## 📂 Notable Projects
 
 Here are some of my favorite projects that I've worked on:
@@ -35,51 +29,48 @@ Here are some of my favorite projects that I've worked on:
 
 ## 🛠️ Technologies & Tools
 
-### Front End :
-<div style={{display : "flex", flexWrap : "wrap", gap: 10}}>
-    <img src="https://img.shields.io/badge/ReactJS-61DAFB?logo=react&logoColor=white&style=flat-square" alt="React" />
-    <img src="https://img.shields.io/badge/Angular-DD0031?logo=angular&logoColor=white&style=flat-square" alt="Angular" />
-    <img src="https://img.shields.io/badge/Next.JS-000000?logo=next.js&logoColor=white&style=flat-square" alt="Next.js" />
-    <img src="https://img.shields.io/badge/SCSS-CC6699?logo=sass&logoColor=white&style=flat-square" alt="SCSS" />
-    <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white&style=flat-square" alt="Tailwind CSS" />
-    <img src="https://img.shields.io/badge/Framer_Motion-0055FF?logo=framer&logoColor=white&style=flat-square" alt="Framer Motion" />
-</div>
+### 🧑‍🎨 Front-End
+![React](https://img.shields.io/badge/ReactJS-61DAFB?logo=react&logoColor=white&style=for-the-badge)
+![Next.js](https://img.shields.io/badge/Next.JS-000000?logo=next.js&logoColor=white&style=for-the-badge)
+![Angular](https://img.shields.io/badge/Angular-DD0031?logo=angular&logoColor=white&style=for-the-badge)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white&style=for-the-badge)
+![SCSS](https://img.shields.io/badge/SCSS-CC6699?logo=sass&logoColor=white&style=for-the-badge)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?logo=framer&logoColor=white&style=for-the-badge)
 
-### Back-end :
-<div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
-    <img src="https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=white&style=flat-square" alt="PHP" />
-    <img src="https://img.shields.io/badge/Laravel-FF2D20?logo=laravel&logoColor=white&style=flat-square" alt="Laravel" />
-</div>
+### 🧩 Back-End
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white&style=for-the-badge)
+![Node.js](https://img.shields.io/badge/Node.JS-339933?logo=node.js&logoColor=white&style=for-the-badge)
+![Express.js](https://img.shields.io/badge/Express.JS-000000?logo=express&logoColor=white&style=for-the-badge)
+![AdonisJS](https://img.shields.io/badge/AdonisJS-220052?logo=adonisjs&logoColor=white&style=for-the-badge)
+![PHP](https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=white&style=for-the-badge)
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?logo=laravel&logoColor=white&style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge)
+![Flask](https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white&style=for-the-badge)
+![Django](https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white&style=for-the-badge)
 
-<div style={{display : "flex", flexWrap : "wrap", gap: 10}}>
-    <img src="https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white&style=flat-square" alt="TypeScript" />
-    <img src="https://img.shields.io/badge/AdonisJS-220052?logo=adonisjs&logoColor=white&style=flat-square" alt="AdonisJS" />
-    <img src="https://img.shields.io/badge/Express.JS-000000?logo=express&logoColor=white&style=flat-square" alt="Express.js" />
-    <img src="https://img.shields.io/badge/Node.JS-339933?logo=node.js&logoColor=white&style=flat-square" alt="Node.js" />
-</div>
+### 🛢️ Database
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white&style=for-the-badge)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white&style=for-the-badge)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white&style=for-the-badge)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white&style=for-the-badge)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black&style=for-the-badge)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white&style=for-the-badge)
 
-<div style={{display : "flex", flexWrap : "wrap", gap: 10}}>
-    <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=flat-square" alt="Python" />
-    <img src="https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white&style=flat-square" alt="Django" />
-    <img src="https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white&style=flat-square" alt="Flask" />
-</div>
+### 🌐 DevOps & Hosting
+![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black&style=for-the-badge)
+![Vercel](https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white&style=for-the-badge)
+![AWS](https://img.shields.io/badge/AWS-232F3E?logo=amazon-aws&logoColor=white&style=for-the-badge)
 
-### Database :
-<div style={{display : "flex", flexWrap : "wrap", gap: 10}}>
-    <img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white&style=flat-square" alt="MySQL" />
-    <img src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white&style=flat-square" alt="MongoDB" />
-    <img src="https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white&style=flat-square" alt="SQLite" />
-    <img src="https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white&style=flat-square" alt="PostgreSQL" />
-    <img src="https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white&style=flat-square" alt="Prisma" />
-    <img src="https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black&style=flat-square" alt="Firebase" />
-</div>
+---
 
-### Server :
-<div style={{display : "flex", flexWrap : "wrap", gap: 10}}>
-    <img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black&style=flat-square" alt="Linux" />
-    <img src="https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white&style=flat-square" alt="Vercel" />
-    <img src="https://img.shields.io/badge/AWS-232F3E?logo=amazon-aws&logoColor=white&style=flat-square" alt="AWS" />
-</div>
+## 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Herman-Riah19&layout=compact&theme=radical" height="170" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Herman-Riah19&show_icons=true&theme=radical" height="170" />
+</p>
+
+---
 
 ## 💼 Services Offered
 
@@ -88,6 +79,22 @@ Here are some of my favorite projects that I've worked on:
 - **Responsive UI/UX Design**: Modern and responsive interfaces with React.js and Tailwind CSS.
 - **Database Design & Management**: Efficient and scalable database solutions with PostgreSQL, MySQL, or MongoDB.
 - **Deployment & DevOps**: Seamless deployment strategies using Vercel, AWS, and Docker.
+---
+
+## 🏆 GitHub Trophies
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=Herman-Riah19&theme=radical&no-frame=true&column=7" />
+</p>
+
+---
+
+## 📈 Contribution Graph
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Herman-Riah19&theme=react-dark" />
+</p>
+
 ---
 
 ## 📬 Let's Connect
@@ -100,5 +107,3 @@ Here are some of my favorite projects that I've worked on:
 ---
 
 Feel free to reach out for collaborations, freelance opportunities, or just to connect!
-
---- 
