@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
   const route = useRouter(); 
 
   const handleDownload = () => {
-    window.open(locale === "fr" ? "/assets/cv_Hermann.pdf" : "/assets/resume_Hermann_English.pdf", "_blank");
+    window.open(locale === "fr" ? "/assets/cv_Hermann.pdf" : "/assets/Resume_Herman.pdf", "_blank");
   };
 
   const handleRedirectHome = () => {
