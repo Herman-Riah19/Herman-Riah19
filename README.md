@@ -1,20 +1,53 @@
-# Hi, I'm Hermann Riah
+# 👋 Hi, I'm Hermann Riah
 
-## A Full Stack Developer Specializing in TypeScript/JavaScript
+![GitDash Preview](/public/assets/image/home_page.PNG)
+
+## 💻 Full Stack Developer | TypeScript & JavaScript Enthusiast
+
+I'm Hermann Riah, a passionate Full Stack Developer with a strong foundation in both frontend and backend technologies. I specialize in building scalable and efficient web applications using modern frameworks and tools.
 
 With a deep passion for TypeScript and JavaScript, I have honed my skills as a Full Stack Developer by working extensively with these technologies. My expertise spans across modern frameworks and libraries, ensuring efficient and high-quality development. Whether it's building scalable applications with **Next.js**, crafting dynamic user interfaces with **ReactJS**, or developing robust backend solutions with **AdonisJS**, I bring a wealth of experience to every project. Additionally, my proficiency in **Angular** allows me to deliver seamless and responsive front-end experiences.
 
 I'm committed to bringing your vision to life with a perfect blend of technical proficiency and creativity. Let's start your project and turn your ideas into reality.
 
+Certainly! Here's an updated and polished version of your GitHub profile README, incorporating your projects, technologies, and services:
 
 ---
 
-### My Expertise:
+## 📂 Notable Projects
+
+- [**TryInc**](https://github.com/Herman-Riah19/TryInc): An AdonisJS-based application demonstrating a Laravel-like structure using TypeScript.
+- [**Python2048**](https://github.com/Herman-Riah19/Python2048): A Python implementation of the classic 2048 game, showcasing algorithmic logic and game development skills.
+
+---
+
+## 📈 GitHub Stats
+
+![Herman-Riah19's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Herman-Riah19&show_icons=true&theme=radical)
+
+---
+
+### My Favorite Projects:
+
+Here are some of my favorite projects that I've worked on:
+
+- [**TryInc**](https://github.com/Herman-Riah19/TryInc): A social media platform built with AdonisJS and React, designed to connect users through engaging and interactive features.
+- [**Python2048**](https://github.com/Herman-Riah19/python2048): A Python implementation of the classic 2048 game, showcasing algorithmic problem-solving and game development skills.
+- [**Angular-is-to-teny**](https://github.com/Herman-Riah19/angular-is-to-teny): A number-to-text translator in Malagasy, built with Angular to help users convert numerical values into their textual equivalents in the Malagasy language.
+- [**Riah Market**](https://github.com/Herman-Riah19/riah-market): An NFT marketplace offering a seamless user experience and secure transactions, built with Next.js.
+- [**StudyManager**](https://github.com/Herman-Riah19/StudyManager): A C# application designed to help students organize and manage their study schedules effectively.
+- [**JeuPuzzle**](https://github.com/Herman-Riah19/JeuPuzzle): A puzzle game built with C++, showcasing interactive gameplay and problem-solving mechanics.
+
+*Explore more projects on my [GitHub repositories](https://github.com/Herman-Riah19?tab=repositories).*
+
+---
+
+## 🛠️ Technologies & Tools
 
 ### Front End :
 <div style={{display : "flex", flexWrap : "wrap", gap: 10}}>
     <img src="https://img.shields.io/badge/ReactJS-61DAFB?logo=react&logoColor=white&style=flat-square" alt="React" />
-    <img src="https://img.shields.io/badge/Angular-DD0031?logo=angular&logoColor=white&style=flat-square" alt="Angulaire" />
+    <img src="https://img.shields.io/badge/Angular-DD0031?logo=angular&logoColor=white&style=flat-square" alt="Angular" />
     <img src="https://img.shields.io/badge/Next.JS-000000?logo=next.js&logoColor=white&style=flat-square" alt="Next.js" />
     <img src="https://img.shields.io/badge/SCSS-CC6699?logo=sass&logoColor=white&style=flat-square" alt="SCSS" />
     <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white&style=flat-square" alt="Tailwind CSS" />
@@ -57,18 +90,24 @@ I'm committed to bringing your vision to life with a perfect blend of technical 
     <img src="https://img.shields.io/badge/AWS-232F3E?logo=amazon-aws&logoColor=white&style=flat-square" alt="AWS" />
 </div>
 
-#### Other Expertise:
-- APIs / RESTful APIs development and integration (with Flask, AdonisJS)
-- Full stack application and integration (with AdonisJS and NextJS)
-- Responsive design
-- Google Authentication integrations
-- Push notification, Google Maps integration
-- Generative AI APIs for text and image (implementation and integration)
-- Next-auth
-- Stripe payment
+## 💼 Services Offered
+
+- **Custom Web Application Development**: Full-stack solutions tailored to your business needs.
+- **API Development & Integration**: RESTful APIs using Express.js, Flask, or AdonisJS.
+- **Responsive UI/UX Design**: Modern and responsive interfaces with React.js and Tailwind CSS.
+- **Database Design & Management**: Efficient and scalable database solutions with PostgreSQL, MySQL, or MongoDB.
+- **Deployment & DevOps**: Seamless deployment strategies using Vercel, AWS, and Docker.
+---
+
+## 📬 Let's Connect
+
+- 📧 Email: [hermanrazafinbdranaivo@gmail.com](mailto:hermanrazafinbdranaivo@gmail.com)
+- 🌐 Portfolio: [herman-riah19.vercel.app](https://herman-riah19.vercel.app)
+- 💼 LinkedIn: [Hermann Razafindranaivo](https://www.linkedin.com/in/hermann-razafindranaivo)
+- 🐙 GitHub: [Herman-Riah19](https://github.com/Herman-Riah19)
 
 ---
 
-Please let me know when we can begin with your project.
+Feel free to reach out for collaborations, freelance opportunities, or just to connect!
 
-Visit my website: [Herman Portfolio](https://hermannchristian.netlify.app/)
+--- 
