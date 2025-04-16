@@ -10,15 +10,6 @@ With a deep passion for TypeScript and JavaScript, I have honed my skills as a F
 
 I'm committed to bringing your vision to life with a perfect blend of technical proficiency and creativity. Let's start your project and turn your ideas into reality.
 
-Certainly! Here's an updated and polished version of your GitHub profile README, incorporating your projects, technologies, and services:
-
----
-
-## 📂 Notable Projects
-
-- [**TryInc**](https://github.com/Herman-Riah19/TryInc): An AdonisJS-based application demonstrating a Laravel-like structure using TypeScript.
-- [**Python2048**](https://github.com/Herman-Riah19/Python2048): A Python implementation of the classic 2048 game, showcasing algorithmic logic and game development skills.
-
 ---
 
 ## 📈 GitHub Stats
@@ -27,7 +18,7 @@ Certainly! Here's an updated and polished version of your GitHub profile README,
 
 ---
 
-### My Favorite Projects:
+## 📂 Notable Projects
 
 Here are some of my favorite projects that I've worked on:
 
