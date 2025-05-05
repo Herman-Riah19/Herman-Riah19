@@ -9,7 +9,8 @@
     "Discover": "Discover",
     "Checkout": "Check out my latest work",
     "Resume": "Resume",
-    "Experiences": "Discover my professional information"
+    "Experiences": "Discover my professional information",
+    "BlogDescription": "Discover my blog articles"
   },
   "Welcome": {
     "Based": "Based in Nextjs",

@@ -5,11 +5,12 @@
     "Developper": "Développeur Full Stack",
     "Speciality": "Je me suis spécialisé en Next.js, TypeScript, Django et Flask",
     "Cta": "Lire mon CV",
-    "Project": "Mes Projects",
-    "Discover": "Decouvrer",
+    "Project": "Mes Projets",
+    "Discover": "Découvrir",
     "Checkout": "Découvrez mon dernier travail",
     "Resume": "CV",
-    "Experiences": "Découvrez mes informations professionnels"
+    "Experiences": "Découvrez mes informations professionnelles",
+    "BlogDescription": "Découvrez mes articles de blog"
   },
   "Welcome": {
     "Based": "Basé de Next JS",

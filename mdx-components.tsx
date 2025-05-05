@@ -1,15 +1,25 @@
 import type { MDXComponents } from 'mdx/types'
 import Image, { ImageProps } from 'next/image'
+import { Terminal, TypingAnimation } from './components/magicui/terminal';
+import matter from 'gray-matter';
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
-    // Allows customizing built-in components, e.g. to add styling.
     h1: ({ children }) => (
       <h1 className='text-[4vw] font-extrabold text-center mt-5 bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text'>{children}</h1>
     ),
-    h2: ({ children }) => (
+    h2: ({ children }) => {
+      const isFrontMatter = (text: string) => {
+        const frontMatterRegex = /^"\n([\s\S]*?)\n"/;
+        return frontMatterRegex.test(text.trim());
+      };
+
+      if (typeof children === 'string' && isFrontMatter(children)) {
+        return null;
+      }
+      return (
       <h2 className='text-[2vw] font-extrabold mt-0 mb-2 m-4'>{children}</h2>
-    ),
+    )},
     ol: ({ children }) => (
       <ol className='list-decimal m-4'>{children}</ol>
     ),
@@ -32,6 +42,16 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         height={100}
         {...(props as ImageProps)}
       />
+    ),
+    code: ({ children }) => (
+      <code className='bg-gray-100 text-red-600 font-mono p-1 rounded'>{children}</code>
+    ),
+    pre: ({ children }) => (
+      <Terminal>
+        <span>
+            {children}
+        </span>
+      </Terminal>
     ),
     ...components,
   }
