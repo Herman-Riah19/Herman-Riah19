@@ -1,7 +1,6 @@
 import type { MDXComponents } from 'mdx/types'
 import Image, { ImageProps } from 'next/image'
-import { Terminal, TypingAnimation } from './components/magicui/terminal';
-import matter from 'gray-matter';
+import { Terminal } from './components/magicui/terminal';
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
