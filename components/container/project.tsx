@@ -12,10 +12,10 @@ export const Projects = () => {
   const [localProjects, setLocalProject] = useState<Model[]>([])
 
   useEffect(() => {
-    if(local === "fr") {
-      setLocalProject(ProjectModelFr)
+    if (local === "fr") {
+      setLocalProject(ProjectModelFr.slice(0, 4))  
     } else {
-      setLocalProject(ProjectModelEn)
+      setLocalProject(ProjectModelEn.slice(0, 4)) 
     }
   }, [local])
 
