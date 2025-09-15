@@ -1,7 +1,7 @@
 {
   "Home": {
     "Presentation": "Hermann Christian RAZAFINDRANAIVO",
-    "Slogan": "J'aime passionnément transformer mes idées en programmes fonctionnels dépassant les attentes.",
+    "Slogan": "Vous avez une idée en tête ? Concrétisons-la : propre, rapide et un peu plus cool que prévu.",
     "Developper": "Développeur Full Stack",
     "Speciality": "Je me suis spécialisé en Next.js, TypeScript, Django et Flask",
     "Cta": "Lire mon CV",
@@ -16,9 +16,9 @@
     "Based": "Basé de Next JS",
     "Developper": "Développeur Web Full Stack",
     "Presentation": "Hermann Christian RAZAFINDRANAIVO",
-    "Slogan": "J'aime passionnément transformer mes idées en programmes fonctionnels dépassant les attentes.",
     "AboutTitle": "A propos",
-    "About": "🚀 Bienvenue !  \n 👋 Je m'appelle **Hermann Christian RAZAFINDRANAIVO**, un développeur web full-stack passionné, spécialisé en **Next.js, TypeScript, Django et Flask**. Fort d’une formation en Télécommunications, j’ai orienté ma carrière vers la création de solutions web performantes et évolutives.  \n ✨ **Mon approche ?** Transformer **des idées en applications intuitives, optimisées et robustes**. Je suis expérimenté **en intégration d’API, gestion des bases de données, et visualisations interactives**. Mon objectif est d’allier performance et ergonomie pour offrir des expériences fluides et adaptées aux besoins des utilisateurs.  \n 📌 Toujours en quête de nouvelles opportunités et défis, je suis motivé par l’apprentissage continu et l’amélioration de mes compétences.  \n 💡 Vous avez un projet web en tête ? Discutons-en et donnons-lui vie ensemble !"
+    "Slogan": "Vous avez une idée en tête ? Concrétisons-la : propre, rapide et un peu plus cool que prévu.",
+    "About": "👋 Salut ! Je suis Hermann Christian RAZAFINDRANAIVO — un développeur full-stack qui a d'abord fait un détour par les Télécommunications, diplômé en 2020, avant de vite réaliser : j’ai plus envie de construire des applis web que de déboguer des ondes radio 😅.  \n Alors j’ai changé de cap. Je me suis plongé dans le développement web, et depuis, je n’ai jamais regretté.  \n  \nPendant un moment, j’ai bossé sur des projets locaux, histoire de forger mes compétences et de découvrir des outils qui rendent le code vraiment fun — comme Next.js, TypeScript, Django ou Flask. Mais le vrai tournant est arrivé en 2024, quand j’ai commencé à bosser en ligne, en freelance. Et là, tout s’est ouvert : télétravail, projets variés, liberté créative... exactement ce que je cherchais.  \n  \n💬 Ma devise ? *Planifier avant de coder, structurer avant de faire fonctionner, et surtout, écrire du code propre et maintenable.* Un projet bien pensé, c’est du temps et des migraines en moins — et ton futur toi te remerciera 😄.  \n  \nCôté techno, je suis clairement du genre à penser performance avant tout. J’adore construire des applis **rapides**, **scalables** et — surtout — **qu’on comprend encore après 3 mois sans y toucher**. Je suis plutôt du genre à préférer **Rust** pour un gros projet exigeant en vitesse, ou **Bun js** quand il faut faire mieux que **Node.js** brut. Oui, je suis ce genre de dev qui croit que la performance, ce n’est pas un bonus, c’est un standard.  \n  \nBref, Ce que je kiffe : prendre une idée floue, la structurer, la prototyper, et la livrer propre comme un repo bien documenté. \n  \n📌 Je travaille souvent en freelance et à distance, et je suis toujours partant pour de nouveaux défis — surtout ceux qui me poussent à monter en compétences. Si tu veux un dev qui code propre, qui comprend vite, et qui aime quand ça tourne à 60 FPS, t’es au bon endroit."
   },
   "Navbar": {
     "Home": "Accueil",
