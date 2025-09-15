@@ -32,7 +32,8 @@
   "Project": {
     "Title": "Mes Projects",
     "Checkout": "Découvrez mon dernier travail",
-    "Description": "J'ai travaillé sur une variété de projets, allant des simples sites Web aux applications Web complexes. Voici quelques un de mes préférés."
+    "Description": "J'ai travaillé sur une variété de projets, allant des simples sites Web aux applications Web complexes. Voici quelques un de mes préférés.",
+    "OtherProject": "List des autres projets"
   },
   "Hobies": {
     "SideProject": "Projet parallèle",
