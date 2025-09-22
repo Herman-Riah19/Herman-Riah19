@@ -9,16 +9,26 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { AnimatedGradientText } from "../magicui/animated-gradient-text";
 import { ChevronRight } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 export const Projects = () => {
   const t = useTranslations("Project");
+  const path = usePathname();
   const local = useLocale();
   const [localProjects, setLocalProject] = useState<Model[]>([]);
 
   useEffect(() => {
     if (local === "fr") {
+      if (path === `/fr/projects`) {
+        setLocalProject(ProjectModelFr);
+        return;
+      }
       setLocalProject(ProjectModelFr.slice(0, 4));
     } else {
+      if (path === `/en/projects`) {
+        setLocalProject(ProjectModelEn);
+        return;
+      }
       setLocalProject(ProjectModelEn.slice(0, 4));
     }
   }, [local]);
