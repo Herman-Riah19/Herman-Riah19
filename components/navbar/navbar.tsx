@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import DarkTheme from "@/components/dark-theme";
+import { DarkTheme } from "@/components/dark-theme";
 import NavLangue from "@/components/navbar/navLangue";
 import { Dock, DockIcon } from "@/components/ui/dock";
 import {
@@ -8,7 +8,7 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { Download, Home } from "lucide-react";
+import { Download, Home, Phone, Rss } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useLocale } from "next-intl";
@@ -22,8 +22,8 @@ const Navbar: React.FC = () => {
     window.open(locale === "fr" ? "/assets/cv_Hermann.pdf" : "/assets/Resume_Herman.pdf", "_blank");
   };
 
-  const handleRedirectHome = () => {
-    route.push(`/${locale}/`)
+  const handleRedirect = (path: string) => {
+    route.push(`/${locale}/${path}`);
   }
 
   return (
@@ -37,13 +37,47 @@ const Navbar: React.FC = () => {
                 variant="ghost"
                 size="icon"
                 className={cn("size-12 nav-link")}
-                onClick={handleRedirectHome}
+                onClick={() => handleRedirect("")}
               >
                 <Home className="size-4 ml-4" />
               </Button>
             </TooltipTrigger>
             <TooltipContent>
               <p>Home</p>
+            </TooltipContent>
+          </Tooltip>
+        </DockIcon>
+        <DockIcon>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button
+                variant="ghost"
+                size="icon"
+                className={cn("size-12 nav-link")}
+                onClick={() => handleRedirect("blog")}
+              >
+                <Rss className="size-4 ml-4" />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Blog</p>
+            </TooltipContent>
+          </Tooltip>
+        </DockIcon>
+        <DockIcon>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button
+                variant="ghost"
+                size="icon"
+                className={cn("size-12 nav-link")}
+                onClick={() => handleRedirect("contact")}
+              >
+                <Phone className="size-4 ml-4" />
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Contact</p>
             </TooltipContent>
           </Tooltip>
         </DockIcon>

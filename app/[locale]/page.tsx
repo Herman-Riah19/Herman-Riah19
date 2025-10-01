@@ -1,39 +1,62 @@
-"use client"
-import { useLocale, useTranslations } from 'next-intl'
-import React from 'react'
+"use client";
+
+import React from "react";
+import { useLocale, useTranslations } from "next-intl";
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
+import { Globe } from "@/components/ui/globe";
+import { OrbitingCircles } from "@/components/magicui/orbiting-circles";
+import { CardProfile } from "@/components/card/card-profile";
+import Features from "@/components/landing-page/features";
+import Hero from "@/components/landing-page/hero";
+import Pricing from "@/components/landing-page/pricing";
+import Testimonials from "@/components/landing-page/testimonial";
+import Footer from "@/components/footer";
+import { DotPattern } from "@/components/magicui/dot-pattern";
 import { cn } from "@/lib/utils";
-import { Globe } from '@/components/ui/globe';
-import { OrbitingCircles } from '@/components/magicui/orbiting-circles';
-import { Safari } from '@/components/magicui/safari';
-import { CardProfile } from '@/components/card/card-profile';
-import { DotPattern } from '@/components/magicui/dot-pattern';
+import { Safari } from "@/components/magicui/safari";
+import { MailContact } from "@/components/landing-page/contact";
 
-const languages = ["typescript", "javascript", "Python", "php", "html5", "css3"];
-const frameworks = ["flask", "django", "nodedotjs", "adonisjs", "express", "nextdotjs", "React", "laravel", "angular"]
-const databases = ["postgresql", "mysql", "firebase", "mongodb"]
+const languages = [
+  "typescript",
+  "javascript",
+  "Python",
+  "php",
+  "html5",
+  "css3",
+];
+const frameworks = [
+  "flask",
+  "django",
+  "nodedotjs",
+  "adonisjs",
+  "express",
+  "nextdotjs",
+  "React",
+  "laravel",
+  "angular",
+];
+const databases = ["postgresql", "mysql", "firebase", "mongodb"];
 
-const PageHome = () => {
+const BentoGridInfo = () => {
   const t = useTranslations("Home");
   const locale = useLocale();
   const imagesLanguages = languages.map(
-    (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`,
+    (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`
   );
   const imagesFrameworks = frameworks.map(
-    (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`,
+    (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`
   );
   const imagesDatabases = databases.map(
-    (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`,
+    (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`
   );
 
   const features = [
     {
-      // Icon: "",
       name: t("Presentation"),
       description: t("Slogan"),
       href: "#",
       className: "col-span-3 lg:col-span-1 lg:row-span-2 h-[100vh] lg:h-full",
-      cta: "hermanrazafinbdranaivo@gmail.com",
+      cta: "your@email.com",
       background: (
         <div className="absolute left-14">
           <CardProfile />
@@ -41,31 +64,35 @@ const PageHome = () => {
       ),
     },
     {
-      // Icon: BellIcon,
       name: "",
       description: "",
       href: `/${locale}/about`,
       className: "col-span-3 lg:col-span-2 lg:row-span-1",
-      cta: t("Cta"),
+      cta: t("Resume"),
       background: (
         <div className="absolute flex h-[500px] w-full flex-col items-center justify-center overflow-hidden">
           <span className="absolute top-0 pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center sm:text-6xl lg:text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
             {t("Developper")}
           </span>
           <OrbitingCircles iconSize={40}>
-            {imagesLanguages.map(img => <img src={img} alt="language" width="200" height="200" />)}
+            {imagesLanguages.map((img) => (
+              <img src={img} alt="language" width="200" height="200" />
+            ))}
           </OrbitingCircles>
           <OrbitingCircles iconSize={30} radius={100} reverse speed={2}>
-            {imagesFrameworks.map(img => <img src={img} alt="language" width="200" height="200" />)}
+            {imagesFrameworks.map((img) => (
+              <img src={img} alt="framework" width="200" height="200" />
+            ))}
           </OrbitingCircles>
           <OrbitingCircles iconSize={30} radius={50} speed={3}>
-            {imagesDatabases.map(img => <img src={img} alt="language" width="200" height="200" />)}
+            {imagesDatabases.map((img) => (
+              <img src={img} alt="db" width="200" height="200" />
+            ))}
           </OrbitingCircles>
         </div>
       ),
     },
     {
-      // Icon: "",
       name: t("Project"),
       description: t("Checkout"),
       href: `/${locale}/projects`,
@@ -97,31 +124,42 @@ const PageHome = () => {
       ),
     },
     {
-      // Icon: File,
-      name: t("Resume"),
+      name: t("Blog"),
       description: t("BlogDescription"),
       className: "col-span-3 lg:col-span-1 lg:row-span-1",
       href: `/${locale}/blog`,
-      cta: t("Cta"),
+      cta: t("BlogDescription"),
       background: (
         <div className="absolute flex size-full max-w-lg items-center justify-center overflow-hidden rounded-lg border bg-background px-40 pb-40 pt-8 md:pb-60">
           <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
             Blog
           </span>
           <Globe className="top-28" />
-          <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_200%,rgba(0,0,0,0.2),rgba(255,255,255,0))]" />
         </div>
       ),
     },
   ];
 
   return (
-    <BentoGrid className="grid sm:w-auto lg:w-full grid-cols-3 gap-2 overflow-y-hidden sm:m-2 lg:m-0 p-0">
+    <BentoGrid className="grid sm:w-auto lg:w-full grid-cols-3 gap-2 sm:m-2 lg:m-0 p-0">
       {features.map((feature, idx) => (
         <BentoCard key={idx} {...feature} />
       ))}
     </BentoGrid>
   );
-}
+};
 
-export default PageHome;
+// ----- LANDING PAGE (MAIN) -----
+export default function LandingPage() {
+  return (
+    <main>
+      {/* <Hero /> */}
+      <BentoGridInfo />
+      <Features />
+      {/* <Testimonials /> */}
+      {/* <Pricing /> */}
+      <MailContact />
+      <Footer />
+    </main>
+  );
+}

@@ -63,6 +63,7 @@ const BentoCard = ({
           {name}
         </h3>
         <p className="max-w-lg text-neutral-400">{description}</p>
+        <p className="max-w-lg text-neutral-400"></p>
         <div>
         {href !== "" && (
           <Button variant="secondary" asChild className="pointer-events-auto w-auto">

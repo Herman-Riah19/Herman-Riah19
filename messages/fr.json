@@ -1,16 +1,67 @@
 {
   "Home": {
+    "Hello": "👨‍💻 Salut, je suis",
     "Presentation": "Hermann Christian RAZAFINDRANAIVO",
     "Slogan": "Vous avez une idée en tête ? Concrétisons-la : propre, rapide et un peu plus cool que prévu.",
     "Developper": "Développeur Full Stack",
     "Speciality": "Je me suis spécialisé en Next.js, TypeScript, Django et Flask",
-    "Cta": "Lire mon CV",
+    "Resume": "Lire mon CV",
     "Project": "Mes Projets",
     "Discover": "Découvrir",
     "Checkout": "Découvrez mon dernier travail",
     "Blog": "Blog",
     "Experiences": "Découvrez mes informations professionnelles",
-    "BlogDescription": "Découvrez mes articles de blog"
+    "BlogDescription": "Découvrez mes articles de blog",
+    "Features": {
+      "header": "Ce que je fais",
+      "feature1": {
+        "title": "Applications Web",
+        "text": "Développement d’interfaces modernes et réactives avec React et Next.js."
+      },
+      "feature2": {
+        "title": "APIs Performantes",
+        "text": "Création d’APIs REST et GraphQL robustes avec Node.js et NestJS."
+      },
+      "feature3": {
+        "title": "Bases de Données",
+        "text": "Conception et gestion de bases de données PostgreSQL et MongoDB."
+      },
+      "feature4": {
+        "title": "DevOps & Cloud",
+        "text": "Déploiement sur Docker, CI/CD, hébergement sur AWS et Vercel."
+      }
+    },
+    "Pricing": {
+      "header": "Tarifs et prestations",
+      "column1": {
+        "title": "Développement Web",
+        "price": "Sur devis",
+        "features": {
+          "feature1": "Applications web complètes",
+          "feature2": "Front + Back end",
+          "feature3": "Responsive et optimisées"
+        }
+      },
+      "column2": {
+        "title": "Freelance / Mission",
+        "price": "À partir de 350€/jour",
+        "features": {
+          "feature1": "Intégration dans vos équipes",
+          "feature2": "Méthodes agiles",
+          "feature3": "Livraison rapide"
+        },
+        "popular": true
+      },
+      "column3": {
+        "title": "Consulting & Audit",
+        "price": "Sur demande",
+        "features": {
+          "feature1": "Audit de code",
+          "feature2": "Optimisation des performances",
+          "feature3": "Conseils en architecture logicielle"
+        }
+      }
+    }
   },
   "Welcome": {
     "Based": "Basé de Next JS",
@@ -39,5 +90,20 @@
     "SideProject": "Projet parallèle",
     "Intro": "J'aime coder des choses",
     "Description": "Pendant et après mes études universitaires, je me suis plongé dans la réalisation de divers projets passionnants tout en affinant mes compétences en développement. Chaque nouveau défi m'a permis d'explorer et d'approfondir mes connaissances, m'apportant une expérience précieuse et un enthousiasme grandissant pour l'innovation technologique."
+  },
+  "Contact": {
+    "Title": "Contactez-moi",
+    "Subtitle": "Vous avez un projet en tête ou simplement envie de discuter ? N'hésitez pas à me contacter !",
+    "Email": "E-mail",
+    "Subject": "Sujet de l’email",
+    "Message": "Message",
+    "Send": "Envoyer le message",
+    "Success": "Merci pour votre message ! Je vous répondrai dès que possible.",
+    "Error": "Une erreur est survenue. Veuillez réessayer plus tard.",
+    "Placeholder": {
+      "Email": "Entrer ici votre adresse email",
+      "Subject": "Choisissez un service",
+      "Message": "Décriver votre message ici"
+    }
   }
 }

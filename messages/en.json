@@ -1,16 +1,67 @@
 {
   "Home": {
+    "Hello": "👨‍💻 Hi, I am",
     "Presentation": "Hermann Christian RAZAFINDRANAIVO",
     "Slogan": "Got an idea in mind? Let’s make it real — and make it clean, fast, and just a little bit cooler than expected.",
     "Developper": "Full Stack Web Developer",
     "Speciality": "I specialized in Next.js, TypeScript, Django and Flask",
-    "Cta": "Read more...",
+    "Resume": "Read more...",
     "Project": "My Projects",
     "Discover": "Discover",
     "Checkout": "Check out my latest work",
     "Blog": "Blog",
     "Experiences": "Discover my professional information",
-    "BlogDescription": "Discover my blog articles"
+    "BlogDescription": "Discover my blog articles",
+    "Features": {
+      "header": "What I do",
+      "feature1": {
+        "title": "Web Applications",
+        "text": "Development of modern and responsive interfaces with React and Next.js."
+      },
+      "feature2": {
+        "title": "High-Performance APIs",
+        "text": "Creation of robust REST and GraphQL APIs with Node.js and NestJS."
+      },
+      "feature3": {
+        "title": "Databases",
+        "text": "Design and management of PostgreSQL and MongoDB databases."
+      },
+      "feature4": {
+        "title": "DevOps & Cloud",
+        "text": "Deployment with Docker, CI/CD, hosting on AWS and Vercel."
+      }
+    },
+    "Pricing": {
+      "header": "Pricing & Services",
+      "column1": {
+        "title": "Web Development",
+        "price": "On estimate",
+        "features": {
+          "feature1": "Complete web applications",
+          "feature2": "Front + Back end",
+          "feature3": "Responsive and optimized"
+        }
+      },
+      "column2": {
+        "title": "Freelance / Mission",
+        "price": "From €350/day",
+        "features": {
+          "feature1": "Integration into your teams",
+          "feature2": "Agile methods",
+          "feature3": "Fast delivery"
+        },
+        "popular": true
+      },
+      "column3": {
+        "title": "Consulting & Audit",
+        "price": "On request",
+        "features": {
+          "feature1": "Code audit",
+          "feature2": "Performance optimization",
+          "feature3": "Software architecture advice"
+        }
+      }
+    }
   },
   "Welcome": {
     "Based": "Based in Nextjs",
@@ -28,7 +79,7 @@
     "Projects": "Projects",
     "Contact": "Contact",
     "Hobbies": "Hobbies"
-  }, 
+  },
   "Project": {
     "Title": "My Project",
     "Checkout": "Check out my latest work",
@@ -39,5 +90,20 @@
     "SideProject": "Side project",
     "Intro": "I like building things",
     "Description": "During and after my university studies, I immersed myself in carrying out various exciting projects while honing my development skills. Each new challenge allowed me to explore and deepen my knowledge, providing me with valuable experience and a growing enthusiasm for technological innovation."
+  },
+  "Contact": {
+    "Title": "Contact me",
+    "Subtitle": "Do you have a project in mind or just want to chat? Feel free to reach out!",
+    "Email": "Email",
+    "Subject": "Email subject",
+    "Message": "Message",
+    "Send": "Send message",
+    "Success": "Thank you for your message! I will reply as soon as possible.",
+    "Error": "An error occurred. Please try again later.",
+    "Placeholder": {
+      "Email": "Enter your email address here",
+      "Subject": "Choose a service",
+      "Message": "Describe your message here"
+    }
   }
 }

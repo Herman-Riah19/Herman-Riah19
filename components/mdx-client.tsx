@@ -1,9 +1,8 @@
-"use client"; // nécessaire pour l'exécution côté client
+"use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { MDXProvider } from "@mdx-js/react";
-import { useMDXComponents } from "@/mdx-components"; // ton wrapper MDX personnalisé
-import { compile } from "@mdx-js/mdx";
+import { useMDXComponents } from "@/mdx-components";
 
 export function MDXClientProvider({ children }: { children: React.ReactNode }) {
   return (

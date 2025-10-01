@@ -14,10 +14,46 @@ const fontSans = FontSans({
 })
 
 export const metadata: Metadata = {
-  title: "Herman Riah",
-  description: "Portfolio developper",
+  title: "Herman Riah - Web Developer Portfolio",
+  description: "Showcasing the work and services of Herman Riah, a passionate web developer specializing in modern, responsive, and high-performance websites.",
   icons: {
     icon: 'next.svg'
+  },
+  keywords: [
+    "Herman Riah",
+    "Web Developer",
+    "Portfolio",
+    "Frontend",
+    "Backend",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "UI/UX",
+    "Web Development Services"
+  ],
+  authors: [
+    { name: "Herman Riah", url: "https://herman-riah19.vercel.app/en" }
+  ],
+  creator: "Herman Riah",
+  openGraph: {
+    title: "Herman Riah - Web Developer Portfolio",
+    description: "Discover my web development projects and services. Let's build something amazing together!",
+    url: "https://herman-riah19.vercel.app/en",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Herman Riah Portfolio"
+      }
+    ],
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Herman Riah - Web Developer Portfolio",
+    description: "Explore my web development work and services.",
+    images: ["/og-image.png"]
   }
 }
 
