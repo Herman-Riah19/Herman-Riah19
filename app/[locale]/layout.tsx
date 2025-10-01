@@ -1,23 +1,25 @@
 import type { Metadata } from "next";
-import { Inter as FontSans } from "next/font/google"
-import { cn } from '@/lib/utils';
+import { Inter as FontSans } from "next/font/google";
+import { cn } from "@/lib/utils";
 import { ThemeProvider } from "next-themes";
 import "@/styles/globals.css";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Navbar from "@/components/navbar/navbar";
 import { NeonGradientCard } from "@/components/magicui/neon-gradient-card";
+import { Toaster } from "sonner";
 
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
-})
+});
 
 export const metadata: Metadata = {
   title: "Herman Riah - Web Developer Portfolio",
-  description: "Showcasing the work and services of Herman Riah, a passionate web developer specializing in modern, responsive, and high-performance websites.",
+  description:
+    "Showcasing the work and services of Herman Riah, a passionate web developer specializing in modern, responsive, and high-performance websites.",
   icons: {
-    icon: 'next.svg'
+    icon: "next.svg",
   },
   keywords: [
     "Herman Riah",
@@ -29,67 +31,74 @@ export const metadata: Metadata = {
     "Next.js",
     "TypeScript",
     "UI/UX",
-    "Web Development Services"
+    "Web Development Services",
   ],
   authors: [
-    { name: "Herman Riah", url: "https://herman-riah19.vercel.app/en" }
+    { name: "Herman Riah", url: "https://herman-riah19.vercel.app/en" },
   ],
   creator: "Herman Riah",
   openGraph: {
     title: "Herman Riah - Web Developer Portfolio",
-    description: "Discover my web development projects and services. Let's build something amazing together!",
+    description:
+      "Discover my web development projects and services. Let's build something amazing together!",
     url: "https://herman-riah19.vercel.app/en",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Herman Riah Portfolio"
-      }
+        alt: "Herman Riah Portfolio",
+      },
     ],
-    type: "website"
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Herman Riah - Web Developer Portfolio",
     description: "Explore my web development work and services.",
-    images: ["/og-image.png"]
-  }
-}
+    images: ["/og-image.png"],
+  },
+};
 
 export default function RootLayout({
   children,
-  params: {locale}
+  params: { locale },
 }: Readonly<{
   children: React.ReactNode;
-  params: {locale: string};
+  params: { locale: string };
 }>) {
-  const message = useMessages()
+  const message = useMessages();
   return (
     <html lang={locale}>
       <head>
-        <meta name="google-site-verification" content="E28uHybi33uoxITvAn5NzpOUu3aZiCoBxQMf-ukGXo0" />
+        <meta
+          name="google-site-verification"
+          content="E28uHybi33uoxITvAn5NzpOUu3aZiCoBxQMf-ukGXo0"
+        />
         <title>Herman Riah: Portfolio</title>
       </head>
-      <body className={cn(
-        "bg-background font-sans antialiased max-w-6xl mx-auto py-2",
+      <body
+        className={cn(
+          "bg-background font-sans antialiased max-w-6xl mx-auto py-2",
           fontSans.variable
-        )} >
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <NextIntlClientProvider messages={message}>
-              <TooltipProvider>
+        )}
+      >
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <NextIntlClientProvider messages={message}>
+            <TooltipProvider>
               <NeonGradientCard className="m-0 p-0">
                 <Navbar />
-                {children}  
+                {children}
+                <Toaster />
               </NeonGradientCard>
-              </TooltipProvider>
-            </NextIntlClientProvider>  
-          </ThemeProvider>
+            </TooltipProvider>
+          </NextIntlClientProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
