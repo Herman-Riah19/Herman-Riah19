@@ -68,7 +68,7 @@ export const DarkTheme = ({ className }: Props) => {
 
   return (
     <button ref={buttonRef} onClick={toggleTheme} className={cn(className)}>
-      {isDark ? <Sun /> : <Moon />}
+      {isDark ? <Sun className="size-4 ml-4" /> : <Moon className="size-4 ml-4" />}
     </button>
   )
 }
