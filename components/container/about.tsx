@@ -10,8 +10,14 @@ const About = () => {
 
   return (
     <section id="about" className='mt-4'>
-      <BlurFade delay={BLUR_FADE_DELAY * 3}>
-        <h2 className="text-xl font-bold">{t('AboutTitle')}</h2>
+      <BlurFade delay={BLUR_FADE_DELAY * 11}>
+        <div className="flex flex-col items-center justify-center space-y-4 text-center mb-6">
+          <div className="space-y-2">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+              {t("AboutTitle")}
+            </h2>
+          </div>
+        </div>
       </BlurFade>
       <BlurFade delay={BLUR_FADE_DELAY * 4} className='text-justify'>
         <Markdown className='prose max-w-full text-pretty font-sans text-lg text-primary dark:prose-invert'>
