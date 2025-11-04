@@ -79,7 +79,7 @@ export default function RootLayout({
       </head>
       <body
         className={cn(
-          "bg-background font-sans antialiased max-w-6xl mx-auto py-2",
+          "bg-background font-sans antialiased overflow-x-hidden",
           fontSans.variable
         )}
       >

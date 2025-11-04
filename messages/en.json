@@ -1,7 +1,10 @@
 {
   "Home": {
-    "Hello": "👨‍💻 Hi, I am",
-    "Presentation": "Hermann Christian RAZAFINDRANAIVO",
+    "Hello": "Hi, I am",
+    "Firstname": "Hermann Christian",
+    "Lastname": "RAZAFINDRANAIVO",
+    "Email": "hermanrazafinbdranaivo@gmail.com",
+    "Services": "UI/UX Integration · Web Developer · API Developer · AI Integration",
     "Slogan": "Got an idea in mind? Let’s make it real — and make it clean, fast, and just a little bit cooler than expected.",
     "Developper": "Full Stack Web Developer",
     "Speciality": "I specialized in Next.js, TypeScript, Django and Flask",
@@ -13,7 +16,9 @@
     "Experiences": "Discover my professional information",
     "BlogDescription": "Discover my blog articles",
     "Features": {
-      "header": "What I do",
+      "Title": "What I do",
+      "Checkout": "Complete service proposal",
+      "Description": "Comprehensive service: audit and consulting, UI/UX design, Front-end (Next.js, TypeScript) and Back-end (Node.js, Django) development, API integration, performance and SEO optimization, testing, maintenance, and deployment. Result: a responsive, fast application that is easily findable on search engines.",
       "feature1": {
         "title": "Web Applications",
         "text": "Development of modern and responsive interfaces with React and Next.js."
@@ -23,8 +28,8 @@
         "text": "Creation of robust REST and GraphQL APIs with Node.js and NestJS."
       },
       "feature3": {
-        "title": "Databases",
-        "text": "Design and management of PostgreSQL and MongoDB databases."
+        "title": "AI Integration",
+        "text": "Integration of AI models and services, including prompt engineering, model deployment, and API integrations (OpenAI, Hugging Face, etc.)."
       },
       "feature4": {
         "title": "DevOps & Cloud",
@@ -32,14 +37,18 @@
       }
     },
     "Pricing": {
-      "header": "Pricing & Services",
+      "Title": "Pricing & Services",
+      "Checkout": "Check out our pricing options",
+      "Description": "Explore our competitive pricing and service offerings tailored to your needs.",
       "column1": {
         "title": "Web Development",
         "price": "On estimate",
         "features": {
           "feature1": "Complete web applications",
           "feature2": "Front + Back end",
-          "feature3": "Responsive and optimized"
+          "feature3": "Responsive and optimized",
+          "feature4": "SEO friendly",
+          "feature5": "User-friendly interfaces"
         }
       },
       "column2": {
@@ -48,7 +57,9 @@
         "features": {
           "feature1": "Integration into your teams",
           "feature2": "Agile methods",
-          "feature3": "Fast delivery"
+          "feature3": "Fast delivery",
+          "feature4": "Regular updates",
+          "feature5": "Post-project support"
         },
         "popular": true
       },
@@ -58,7 +69,9 @@
         "features": {
           "feature1": "Code audit",
           "feature2": "Performance optimization",
-          "feature3": "Software architecture advice"
+          "feature3": "Software architecture advice",
+          "feature4": "Security assessment",
+          "feature5": "Best practices recommendations"
         }
       }
     }

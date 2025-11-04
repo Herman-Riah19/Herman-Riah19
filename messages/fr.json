@@ -1,9 +1,12 @@
 {
   "Home": {
-    "Hello": "👨‍💻 Salut, je suis",
-    "Presentation": "Hermann Christian RAZAFINDRANAIVO",
+    "Hello": "Salut, je suis",
+    "Firstname": "Hermann Christian",
+    "Lastname": "RAZAFINDRANAIVO",
+    "Email": "hermanrazafinbdranaivo@gmail.com",
     "Slogan": "Vous avez une idée en tête ? Concrétisons-la : propre, rapide et un peu plus cool que prévu.",
     "Developper": "Développeur Full Stack",
+    "Services": "Intégration UI/UX · Développeur Web · Développeur d'API · Intégration IA",
     "Speciality": "Je me suis spécialisé en Next.js, TypeScript, Django et Flask",
     "Resume": "Lire mon CV",
     "Project": "Mes Projets",
@@ -13,7 +16,9 @@
     "Experiences": "Découvrez mes informations professionnelles",
     "BlogDescription": "Découvrez mes articles de blog",
     "Features": {
-      "header": "Ce que je fais",
+      "Title": "Ce que je fais",
+      "Checkout": "Proposition de service complète",
+      "Description": "Prestation complète : audit et conseil, conception UI/UX, développement Front (Next.js, TypeScript) et Back (Node.js, Django), intégration d’APIs, optimisation des performances et du SEO, tests, maintenance et déploiement. Résultat : une application responsive, rapide et facilement trouvable sur les moteurs de recherche.",
       "feature1": {
         "title": "Applications Web",
         "text": "Développement d’interfaces modernes et réactives avec React et Next.js."
@@ -23,8 +28,8 @@
         "text": "Création d’APIs REST et GraphQL robustes avec Node.js et NestJS."
       },
       "feature3": {
-        "title": "Bases de Données",
-        "text": "Conception et gestion de bases de données PostgreSQL et MongoDB."
+        "title": "Intégration IA",
+        "text": "Intégration de modèles et de services d'IA, y compris l'ingénierie des invites, le déploiement de modèles et les intégrations d'API (OpenAI, Hugging Face, etc.)."
       },
       "feature4": {
         "title": "DevOps & Cloud",
@@ -32,34 +37,42 @@
       }
     },
     "Pricing": {
-      "header": "Tarifs et prestations",
+      "Title": "Tarification & Services",
+      "Checkout": "Découvrez nos options de tarification",
+      "Description": "Explorez nos tarifs compétitifs et nos offres de services adaptées à vos besoins.",
       "column1": {
-        "title": "Développement Web",
-        "price": "Sur devis",
-        "features": {
-          "feature1": "Applications web complètes",
-          "feature2": "Front + Back end",
-          "feature3": "Responsive et optimisées"
-        }
+      "title": "Développement Web",
+      "price": "Sur estimation",
+      "features": {
+        "feature1": "Applications web complètes",
+        "feature2": "Front + Back end",
+        "feature3": "Réactif et optimisé",
+        "feature4": "Compatible SEO",
+        "feature5": "Interfaces conviviales"
+      }
       },
       "column2": {
-        "title": "Freelance / Mission",
-        "price": "À partir de 350€/jour",
-        "features": {
-          "feature1": "Intégration dans vos équipes",
-          "feature2": "Méthodes agiles",
-          "feature3": "Livraison rapide"
-        },
-        "popular": true
+      "title": "Freelance / Mission",
+      "price": "À partir de 350 €/jour",
+      "features": {
+        "feature1": "Intégration dans vos équipes",
+        "feature2": "Méthodes agiles",
+        "feature3": "Livraison rapide",
+        "feature4": "Mises à jour régulières",
+        "feature5": "Support post-projet"
+      },
+      "popular": true
       },
       "column3": {
-        "title": "Consulting & Audit",
-        "price": "Sur demande",
-        "features": {
-          "feature1": "Audit de code",
-          "feature2": "Optimisation des performances",
-          "feature3": "Conseils en architecture logicielle"
-        }
+      "title": "Consultation & Audit",
+      "price": "Sur demande",
+      "features": {
+        "feature1": "Audit de code",
+        "feature2": "Optimisation des performances",
+        "feature3": "Conseils en architecture logicielle",
+        "feature4": "Évaluation de la sécurité",
+        "feature5": "Recommandations des meilleures pratiques"
+      }
       }
     }
   },

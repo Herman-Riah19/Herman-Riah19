@@ -49,14 +49,13 @@ export function MailContact() {
   };
 
   return (
-    <Card id="contact" className="w-full shadow-xl">
+    <Card id="contact" className="w-full shadow-xl max-w-6xl mx-auto mt-8">
       <CardHeader className="flex flex-col justify-center items-center text-center">
         <CardTitle className="text-2xl">{t("Title")}</CardTitle>
         <CardDescription className="text-xl">{t("Subtitle")}</CardDescription>
       </CardHeader>
       <CardContent className="w-full m-2">
         <FormProvider {...formMethods}>
-          {/* onSubmit doit transformer les données en FormData */}
           <form
             action={handleSubmit} 
             className="flex flex-col w-full gap-4 p-4"

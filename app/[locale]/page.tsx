@@ -9,12 +9,13 @@ import { CardProfile } from "@/components/card/card-profile";
 import Features from "@/components/landing-page/features";
 import Hero from "@/components/landing-page/hero";
 import Pricing from "@/components/landing-page/pricing";
-import Testimonials from "@/components/landing-page/testimonial";
 import Footer from "@/components/footer";
 import { DotPattern } from "@/components/magicui/dot-pattern";
 import { cn } from "@/lib/utils";
 import { Safari } from "@/components/magicui/safari";
 import { MailContact } from "@/components/landing-page/contact";
+import { VerticalScroll } from "@/components/animation/animationScroll";
+import { Slogan } from "@/components/landing-page/slogan";
 
 const languages = [
   "typescript",
@@ -52,11 +53,11 @@ const BentoGridInfo = () => {
 
   const features = [
     {
-      name: t("Presentation"),
+      name: `${t("Firstname")} ${t("Lastname")}`,
       description: t("Slogan"),
       href: "#",
       className: "col-span-3 lg:col-span-1 lg:row-span-2 h-[100vh] lg:h-full",
-      cta: "your@email.com",
+      cta: t("Email"),
       background: (
         <div className="absolute left-14">
           <CardProfile />
@@ -102,24 +103,34 @@ const BentoGridInfo = () => {
         <div className="absolute flex h-[300px] w-full min-w-[320px] flex-col items-center justify-center overflow-hidden">
           <DotPattern
             className={cn(
-              "m-0 p-0 w-full [mask-image:radial-gradient(300px_circle_at_center,white,transparent)]",
+              "m-0 p-0 w-full [mask-image:radial-gradient(300px_circle_at_center,white,transparent)]"
             )}
           />
-          <Safari url="magicui.design"
+          <Safari
+            url="magicui.design"
             className="size-60 absolute -top-16 left-2 right-2"
-            imageSrc="/assets/image/Jupiter.png" />
-          <Safari url="magicui.design"
+            imageSrc="/assets/image/Jupiter.png"
+          />
+          <Safari
+            url="magicui.design"
             className="size-60 absolute -top-6 left-14 right-2"
-            imageSrc="/assets/image/trink.png" />
-          <Safari url="magicui.design"
+            imageSrc="/assets/image/trink.png"
+          />
+          <Safari
+            url="magicui.design"
             className="size-60 absolute top-4 left-24 right-2"
-            imageSrc="/assets/image/ChatGnoseIA.png" />
-          <Safari url="magicui.design"
+            imageSrc="/assets/image/ChatGnoseIA.png"
+          />
+          <Safari
+            url="magicui.design"
             className="size-60 absolute top-14 left-[8.5rem] right-2"
-            imageSrc="/assets/image/upscaler.png" />
-          <Safari url="magicui.design"
+            imageSrc="/assets/image/upscaler.png"
+          />
+          <Safari
+            url="magicui.design"
             className="size-60 absolute top-28 left-[11.5rem] right-2"
-            imageSrc="/assets/image/openmyst.PNG" />
+            imageSrc="/assets/image/openmyst.PNG"
+          />
         </div>
       ),
     },
@@ -152,13 +163,25 @@ const BentoGridInfo = () => {
 // ----- LANDING PAGE (MAIN) -----
 export default function LandingPage() {
   return (
-    <main>
-      {/* <Hero /> */}
-      <BentoGridInfo />
-      <Features />
-      {/* <Testimonials /> */}
-      {/* <Pricing /> */}
-      <MailContact />
+    <main className="bg-background p-4">
+      <VerticalScroll>
+        <Hero />
+      </VerticalScroll>
+      <VerticalScroll>
+        <div className="max-w-6xl mx-auto py-2">
+          <BentoGridInfo />
+        </div>
+      </VerticalScroll>
+      <VerticalScroll>
+        <Features />
+      </VerticalScroll>
+      <VerticalScroll>
+        <Pricing />
+      </VerticalScroll>
+      <Slogan />
+      <VerticalScroll className="bg-transparent">
+        <MailContact />
+      </VerticalScroll>
       <Footer />
     </main>
   );

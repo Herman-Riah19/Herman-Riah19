@@ -5,10 +5,6 @@ import BlurFade from "./blur-fade";
 import { CardProject } from "../card/cardProject";
 import { ProjectModelFr, ProjectModelEn, Model } from "@/model/ProjectModel";
 import { useLocale, useTranslations } from "next-intl";
-import Link from "next/link";
-import { cn } from "@/lib/utils";
-import { AnimatedGradientText } from "../magicui/animated-gradient-text";
-import { ChevronRight } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { LinkButton } from "../magicui/link-button";
 
