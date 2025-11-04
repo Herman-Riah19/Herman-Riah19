@@ -56,7 +56,7 @@ export default function Features() {
         {features.map((f, idx) => (
           <Card
             key={f.title}
-            className={`${idx === 3 ? "lg:col-start-2" : ""} relative overflow-hidden hover:shadow-lg transition-shadow duration-300`}
+            className={`${idx === 3 ? "lg:col-start-2" : ""} relative overflow-hidden border-none shadow-none`}
           >
             <MagicCard>
               <CardHeader>
@@ -67,7 +67,6 @@ export default function Features() {
                 {f.text}
               </CardContent>
             </MagicCard>
-            <BorderBeam duration={8} size={100} />
           </Card>
         ))}
       </div>
