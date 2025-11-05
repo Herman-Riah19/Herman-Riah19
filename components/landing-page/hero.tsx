@@ -50,7 +50,9 @@ export default function Hero() {
             {t("Services")}
           </Badge>
 
-          <AnimatedGradientText className="text-3xl">{t("Hello")}</AnimatedGradientText>
+          <AnimatedGradientText className="text-3xl">
+            {t("Hello")}
+          </AnimatedGradientText>
 
           <h1 className="text-xl md:text-5xl font-extrabold mb-4">
             {t("Firstname")}
@@ -61,6 +63,28 @@ export default function Hero() {
           </h1>
 
           <p className="text-xl text-muted-foreground">{t("Email")}</p>
+          <motion.div
+            variants={fadeIn}
+            initial="hidden"
+            animate="visible"
+            transition={{ delay: 0.6 }}
+            className="flex justify-center gap-4 mt-8"
+          >
+            {socials.map((s) => (
+              <a
+                key={s.name}
+                href={s.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={cn(
+                  "p-3 rounded-full transition-colors",
+                  "bg-background border border-foreground/10 hover:bg-primary hover:text-primary-foreground"
+                )}
+              >
+                <s.icon className="w-6 h-6" />
+              </a>
+            ))}
+          </motion.div>
         </motion.div>
 
         <motion.div
@@ -70,47 +94,24 @@ export default function Hero() {
           className="mt-10 flex flex-col justify-center"
         >
           <div className="flex justify-center ">
-          <Card
-            className={cn(
-              "relative overflow-hidden border-0 p-4 rounded-full shadow-xl",
-              "bg-background/80 [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)]",
-              "transform-gpu dark:bg-background dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]"
-            )}
-          >
-            <Image
-              src="/assets/image/profile-remove.png"
-              alt="Profile"
-              width={250}
-              height={250}
-              className="relative rounded-full z-10"
-            />
-            <DotPattern />
-          </Card>
-          </div>
-        <motion.div
-          variants={fadeIn}
-          initial="hidden"
-          animate="visible"
-          transition={{ delay: 0.6 }}
-          className="flex justify-center gap-4 mt-8"
-        >
-          {socials.map((s) => (
-            <a
-              key={s.name}
-              href={s.href}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Card
               className={cn(
-                "p-3 rounded-full transition-colors",
-                "bg-background border border-foreground/10 hover:bg-primary hover:text-primary-foreground"
+                "relative overflow-hidden border-0 p-4 rounded-full shadow-xl",
+                "bg-background/80 [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)]",
+                "transform-gpu dark:bg-background dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]"
               )}
             >
-              <s.icon className="w-6 h-6" />
-            </a>
-          ))}
+              <Image
+                src="/assets/image/profile-remove.png"
+                alt="Profile"
+                width={500}
+                height={500}
+                className="relative rounded-full z-10"
+              />
+              <DotPattern />
+            </Card>
+          </div>
         </motion.div>
-        </motion.div>
-
       </div>
     </section>
   );
