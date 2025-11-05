@@ -125,7 +125,7 @@ const socials = [
   },
   {
     name: "Instagram",
-    href: "https://www.instagram.com/riah.hermann",
+    href: "https://www.instagram.com/hermannriah/",
     icon: Instagram,
   },
   {
