@@ -11,6 +11,3 @@ export function MDXClientProvider({ children }: { children: React.ReactNode }) {
     </MDXProvider>
   );
 }
-
-
-
