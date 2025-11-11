@@ -43,10 +43,7 @@ export default function Hero() {
           animate="visible"
           className="text-left relative justify-center items-start flex flex-col p-4 lg:p-8"
         >
-          <Badge
-            variant="secondary"
-            className="text-sm tracking-wide text-foreground/80 mb-5"
-          >
+          <Badge className="text-md tracking-wide mb-5">
             {t("Services")}
           </Badge>
 
