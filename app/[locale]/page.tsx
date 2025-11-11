@@ -76,18 +76,18 @@ const BentoGridInfo = () => {
             {t("Developper")}
           </span>
           <OrbitingCircles iconSize={40}>
-            {imagesLanguages.map((img) => (
-              <img src={img} alt="language" width="200" height="200" />
+            {imagesLanguages.map((img, idx) => (
+              <img key={idx} src={img} alt="language" width="200" height="200" />
             ))}
           </OrbitingCircles>
           <OrbitingCircles iconSize={30} radius={100} reverse speed={2}>
-            {imagesFrameworks.map((img) => (
-              <img src={img} alt="framework" width="200" height="200" />
+            {imagesFrameworks.map((img, idx) => (
+              <img key={idx} src={img} alt="framework" width="200" height="200" />
             ))}
           </OrbitingCircles>
           <OrbitingCircles iconSize={30} radius={50} speed={3}>
-            {imagesDatabases.map((img) => (
-              <img src={img} alt="db" width="200" height="200" />
+            {imagesDatabases.map((img, idx) => (
+              <img key={idx} src={img} alt="db" width="200" height="200" />
             ))}
           </OrbitingCircles>
         </div>
