@@ -1,11 +1,12 @@
+import { NeonGradientCard } from "@/components/magicui/neon-gradient-card";
 import type { Metadata } from "next";
-import React from 'react'
+import React from "react";
 
 export const metadata: Metadata = {
   title: "Blog - Herman Riah",
   description: "All my blog",
   icons: {
-    icon: 'next.svg'
+    icon: "next.svg",
   },
   authors: [{ name: "Herman Riah", url: "https://hermanriah.com" }],
   keywords: ["blog", "herman riah", "articles", "tech", "development"],
@@ -19,26 +20,26 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Blog - Herman Riah"
-      }
+        alt: "Blog - Herman Riah",
+      },
     ],
     locale: "en_US",
-    type: "website"
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Blog - Herman Riah",
     description: "All my blog",
-    images: ["/og-image.png"]
-  }
-}
+    images: ["/og-image.png"],
+  },
+};
 
-const LayoutBlog = ({children}: Readonly<{children: React.ReactNode;}>) => {
+export default function LayoutBlog({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <div className="py-12 sm:py-16 px-6 max-w-6xl mx-auto">
-        {children}
+      <NeonGradientCard>{children}</NeonGradientCard>
     </div>
-  )
+  );
 }
-
-export default LayoutBlog

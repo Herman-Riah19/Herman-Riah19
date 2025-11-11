@@ -9,13 +9,13 @@ import { CardProfile } from "@/components/card/card-profile";
 import Features from "@/components/landing-page/features";
 import Hero from "@/components/landing-page/hero";
 import Pricing from "@/components/landing-page/pricing";
-import Footer from "@/components/footer";
 import { DotPattern } from "@/components/magicui/dot-pattern";
 import { cn } from "@/lib/utils";
 import { Safari } from "@/components/magicui/safari";
 import { MailContact } from "@/components/landing-page/contact";
 import { VerticalScroll } from "@/components/animation/animationScroll";
 import { Slogan } from "@/components/landing-page/slogan";
+import { NeonGradientCard } from "@/components/magicui/neon-gradient-card";
 
 const languages = [
   "typescript",
@@ -163,7 +163,7 @@ const BentoGridInfo = () => {
 // ----- LANDING PAGE (MAIN) -----
 export default function LandingPage() {
   return (
-    <main className="bg-background p-4">
+    <main className="p-4">
       <VerticalScroll>
         <Hero />
       </VerticalScroll>
@@ -172,17 +172,18 @@ export default function LandingPage() {
           <BentoGridInfo />
         </div>
       </VerticalScroll>
-      <VerticalScroll>
-        <Features />
-      </VerticalScroll>
-      <VerticalScroll>
-        <Pricing />
-      </VerticalScroll>
+      <NeonGradientCard className="m-0 p-0">
+        <VerticalScroll>
+          <Features />
+        </VerticalScroll>
+        <VerticalScroll>
+          <Pricing />
+        </VerticalScroll>
+      </NeonGradientCard>
       <Slogan />
       <VerticalScroll className="bg-transparent">
         <MailContact />
       </VerticalScroll>
-      <Footer />
     </main>
   );
 }

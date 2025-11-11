@@ -1,7 +1,6 @@
 "use client"
 import React from 'react';
 import About from '@/components/container/about';
-import Footer from '@/components/footer';
 import Welcome from '@/components/container/welcome';
 import ListTech from '@/components/container/listTech';
 import InfoContact from '@/components/container/info-contact';
@@ -11,7 +10,7 @@ import { Projects } from '@/components/container/project';
 import HobieProject from '@/components/container/hobieProject';
 import Profile from '@/components/container/profile';
 
-const HermanPage = () => {
+export default async function AboutPage () {
   
   return (
     <div id="home">
@@ -30,9 +29,6 @@ const HermanPage = () => {
           <HobieProject />
         </div>
       </section>
-      <Footer />
     </div>
   )
 }
-
-export default HermanPage

@@ -5,9 +5,9 @@ import { ThemeProvider } from "next-themes";
 import "@/styles/globals.css";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import Navbar from "@/components/navbar/navbar";
-import { NeonGradientCard } from "@/components/magicui/neon-gradient-card";
+import { Navbar } from "@/components/navbar/navbar";
 import { Toaster } from "sonner";
+import { Footer } from "@/components/footer";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -91,11 +91,10 @@ export default function RootLayout({
         >
           <NextIntlClientProvider messages={message}>
             <TooltipProvider>
-              <NeonGradientCard className="m-0 p-0">
-                <Navbar />
-                {children}
-                <Toaster />
-              </NeonGradientCard>
+              <Navbar />
+              {children}
+              <Toaster />
+              <Footer />
             </TooltipProvider>
           </NextIntlClientProvider>
         </ThemeProvider>

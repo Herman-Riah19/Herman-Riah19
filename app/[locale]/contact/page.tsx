@@ -1,12 +1,10 @@
-import Footer from '@/components/footer';
-import { MailContact } from '@/components/landing-page/contact';
-import * as React from 'react';
+import { MailContact } from "@/components/landing-page/contact";
+import * as React from "react";
 
-export default function PageContact () {
+export default function PageContact() {
   return (
-    <main role='main'>
-        <MailContact />
-        <Footer />
-    </main>
-  )
+    <div className="flex flex-col gap-4 max-w-6xl mx-auto">
+      <MailContact />
+    </div>
+  );
 }

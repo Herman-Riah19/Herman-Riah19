@@ -56,9 +56,9 @@ const navigation: {
   ],
 }
 
-const Footer: React.FC = () => {
+export function Footer() {
   return (
-    <footer className="w-full">
+    <footer className="w-full h-1/2 flex flex-col justify-items-center pb-10">
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
@@ -78,7 +78,7 @@ const Footer: React.FC = () => {
                   >
                     <span className="sr-only">{item.name}</span>
                     {item.icon && (
-                      <item.icon className="h-5 w-5" aria-hidden="true" />
+                      <item.icon className="h-6 w-5" aria-hidden="true" />
                     )}
                   </a>
                 ))}
@@ -90,5 +90,3 @@ const Footer: React.FC = () => {
     </footer>
   )
 }
-
-export default Footer

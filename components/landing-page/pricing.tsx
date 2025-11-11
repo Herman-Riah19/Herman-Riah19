@@ -91,7 +91,7 @@ export default function Pricing() {
                   ))}
                 </ul>
                 <a href="#contact">
-                  <Button className="text-black w-full">Me contacter</Button>
+                  <Button className="w-full">Me contacter</Button>
                 </a>
               </CardContent>
             </MagicCard>

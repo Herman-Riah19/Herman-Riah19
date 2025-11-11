@@ -17,7 +17,7 @@ import {
 } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 import { toast } from "sonner";
-import { sendEmailAction } from "@/lib/mail-service"; // Server Action
+import { sendEmailAction } from "@/lib/mail-service"; 
 import { useTranslations } from "next-intl";
 
 export function MailContact() {

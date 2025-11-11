@@ -14,7 +14,7 @@ import { cn } from "@/lib/utils";
 import { useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
 
-const Navbar: React.FC = () => {
+export function Navbar () {
   const locale = useLocale();
   const route = useRouter(); 
 
@@ -122,5 +122,3 @@ const Navbar: React.FC = () => {
     </div>
   );
 };
-
-export default Navbar;
