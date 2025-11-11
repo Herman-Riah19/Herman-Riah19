@@ -67,7 +67,7 @@ export const Projects = () => {
             </BlurFade>
           ))}
         </div>
-        <LinkButton link={`/${local}/projects`} title={t("OtherProject")} />
+        {path !== `/${local}/projects` && <LinkButton link={`/${local}/projects`} title={t("OtherProject")} /> }
       </div>
     </section>
   );

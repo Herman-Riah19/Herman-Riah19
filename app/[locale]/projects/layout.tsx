@@ -1,3 +1,4 @@
+import { NeonGradientCard } from "@/components/magicui/neon-gradient-card";
 import type { Metadata } from "next";
 import React from "react";
 
@@ -46,9 +47,12 @@ export const metadata: Metadata = {
   robots: "index, follow",
 };
 
-export default function ProjectLayout ({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function ProjectLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <div className="py-12 sm:py-16 px-6 max-w-6xl mx-auto">{children}</div>
+    <div className="py-12 sm:py-16 px-6 max-w-6xl mx-auto">
+      <NeonGradientCard>{children}</NeonGradientCard>
+    </div>
   );
-};
-
+}
