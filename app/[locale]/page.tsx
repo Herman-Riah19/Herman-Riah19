@@ -16,6 +16,7 @@ import { MailContact } from "@/components/landing-page/contact";
 import { VerticalScroll } from "@/components/animation/animationScroll";
 import { Slogan } from "@/components/landing-page/slogan";
 import { NeonGradientCard } from "@/components/magicui/neon-gradient-card";
+import { Projects } from "@/components/container/project";
 
 const languages = [
   "typescript",
@@ -23,7 +24,7 @@ const languages = [
   "Python",
   "php",
   "html5",
-  "rust"
+  "rust",
 ];
 const frameworks = [
   "flask",
@@ -78,12 +79,24 @@ const BentoGridInfo = () => {
           </span>
           <OrbitingCircles iconSize={40}>
             {imagesLanguages.map((img, idx) => (
-              <img key={idx} src={img} alt="language" width="200" height="200" />
+              <img
+                key={idx}
+                src={img}
+                alt="language"
+                width="200"
+                height="200"
+              />
             ))}
           </OrbitingCircles>
           <OrbitingCircles iconSize={30} radius={100} reverse speed={2}>
             {imagesFrameworks.map((img, idx) => (
-              <img key={idx} src={img} alt="framework" width="200" height="200" />
+              <img
+                key={idx}
+                src={img}
+                alt="framework"
+                width="200"
+                height="200"
+              />
             ))}
           </OrbitingCircles>
           <OrbitingCircles iconSize={30} radius={50} speed={3}>
@@ -176,6 +189,9 @@ export default function LandingPage() {
       <NeonGradientCard className="m-0 p-0">
         <VerticalScroll>
           <Features />
+        </VerticalScroll>
+        <VerticalScroll>
+        <Projects />
         </VerticalScroll>
         <VerticalScroll>
           <Pricing />
