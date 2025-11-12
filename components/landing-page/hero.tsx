@@ -36,14 +36,14 @@ export default function Hero() {
         squares={[100, 100]}
         squaresClassName="hover:fill-foreground-500"
       />
-      <div className="grid lg:grid-cols-2 h-screen">
+      <div className="m-4 grid lg:grid-cols-2 h-screen">
         <motion.div
           variants={fadeIn}
           initial="hidden"
           animate="visible"
-          className="text-left relative justify-center items-start flex flex-col p-4 lg:p-8"
+          className="text-left relative justify-center items-center lg:items-start flex flex-col p-4 lg:p-8"
         >
-          <Badge className="text-md tracking-wide mb-5">
+          <Badge className="text-sm lg:text-md text-center tracking-wide mb-5">
             {t("Services")}
           </Badge>
 
@@ -51,11 +51,11 @@ export default function Hero() {
             {t("Hello")}
           </AnimatedGradientText>
 
-          <h1 className="text-xl md:text-5xl font-extrabold mb-4">
+          <h1 className="text-3xl md:text-5xl font-extrabold mb-4">
             {t("Firstname")}
           </h1>
 
-          <h1 className="text-6xl font-extrabold mb-3 bg-gradient-to-b from-primary to-blue-500/30 bg-clip-text text-transparent">
+          <h1 className="text-4xl lg:text-6xl font-extrabold mb-3 bg-gradient-to-b from-primary to-blue-500/30 bg-clip-text text-transparent">
             {t("Lastname")}
           </h1>
 

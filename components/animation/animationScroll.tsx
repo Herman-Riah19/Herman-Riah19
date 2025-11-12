@@ -21,6 +21,11 @@ export const VerticalScroll: React.FC<VerticalScrollProps> = ({ children, classN
     const scrollContainer = scrollRef.current;
     if (!container || !scrollContainer) return;
 
+    // ✅ Désactiver le scroll animé sur mobile / tablette
+    const isDesktop = window.matchMedia("(min-width: 1024px)").matches;
+
+    if (!isDesktop) return; // Pas d'animation sur mobile
+
     const ctx = gsap.context(() => {
       gsap.to(scrollContainer, {
         y: -window.innerHeight,
@@ -45,7 +50,7 @@ export const VerticalScroll: React.FC<VerticalScrollProps> = ({ children, classN
   }, []);
 
   return (
-    <div ref={containerRef} className={`relative overflow-hidden h-auto ${className}`}>
+    <div ref={containerRef} className={`relative overflow-hidden h-auto ${className || ""}`}>
       <div ref={scrollRef} className="flex flex-col h-auto">
         {children}
       </div>

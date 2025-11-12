@@ -23,13 +23,14 @@ const languages = [
   "Python",
   "php",
   "html5",
-  "css3",
+  "rust"
 ];
 const frameworks = [
   "flask",
   "django",
   "nodedotjs",
   "adonisjs",
+  "nestjs",
   "express",
   "nextdotjs",
   "React",
