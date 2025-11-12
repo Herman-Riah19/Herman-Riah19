@@ -59,13 +59,13 @@ export default function Pricing() {
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-              {t("Features.Title")}
+              {t("Pricing.Title")}
             </div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-              {t("Features.Checkout")}
+              {t("Pricing.Checkout")}
             </h2>
             <p className="prose max-w-full text-pretty font-sans text-lg text-secondary/80 dark:prose-invert">
-              {t("Features.Description")}
+              {t("Pricing.Description")}
             </p>
           </div>
         </div>

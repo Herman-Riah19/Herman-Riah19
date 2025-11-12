@@ -18,7 +18,7 @@
     "Features": {
       "Title": "Ce que je fais",
       "Checkout": "Proposition de service complète",
-      "Description": "Prestation complète : audit et conseil, conception UI/UX, développement Front (Next.js, TypeScript) et Back (Node.js, Django), intégration d’APIs, optimisation des performances et du SEO, tests, maintenance et déploiement. Résultat : une application responsive, rapide et facilement trouvable sur les moteurs de recherche.",
+      "Description": "De l’audit à la mise en ligne, je conçois des applications rapides, ergonomiques et optimisées pour le SEO, alliant performance, design et visibilité.",
       "feature1": {
         "title": "Applications Web",
         "text": "Développement d’interfaces modernes et réactives avec React et Next.js."

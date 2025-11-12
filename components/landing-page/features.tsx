@@ -52,13 +52,13 @@ export default function Features() {
         </div>
       </BlurFade>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         {features.map((f, idx) => (
           <Card
-            key={f.title}
-            className={`${idx === 3 ? "lg:col-start-2" : ""} relative overflow-hidden border-none shadow-none`}
+            key={idx}
+            className={`relative overflow-hidden border-none shadow-none`}
           >
-            <MagicCard>
+            <MagicCard className="h-full m-0 p-0">
               <CardHeader>
                 {f.icon}
                 <CardTitle className="text-lg">{f.title}</CardTitle>

@@ -78,7 +78,7 @@ export default function Hero() {
                   "bg-background border border-foreground/10 hover:bg-primary hover:text-primary-foreground"
                 )}
               >
-                <s.icon className="w-6 h-6" />
+                {s.icon}
               </a>
             ))}
           </motion.div>
@@ -118,21 +118,21 @@ const socials = [
   {
     name: "Facebook",
     href: "https://www.facebook.com/riah.hermann/",
-    icon: Facebook,
+    icon: <Facebook className="fill-primary w-6 h-6 " />
   },
   {
     name: "Instagram",
     href: "https://www.instagram.com/hermannriah/",
-    icon: Instagram,
+    icon: <Instagram className="w-6 h-6 " />
   },
   {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/hermann-razafindranaivo-174378237/",
-    icon: Linkedin,
+    icon: <Linkedin className="fill-primary w-6 h-6 " />
   },
   {
     name: "GitHub",
     href: "https://www.github.com/Herman-Riah19",
-    icon: Github,
+    icon: <Github className="w-6 h-6 " />
   },
 ];
