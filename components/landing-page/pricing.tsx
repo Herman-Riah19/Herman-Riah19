@@ -7,6 +7,7 @@ import { BorderBeam } from "@/components/magicui/border-beam";
 import { BLUR_FADE_DELAY } from "@/lib/constant";
 import BlurFade from "@/components/container/blur-fade";
 import { MagicCard } from "@/components/ui/magic-card";
+import { AnimateWelcomeBack } from "../animation/animateWelcome";
 
 export default function Pricing() {
   const t = useTranslations("Home");
@@ -71,32 +72,33 @@ export default function Pricing() {
         </div>
       </BlurFade>
       <div className="grid md:grid-cols-3 gap-6">
-        {services.map((s) => (
-          <Card
-            key={s.title}
-            className="relative overflow-hidden hover:shadow-lg transition-shadow duration-300"
-          >
-            <MagicCard>
-              <CardHeader>
-                <CardTitle className="flex justify-between items-center">
-                  {s.title}
-                  {s.popular && <span className="text-sm">Populaire</span>}
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="text-2xl font-bold mb-4">{s.price}</div>
-                <ul className="space-y-1 mb-4 ml-4 text-muted-foreground text-sm">
-                  {s.features.map((f) => (
-                    <li key={f}>{f}</li>
-                  ))}
-                </ul>
-                <a href="#contact">
-                  <Button className="w-full">Me contacter</Button>
-                </a>
-              </CardContent>
-            </MagicCard>
-            <BorderBeam duration={8} size={100} />
-          </Card>
+        {services.map((service, idx) => (
+          <AnimateWelcomeBack key={idx}>
+            <Card className="relative overflow-hidden hover:shadow-lg transition-shadow duration-300">
+              <MagicCard>
+                <CardHeader>
+                  <CardTitle className="flex justify-between items-center">
+                    {service.title}
+                    {service.popular && (
+                      <span className="text-sm">Populaire</span>
+                    )}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="text-2xl font-bold mb-4">{service.price}</div>
+                  <ul className="space-y-1 mb-4 ml-4 text-muted-foreground text-sm">
+                    {service.features.map((f) => (
+                      <li key={f}>{f}</li>
+                    ))}
+                  </ul>
+                  <a href="#contact">
+                    <Button className="w-full">Me contacter</Button>
+                  </a>
+                </CardContent>
+              </MagicCard>
+              <BorderBeam duration={8} size={100} />
+            </Card>
+          </AnimateWelcomeBack>
         ))}
       </div>
     </section>

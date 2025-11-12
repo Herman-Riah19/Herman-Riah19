@@ -7,7 +7,7 @@ type AnimateProps = {
   children: JSX.Element
 }
 
-const AnimateFeature: React.FC<AnimateProps> = ({ children }) => {
+export const AnimateFeature: React.FC<AnimateProps> = ({ children }) => {
   let [ ref , { width }] = useMeasure();
 
   const x = useMotionValue(0);
@@ -37,5 +37,3 @@ const AnimateFeature: React.FC<AnimateProps> = ({ children }) => {
     </div>
   )
 }
-
-export default AnimateFeature;

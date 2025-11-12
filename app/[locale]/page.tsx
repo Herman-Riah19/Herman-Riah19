@@ -16,7 +16,8 @@ import { MailContact } from "@/components/landing-page/contact";
 import { VerticalScroll } from "@/components/animation/animationScroll";
 import { Slogan } from "@/components/landing-page/slogan";
 import { NeonGradientCard } from "@/components/magicui/neon-gradient-card";
-import { Projects } from "@/components/container/project";
+import { ProjectsVerticalScroll } from "@/components/container/project";
+import { AnimateWelcome } from "@/components/animation/animateWelcome";
 
 const languages = [
   "typescript",
@@ -187,20 +188,14 @@ export default function LandingPage() {
         </div>
       </VerticalScroll>
       <NeonGradientCard className="m-0 p-0">
-        <VerticalScroll>
-          <Features />
-        </VerticalScroll>
-        <VerticalScroll>
-        <Projects />
-        </VerticalScroll>
-        <VerticalScroll>
-          <Pricing />
-        </VerticalScroll>
+        <Features />
+        <ProjectsVerticalScroll />
+        <Pricing />
       </NeonGradientCard>
       <Slogan />
-      <VerticalScroll className="bg-transparent">
+      <AnimateWelcome>
         <MailContact />
-      </VerticalScroll>
+      </AnimateWelcome>
     </main>
   );
 }

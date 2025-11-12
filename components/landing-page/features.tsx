@@ -1,32 +1,40 @@
 import React from "react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { BorderBeam } from "../magicui/border-beam";
 import { useTranslations } from "next-intl";
 import { BLUR_FADE_DELAY } from "@/lib/constant";
 import BlurFade from "../container/blur-fade";
 import { MagicCard } from "../ui/magic-card";
 import { Brain, Cable, Cloud, Code } from "lucide-react";
+import { AnimatedListItem } from "../animation/animatedList";
 
 export default function Features() {
   const t = useTranslations("Home");
   const features = [
     {
-      icon: <Code strokeWidth={1.5} className="size-10  text-foreground mb-4" />,
+      icon: (
+        <Code strokeWidth={1.5} className="size-10  text-foreground mb-4" />
+      ),
       title: t("Features.feature1.title"),
       text: t("Features.feature1.text"),
     },
     {
-      icon: <Cable strokeWidth={1.5} className="size-10  text-foreground mb-4" />,
+      icon: (
+        <Cable strokeWidth={1.5} className="size-10  text-foreground mb-4" />
+      ),
       title: t("Features.feature2.title"),
       text: t("Features.feature2.text"),
     },
     {
-      icon: <Brain strokeWidth={1.5} className="size-10  text-foreground mb-4" />,
+      icon: (
+        <Brain strokeWidth={1.5} className="size-10  text-foreground mb-4" />
+      ),
       title: t("Features.feature3.title"),
       text: t("Features.feature3.text"),
     },
     {
-      icon: <Cloud strokeWidth={1.5} className="size-10  text-foreground mb-4" />,
+      icon: (
+        <Cloud strokeWidth={1.5} className="size-10  text-foreground mb-4" />
+      ),
       title: t("Features.feature4.title"),
       text: t("Features.feature4.text"),
     },
@@ -54,20 +62,21 @@ export default function Features() {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         {features.map((f, idx) => (
-          <Card
-            key={idx}
-            className={`relative overflow-hidden border-none shadow-none`}
-          >
-            <MagicCard className="h-full m-0 p-0">
-              <CardHeader>
-                {f.icon}
-                <CardTitle className="text-lg">{f.title}</CardTitle>
-              </CardHeader>
-              <CardContent className="text-muted-foreground">
-                {f.text}
-              </CardContent>
-            </MagicCard>
-          </Card>
+          <AnimatedListItem key={idx}>
+            <Card
+              className={`relative overflow-hidden border-none shadow-none h-full`}
+            >
+              <MagicCard className="h-full m-0 p-0">
+                <CardHeader>
+                  {f.icon}
+                  <CardTitle className="text-lg">{f.title}</CardTitle>
+                </CardHeader>
+                <CardContent className="text-muted-foreground">
+                  {f.text}
+                </CardContent>
+              </MagicCard>
+            </Card>
+          </AnimatedListItem>
         ))}
       </div>
     </section>

@@ -1,7 +1,13 @@
 "use client";
 
-import { AnimatePresence, motion } from "framer-motion";
-import React, { ReactElement, useEffect, useMemo, useRef, useState } from "react";
+import { AnimatePresence, motion, useInView } from "framer-motion";
+import React, {
+  ReactElement,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 
 export const AnimatedList = React.memo(
   ({
@@ -29,7 +35,7 @@ export const AnimatedList = React.memo(
 
     const itemsToShow = useMemo(
       () => childrenArray.slice(0, index + 1),
-      [index, childrenArray],
+      [index, childrenArray]
     );
 
     useEffect(() => {
@@ -57,26 +63,37 @@ export const AnimatedList = React.memo(
         </AnimatePresence>
       </div>
     );
-  },
+  }
 );
 
 AnimatedList.displayName = "AnimatedList";
 
 export function AnimatedListItem({ children }: { children: React.ReactNode }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref, { once: true, margin: "-50px" });
+
   const animations = {
-    initial: { scale: 0, opacity: 0, translateY: 50 }, // L'élément commence en bas
-    animate: { scale: 1, opacity: 1, translateY: 0 }, // Animation vers sa position finale
-    exit: { scale: 0, opacity: 0, translateY: -50 }, // Animation vers le haut à la suppression
-    transition: { type: "spring", stiffness: 350, damping: 40 },
+    hidden: { scale: 0.9, opacity: 0, y: 50 },
+    visible: {
+      scale: 1,
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        stiffness: 120, // moins rigide → plus fluide
+        damping: 20, // plus petit → rebond plus doux
+        duration: 0.8, // ajoute un léger temps de transition
+        ease: "easeOut", // adoucit la fin
+      },
+    },
   };
 
   return (
     <motion.div
-      initial={animations.initial}
-      animate={animations.animate}
-      exit={animations.exit}
-      transition={animations.transition}
-      layout
+      ref={ref}
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
+      variants={animations}
       className="mx-auto w-full"
     >
       {children}
