@@ -118,8 +118,8 @@ export function ProjectsVerticalScroll() {
                   delay={BLUR_FADE_DELAY * 12 + id * 0.05}
                 >
                   <CardProject
+                    key={id}
                     href={project.href}
-                    key={project.title}
                     title={project.title}
                     description={project.description}
                     dates={project.date}
