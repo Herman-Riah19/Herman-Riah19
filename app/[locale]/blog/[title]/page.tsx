@@ -1,17 +1,15 @@
 import { loadPost } from "@/lib/mdx";
-import { MDXClientProvider } from "@/components/mdx-client";
-import { MDXRemote } from "next-mdx-remote/rsc";
-import { useMDXComponents } from "@/mdx-components";
 import { Badge } from "@/components/ui/badge";
+import MdxContent from "./mdx-component";
 
 export default async function PageDetailBlog({
   params,
 }: {
   params: { title: string };
 }) {
-  const { frontmatter, content } = loadPost(params.title);
+  const post = loadPost(params.title);
 
-  const components = useMDXComponents({});
+  const { frontmatter, content } = post;
 
   return (
     <div className="m-4 flex flex-col gap-4">
@@ -31,12 +29,7 @@ export default async function PageDetailBlog({
           className="rounded-xl"
         />
       )}
-
-      <MDXClientProvider>
-        <div className="prose prose-invert max-w-none">
-          <MDXRemote source={content} components={components} />
-        </div>
-      </MDXClientProvider>
+      <MdxContent content={content} />
     </div>
   );
 }
