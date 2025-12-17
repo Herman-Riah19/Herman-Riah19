@@ -17,8 +17,8 @@ export default async function PageBlog() {
   return (
     <div className="flex flex-col gap-4">
       <section className="grid sm:grid-cols-1 md:grid-cols-3 gap-6">
-        {blogs.map((blog) => (
-          <Link href={`/${locale}/blog/${blog.fileName}`}>
+        {blogs.map((blog, idx) => (
+          <Link key={idx} href={`/${locale}/blog/${blog.fileName}`}>
             <Card>
               <CardHeader>
                 <Image

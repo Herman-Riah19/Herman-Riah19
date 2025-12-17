@@ -3,11 +3,14 @@ import { Inter as FontSans } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "next-themes";
 import "@/styles/globals.css";
-import { NextIntlClientProvider, useMessages } from "next-intl";
+import { NextIntlClientProvider } from "next-intl";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Navbar } from "@/components/navbar/navbar";
 import { Toaster } from "sonner";
 import { Footer } from "@/components/footer";
+import { routing } from "@/i18n/routing";
+import { notFound } from "next/navigation";
+import { getMessages } from "next-intl/server";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -60,14 +63,19 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-  params: { locale },
+  params,
 }: Readonly<{
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }>) {
-  const message = useMessages();
+  const { locale } = await params;
+  if (!routing.locales.includes(locale as any)) {
+    notFound();
+  }
+
+  const message = await getMessages();
   return (
     <html lang={locale}>
       <head>
