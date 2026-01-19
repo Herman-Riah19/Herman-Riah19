@@ -1,5 +1,6 @@
 "use client";
 
+import { useSafeMotion } from "@/hooks/useSafeMotion";
 import { AnimatePresence, motion, useInView } from "framer-motion";
 import React, {
   ReactElement,
@@ -14,7 +15,7 @@ export const AnimatedList = React.memo(
     className,
     children,
     delay = 1000,
-    maxHeight = 300, // Limite de hauteur en pixels
+    maxHeight = 300,
   }: {
     className?: string;
     children: React.ReactNode;
@@ -35,12 +36,11 @@ export const AnimatedList = React.memo(
 
     const itemsToShow = useMemo(
       () => childrenArray.slice(0, index + 1),
-      [index, childrenArray]
+      [index, childrenArray],
     );
 
     useEffect(() => {
       if (containerRef.current) {
-        // Si le contenu dépasse la hauteur maximale, faire défiler
         const container = containerRef.current;
         if (container.scrollHeight > container.offsetHeight) {
           container.scrollTop = container.scrollHeight - container.offsetHeight;
@@ -52,7 +52,7 @@ export const AnimatedList = React.memo(
       <div
         ref={containerRef}
         className={`relative flex flex-col items-center gap-4 overflow-hidden ${className}`}
-        style={{ maxHeight: `${maxHeight}px` }} // Appliquer la limite de hauteur
+        style={{ maxHeight: `${maxHeight}px` }}
       >
         <AnimatePresence>
           {itemsToShow.map((item) => (
@@ -63,7 +63,7 @@ export const AnimatedList = React.memo(
         </AnimatePresence>
       </div>
     );
-  }
+  },
 );
 
 AnimatedList.displayName = "AnimatedList";
@@ -71,6 +71,7 @@ AnimatedList.displayName = "AnimatedList";
 export function AnimatedListItem({ children }: { children: React.ReactNode }) {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
+  const motionEnabled = useSafeMotion();
 
   const animations = {
     hidden: { scale: 0.9, opacity: 0, y: 50 },
@@ -91,8 +92,8 @@ export function AnimatedListItem({ children }: { children: React.ReactNode }) {
   return (
     <motion.div
       ref={ref}
-      initial="hidden"
-      animate={isInView ? "visible" : "hidden"}
+      initial={motionEnabled ? "hidden" : "visible"}
+      animate={!motionEnabled || isInView ? "visible" : "hidden"}
       variants={animations}
       className="mx-auto w-full"
     >

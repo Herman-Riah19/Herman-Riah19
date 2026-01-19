@@ -1,4 +1,4 @@
-import HobieProject from "@/components/container/hobieProject";
+import { HobieProject } from "@/components/container/hobieProject";
 import { Projects } from "@/components/container/project";
 import { LinkButton } from "@/components/magicui/link-button";
 import { getLocale, getTranslations } from "next-intl/server";

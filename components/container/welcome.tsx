@@ -1,11 +1,12 @@
 "use client"
 import React from 'react'
-import { useLocale, useTranslations } from 'next-intl'
-import BlurFadeText from '@/components/container/blur-fade-text';
+import { useTranslations } from 'next-intl'
+import { BlurFadeText } from '@/components/container/blur-fade-text';
 import { BLUR_FADE_DELAY } from '@/lib/constant';
 
-const Welcome = () => {
-  const t = useTranslations('Welcome')
+export const Welcome = () => {
+  const t = useTranslations('Welcome');
+  
   return (
     <section>
       <div className="mx-auto w-full max-w-2xl space-y-8">
@@ -28,5 +29,4 @@ const Welcome = () => {
   )
 }
 
-export default Welcome
 

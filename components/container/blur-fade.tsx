@@ -1,5 +1,6 @@
 "use client";
 
+import { useSafeMotion } from "@/hooks/useSafeMotion";
 import { AnimatePresence, motion, useInView, Variants } from "framer-motion";
 import { useRef } from "react";
 
@@ -14,13 +15,14 @@ interface BlurFadeProps {
   delay?: number;
   yOffset?: number;
   inView?: boolean;
-  inViewMargin?: string;
+  inViewMargin?: string | number;
   blur?: string;
+  visibleByDefault?: boolean;
 }
 
-const BlurFade = ({children, className, variant, duration = 0.4, delay = 0, yOffset = 6, inView = false, inViewMargin = "-50px", blur = "6px"}: BlurFadeProps) => {
+const BlurFade = ({children, className, variant, duration = 0.4, delay = 0, yOffset = 6, inView = false, inViewMargin = "-50px", blur = "6px", visibleByDefault = false}: BlurFadeProps) => {
   const ref = useRef(null);
-  const inViewResult = useInView(ref, { once: true, margin: inViewMargin });
+  const inViewResult = useInView(ref, { once: true, margin: inViewMargin as any });
   const isInView = !inView || inViewResult;
   const defaultVariants: Variants = {
     hidden: { y: yOffset, opacity: 0, filter: `blur(${blur})` },
@@ -31,8 +33,8 @@ const BlurFade = ({children, className, variant, duration = 0.4, delay = 0, yOff
     <AnimatePresence>
       <motion.div
         ref={ref}
-        initial="hidden"
-        animate={isInView ? "visible" : "hidden"}
+        initial={visibleByDefault ? "visible" : "hidden"}
+        animate={visibleByDefault || isInView ? "visible" : "hidden"}
         exit="hidden"
         variants={combinedVariants}
         transition={{

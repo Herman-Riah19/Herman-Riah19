@@ -2,18 +2,17 @@ import { Badge } from "@/components/ui/badge";
 import {
   Card,
   CardContent,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import { Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import Markdown from "react-markdown";
 import { Lens } from "@/components/magicui/lens";
 
 interface Props {
+  id: number;
   title: string;
   href?: string;
   description: string;
@@ -26,6 +25,7 @@ interface Props {
 }
 
 export function CardProject({
+  id,
   title,
   href,
   description,
@@ -38,6 +38,7 @@ export function CardProject({
 }: Props) {
   return (
     <Card
+      key={id}
       className={
         "bg-background/80 flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full"
       }
@@ -65,8 +66,8 @@ export function CardProject({
       </Link>
       <CardHeader className="p-0 m-0">
         <div className="space-y-1 p-2">
-          <CardTitle className="mt-1 text-lg">{title}</CardTitle>
-          <time className="font-sans text-sm">{dates}</time>
+          <CardTitle className="mt-1 text-lg" data-testid={`project-title-${id}`}>{title}</CardTitle>
+          <time className="font-sans text-sm" data-testid={`project-dates-${id}`}>{dates}</time>
           <div className="hidden font-sans text-xs underline print:visible">
             {link?.replace("https://", "").replace("www.", "").replace("/", "")}
           </div>
@@ -77,8 +78,9 @@ export function CardProject({
       </CardHeader>
       <CardContent className="mt-auto flex flex-col px-2">
         <div className="mt-2 flex flex-wrap gap-1">
-          {tags.map(tag => (
+          {tags.map((tag, idx) => (
             <Badge
+              key={idx}
               className="px-1 py-0 text-[11px]"
               variant="secondary"
             >
@@ -88,18 +90,6 @@ export function CardProject({
 
         </div>
       </CardContent>
-      {/* {links !== "" && (
-        <CardFooter className="px-2 pb-2">
-          <div className="flex flex-row flex-wrap items-start gap-1">
-            <Link href={links} target="_blank">
-              <Badge title="Source code" className="flex gap-2">
-                <Github />
-                Source code
-              </Badge>
-            </Link>
-          </div>
-        </CardFooter>
-      )} */}
     </Card>
   );
 }

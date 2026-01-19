@@ -30,8 +30,8 @@ export default async function PageBlog() {
                 />
               </CardHeader>
               <CardContent>
-                <CardTitle>{blog.title}</CardTitle>
-                <CardDescription>{blog.description}</CardDescription>
+                <CardTitle data-testid={`blog-card-title-${blog.title}`}>{blog.title}</CardTitle>
+                <CardDescription data-testid={`blog-card-description-${blog.title}`}>{blog.description}</CardDescription>
               </CardContent>
             </Card>
           </Link>

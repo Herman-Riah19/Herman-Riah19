@@ -2,10 +2,10 @@ import React from "react";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { useTranslations } from "next-intl";
 import { BLUR_FADE_DELAY } from "@/lib/constant";
-import BlurFade from "../container/blur-fade";
-import { MagicCard } from "../ui/magic-card";
+import BlurFade from "@/components/container/blur-fade";
+import { MagicCard } from "@/components/ui/magic-card";
 import { Brain, Cable, Cloud, Code } from "lucide-react";
-import { AnimatedListItem } from "../animation/animatedList";
+import { AnimatedListItem } from "@/components/animation/animatedList";
 
 export default function Features() {
   const t = useTranslations("Home");
@@ -47,31 +47,32 @@ export default function Features() {
       <BlurFade delay={BLUR_FADE_DELAY * 11}>
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+            <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm" data-testid="features-title">
               {t("Features.Title")}
             </div>
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl" data-testid="features-checkout">
               {t("Features.Checkout")}
             </h2>
-            <p className="prose max-w-full text-pretty font-sans text-lg text-secondary/80 dark:prose-invert">
+            <p className="prose max-w-full text-pretty font-sans text-lg text-secondary/80 dark:prose-invert" data-testid="features-description">
               {t("Features.Description")}
             </p>
           </div>
         </div>
       </BlurFade>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
         {features.map((f, idx) => (
           <AnimatedListItem key={idx}>
             <Card
+              key={idx}
               className={`relative overflow-hidden border-none shadow-none h-full`}
             >
               <MagicCard className="h-full m-0 p-0">
-                <CardHeader>
+                <CardHeader data-testid={`feature-${idx}-header`}>
                   {f.icon}
-                  <CardTitle className="text-lg">{f.title}</CardTitle>
+                  <CardTitle className="text-lg" data-testid={`feature-${idx}-title`}>{f.title}</CardTitle>
                 </CardHeader>
-                <CardContent className="text-muted-foreground">
+                <CardContent className="text-muted-foreground" data-testid={`feature-${idx}-content`}>
                   {f.text}
                 </CardContent>
               </MagicCard>

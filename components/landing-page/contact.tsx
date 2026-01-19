@@ -51,25 +51,28 @@ export function MailContact() {
   return (
     <Card id="contact" className="w-full shadow-xl max-w-6xl mx-auto mt-8">
       <CardHeader className="flex flex-col justify-center items-center text-center">
-        <CardTitle className="text-2xl">{t("Title")}</CardTitle>
-        <CardDescription className="text-xl">{t("Subtitle")}</CardDescription>
+        <CardTitle className="text-2xl" data-testid="contact-title">{t("Title")}</CardTitle>
+        <CardDescription className="text-xl" data-testid="contact-subtitle">{t("Subtitle")}</CardDescription>
       </CardHeader>
       <CardContent className="w-full m-2">
         <FormProvider {...formMethods}>
           <form
             action={handleSubmit} 
             className="flex flex-col w-full gap-4 p-4"
+            data-testid="contact-form"
           >
             <LabelledTextField
               label={t("Email")}
               placeholder={t("Placeholder.Email")}
               {...formMethods.register("email")}
+              data-testid="contact-email"
             />
 
             <LabelledTextField
               label={t("Subject")}
               placeholder={t("Placeholder.Subject")}
               {...formMethods.register("subject")}
+              data-testid="contact-subject"
             />
 
             <LabelledTextarea
@@ -77,6 +80,7 @@ export function MailContact() {
               placeholder={t("Placeholder.Message")}
               className="h-[80px]"
               {...formMethods.register("message")}
+              data-testid="contact-message"
             />
 
             <div className="flex">
@@ -85,6 +89,7 @@ export function MailContact() {
                 variant="secondary"
                 className="p-6 rounded-full text-lg"
                 disabled={isPending}
+                data-testid="contact-submit"
               >
                 <span className="bg-background rounded-full p-2">
                   <ArrowRight className="stroke-foreground" />

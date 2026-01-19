@@ -19,7 +19,7 @@ export const CardProfile = () => {
       <CardHeader className="m-0 p-0 pb-2 flex justify-center items-center">
         <img
           src={"/assets/image/profile.png"}
-          className="sm:h-[64vh] sm:ml-2 lg:h-[58vh] w-full p-0 lg:m-0"
+          className="sm:h-[64vh] lg:h-[60vh] w-full p-0 m-0 -ml-5"
         />
       </CardHeader>
       <CardFooter>

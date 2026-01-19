@@ -9,12 +9,14 @@ import { usePathname } from "next/navigation";
 import { LinkButton } from "@/components/magicui/link-button";
 import { AnimateFeature } from "@/components/animation/animateFeature";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { useSafeMotion } from "@/hooks/useSafeMotion";
 
 export const Projects = () => {
   const t = useTranslations("Project");
   const path = usePathname();
   const local = useLocale();
   const [localProjects, setLocalProject] = useState<Model[]>([]);
+  const safeMotion = useSafeMotion();
 
   useEffect(() => {
     if (local === "fr") {
@@ -35,30 +37,32 @@ export const Projects = () => {
   return (
     <section id="projects" className="mt-4">
       <div className="space-y-12 w-full py-12">
-        <BlurFade delay={BLUR_FADE_DELAY * 11}>
+        <BlurFade delay={BLUR_FADE_DELAY * 11} visibleByDefault={safeMotion}>
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                 {t("Title")}
               </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl" data-testid="projects-checkout">
                 {t("Checkout")}
               </h2>
-              <p className="prose max-w-full text-pretty font-sans text-lg text-secondary/80 dark:prose-invert">
+              <p className="prose max-w-full text-pretty font-sans text-lg text-secondary/80 dark:prose-invert" data-testid="projects-description">
                 {t("Description")}
               </p>
             </div>
           </div>
         </BlurFade>
-        <div className="grid md:grid-cols-2 gap-3 sm:grid-cols-1 max-w-[800px] mx-auto">
+        <div className="grid md:grid-cols-2 gap-3 sm:grid-cols-1 max-w-[800px] mx-auto" >
           {localProjects.map((project, id) => (
             <BlurFade
               key={project.title}
               delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+              visibleByDefault={safeMotion}
             >
               <CardProject
-                href={project.href}
+                id={project.id ?? id}
                 key={project.title}
+                href={project.href}
                 title={project.title}
                 description={project.description}
                 dates={project.date}
@@ -83,6 +87,7 @@ export function ProjectsVerticalScroll() {
   const t = useTranslations("Project");
   const local = useLocale();
   const [localProjects, setLocalProject] = useState<Model[]>([]);
+  const safeMotion = useSafeMotion();
 
   useEffect(() => {
     if (local === "fr") {
@@ -91,34 +96,49 @@ export function ProjectsVerticalScroll() {
       setLocalProject(ProjectModelEn);
     }
   }, [local]);
+
+  const projects = localProjects.length > 0 ? localProjects : ProjectModelEn;
+
   return (
     <section id="projects" className="mt-4">
       <div className="space-y-12 w-full py-12">
-        <BlurFade delay={BLUR_FADE_DELAY * 11}>
+        <BlurFade delay={BLUR_FADE_DELAY * 11} visibleByDefault={!safeMotion}>
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+              <div
+                className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm"
+                data-testid="projects-title"
+              >
                 {t("Title")}
               </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+              <h2
+                className="text-3xl font-bold tracking-tighter sm:text-5xl"
+                data-testid="projects-checkout"
+              >
                 {t("Checkout")}
               </h2>
-              <p className="prose max-w-full text-pretty font-sans text-lg text-secondary/80 dark:prose-invert">
+              <p
+                className="prose max-w-full text-pretty font-sans text-lg text-secondary/80 dark:prose-invert"
+                data-testid="projects-description"
+              >
                 {t("Description")}
               </p>
             </div>
           </div>
         </BlurFade>
+
         <ScrollArea>
           <AnimateFeature>
-            <div className="flex gap-2 w-[350vw] space-x-2 p-4">
-              {localProjects.map((project, id) => (
+            <div className="flex gap-2 w-[550vw] md:w-[400vw] lg:w-[300vw] space-x-2 p-4">
+              {projects.map((project, id) => (
                 <BlurFade
                   key={project.title}
                   delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+                  inView={!safeMotion}
                 >
                   <CardProject
-                    key={id}
+                    key={project.title}
+                    id={project.id ?? id}
                     href={project.href}
                     title={project.title}
                     description={project.description}

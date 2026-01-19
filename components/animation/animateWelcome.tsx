@@ -1,6 +1,7 @@
 'use client'
 import React, { useEffect, useRef } from 'react'
 import { motion, useAnimation, useInView } from "framer-motion"
+import { useSafeMotion } from '@/hooks/useSafeMotion'
 
 type AnimateProps = {
   children: JSX.Element
@@ -9,6 +10,7 @@ type AnimateProps = {
 export const AnimateWelcome: React.FC<AnimateProps> = ({ children }) => {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: false })
+  const motionEnabled = useSafeMotion();
 
   const mainControls = useAnimation();
 
@@ -24,8 +26,8 @@ export const AnimateWelcome: React.FC<AnimateProps> = ({ children }) => {
           hidden: { opacity: 0, x: 0, display: "none" },
           visible: { opacity: 1, x: 10, display: "block" }
         }}
-        initial="hidden"
-        animate={mainControls}
+        initial={motionEnabled ? "hidden" : "visible"}
+        animate={motionEnabled ? mainControls : "visible"}
         transition={{ duration: 1, delay: 0.5 }}
       >
         {children}
@@ -65,6 +67,7 @@ export const AnimateWelcomeLeft: React.FC<AnimateProps> = ({ children }) => {
 export const AnimateWelcomeBack: React.FC<AnimateProps> = ({ children }) => {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: false })
+  const motionEnabled = useSafeMotion();
 
   const mainControls = useAnimation();
 
@@ -81,8 +84,8 @@ export const AnimateWelcomeBack: React.FC<AnimateProps> = ({ children }) => {
           hidden: { opacity: 0, y: 75 },
           visible: { opacity: 1, y: 0 }
         }}
-        initial="hidden"
-        animate={mainControls}
+        initial={motionEnabled ? "hidden" : "visible"}
+        animate={!motionEnabled || mainControls}
         transition={{ duration: 1, delay: 0.5 }}
       >
         {children}

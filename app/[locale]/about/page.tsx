@@ -1,14 +1,14 @@
 "use client";
 import React from "react";
-import About from "@/components/container/about";
-import Welcome from "@/components/container/welcome";
-import ListTech from "@/components/container/listTech";
-import InfoContact from "@/components/container/info-contact";
-import Resume from "@/components/container/resume";
-import Education from "@/components/container/education";
+import { About } from "@/components/container/about";
+import { Welcome } from "@/components/container/welcome";
+import { ListTech } from "@/components/container/listTech";
+import { InfoContact } from "@/components/container/info-contact";
+import { Resume } from "@/components/container/resume";
+import { Education } from "@/components/container/education";
 import { Projects } from "@/components/container/project";
-import HobieProject from "@/components/container/hobieProject";
-import Profile from "@/components/container/profile";
+import { HobieProject } from "@/components/container/hobieProject";
+import { Profile } from "@/components/container/profile";
 import { NeonGradientCard } from "@/components/magicui/neon-gradient-card";
 
 export default async function AboutPage() {
@@ -22,10 +22,10 @@ export default async function AboutPage() {
           <Welcome />
           <InfoContact />
           <About />
+          <ListTech />
+          <Education />
           <Resume />
           <NeonGradientCard>
-            <Education />
-            <ListTech />
             <Projects />
           </NeonGradientCard>
           <HobieProject />

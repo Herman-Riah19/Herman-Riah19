@@ -75,21 +75,16 @@ export default async function RootLayout({
     notFound();
   }
 
-  const message = await getMessages();
+  const message = await getMessages({ locale });
+
   return (
-    <html lang={locale}>
-      <head>
-        <meta
-          name="google-site-verification"
-          content="E28uHybi33uoxITvAn5NzpOUu3aZiCoBxQMf-ukGXo0"
-        />
-        <title>Herman Riah: Portfolio</title>
-      </head>
+    <html lang={locale} suppressHydrationWarning>
       <body
         className={cn(
           "bg-background font-sans antialiased overflow-x-hidden",
           fontSans.variable
         )}
+        suppressHydrationWarning
       >
         <ThemeProvider
           attribute="class"

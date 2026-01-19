@@ -1,5 +1,6 @@
 "use client";
 
+import { useSafeMotion } from "@/hooks/useSafeMotion";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion, Variants } from "framer-motion";
 import { useMemo } from "react";
@@ -16,15 +17,19 @@ interface BlurFadeTextProps {
   delay?: number;
   yOffset?: number;
   animateByCharacter?: boolean;
+  testMode?: boolean;
 }
 
-const BlurFadeText = ({ text, className, variant, characterDelay = 0.03, delay = 0, yOffset = 8, animateByCharacter = false }: BlurFadeTextProps) => {
+export const BlurFadeText = ({ text, className, variant, characterDelay = 0.03, delay = 0, yOffset = 8, animateByCharacter = false, testMode = false }: BlurFadeTextProps) => {
   const defaultVariants: Variants = {
     hidden: { y: yOffset, opacity: 0, filter: "blur(8px)" },
     visible: { y: -yOffset, opacity: 1, filter: "blur(0px)" },
   };
   const combinedVariants = variant || defaultVariants;
   const characters = useMemo(() => Array.from(text), [text]);
+  const safeMotion = useSafeMotion();
+
+  const showImmediately = testMode || !safeMotion;
 
   if (animateByCharacter) {
     return (
@@ -33,7 +38,7 @@ const BlurFadeText = ({ text, className, variant, characterDelay = 0.03, delay =
           {characters.map((char, i) => (
             <motion.span
               key={i}
-              initial="hidden"
+              initial={showImmediately ? "visible" : "hidden"}
               animate="visible"
               exit="hidden"
               variants={combinedVariants}
@@ -57,7 +62,7 @@ const BlurFadeText = ({ text, className, variant, characterDelay = 0.03, delay =
     <div className="flex">
       <AnimatePresence>
         <motion.span
-          initial="hidden"
+          initial={showImmediately ? "visible" : "hidden"}
           animate="visible"
           exit="hidden"
           variants={combinedVariants}
@@ -74,5 +79,3 @@ const BlurFadeText = ({ text, className, variant, characterDelay = 0.03, delay =
     </div>
   );
 };
-
-export default BlurFadeText;

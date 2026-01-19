@@ -1,7 +1,9 @@
 "use client"
+import { useSafeMotion } from "@/hooks/useSafeMotion";
 import { AnimatePresence, motion } from "framer-motion";
 
 export function AnimateText() {
+  const motionEnabled = useSafeMotion();
   const text = "Gradual Spacing";
   const gradual = {
     hidden: { opacity: 0, x: -20 },
@@ -13,8 +15,8 @@ export function AnimateText() {
         {text.split("").map((char, i) => (
           <motion.h1
             key={i}
-            initial="hidden"
-            animate="visible"
+             initial={motionEnabled ? "hidden" : "visible"}
+              animate={!motionEnabled ? "visible" : "hidden"}
             exit="hidden"
             variants={gradual}
             transition={{ duration: 0.5, delay: i * 0.1 }}
