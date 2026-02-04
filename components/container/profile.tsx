@@ -16,7 +16,7 @@ export const Profile = () => {
     return (
         <BlurFade delay={BLUR_FADE_DELAY} className='md:fixed flex flex-col sm:items-center md:items-start sm:justify-center md:justify-start' visibleByDefault={safeMotion}>
             <Avatar className="size-48 border">
-                <AvatarImage alt={'herman'} src={"/assets/image/profile.jpg"} data-testid="profile-image" />
+                <AvatarImage alt={'herman'} src={"/assets/image/profile.png"} data-testid="profile-image" />
                 <AvatarFallback>{"HR"}</AvatarFallback>
             </Avatar>
             <ul style={{listStyleType: "none"}} className="flex flex-col m-0">
