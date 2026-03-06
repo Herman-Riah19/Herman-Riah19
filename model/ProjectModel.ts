@@ -149,7 +149,7 @@ export let ProjectModelFrReversed: Array<Model> = [
   },
   {
     id: 11,
-    href: "",
+    href: "https://cv-generator-sable-two.vercel.app/",
     title: "Générateur de CV ATS",
     type: "Application Web IA",
     img: `/assets/image/cv-generator.png`,
@@ -298,7 +298,7 @@ export const ProjectModelEnReversed: Array<Model> = [
   },
   {
     id: 11,
-    href: "",
+    href: "https://cv-generator-sable-two.vercel.app/",
     title: "ATS CV Generator",
     type: "AI Web Application",
     img: `/assets/image/cv-generator.png`,
