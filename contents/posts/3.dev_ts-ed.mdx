@@ -1,0 +1,371 @@
+---
+title: "Getting Started with Ts.ED Framework"
+description: "A comprehensive guide to building scalable Node.js applications with Ts.ED, covering architecture, decorators, dependency injection, controllers, middleware, and database integration."
+created_at: "2026-02-13"
+banner_url: "/assets/content/ts-ed.jpg"
+---
+
+# Getting Started with Ts.ED Framework
+
+:contentReference[oaicite:0]{index=0} is a powerful **TypeScript framework for Node.js** built on top of :contentReference[oaicite:1]{index=1} (and optionally :contentReference[oaicite:2]{index=2}).  
+
+It brings **Angular-like architecture** to the backend world by introducing:
+- Decorators
+- Dependency Injection
+- Strong typing
+- Modular structure
+- Built-in testing & validation tools
+
+Ts.ED is designed to help developers build **scalable, maintainable, and enterprise-ready APIs** with a clean and organized architecture.
+
+---
+
+## 🚀 Why Choose Ts.ED?
+
+### 1️⃣ TypeScript First
+
+Ts.ED is built entirely around TypeScript:
+- Strong typing everywhere
+- Native decorator support
+- Automatic OpenAPI (Swagger) generation
+- Clean DTO-based validation
+
+If you love TypeScript in frontend frameworks like Angular or React — you’ll feel at home.
+
+---
+
+### 2️⃣ Structured & Scalable Architecture
+
+Ts.ED promotes:
+- Controllers
+- Services
+- Modules
+- Middleware
+- Dependency Injection
+
+This makes it ideal for:
+- REST APIs
+- Microservices
+- Enterprise backends
+- Large-scale applications
+
+---
+
+### 3️⃣ Built-in Swagger & Validation
+
+With simple decorators, Ts.ED can:
+- Validate request bodies
+- Generate OpenAPI documentation
+- Serialize/deserialize data automatically
+
+No extra boilerplate required.
+
+---
+
+### 4️⃣ Express Compatibility
+
+Since Ts.ED runs on Express (by default), you can:
+- Use existing Express middleware
+- Integrate third-party libraries easily
+- Migrate existing projects gradually
+
+---
+
+## 🛠️ Creating a New Ts.ED Project
+
+You can create a new project using the official CLI:
+
+```bash
+npx @tsed/cli create my-tsed-app
+````
+
+Project structure example:
+
+```
+my-tsed-app/
+│
+├── src/
+│   ├── Server.ts
+│   ├── controllers/
+│   │   └── HelloController.ts
+│   ├── services/
+│   │   └── UserService.ts
+│   ├── middlewares/
+│   ├── models/
+│   └── config/
+│
+├── test/
+├── package.json
+├── tsconfig.json
+└── nodemon.json
+```
+
+This structure encourages separation of concerns from day one.
+
+---
+
+## 🧱 Core Concepts
+
+### 🖥️ Server Configuration
+
+The `Server.ts` file bootstraps the application:
+
+```ts
+import { Configuration } from "@tsed/di";
+import "@tsed/platform-express";
+
+@Configuration({
+  port: 3000,
+  mount: {
+    "/rest": [`${__dirname}/controllers/*.ts`]
+  }
+})
+export class Server {}
+```
+
+This defines:
+
+* The application port
+* Route mounting
+* Global configuration
+
+---
+
+### 🎮 Controllers
+
+Controllers handle HTTP requests.
+
+```ts
+import { Controller, Get } from "@tsed/common";
+
+@Controller("/hello")
+export class HelloController {
+
+  @Get("/")
+  get() {
+    return { message: "Hello from Ts.ED 🚀" };
+  }
+
+}
+```
+
+This automatically creates:
+
+```
+GET /rest/hello
+```
+
+Decorators simplify routing and make your code readable and structured.
+
+---
+
+### 🔁 Dependency Injection
+
+Ts.ED provides a powerful DI container.
+
+```ts
+import { Injectable } from "@tsed/di";
+
+@Injectable()
+export class UserService {
+  getUsers() {
+    return ["Alice", "Bob", "Charlie"];
+  }
+}
+```
+
+Inject it inside a controller:
+
+```ts
+import { Inject } from "@tsed/di";
+
+@Controller("/users")
+export class UserController {
+
+  @Inject()
+  private userService: UserService;
+
+  @Get("/")
+  getUsers() {
+    return this.userService.getUsers();
+  }
+}
+```
+
+No manual instantiation required — everything is managed automatically.
+
+---
+
+## 📦 Models & Validation
+
+Ts.ED uses decorators for validation and schema generation.
+
+```ts
+import { Property, Required } from "@tsed/schema";
+
+export class CreateUserDto {
+
+  @Required()
+  @Property()
+  name: string;
+
+  @Required()
+  @Property()
+  email: string;
+
+}
+```
+
+Use it in a controller:
+
+```ts
+import { BodyParams, Post } from "@tsed/common";
+
+@Post("/")
+create(@BodyParams() payload: CreateUserDto) {
+  return payload;
+}
+```
+
+Ts.ED automatically:
+
+* Validates input
+* Rejects invalid data
+* Generates Swagger documentation
+
+---
+
+## 📘 Automatic Swagger Documentation
+
+Ts.ED integrates Swagger out of the box:
+
+```ts
+@Configuration({
+  swagger: [
+    {
+      path: "/docs"
+    }
+  ]
+})
+```
+
+Then visit:
+
+```
+http://localhost:3000/docs
+```
+
+You get a fully generated OpenAPI UI automatically 🎉
+
+---
+
+## 🧩 Middleware
+
+Middleware can be global or route-specific.
+
+```ts
+import { Middleware, Req, Res } from "@tsed/common";
+
+@Middleware()
+export class LoggerMiddleware {
+  use(@Req() request: Req, @Res() response: Res) {
+    console.log(`${request.method} - ${request.url}`);
+  }
+}
+```
+
+Register globally in configuration.
+
+---
+
+## 🗄️ Database Integration
+
+Ts.ED works seamlessly with:
+
+* TypeORM
+* Prisma
+* Mongoose
+* Sequelize
+
+Example with Prisma:
+
+```ts
+@Injectable()
+export class PrismaService extends PrismaClient {}
+```
+
+You can inject it like any other service.
+
+---
+
+## 🧪 Testing
+
+Ts.ED provides utilities for integration testing:
+
+```ts
+import { PlatformTest } from "@tsed/common";
+
+beforeEach(PlatformTest.bootstrap(Server));
+afterEach(PlatformTest.reset);
+```
+
+This simplifies API testing without manual setup.
+
+---
+
+## 🧠 Best Practices
+
+1. Organize your code by domain (controllers, services, models).
+2. Always use DTOs for request validation.
+3. Use Dependency Injection instead of manual object creation.
+4. Enable Swagger in development.
+5. Separate business logic into services.
+
+---
+
+## 🧭 When Should You Use Ts.ED?
+
+Ts.ED is perfect if you:
+
+* Prefer strong architecture like Angular
+* Want enterprise-level backend structure
+* Need automatic OpenAPI documentation
+* Work in large TypeScript teams
+* Want clean, maintainable APIs
+
+If you’re building:
+
+* SaaS platforms
+* Enterprise APIs
+* Microservices
+* Large REST backends
+
+Ts.ED is a powerful and elegant solution.
+
+---
+
+## 🏁 Conclusion
+
+Ts.ED brings **structure, scalability, and TypeScript power** to Node.js development.
+
+It combines:
+
+* Express flexibility
+* Angular-like architecture
+* Built-in validation
+* Automatic Swagger documentation
+* Powerful Dependency Injection
+
+If you’re serious about building scalable backend systems with TypeScript, Ts.ED is absolutely worth exploring.
+
+---
+
+✨ **Next Steps**
+
+* Explore the official documentation: [https://tsed.io](https://tsed.io)
+* Build a small REST API project
+* Integrate Prisma or TypeORM
+* Deploy using Docker or a cloud provider
+
+Happy coding with Ts.ED 🚀
+

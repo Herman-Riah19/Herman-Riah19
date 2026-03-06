@@ -76,6 +76,10 @@
       }
     }
   },
+  "Blog": {
+    "Title": "List de blogs",
+    "Description": "Voici les lists de blog que j'écris pour la base du développement"
+  },
   "Welcome": {
     "Based": "Basé de Next JS",
     "Developper": "Développeur Web Full Stack",

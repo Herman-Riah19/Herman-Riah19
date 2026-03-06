@@ -13,7 +13,6 @@ export function loadPost(title: string) {
   const fileContent = fs.readFileSync(filePath, "utf-8");
   const { data: frontmatter, content } = matter(fileContent);
 
-  console.log("formater: ", frontmatter)
   return { frontmatter, content };
 }
 

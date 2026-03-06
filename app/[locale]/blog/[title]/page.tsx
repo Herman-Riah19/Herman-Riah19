@@ -1,8 +1,8 @@
 import { loadPost } from "@/lib/mdx";
 import { Badge } from "@/components/ui/badge";
-import MdxContent from "./mdx-component";
+import { MdxContent } from "./mdx-component";
 
-export default async function PageDetailBlog({
+export default function PageDetailBlog({
   params,
 }: {
   params: { title: string };

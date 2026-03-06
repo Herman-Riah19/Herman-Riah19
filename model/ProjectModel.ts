@@ -13,6 +13,40 @@ export interface Model {
 export let ProjectModelFr: Array<Model> = [
   {
     id: 1,
+    href: "https://github.com/Herman-Riah19/Artifex-app",
+    title: "Artifex APP",
+    type: "Gestion des Contrat Intélligent",
+    img: "/assets/image/web_compagnie.png",
+    link: "",
+    description:
+      "Artifex est une plateforme moderne de gestion des smart contracts destinée aux équipes blockchain, startups Web3 et entreprises souhaitant concevoir, déployer, auditer et superviser leurs contrats intelligents de manière sécurisée et centralisée.",
+    date: "Janvier 2026 - Mars 2026",
+    technology: [
+      "Web 3",
+      "Monorepo Microservice",
+      "TS.ED",
+      "Next.js",
+      "React.js",
+      "Shadcn UI",
+      "Prisma",
+      "Postgre SQL",
+    ],
+  },
+
+  {
+    id: 2,
+    href: "https://aetheris-ltd.vercel.app/",
+    title: "Aetheris LTD",
+    type: "Site vitrine / Landing page",
+    img: "/assets/image/web_compagnie.png",
+    link: "",
+    description:
+      "Développement et intégration du site vitrine de Aetheris LTD qui offres des service de gestion ERP et configuration des modules Odoo au sein des entreprise B2B. Cette application se relie avec le CRM Odoo pour dinamyser ses conténune",
+    date: "Décembre 2025 - Février 2026",
+    technology: ["Next.js", "React.js", "Shadcn UI", "Odoo"],
+  },
+  {
+    id: 3,
     href: "https://web-companies-two.vercel.app/",
     title: "Web Ltd",
     type: "Site vitrine / Landing page",
@@ -24,7 +58,7 @@ export let ProjectModelFr: Array<Model> = [
     technology: ["Next.js", "React.js", "Shadcn UI", "Drupal"],
   },
   {
-    id: 2,
+    id: 4,
     href: "https://riah-market.vercel.app/fr",
     title: "Riah market",
     type: "NFT market powered by AI",
@@ -43,7 +77,7 @@ export let ProjectModelFr: Array<Model> = [
     ],
   },
   {
-    id: 3,
+    id: 5,
     href: "https://didascale.vercel.app/fr",
     title: "Didache",
     type: "IA pour Encyclopedie Eglise",
@@ -55,7 +89,7 @@ export let ProjectModelFr: Array<Model> = [
     technology: ["NextJS", "ReactJs", "Shadcn UI", "Firebase", "Mapbox"],
   },
   {
-    id: 4,
+    id: 6,
     href: "https://open-myst-web-app.vercel.app/",
     title: "OpenMyst",
     type: "Similateur 3D",
@@ -67,7 +101,7 @@ export let ProjectModelFr: Array<Model> = [
     technology: ["NextJS", "ReactJs", "Shadcn UI", "Firebase", "Mapbox"],
   },
   {
-    id: 5,
+    id: 7,
     href: "https://midas-stability.vercel.app/fr",
     title: "Image Upscaler",
     type: "Generateur image",
@@ -79,7 +113,7 @@ export let ProjectModelFr: Array<Model> = [
     technology: ["Flask", "ReactJs", "Shadcn UI", "Prisma", "Postgre SQL"],
   },
   {
-    id: 6,
+    id: 8,
     href: "http://jupiter.fr",
     title: "Jupiter",
     type: "Application de Crowfunding",
@@ -91,7 +125,7 @@ export let ProjectModelFr: Array<Model> = [
     technology: ["Flask", "ReactJs", "MaterialUI", "Firebase"],
   },
   {
-    id: 7,
+    id: 9,
     href: "https://webmaster-landing.vercel.app",
     title: "Webmaster",
     type: "Landing page",
@@ -103,7 +137,7 @@ export let ProjectModelFr: Array<Model> = [
     technology: ["Next JS", "ReactJS", "Shadcn UI", "Tailwind"],
   },
   {
-    id: 8,
+    id: 10,
     href: "https://github.com/Herman-Riah19/TryInc",
     title: "TryInk",
     type: "Réseau Social",
@@ -119,17 +153,42 @@ export let ProjectModelFr: Array<Model> = [
 export const ProjectModelEn: Array<Model> = [
   {
     id: 1,
+    href: "https://github.com/Herman-Riah19/Artifex-app",
+    title: "Artifex APP",
+    type: "Smart Contract Management",
+    img: "/assets/image/web_compagnie.png",
+    link: "",
+    description:
+      "Artifex is a modern smart contract management platform designed for blockchain teams, Web3 startups, and enterprises that want to design, deploy, audit, and monitor their smart contracts in a secure and centralized environment.",
+    date: "January 2026 - March 2026",
+    technology: [ "Web3", "Monorepo Microservices", "TS.ED", "Next.js", "React.js", "Shadcn UI", "Prisma", "PostgreSQL" ],
+  },
+  {
+    id: 2,
+    href: "https://aetheris-ltd.vercel.app/",
+    title: "Aetheris LTD",
+    type: "Showcase Website / Landing Page",
+    img: "/assets/image/web_compagnie.png",
+    link: "",
+    description:
+      "Development and integration of the Aetheris LTD showcase website, which offers ERP management services and Odoo module configuration for B2B companies. The application is connected to the Odoo CRM to dynamically manage and update its content.",
+    date: "December 2025 - February 2026",
+    technology: ["Next.js", "React.js", "Shadcn UI", "Odoo"],
+  },
+  {
+    id: 3,
     href: "https://web-companies-two.vercel.app/",
     title: "Web Ltd",
     type: "Site vitrine / Landing page",
     img: "/assets/image/web_compagnie.png",
     link: "",
-    description: "Development and integration of the showcase website for Web Compagnie France, a subsidiary of the original Mauritius-based agency, marking its entry into the French market.",
+    description:
+      "Development and integration of the showcase website for Web Compagnie France, a subsidiary of the original Mauritius-based agency, marking its entry into the French market.",
     date: "July 2025 - August 2025",
     technology: ["Next.js", "React.js", "Shadcn UI", "Drupal"],
   },
   {
-    id: 2,
+    id: 4,
     href: "https://riah-market.vercel.app/fr",
     title: "Riah market",
     type: "NFT market powered by AI",
@@ -148,7 +207,7 @@ export const ProjectModelEn: Array<Model> = [
     ],
   },
   {
-    id: 3,
+    id: 5,
     href: "https://didascale.vercel.app/fr",
     title: "Didache",
     type: "AI for Church Encyclopedia",
@@ -160,7 +219,7 @@ export const ProjectModelEn: Array<Model> = [
     technology: ["NextJS", "ReactJs", "Shadcn UI", "Firebase", "Mapbox"],
   },
   {
-    id: 4,
+    id: 6,
     href: "https://open-myst-web-app.vercel.app/",
     title: "OpenMyst",
     type: "3D Simulator",
@@ -172,7 +231,7 @@ export const ProjectModelEn: Array<Model> = [
     technology: ["NextJS", "ReactJs", "Shadcn UI", "Firebase", "Mapbox"],
   },
   {
-    id: 5,
+    id: 7,
     href: "https://midas-stability.vercel.app/fr",
     title: "Image Upscaler",
     type: "Image Generator",
@@ -184,7 +243,7 @@ export const ProjectModelEn: Array<Model> = [
     technology: ["Flask", "ReactJs", "Shadcn UI", "Prisma", "Postgre SQL"],
   },
   {
-    id: 6,
+    id: 8,
     href: "http://jupiter.fr",
     title: "Jupiter",
     type: "Crowdfunding Application",
@@ -196,7 +255,7 @@ export const ProjectModelEn: Array<Model> = [
     technology: ["Flask", "ReactJs", "MaterialUI", "Firebase"],
   },
   {
-    id: 7,
+    id: 9,
     href: "https://webmaster-landing.vercel.app",
     title: "Webmaster",
     type: "Landing page",
@@ -208,7 +267,7 @@ export const ProjectModelEn: Array<Model> = [
     technology: ["Next JS", "ReactJS", "Shadcn UI", "Tailwind"],
   },
   {
-    id: 8,
+    id: 10,
     href: "https://github.com/Herman-Riah19/TryInc",
     title: "TryInk",
     type: "Social Network",
