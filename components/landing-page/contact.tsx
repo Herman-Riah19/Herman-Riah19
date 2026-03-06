@@ -19,6 +19,7 @@ import { ArrowRight } from "lucide-react";
 import { toast } from "sonner";
 import { sendEmailAction } from "@/lib/mail-service"; 
 import { useTranslations } from "next-intl";
+import { DottedMapContext } from "./dottedMapContext";
 
 export function MailContact() {
   const t = useTranslations("Contact");
@@ -49,7 +50,8 @@ export function MailContact() {
   };
 
   return (
-    <Card id="contact" className="w-full shadow-xl max-w-6xl mx-auto mt-8">
+    <section className="grid lg:grid-cols-2 gap-2">
+    <Card id="contact" className="h-full w-full shadow-xl max-w-6xl mx-auto mt-8">
       <CardHeader className="flex flex-col justify-center items-center text-center">
         <CardTitle className="text-2xl" data-testid="contact-title">{t("Title")}</CardTitle>
         <CardDescription className="text-xl" data-testid="contact-subtitle">{t("Subtitle")}</CardDescription>
@@ -103,5 +105,7 @@ export function MailContact() {
         </FormProvider>
       </CardContent>
     </Card>
+    <DottedMapContext />
+    </section>
   );
 }
