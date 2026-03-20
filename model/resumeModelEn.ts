@@ -51,16 +51,20 @@ const diplomasEn: Array<ResumeModel> = [
 
 const experiencesEn: Array<ResumeModel> = [
   {
-    title: "Freelance Frontend Developer",
+    title: "Frontend web Developer",
     start: "2025-07-01",
     end: "Now",
-    badges: ["Next.js", "React.js", "Shadcn UI", "Drupal"],
-    href: "https://web-companies-two.vercel.app/",
-    logoUrl: "/assets/icon/web-ltd.svg",
-    company: "Web Compagnie France",
+    badges: ["Next.js", "React.js", "Shadcn UI", "Drupal", "Odoo", "GSAP"],
+    href: "/",
+    logoUrl: "/assets/icon/Aetheris-DNA.png",
+    company: "Aetheris LTD France",
     location: "Paris, France (Remote)",
     description:
-      "Designed and developed the corporate website for Web Compagnie France, a subsidiary of a Mauritius-based agency, to support its expansion into the French market. Leveraged modern technologies such as Next.js, React.js, Shadcn UI, and Drupal to ensure performance and scalability.",
+      "<ul class='list-disc'><li class='text-sm font-regular text-justify'>Design and development of a corporate website for Web Compagnie France based on a client-provided mockup, following UX/UI standards and web best practices.</li>" +
+      "<li class='text-sm font-regular text-justify list-disc'>Development and integration of API-connected interfaces with a Drupal-based CRM, ensuring user data synchronization.</li>" +
+      "<li class='text-sm font-regular text-justify list-disc'>Redesign and integration of websites for Aetheris LTD and Aetheris DNA, implementing modern and responsive designs.</li>" +
+      "<li class='text-sm font-regular text-justify list-disc'>Implementation of a communication system between the website and Odoo CRM for automated lead collection, storage, and management (emails and customer messages).</li>" +
+      "</ul>",
   },
   {
     title: "Full Stack Developer",

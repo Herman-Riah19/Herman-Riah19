@@ -51,16 +51,20 @@ const diplomes: Array<ResumeModel> = [
 
 const experiences: Array<ResumeModel> = [
   {
-    title: "Développeur Frontend Freelance",
+    title: "Développeur Web Front End",
     start: "2025-07-01",
     end: "Maintenant",
-    badges: ["Next.js", "React.js", "Shadcn UI", "Drupal"],
+    badges: ["Next.js", "React.js", "Shadcn UI", "Drupal", "Odoo", "GSAP"],
     href: "/",
-    logoUrl: "/assets/icon/web-ltd.svg",
-    company: "Web Compagnie France",
+    logoUrl: "/assets/icon/Aetheris-DNA.png",
+    company: "Aetheris LTD France",
     location: "Paris, France (à distance)",
     description:
-      "Conception et intégration du site vitrine de Web Compagnie France, filiale d’une agence basée à l'île Maurice, afin de soutenir son implantation sur le marché français. Utilisation de technologies modernes telles que Next.js, React.js, Shadcn UI et Drupal pour assurer performance et évolutivité.",
+      "<ul class='list-disc'><li class='text-sm font-regular text-justify'>Conception et intégration d’un site vitrine pour Web Compagnie France à partir d’une maquette fournie par le client, en respectant les standards UX/UI et les bonnes pratiques web.</li>" +
+      "<li class='text-sm font-regular text-justify list-disc'>Développement et intégration d’interfaces connectées via API avec un CRM basé sur Drupal, assurant la synchronisation des données utilisateurs.</li>" +
+      "<li class='text-sm font-regular text-justify list-disc'>Refonte et intégration des sites web des entités Aetheris LTD et Aetheris DNA, avec implémentation de nouveaux designs modernes et responsives. </li>" +
+      "<li class='text-sm font-regular text-justify list-disc'>Mise en place d’un système de communication entre le site web et le CRM Odoo pour la collecte, le stockage et la gestion automatisée des leads (emails et messages clients).</li>" +
+      "</ul>",
   },
   {
     title: "Développeur Full stack",
