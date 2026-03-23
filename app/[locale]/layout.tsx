@@ -61,6 +61,9 @@ export const metadata: Metadata = {
     description: "Explore my web development work and services.",
     images: ["/og-image.png"],
   },
+  verification: {
+    google: "9uYJjiHuL-D2M9ZwPQ9_FTOZDSnbXrYcHhno-KNQm7c",
+  },
 };
 
 export default async function RootLayout({
