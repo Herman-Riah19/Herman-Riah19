@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect, useState } from "react";
 import BlurFade from "@/components/container/blur-fade";
 import { BLUR_FADE_DELAY } from "@/lib/constant";

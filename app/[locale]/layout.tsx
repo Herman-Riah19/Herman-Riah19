@@ -7,7 +7,6 @@ import { NextIntlClientProvider } from "next-intl";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Navbar } from "@/components/navbar/navbar";
 import { Toaster } from "sonner";
-import { Footer } from "@/components/footer";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 import { getMessages } from "next-intl/server";
@@ -97,7 +96,6 @@ export default async function RootLayout({
               <Navbar />
               {children}
               <Toaster />
-              <Footer />
             </TooltipProvider>
           </NextIntlClientProvider>
         </ThemeProvider>

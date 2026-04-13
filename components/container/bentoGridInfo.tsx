@@ -47,7 +47,7 @@ export const BentoGridInfo = () => {
     {
       name: `${t("Firstname")} ${t("Lastname")}`,
       description: t("Slogan"),
-      href: "#",
+      href: `/${locale}/contact`,
       className: "col-span-3 lg:col-span-1 lg:row-span-2 h-[100vh] lg:h-full",
       cta: t("Email"),
       background: (

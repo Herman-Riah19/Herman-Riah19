@@ -56,7 +56,7 @@ const experiences: Array<ResumeModel> = [
     end: "Maintenant",
     badges: ["Next.js", "React.js", "Shadcn UI", "Drupal", "Odoo", "GSAP"],
     href: "/",
-    logoUrl: "/assets/icon/Aetheris-DNA.png",
+    logoUrl: "/assets/icon/Aetheris.svg",
     company: "Aetheris LTD France",
     location: "Paris, France (à distance)",
     description:

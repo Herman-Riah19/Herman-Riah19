@@ -3,10 +3,7 @@ import React from "react";
 import { buttonVariants } from "@/components/ui/button";
 import {
   Card,
-  CardContent,
-  CardDescription,
   CardHeader,
-  CardTitle,
   CardFooter,
 } from "@/components/ui/card";
 import { Github, Linkedin } from "lucide-react";

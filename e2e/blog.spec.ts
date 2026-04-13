@@ -1,4 +1,4 @@
-import { getAllBlogs } from "@/app/[locale]/blog/blog.action";
+import { getAllBlogs } from "@/app/[locale]/(content)/blog/blog.action";
 import { test, expect } from "@playwright/test";
 
 const locales = ["en", "fr"];
