@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getAllBlogs } from "./[locale]/blog/blog.action";
+import { getAllBlogs } from "./[locale]/(content)/blog/blog.action";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = "https://herman-riah19.vercel.app";
