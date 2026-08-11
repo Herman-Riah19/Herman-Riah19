@@ -101,7 +101,11 @@
     "Title": "Mes Projects",
     "Checkout": "Découvrez mon dernier travail",
     "Description": "J'ai travaillé sur une variété de projets, allant des simples sites Web aux applications Web complexes. Voici quelques un de mes préférés.",
-    "OtherProject": "List des autres projets"
+    "OtherProject": "List des autres projets",
+    "FilterAll": "Tous",
+    "FilterWebsite": "Site Web",
+    "FilterWebApp": "Application Web",
+    "FilterAIApp": "Application IA"
   },
   "Hobies": {
     "SideProject": "Projet parallèle",

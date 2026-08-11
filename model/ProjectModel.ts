@@ -15,7 +15,7 @@ export let ProjectModelFrReversed: Array<Model> = [
     id: 1,
     href: "https://github.com/Herman-Riah19/TryInc",
     title: "TryInk",
-    type: "Réseau Social",
+    type: "Application Web",
     img: `/assets/image/trink.png`,
     link: "https://github.com/Herman-Riah19/TryInc",
     description:
@@ -27,7 +27,7 @@ export let ProjectModelFrReversed: Array<Model> = [
     id: 2,
     href: "https://webmaster-landing.vercel.app",
     title: "Webmaster",
-    type: "Landing page",
+    type: "Site Web",
     img: `/assets/image/webmaster.PNG`,
     link: "",
     description:
@@ -39,7 +39,7 @@ export let ProjectModelFrReversed: Array<Model> = [
     id: 3,
     href: "http://jupiter.fr",
     title: "Jupiter",
-    type: "Application de Crowfunding",
+    type: "Application Web",
     img: `/assets/image/Jupiter.png`,
     link: "",
     description:
@@ -51,7 +51,7 @@ export let ProjectModelFrReversed: Array<Model> = [
     id: 4,
     href: "https://midas-stability.vercel.app/fr",
     title: "Image Upscaler",
-    type: "Generateur image",
+    type: "Application IA",
     img: `/assets/image/upscaler.png`,
     link: "",
     description:
@@ -63,7 +63,7 @@ export let ProjectModelFrReversed: Array<Model> = [
     id: 5,
     href: "https://open-myst-web-app.vercel.app/",
     title: "OpenMyst",
-    type: "Similateur 3D",
+    type: "Application Web",
     img: `/assets/image/openmyst.PNG`,
     link: "",
     description:
@@ -75,7 +75,7 @@ export let ProjectModelFrReversed: Array<Model> = [
     id: 6,
     href: "https://didascale.vercel.app/fr",
     title: "Didache",
-    type: "IA pour Encyclopedie Eglise",
+    type: "Application IA",
     img: `/assets/image/didache.PNG`,
     link: "",
     description:
@@ -87,7 +87,7 @@ export let ProjectModelFrReversed: Array<Model> = [
     id: 7,
     href: "https://riah-market.vercel.app/fr",
     title: "Riah market",
-    type: "NFT market powered by AI",
+    type: "Application Web",
     img: `/assets/image/riah-market.png`,
     link: "",
     description:
@@ -106,7 +106,7 @@ export let ProjectModelFrReversed: Array<Model> = [
     id: 8,
     href: "https://web-companies-two.vercel.app/",
     title: "Web Ltd",
-    type: "Site vitrine / Landing page",
+    type: "Site Web",
     img: "/assets/image/web_compagnie.png",
     link: "",
     description:
@@ -118,7 +118,7 @@ export let ProjectModelFrReversed: Array<Model> = [
     id: 9,
     href: "https://aetheris-ltd.vercel.app/",
     title: "Aetheris LTD",
-    type: "Site vitrine / Landing page",
+    type: "Site Web",
     img: "/assets/image/Aetheris.png",
     link: "",
     description:
@@ -130,7 +130,7 @@ export let ProjectModelFrReversed: Array<Model> = [
     id: 10,
     href: "https://github.com/Herman-Riah19/Artifex-app",
     title: "Artifex APP",
-    type: "Gestion des Contrat Intélligent",
+    type: "Application Web",
     img: "/assets/image/artifex.png",
     link: "",
     description:
@@ -151,7 +151,7 @@ export let ProjectModelFrReversed: Array<Model> = [
     id: 11,
     href: "https://cv-generator-sable-two.vercel.app/",
     title: "Générateur de CV ATS",
-    type: "Application Web IA",
+    type: "Application IA",
     img: `/assets/image/cv-generator.png`,
     link: "",
     description:
@@ -166,6 +166,39 @@ export let ProjectModelFrReversed: Array<Model> = [
       "Local AI",
     ],
   },
+  {
+    id: 12,
+    href: "https://github.com/Herman-Riah19/hydroid-ai",
+    title: "Hydroid AI",
+    type: "Application IA",
+    img: "/assets/image/hydroid.png",
+    link: "https://github.com/Herman-Riah19/hydroid-ai",
+    description:
+      "ThreatLens est une plateforme d'intelligence et d'analyse de la sécurité web. Construite en monorepo Turborepo avec un backend Ts.ED, un frontend Next.js et un scanner de vulnérabilités auto-hébergé avec le support de LM Studio.",
+    date: "Avril 2026 - Juillet 2026",
+    technology: [
+      "Turborepo",
+      "Ts.ED",
+      "Next.js",
+      "React.js",
+      "Shadcn UI",
+      "LM Studio",
+      "Local AI",
+      "Docker",
+    ],
+  },
+  {
+    id: 13,
+    href: "https://digitalstudio-mada.com/",
+    title: "Digital Studio",
+    type: "Site Web",
+    img: "/assets/image/digital-studio.png",
+    link: "",
+    description:
+      "Landing page et portfolio du studio Digital Studio, mettant en avant le travail d'un cameraman et réalisateur à travers une présentation élégante de ses prestations, projets et réalisations.",
+    date: "Juin 2026 - Août 2026",
+    technology: ["Next.js", "React.js", "Shadcn UI", "Tailwind CSS"],
+  },
 ];
 
 export const ProjectModelEnReversed: Array<Model> = [
@@ -173,7 +206,7 @@ export const ProjectModelEnReversed: Array<Model> = [
     id: 1,
     href: "https://github.com/Herman-Riah19/TryInc",
     title: "TryInk",
-    type: "Social Network",
+    type: "Web Application",
     img: `/assets/image/trink.png`,
     link: "https://github.com/Herman-Riah19/TryInc",
     description:
@@ -185,7 +218,7 @@ export const ProjectModelEnReversed: Array<Model> = [
     id: 2,
     href: "https://webmaster-landing.vercel.app",
     title: "Webmaster",
-    type: "Landing page",
+    type: "Website",
     img: `/assets/image/webmaster.PNG`,
     link: "",
     description:
@@ -197,7 +230,7 @@ export const ProjectModelEnReversed: Array<Model> = [
     id: 3,
     href: "http://jupiter.fr",
     title: "Jupiter",
-    type: "Crowdfunding Application",
+    type: "Web Application",
     img: `/assets/image/Jupiter.png`,
     link: "",
     description:
@@ -209,7 +242,7 @@ export const ProjectModelEnReversed: Array<Model> = [
     id: 4,
     href: "https://midas-stability.vercel.app/fr",
     title: "Image Upscaler",
-    type: "Image Generator",
+    type: "AI Application",
     img: `/assets/image/upscaler.png`,
     link: "",
     description:
@@ -221,7 +254,7 @@ export const ProjectModelEnReversed: Array<Model> = [
     id: 5,
     href: "https://open-myst-web-app.vercel.app/",
     title: "OpenMyst",
-    type: "3D Simulator",
+    type: "Web Application",
     img: `/assets/image/openmyst.PNG`,
     link: "",
     description:
@@ -233,7 +266,7 @@ export const ProjectModelEnReversed: Array<Model> = [
     id: 6,
     href: "https://didascale.vercel.app/fr",
     title: "Didache",
-    type: "AI for Church Encyclopedia",
+    type: "AI Application",
     img: `/assets/image/didache.PNG`,
     link: "",
     description:
@@ -245,7 +278,7 @@ export const ProjectModelEnReversed: Array<Model> = [
     id: 7,
     href: "https://riah-market.vercel.app/fr",
     title: "Riah market",
-    type: "NFT market powered by AI",
+    type: "Web Application",
     img: `/assets/image/riah-market.png`,
     link: "",
     description:
@@ -264,7 +297,7 @@ export const ProjectModelEnReversed: Array<Model> = [
     id: 8,
     href: "https://web-companies-two.vercel.app/",
     title: "Web Ltd",
-    type: "Showcase Website / Landing page",
+    type: "Website",
     img: "/assets/image/web_compagnie.png",
     link: "",
     description:
@@ -276,7 +309,7 @@ export const ProjectModelEnReversed: Array<Model> = [
     id: 9,
     href: "https://aetheris-ltd.vercel.app/",
     title: "Aetheris LTD",
-    type: "Showcase Website / Landing Page",
+    type: "Website",
     img: "/assets/image/Aetheris.png",
     link: "",
     description:
@@ -288,7 +321,7 @@ export const ProjectModelEnReversed: Array<Model> = [
     id: 10,
     href: "https://github.com/Herman-Riah19/Artifex-app",
     title: "Artifex APP",
-    type: "Smart Contract Management",
+    type: "Web Application",
     img: "/assets/image/artifex.png",
     link: "",
     description:
@@ -300,7 +333,7 @@ export const ProjectModelEnReversed: Array<Model> = [
     id: 11,
     href: "https://cv-generator-sable-two.vercel.app/",
     title: "ATS CV Generator",
-    type: "AI Web Application",
+    type: "AI Application",
     img: `/assets/image/cv-generator.png`,
     link: "",
     description:
@@ -316,6 +349,39 @@ export const ProjectModelEnReversed: Array<Model> = [
       "Ollama",
       "Local AI",
     ],
+  },
+  {
+    id: 12,
+    href: "https://github.com/Herman-Riah19/hydroid-ai",
+    title: "Hydroid AI Sec",
+    type: "AI Application",
+    img: "/assets/image/hydroid.png",
+    link: "https://github.com/Herman-Riah19/hydroid-ai",
+    description:
+      "Hydroid AI is a web security intelligence and analysis platform. Built as a Turborepo monorepo with a Ts.ED backend, a Next.js frontend, and a self-hosted vulnerability scanner with LM Studio support.",
+    date: "April 2026 - July 2026",
+    technology: [
+      "Turborepo",
+      "Ts.ED",
+      "Next.js",
+      "React.js",
+      "Shadcn UI",
+      "LM Studio",
+      "Local AI",
+      "Docker",
+    ],
+  },
+  {
+    id: 13,
+    href: "https://digitalstudio-mada.com/",
+    title: "Digital Studio",
+    type: "Website",
+    img: "/assets/image/digital-studio.png",
+    link: "",
+    description:
+      "Landing page and portfolio for Digital Studio, showcasing the work of a cameraman and director through an elegant presentation of services, projects, and productions.",
+    date: "June 2026 - August 2026",
+    technology: ["Next.js", "React.js", "Shadcn UI", "Tailwind CSS"],
   },
 ];
 
