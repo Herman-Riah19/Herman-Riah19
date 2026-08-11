@@ -116,13 +116,13 @@ export let ProjectModelFrReversed: Array<Model> = [
   },
   {
     id: 9,
-    href: "https://aetheris-ltd.vercel.app/",
-    title: "Aetheris LTD",
+    href: "https://www.aetheris-dna.com",
+    title: "Aetheris LTD et DNA",
     type: "Site Web",
     img: "/assets/image/Aetheris.png",
     link: "",
     description:
-      "Développement et intégration du site vitrine de Aetheris LTD qui offres des service de gestion ERP et configuration des modules Odoo au sein des entreprise B2B. Cette application se relie avec le CRM Odoo pour dinamyser ses conténune",
+      "Développement et intégration du site vitrine de Aetheris LTD et DNA qui offres des service de gestion ERP et configuration des modules Odoo au sein des entreprise B2B. Cette application se relie avec le CRM Odoo pour dinamyser ses conténune",
     date: "Décembre 2025 - Février 2026",
     technology: ["Next.js", "React.js", "Shadcn UI", "Odoo"],
   },
@@ -313,7 +313,7 @@ export const ProjectModelEnReversed: Array<Model> = [
     img: "/assets/image/Aetheris.png",
     link: "",
     description:
-      "Development and integration of the Aetheris LTD showcase website, which offers ERP management services and Odoo module configuration for B2B companies. The application is connected to the Odoo CRM to dynamically manage and update its content.",
+      "Development and integration of the Aetheris LTD and DNA showcase website, which offers ERP management services and Odoo module configuration for B2B companies. The application is connected to the Odoo CRM to dynamically manage and update its content.",
     date: "December 2025 - February 2026",
     technology: ["Next.js", "React.js", "Shadcn UI", "Odoo"],
   },
