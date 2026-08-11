@@ -123,7 +123,7 @@ export let ProjectModelFrReversed: Array<Model> = [
     link: "",
     description:
       "Développement et intégration du site vitrine de Aetheris LTD et DNA qui offres des service de gestion ERP et configuration des modules Odoo au sein des entreprise B2B. Cette application se relie avec le CRM Odoo pour dinamyser ses conténune",
-    date: "Décembre 2025 - Février 2026",
+    date: "Décembre 2025 - Juin 2026",
     technology: ["Next.js", "React.js", "Shadcn UI", "Odoo"],
   },
   {
@@ -314,7 +314,7 @@ export const ProjectModelEnReversed: Array<Model> = [
     link: "",
     description:
       "Development and integration of the Aetheris LTD and DNA showcase website, which offers ERP management services and Odoo module configuration for B2B companies. The application is connected to the Odoo CRM to dynamically manage and update its content.",
-    date: "December 2025 - February 2026",
+    date: "December 2025 - June 2026",
     technology: ["Next.js", "React.js", "Shadcn UI", "Odoo"],
   },
   {
