@@ -307,8 +307,8 @@ export const ProjectModelEnReversed: Array<Model> = [
   },
   {
     id: 9,
-    href: "https://aetheris-ltd.vercel.app/",
-    title: "Aetheris LTD",
+    href: "https://www.aetheris-dna.com/",
+    title: "Aetheris DNA",
     type: "Website",
     img: "/assets/image/Aetheris.png",
     link: "",
