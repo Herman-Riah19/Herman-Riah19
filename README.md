@@ -16,6 +16,8 @@ I'm committed to bringing your vision to life with a perfect blend of technical 
 
 Here are some of my favorite projects that I've worked on:
 
+- [**Hydroid**](https://github.com/Herman-Riah19/hydroid-ai): Web security intelligence and analysis platform. Turborepo monorepo with Ts.ED backend, Next.js frontend, and self-hosted vulnerability scanner with LM Studio support.
+- [**Boiler Plate Riah**](https://github.com/Herman-Riah19/boiler-plate-riah): This boiler plate is a modern Bun-based monorepo built with a microservices-oriented architecture and orchestrated using Turborepo. It is designed to manage multiple applications and shared packages within a single repository, enabling parallel development, code reuse, and high scalability..
 - [**TryInc**](https://github.com/Herman-Riah19/TryInc): A social media platform built with AdonisJS and React, designed to connect users through engaging and interactive features.
 - [**Python2048**](https://github.com/Herman-Riah19/python2048): A Python implementation of the classic 2048 game, showcasing algorithmic problem-solving and game development skills.
 - [**Angular-is-to-teny**](https://github.com/Herman-Riah19/angular-is-to-teny): A number-to-text translator in Malagasy, built with Angular to help users convert numerical values into their textual equivalents in the Malagasy language.
