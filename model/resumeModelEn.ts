@@ -63,7 +63,7 @@ const experiencesEn: Array<ResumeModel> = [
       "<ul class='list-disc'><li class='text-sm font-regular text-justify'>Design and development of a corporate website for Web Compagnie France based on a client-provided mockup, following UX/UI standards and web best practices.</li>" +
       "<li class='text-sm font-regular text-justify list-disc'>Development and integration of API-connected interfaces with a Drupal-based CRM, ensuring user data synchronization.</li>" +
       "<li class='text-sm font-regular text-justify list-disc'>Redesign and integration of websites for Aetheris LTD and Aetheris DNA, implementing modern and responsive designs.</li>" +
-      "<li class='text-sm font-regular text-justify list-disc'>Implementation of a communication system between the website and Odoo CRM for automated lead collection, storage, and management (emails and customer messages).</li>" +
+      "<li class='text-sm font-regular text-justify list-disc'> Implemented a Headless architecture connecting the website to Odoo to centralize lead capture, client project tracking, content management (blog & SEO), and CRM workflow automation.</li>" +
       "</ul>",
   },
   {

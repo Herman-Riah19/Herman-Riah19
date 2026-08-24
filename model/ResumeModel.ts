@@ -62,8 +62,8 @@ const experiences: Array<ResumeModel> = [
     description:
       "<ul class='list-disc'><li class='text-sm font-regular text-justify'>Conception et intégration d’un site vitrine pour Web Compagnie France à partir d’une maquette fournie par le client, en respectant les standards UX/UI et les bonnes pratiques web.</li>" +
       "<li class='text-sm font-regular text-justify list-disc'>Développement et intégration d’interfaces connectées via API avec un CRM basé sur Drupal, assurant la synchronisation des données utilisateurs.</li>" +
-      "<li class='text-sm font-regular text-justify list-disc'>Refonte et intégration des sites web des entités Aetheris LTD et Aetheris DNA, avec implémentation de nouveaux designs modernes et responsives. </li>" +
-      "<li class='text-sm font-regular text-justify list-disc'>Mise en place d’un système de communication entre le site web et le CRM Odoo pour la collecte, le stockage et la gestion automatisée des leads (emails et messages clients).</li>" +
+      "<li class='text-sm font-regular text-justify list-disc'> Intégration et modernisation des plateformes web pour Aetheris LTD et Aetheris DNA en créant des designs systèmes personnalisés et responsives. </li>" +
+      "<li class='text-sm font-regular text-justify list-disc'>Mise en place d'une architecture Headless reliant le site web à Odoo pour centraliser la capture de contacts, le suivi des projets clients, la gestion du contenu (blog & SEO) et l'automatisation des flux CRM.</li>" +
       "</ul>",
   },
   {
