@@ -25,7 +25,7 @@
       },
       "feature2": {
         "title": "APIs Performantes",
-        "text": "Création d’APIs REST et GraphQL robustes avec Node.js et NestJS."
+        "text": "Création d’APIs REST ou tRPC avec Node.js et NestJS."
       },
       "feature3": {
         "title": "IA agentique & Opencode",
@@ -33,7 +33,7 @@
       },
       "feature4": {
         "title": "DevOps & Cloud",
-        "text": "Déploiement sur Docker, CI/CD, hébergement sur AWS et Vercel."
+        "text": "Déploiement sur Docker,Github Action CI/CD, GitLab CI/CD, Dokploy, hébergement sur AWS et Vercel."
       }
     },
     "Pricing": {
@@ -86,7 +86,7 @@
     "Presentation": "Hermann Christian RAZAFINDRANAIVO",
     "AboutTitle": "A propos",
     "Slogan": "Vous avez une idée en tête ? Concrétisons-la : propre, rapide et un peu plus cool que prévu.",
-    "About": "Ingénieur / Développeur Python orienté Data & IA Générative. Concepteur d'APIs RESTful performantes (FastAPI, PostgreSQL) et de systèmes RAG avancés permettant d'exploiter la puissance des LLMs sur des bases de connaissances ciblées. Solide expertise en Web Scraping, structuration et visualisation de données, combinée à une rigueur d'ingénierie logicielle basée sur la conteneurisation Docker. \n \n Développeur Full-Stack & Architecte Logiciel spécialisé dans les applications web modernes (TypeScript, Next.js) et l'intégration UI/UX soignée. Au quotidien je code majoritairement avec Opencode, avec une bonne maîtrise des skills, commandes et code rules / AGENTS.md. Ma spécialité : les architectures monorepo (Turborepo, Nx, pnpm workspaces) et microservices (event-driven, REST/GraphQL, Docker). \n \n Curieux, organisé et solution-oriented, j'allie empathie, travail d'équipe et passion pour le continuous learning pour livrer des systèmes propres et centrés sur l'utilisateur. Motivé par un esprit d'innovation et un apprentissage continu, je suis toujours en quête de nouvelles opportunités pour repousser les frontières du possible."
+    "About": "Ingénieur / Développeur Python orienté Data & IA Générative. Concepteur d'APIs RESTful performantes (FastAPI, PostgreSQL) et de systèmes RAG avancés permettant d'exploiter la puissance des LLMs sur des bases de connaissances ciblées. Solide expertise en Web Scraping, structuration et visualisation de données, combinée à une rigueur d'ingénierie logicielle basée sur la conteneurisation Docker. \n \n Développeur Full-Stack spécialisé dans les écosystèmes Node.js moderne (TypeScript,Nest.js et Next.js) et l'intégration UI/UX soignée avec l'application de Atomic Design et Storybook.\n \n Au quotidien je code majoritairement avec Opencode, avec une bonne maîtrise des Skills, commandes et code rules / AGENTS.md. \n \n Ma spécialité ce sont: les architectures monorepo (Turborepo, Nx, pnpm workspaces) et microservices (event-driven, REST/GraphQL, Docker), La programmation Orientée Objet, TDD et DDD, le Review et l'optimisation des Codes afin de rendre le projet plus performant et scalable. \n \n Curieux, organisé et solution-oriented, j'allie empathie, travail d'équipe et passion pour le continuous learning pour livrer des systèmes propres et centrés sur l'utilisateur. Motivé par un esprit d'innovation et un apprentissage continu, je suis toujours en quête de nouvelles opportunités pour repousser les frontières du possible."
   },
   "Navbar": {
     "Home": "Accueil",
