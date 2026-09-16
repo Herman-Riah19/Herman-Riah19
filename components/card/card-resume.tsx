@@ -72,7 +72,7 @@ export const CardResume = ({
             <span className="flex flex-wrap gap-px bg-border border border-border">
               {badges.map((badge, index) => (
                 <Badge
-                  variant="secondary"
+                  variant="default"
                   className="rounded-none border-0"
                   key={index}
                 >

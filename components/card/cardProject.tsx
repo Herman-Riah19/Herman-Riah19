@@ -117,7 +117,7 @@ export function CardProject({
           {tags.map((tag, idx) => (
             <Badge
               key={idx}
-              variant="secondary"
+              variant="default"
               className="px-2 py-1 text-[10px] font-mono uppercase tracking-wider rounded-none border-0"
             >
               {tag}

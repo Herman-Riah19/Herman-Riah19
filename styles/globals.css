@@ -8,51 +8,52 @@ ul {
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 220.9 39.3% 11%;
+    /* Thème clair par défaut (version sombre moderne) */
+    --background: 220 18% 10%;
+    --foreground: 210 20% 98%;
+    --card: 220 16% 14%;
+    --card-foreground: 210 20% 98%;
+    --popover: 220 16% 14%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 38 75% 58%;           /* Accents dorés / ambre comme le texte japonais */
+    --primary-foreground: 220 20% 8%;
+    --secondary: 217 19% 18%;
     --secondary-foreground: 210 20% 98%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-    --destructive: 0 84.2% 60.2%;
+    --muted: 217 19% 18%;
+    --muted-foreground: 215 15% 62%;  /* Gris textuel des graphiques/labels */
+    --accent: 217 19% 22%;
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-    --radius: 0;
+    --border: 217 15% 20%;           /* Lignes légères séparant les panneaux */
+    --input: 217 15% 20%;
+    --ring: 38 75% 58%;
+    --radius: 0.375rem;
   }
 
   .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 210 20% 98%;
-    --secondary-foreground: 220.9 39.3% 11%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9;
+    /* Mode Sombre Ultra (Fidèle à l'arrière-plan de l'écran de droite/gauche) */
+    --background: 222 20% 7%;        /* Fond très sombre #0d0f12 */
+    --foreground: 210 15% 90%;       /* Texte principal gris clair */
+    --card: 222 18% 11%;             /* Panneaux du dashboard #14181f */
+    --card-foreground: 210 15% 95%;
+    --popover: 222 18% 11%;
+    --popover-foreground: 210 15% 95%;
+    --primary: 38 80% 55%;           /* Couleur dorée / ambre (#e5a83b) */
+    --primary-foreground: 222 20% 7%;
+    --secondary: 217 16% 16%;        /* Éléments secondaires / boutons sombres */
+    --secondary-foreground: 210 15% 90%;
+    --muted: 217 16% 16%;
+    --muted-foreground: 215 12% 55%; /* Légendes et textes secondaires */
+    --accent: 217 20% 20%;
+    --accent-foreground: 210 15% 98%;
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 217 16% 18%;           /* Bordures fines entre les cartes */
+    --input: 217 16% 18%;
+    --ring: 38 80% 55%;
   }
 }
-
 
 @layer base {
   * {

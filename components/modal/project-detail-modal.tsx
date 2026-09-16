@@ -98,7 +98,7 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({
                   {project.technology.map((tech, idx) => (
                     <Badge
                       key={idx}
-                      variant="secondary"
+                      variant="default"
                       className="rounded-none border-0"
                     >
                       {tech}
