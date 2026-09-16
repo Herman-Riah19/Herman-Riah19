@@ -186,7 +186,7 @@ export const HeroSection = () => {
 
                 <div className="relative w-full h-full overflow-hidden">
                   <Image
-                    src="/assets/image/hero-portrait.jpg"
+                    src="/assets/image/profile-remove.png"
                     alt="Hero portrait"
                     fill
                     priority
