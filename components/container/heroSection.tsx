@@ -94,7 +94,7 @@ export const HeroSection = () => {
                 </div>
                 <div className="bg-card p-3 space-y-1">
                   <span className="text-[10px] uppercase text-muted-foreground block">STACK</span>
-                  <span className="text-sm font-semibold text-card-foreground">TS / NEXT / GO</span>
+                  <span className="text-sm font-semibold text-card-foreground">TS / PYTHON / AI Coding</span>
                 </div>
                 <div className="bg-card p-3 space-y-1">
                   <span className="text-[10px] uppercase text-muted-foreground block">SYSTEM</span>
