@@ -3,11 +3,10 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { useTranslations } from "next-intl";
-import { BorderBeam } from "@/components/magicui/border-beam";
 import { BLUR_FADE_DELAY } from "@/lib/constant";
 import BlurFade from "@/components/container/blur-fade";
-import { MagicCard } from "@/components/ui/magic-card";
 import { AnimateWelcomeBack } from "../animation/animateWelcome";
+import { Terminal } from "lucide-react";
 
 export default function Pricing() {
   const t = useTranslations("Home");
@@ -53,53 +52,61 @@ export default function Pricing() {
 
   return (
     <section
-      id="services"
-      className="container mx-auto py-16 flex flex-col gap-10"
+      id="pricing"
+      className="w-full bg-background text-foreground font-mono border-t border-border"
     >
-      <BlurFade delay={BLUR_FADE_DELAY * 11}>
-        <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <div className="space-y-2">
-            <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-              {t("Pricing.Title")}
+      <div className="px-4 sm:px-8 lg:px-12 py-16 lg:py-20">
+        <BlurFade delay={BLUR_FADE_DELAY * 11}>
+          <div className="flex flex-col space-y-3 max-w-3xl mb-10">
+            <div className="flex items-center gap-2 text-xs uppercase text-muted-foreground tracking-widest">
+              <Terminal className="w-3.5 h-3.5" />
+              <span>04 // {t("Pricing.Title")}</span>
             </div>
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif tracking-tight leading-none text-foreground">
               {t("Pricing.Checkout")}
             </h2>
-            <p className="prose max-w-full text-pretty font-sans text-lg text-secondary/80 dark:prose-invert">
+            <p className="font-sans text-sm sm:text-base text-muted-foreground leading-relaxed max-w-xl">
               {t("Pricing.Description")}
             </p>
           </div>
-        </div>
-      </BlurFade>
-      <div className="grid md:grid-cols-3 gap-6">
-        {services.map((service, idx) => (
-          <AnimateWelcomeBack key={idx}>
-            <Card className="relative overflow-hidden hover:shadow-lg transition-shadow duration-300">
-              <MagicCard>
-                <CardHeader>
-                  <CardTitle className="flex justify-between items-center">
+        </BlurFade>
+        <div className="grid md:grid-cols-3 gap-px bg-border border border-border max-w-6xl">
+          {services.map((service, idx) => (
+            <AnimateWelcomeBack key={idx}>
+              <Card className="relative overflow-hidden rounded-none border-0 bg-card h-full flex flex-col shadow-sm">
+                <CardHeader className="p-6 sm:p-8 pb-4 border-b border-border">
+                  <CardTitle className="flex justify-between items-center font-mono text-xs uppercase tracking-widest text-muted-foreground">
                     {service.title}
                     {service.popular && (
-                      <span className="text-sm">Populaire</span>
+                      <span className="text-[10px] font-mono uppercase tracking-widest px-2 py-1 bg-primary text-primary-foreground">
+                        Populaire
+                      </span>
                     )}
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <div className="text-2xl font-bold mb-4">{service.price}</div>
-                  <ul className="space-y-1 mb-4 ml-4 text-muted-foreground text-sm">
+                <CardContent className="p-6 sm:p-8 pt-6 flex flex-col flex-grow">
+                  <div className="font-serif text-4xl tracking-tight mb-6 text-foreground">{service.price}</div>
+                  <ul className="space-y-3 mb-8 text-muted-foreground font-sans text-sm flex-grow">
                     {service.features.map((f) => (
-                      <li key={f}>{f}</li>
+                      <li key={f} className="flex items-start gap-2 border-b border-border/60 pb-2 last:border-0">
+                        <span className="text-foreground text-sm leading-none mt-0.5">—</span> {f}
+                      </li>
                     ))}
                   </ul>
-                  <a href="#contact">
-                    <Button className="w-full">Me contacter</Button>
+                  <a href="#contact" className="mt-auto">
+                    <Button className="w-full rounded-none font-mono text-xs uppercase tracking-wider h-11 px-6" variant={service.popular ? "default" : "outline"}>
+                      Me contacter
+                    </Button>
                   </a>
                 </CardContent>
-              </MagicCard>
-              <BorderBeam duration={8} size={100} />
-            </Card>
-          </AnimateWelcomeBack>
-        ))}
+              </Card>
+            </AnimateWelcomeBack>
+          ))}
+        </div>
+        <div className="flex items-center justify-between pt-4 mt-8 border-t border-border text-[10px] text-muted-foreground uppercase tracking-widest">
+          <div>TIERS // 04</div>
+          <div>SYSTEM ACTIVE</div>
+        </div>
       </div>
     </section>
   );

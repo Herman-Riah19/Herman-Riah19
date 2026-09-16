@@ -58,35 +58,43 @@ const navigation: {
 
 export function Footer() {
   return (
-    <footer className="w-full h-1/2 flex flex-col justify-items-center pb-10">
-      <section id="contact">
-        <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 16}>
-            <div className="space-y-3">
-              <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                Contact
+    <footer className="w-full bg-background text-foreground font-mono border-t border-border">
+      <div className="px-4 sm:px-8 lg:px-12 pt-12 pb-8">
+        <section id="social-links" className="w-full">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
+            <BlurFade delay={BLUR_FADE_DELAY * 16}>
+              <div className="space-y-3">
+                <div className="text-xs uppercase tracking-widest text-muted-foreground">06 // SYSTEM FOOTNOTE</div>
+                <h2 className="font-serif text-3xl sm:text-4xl tracking-tight leading-none">
+                  Get in <span className="italic font-light text-muted-foreground">Touch</span>
+                </h2>
               </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Get in Touch
-              </h2>
-              <div className="mt-5 flex justify-center space-x-6">
-                {navigation.social.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="text-gray-600 hover:text-gray-800 dark:text-gray-100"
-                  >
-                    <span className="sr-only">{item.name}</span>
-                    {item.icon && (
-                      <item.icon className="h-6 w-5" aria-hidden="true" />
-                    )}
-                  </a>
-                ))}
-              </div>
+            </BlurFade>
+            <div className="flex items-center gap-1 border-l border-border pl-3">
+              {navigation.social.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="flex items-center justify-center w-10 h-10 rounded-none text-muted-foreground hover:text-foreground hover:bg-accent transition-colors"
+                >
+                  <span className="sr-only">{item.name}</span>
+                  {item.icon && (
+                    <item.icon className="h-4 w-4" aria-hidden="true" />
+                  )}
+                </a>
+              ))}
             </div>
-          </BlurFade>
+          </div>
+        </section>
+        <div className="flex items-center justify-between pt-4 mt-10 border-t border-border text-[10px] text-muted-foreground uppercase tracking-widest">
+          <div>EDITION // 2026.1</div>
+          <div className="flex items-center gap-2">
+            <span className="h-1.5 w-1.5 bg-primary rounded-full"></span>
+            <span>SYSTEM ACTIVE</span>
+          </div>
+          <div>© 2026</div>
         </div>
-      </section>
+      </div>
     </footer>
   )
 }

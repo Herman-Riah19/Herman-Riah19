@@ -6,6 +6,7 @@ export interface Model {
   img: string;
   link: string;
   description: string;
+  longDescription?: string;
   date: string;
   technology: string[];
 }
@@ -68,6 +69,8 @@ export let ProjectModelFrReversed: Array<Model> = [
     link: "",
     description:
       "Open Myst est une plateforme de visualisation 3D qui rassemble les données les plus fiables disponibles sur la vie de Jésus.",
+    longDescription:
+      "OpenMyst est une application immersive de visualisation cartographique 3D construite avec Next.js, Mapbox GL et Firebase. Elle rassemble et structure des données historiques et géographiques complexes pour offrir une exploration interactive temporelle et spatiale. Grâce à l'intégration de la 3D, les utilisateurs peuvent suivre des itinéraires historiques et consulter des contextes détaillés.",
     date: "Mai 2024 - Décembre 2024",
     technology: ["NextJS", "ReactJs", "Shadcn UI", "Firebase", "Mapbox"],
   },
@@ -135,6 +138,8 @@ export let ProjectModelFrReversed: Array<Model> = [
     link: "",
     description:
       "Artifex est une plateforme moderne de gestion des smart contracts destinée aux équipes blockchain, startups Web3 et entreprises souhaitant concevoir, déployer, auditer et superviser leurs contrats intelligents de manière sécurisée et centralisée.",
+    longDescription:
+      "Artifex APP est une suite logicielle dédiée à la gestion et au cycle de vie complet des Smart Contracts Web3. Conçue sous forme de monorepo microservice avec Next.js et Ts.ED, elle permet d'écrire, tester, simuler l'exécution, calculer le coût en gaz et déployer en toute sécurité des contrats intelligents sur plusieurs réseaux blockchain (Ethereum, Polygon, Arbitrum). L'application comprend également un tableau de bord en temps réel pour le suivi des transactions et la détection d'anomalies.",
     date: "Janvier 2026 - Mars 2026",
     technology: [
       "Web 3",
@@ -156,6 +161,8 @@ export let ProjectModelFrReversed: Array<Model> = [
     link: "",
     description:
       "Générateur de CV intelligent compatible ATS (Applicant Tracking System) qui utilise l'IA locale via LM Studio pour analyser, optimiser et générer des CV adaptés aux systèmes de recrutement automatisés. L'application se connecte aux modèles LLMs locaux pour une personnalisation avancée des contenus.",
+    longDescription:
+      "Cette application web exploite les modèles de langage IA locaux (via LM Studio & Ollama) pour optimiser et adapter les CV aux filtres automatisés ATS (Applicant Tracking System). Elle garantit une confidentialité totale des données en évitant l'envoi vers des serveurs tiers. L'utilisateur peut importer une fiche de poste et son CV, puis bénéficier d'une analyse d'écart sémantique, d'une recommandation de mots-clés clés et de la génération d'un CV optimisé prêt au téléchargement.",
     date: "Mars 2026 - Avril 2026",
     technology: [
       "Next.js",
@@ -175,6 +182,8 @@ export let ProjectModelFrReversed: Array<Model> = [
     link: "https://github.com/Herman-Riah19/hydroid-ai",
     description:
       "ThreatLens est une plateforme d'intelligence et d'analyse de la sécurité web. Construite en monorepo Turborepo avec un backend Ts.ED, un frontend Next.js et un scanner de vulnérabilités auto-hébergé avec le support de LM Studio.",
+    longDescription:
+      "Hydroid AI / ThreatLens est une solution d'intelligence et d'analyse de la sécurité web de pointe. Basée sur une architecture monorepo Turborepo, elle combine un backend puissant en Ts.ED (Node.js/TypeScript) et un frontend réactif en Next.js. Elle embarque un scanner automatisé de vulnérabilités web auto-hébergé couplé à des modèles d'IA locaux via LM Studio et Ollama. L'application permet d'auditer en temps réel les sites web, de détecter les failles XSS, injections SQL et mauvaises configurations, puis d'obtenir des conseils de remédiation automatisés.",
     date: "Avril 2026 - Juillet 2026",
     technology: [
       "Turborepo",
@@ -326,6 +335,8 @@ export const ProjectModelEnReversed: Array<Model> = [
     link: "",
     description:
       "Artifex is a modern smart contract management platform designed for blockchain teams, Web3 startups, and enterprises that want to design, deploy, audit, and monitor their smart contracts in a secure and centralized environment.",
+    longDescription:
+      "Artifex APP is a comprehensive software platform designed for full Web3 smart contract management. Architected as a microservice monorepo using Next.js and Ts.ED, it allows developers to write, test, simulate gas costs, and deploy smart contracts securely across multiple blockchains (Ethereum, Polygon, Arbitrum). Includes a real-time monitoring dashboard for on-chain events and automated security auditing.",
     date: "January 2026 - March 2026",
     technology: [ "Web3", "Monorepo Microservices", "TS.ED", "Next.js", "React.js", "Shadcn UI", "Prisma", "PostgreSQL" ],
   },
@@ -338,6 +349,8 @@ export const ProjectModelEnReversed: Array<Model> = [
     link: "",
     description:
       "ATS-compatible intelligent CV generator that uses local AI via LM Studio to analyze, optimize, and generate resumes tailored to automated recruitment systems. The application connects to local LLM models for advanced content personalization.",
+    longDescription:
+      "This web application leverages local AI language models (via LM Studio & Ollama) to optimize resumes specifically for Applicant Tracking System (ATS) recruitment filters. Ensuring 100% data privacy without uploading data to third-party APIs, users can compare their resumes against job descriptions, receive semantic keyword recommendations, and generate tailored ATS-friendly resumes.",
     date: "March 2026 - April 2026",
     technology: [
       "Next.js",
@@ -359,6 +372,8 @@ export const ProjectModelEnReversed: Array<Model> = [
     link: "https://github.com/Herman-Riah19/hydroid-ai",
     description:
       "Hydroid AI is a web security intelligence and analysis platform. Built as a Turborepo monorepo with a Ts.ED backend, a Next.js frontend, and a self-hosted vulnerability scanner with LM Studio support.",
+    longDescription:
+      "Hydroid AI / ThreatLens is a cutting-edge web security intelligence and vulnerability scanning solution. Built on a Turborepo monorepo architecture combining a high-performance Ts.ED TypeScript backend and a Next.js frontend. It features an automated self-hosted web vulnerability scanner integrated with local AI LLMs via LM Studio and Ollama to perform real-time security auditing, XSS/SQLi detection, and smart remediation guidance.",
     date: "April 2026 - July 2026",
     technology: [
       "Turborepo",

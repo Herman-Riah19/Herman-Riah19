@@ -1,8 +1,7 @@
 import { ComponentPropsWithoutRef, ReactNode } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { ArrowRightIcon } from "lucide-react";
-import { BorderBeam } from "@/components/magicui/border-beam";
+import { ArrowUpRight } from "lucide-react";
 
 interface BentoGridProps extends ComponentPropsWithoutRef<"div"> {
   children: ReactNode;
@@ -23,7 +22,7 @@ const BentoGrid = ({ children, className, ...props }: BentoGridProps) => {
   return (
     <div
       className={cn(
-        "grid w-full grid-cols-3 gap-2",
+        "grid w-full grid-cols-3 gap-px bg-border border border-border",
         className
       )}
       {...props}
@@ -47,35 +46,29 @@ const BentoCard = ({
   <div
     key={name}
     className={cn(
-      "h-[48vh] group relative col-span-3 flex flex-col justify-between overflow-hidden rounded-xl",
-      // light styles
-      "bg-background/80 [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)]",
-      // dark styles
-      "transform-gpu dark:bg-background dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]",
+      "h-[48vh] group relative col-span-3 flex flex-col justify-between overflow-hidden rounded-none border border-border bg-card text-card-foreground shadow-sm font-mono",
       className
     )}
     {...props}
   >
-    <div className="z-0">{background}</div>
-    <div className="pointer-events-none z-10 flex transform-gpu flex-col gap-1 p-6">
-      {Icon && <Icon className="h-12 w-12 origin-left transform-gpu text-neutral-700" />}
-        <h3 className="sm:text-lg lg:text-3xl font-bold bg-gradient-to-b from-black to-black/50 bg-clip-text text-transparent dark:from-white dark:to-slate-900/10">
+    <div className="relative flex-1 overflow-hidden border-b border-border bg-background">{background}</div>
+    <div className="pointer-events-none z-10 flex flex-col gap-2 p-6 bg-card">
+      {Icon && <Icon className="h-5 w-5 text-muted-foreground" />}
+        <h3 className="font-serif text-2xl lg:text-3xl tracking-tight leading-none text-foreground">
           {name}
         </h3>
-        <p className="max-w-lg text-neutral-400">{description}</p>
-        <p className="max-w-lg text-neutral-400"></p>
+        <p className="max-w-lg font-sans text-sm text-muted-foreground leading-relaxed">{description}</p>
         <div>
         {href !== "" && (
-          <Button variant="secondary" asChild className="pointer-events-auto w-auto">
+          <Button variant="outline" asChild className="pointer-events-auto w-auto rounded-none font-mono text-xs uppercase tracking-wider h-11 px-6 mt-2">
             <a href={href}>
               {cta}
-              <ArrowRightIcon className="ms-2 h-4 w-4 rtl:rotate-180" />
+              <ArrowUpRight className="ml-1 h-4 w-4" />
             </a>
           </Button>
         )}
         </div>
     </div>
-    <BorderBeam duration={8} size={100} />
   </div>
 );
 }

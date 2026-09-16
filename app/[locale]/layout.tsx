@@ -77,7 +77,7 @@ export default async function RootLayout({
   const message = await getMessages({ locale });
 
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning className="dark">
       <body
         className={cn(
           "bg-background font-sans antialiased overflow-x-hidden",
@@ -87,8 +87,8 @@ export default async function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
+          defaultTheme="dark"
+          enableSystem={false}
           disableTransitionOnChange
         >
           <NextIntlClientProvider messages={message}>

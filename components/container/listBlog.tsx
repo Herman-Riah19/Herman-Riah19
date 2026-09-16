@@ -7,6 +7,7 @@ import CardBlog from "@/components/card/card-blog";
 import { useLocale, useTranslations } from "next-intl";
 import { BLUR_FADE_DELAY } from "@/lib/constant";
 import BlurFade from "./blur-fade";
+import { Terminal } from "lucide-react";
 
 interface ListBlogProps {
   blogs: Blog[];
@@ -17,29 +18,37 @@ export function ListBlog({ blogs }: ListBlogProps) {
   const t = useTranslations("Blog");
 
   return (
-    <div className="container mx-auto py-16 flex flex-col gap-10">
-      <BlurFade delay={BLUR_FADE_DELAY * 11}>
-        <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl" data-testid="features-checkout">
+    <div className="w-full bg-background text-foreground font-mono">
+      <div className="px-4 sm:px-8 lg:px-12 py-16 lg:py-20">
+        <BlurFade delay={BLUR_FADE_DELAY * 11}>
+          <div className="flex flex-col space-y-3 max-w-3xl mb-10">
+            <div className="flex items-center gap-2 text-xs uppercase text-muted-foreground tracking-widest">
+              <Terminal className="w-3.5 h-3.5" />
+              <span>Blog // Index</span>
+            </div>
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif tracking-tight leading-none" data-testid="features-checkout">
               {t("Title")}
             </h2>
             <p
-              className="prose max-w-full text-pretty font-sans text-lg text-secondary/80 dark:prose-invert"
+              className="font-sans text-sm sm:text-base text-muted-foreground leading-relaxed max-w-xl"
               data-testid="features-description"
             >
               {t("Description")}
             </p>
           </div>
+        </BlurFade>
+        <section className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-px bg-border border border-border">
+          {blogs.map((blog, idx) => (
+            <Link key={idx} href={`/${locale}/blog/${blog.fileName}`} className="bg-card">
+              <CardBlog {...blog} />
+            </Link>
+          ))}
+        </section>
+        <div className="flex items-center justify-between pt-4 mt-8 border-t border-border text-[10px] text-muted-foreground uppercase tracking-widest">
+          <div>Posts // {blogs.length}</div>
+          <div>System active</div>
         </div>
-      </BlurFade>
-      <section className="grid sm:grid-cols-1 md:grid-cols-3 gap-6">
-        {blogs.map((blog, idx) => (
-          <Link key={idx} href={`/${locale}/blog/${blog.fileName}`}>
-            <CardBlog {...blog} />
-          </Link>
-        ))}
-      </section>
+      </div>
     </div>
   );
 }

@@ -1,26 +1,26 @@
 "use client";
 import React from "react";
 import { buttonVariants } from "@/components/ui/button";
-import {
-  Card,
-  CardHeader,
-  CardFooter,
-} from "@/components/ui/card";
 import { Github, Linkedin } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 export const CardProfile = () => {
   const t = useTranslations("Welcome");
   return (
-    <Card className="flex flex-col justify-center items-center shadow-none border-none bg-transparent">
-      <CardHeader className="m-0 p-0 pb-2 flex justify-center items-center">
+    <div className="flex flex-col w-full border border-border bg-card p-2 shadow-sm font-mono">
+      <div className="relative w-full overflow-hidden bg-background">
         <img
-          src={"/assets/image/profile.png"}
-          className="sm:h-[64vh] lg:h-[60vh] w-full p-0 m-0 -ml-5"
+          src={"/assets/image/portrait.jpg"}
+          alt="profile"
+          className="h-[52vh] lg:h-[60vh] w-full object-cover object-top p-0 m-0"
         />
-      </CardHeader>
-      <CardFooter>
-        <div>
+        <span className="absolute top-3 right-3 text-xs font-serif text-muted-foreground/60 pointer-events-none">
+          力
+        </span>
+      </div>
+      <div className="flex items-center justify-between border-t border-border mt-2 pt-2 px-1">
+        <span className="text-[10px] uppercase tracking-widest text-muted-foreground">PROFILE // 00</span>
+        <div className="flex items-center gap-1">
           <a
             rel="noreferrer noopener"
             href="https://github.com/Herman-Riah19"
@@ -67,7 +67,7 @@ export const CardProfile = () => {
             <Linkedin size="20" />
           </a>
         </div>
-      </CardFooter>
-    </Card>
+      </div>
+    </div>
   );
 };

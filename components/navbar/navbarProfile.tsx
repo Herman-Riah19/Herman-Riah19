@@ -13,6 +13,7 @@ import {
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
+import { ArrowUpRight } from "lucide-react";
 
 export const NavbarProfile = () => {
   const t = useTranslations("Navbar");
@@ -26,7 +27,6 @@ export const NavbarProfile = () => {
 
   useEffect(() => {
     const hash = window.location.hash;
-    console.log(hash);
     if (hash) {
       const targetId = hash.substring(1);
       scrollToSection(targetId);
@@ -63,20 +63,25 @@ export const NavbarProfile = () => {
   ];
 
   return (
-    <div className="sm:hidden md:flex flex-col gap-2 items-start mt-4">
-      {pages.map((item) => (
+    <nav className="grid grid-cols-1 gap-px bg-border border border-border font-mono">
+      {pages.map((item, i) => (
         <Link
           key={item.href}
           href={item.href}
           className={cn(
-            "w-full nav-link text-secondary sm:text-md md:text-lg flex flex-row gap-2",
+            "nav-link group flex items-center justify-between gap-2 bg-card px-3 py-2.5 text-xs uppercase tracking-wider text-muted-foreground hover:text-foreground hover:bg-accent transition-colors",
           )}
         >
-          <item.icon className="size-4 m-1 text-primary" />
-          {item.label}
+          <span className="flex items-center gap-2.5 min-w-0">
+            <span className="text-[10px] text-muted-foreground/60 tabular-nums">
+              0{i + 1}
+            </span>
+            <item.icon className="size-4 shrink-0" />
+            <span className="truncate">{item.label}</span>
+          </span>
+          <ArrowUpRight className="size-3.5 opacity-0 group-hover:opacity-100 transition-opacity shrink-0" />
         </Link>
       ))}
-    </div>
+    </nav>
   );
 };
-

@@ -5,36 +5,40 @@ import BlurFade from "./blur-fade";
 import { useTranslations } from "next-intl";
 import Markdown from "react-markdown";
 import { useSafeMotion } from "@/hooks/useSafeMotion";
+import { Terminal } from "lucide-react";
 
 export const About = () => {
   const t = useTranslations("Welcome");
   const safeMotion = useSafeMotion();
 
   return (
-    <section id="about" className="mt-4">
-      <BlurFade delay={BLUR_FADE_DELAY * 11} visibleByDefault={safeMotion}>
-        <div className="flex flex-col items-center justify-center space-y-4 text-center mb-6">
-          <div className="space-y-2">
+    <section id="about" className="w-full bg-background text-foreground font-mono border border-border">
+      <div className="p-6 sm:p-8">
+        <BlurFade delay={BLUR_FADE_DELAY * 11} visibleByDefault={safeMotion}>
+          <div className="flex flex-col space-y-3 mb-6">
+            <div className="flex items-center gap-2 text-xs uppercase text-muted-foreground tracking-widest">
+              <Terminal className="w-3.5 h-3.5" />
+              <span>01 // Brief</span>
+            </div>
             <h2
-              className="text-3xl font-bold tracking-tighter sm:text-5xl"
+              className="font-serif text-4xl sm:text-5xl tracking-tight leading-none"
               data-testid="about-title"
             >
               {t("AboutTitle")}
             </h2>
           </div>
-        </div>
-      </BlurFade>
-      <BlurFade
-        delay={BLUR_FADE_DELAY * 4}
-        visibleByDefault={safeMotion}
-        className="text-justify"
-      >
-        <div data-testid="about-content">
-          <Markdown className="prose max-w-full text-pretty font-sans text-lg text-primary dark:prose-invert">
-            {t("About")}
-          </Markdown>
-        </div>
-      </BlurFade>
+        </BlurFade>
+        <BlurFade
+          delay={BLUR_FADE_DELAY * 4}
+          visibleByDefault={safeMotion}
+        >
+          <div data-testid="about-content" className="border-t border-border pt-4">
+            <Markdown className="prose max-w-full font-sans text-sm sm:text-base text-muted-foreground leading-relaxed dark:prose-invert">
+              {t("About")}
+            </Markdown>
+          </div>
+        </BlurFade>
+      </div>
     </section>
   );
 };

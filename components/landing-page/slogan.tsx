@@ -1,24 +1,19 @@
 "use client";
-import {
-  ScrollVelocityContainer,
-  ScrollVelocityRow,
-} from "@/components/magicui/scroll-based-velocity";
 import { useTranslations } from "next-intl";
 
 export function Slogan() {
   const t = useTranslations("Home");
   return (
-    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
-      <ScrollVelocityContainer className="text-4xl font-bold tracking-[-0.02em] md:text-7xl md:leading-[5rem]">
-        <ScrollVelocityRow baseVelocity={5} direction={1}>
+    <div className="w-full bg-background text-foreground font-mono border-t border-border overflow-hidden">
+      <div className="px-4 sm:px-8 lg:px-12 py-10 border-b border-border">
+        <div className="text-[10px] uppercase tracking-widest text-muted-foreground mb-2">Slogan // System</div>
+        <div className="font-serif text-3xl sm:text-5xl tracking-tight leading-none">
           {t("Slogan")}
-        </ScrollVelocityRow>
-        <ScrollVelocityRow baseVelocity={5} direction={-1}>
+        </div>
+        <div className="font-serif text-xl sm:text-2xl italic font-light text-muted-foreground mt-1">
           {t("Services")}
-        </ScrollVelocityRow>
-      </ScrollVelocityContainer>
-      <div className="from-background pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r"></div>
-      <div className="from-background pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l"></div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,33 +1,16 @@
 import Link from "next/link";
 import React from "react";
-import { AnimatedGradientText } from "./animated-gradient-text";
-import { ChevronRight } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { ArrowUpRight } from "lucide-react";
 
 export function LinkButton({ link, title }: { link: string; title: string }) {
   return (
     <Link
       href={link}
-      className="group relative mx-auto flex items-center justify-center rounded-full px-4 py-1.5 shadow-[inset_0_-8px_10px_#8fdfff1f] transition-shadow duration-500 ease-out hover:shadow-[inset_0_-5px_10px_#8fdfff3f] "
+      className="group inline-flex items-center justify-center gap-2 rounded-none border border-border bg-card px-6 h-11 font-mono text-xs uppercase tracking-wider text-foreground hover:bg-accent hover:text-accent-foreground transition-colors"
     >
-      <span
-        className={cn(
-          "absolute inset-0 block h-full w-full animate-gradient rounded-[inherit] bg-gradient-to-r from-[#ffaa40]/50 via-[#9c40ff]/50 to-[#ffaa40]/50 bg-[length:300%_100%] p-[1px]"
-        )}
-        style={{
-          WebkitMask:
-            "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
-          WebkitMaskComposite: "destination-out",
-          mask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
-          maskComposite: "subtract",
-          WebkitClipPath: "padding-box",
-        }}
-      />
-      🎉 <hr className="mx-2 h-4 w-px shrink-0 bg-neutral-500" />
-      <AnimatedGradientText className="text-xl font-medium">
-        {title}
-      </AnimatedGradientText>
-      <ChevronRight className="ml-1 size-4 stroke-neutral-500 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+      <span className="h-1.5 w-1.5 bg-primary rounded-full"></span>
+      {title}
+      <ArrowUpRight className="size-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
     </Link>
   );
 }

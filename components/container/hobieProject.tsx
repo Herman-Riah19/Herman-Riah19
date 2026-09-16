@@ -7,6 +7,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { CardHackathon } from "@/components/card/card-hackathon";
 import { hobbiesEn } from "@/model/resumeModelEn";
 import { useSafeMotion } from "@/hooks/useSafeMotion";
+import { Terminal } from "lucide-react";
 
 export const HobieProject = () => {
   const t = useTranslations("Hobies");
@@ -23,26 +24,25 @@ export const HobieProject = () => {
   }, [local]);
 
   return (
-    <section id="hobbies">
-      <div className="flex min-h-0 flex-col gap-y-3 mt-4">
+    <section id="hobbies" className="w-full bg-background text-foreground font-mono border border-border">
+      <div className="p-6 sm:p-8">
         <BlurFade delay={BLUR_FADE_DELAY * 13} visibleByDefault={safeMotion}>
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2">
-              <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm" data-testid="hobie-title">
-                {t("SideProject")}
-              </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl" data-testid="hobie-intro">
-                {t("Intro")}
-              </h2>
-              <p className="prose max-w-full text-pretty font-sans text-lg text-secondary/80 dark:prose-invert">
-                {t("Description")}
-              </p>
+          <div className="flex flex-col space-y-3 mb-6">
+            <div className="flex items-center gap-2 text-xs uppercase text-muted-foreground tracking-widest" data-testid="hobie-title">
+              <Terminal className="w-3.5 h-3.5" />
+              <span>06 // {t("SideProject")}</span>
             </div>
+            <h2 className="font-serif text-3xl sm:text-4xl tracking-tight leading-none" data-testid="hobie-intro">
+              {t("Intro")}
+            </h2>
+            <p className="font-sans text-sm text-muted-foreground leading-relaxed max-w-xl">
+              {t("Description")}
+            </p>
           </div>
         </BlurFade>
         <ul
           style={{ listStyleType: "none" }}
-          className="mb-4 ml-4 divide-y divide-dashed border-l"
+          className="m-0 p-0 grid grid-cols-1 gap-px bg-border border border-border"
           data-testid="hobie-list"
         >
           {localHobies.map((work, id) => (

@@ -1,40 +1,29 @@
 import React from "react";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { useTranslations } from "next-intl";
 import { BLUR_FADE_DELAY } from "@/lib/constant";
 import BlurFade from "@/components/container/blur-fade";
-import { MagicCard } from "@/components/ui/magic-card";
-import { Brain, Cable, Cloud, Code } from "lucide-react";
-import { AnimatedListItem } from "@/components/animation/animatedList";
+import { Brain, Cable, Cloud, Code, Terminal } from "lucide-react";
 
 export default function Features() {
   const t = useTranslations("Home");
   const features = [
     {
-      icon: (
-        <Code strokeWidth={1.5} className="size-10  text-foreground mb-4" />
-      ),
+      icon: Code,
       title: t("Features.feature1.title"),
       text: t("Features.feature1.text"),
     },
     {
-      icon: (
-        <Cable strokeWidth={1.5} className="size-10  text-foreground mb-4" />
-      ),
+      icon: Cable,
       title: t("Features.feature2.title"),
       text: t("Features.feature2.text"),
     },
     {
-      icon: (
-        <Brain strokeWidth={1.5} className="size-10  text-foreground mb-4" />
-      ),
+      icon: Brain,
       title: t("Features.feature3.title"),
       text: t("Features.feature3.text"),
     },
     {
-      icon: (
-        <Cloud strokeWidth={1.5} className="size-10  text-foreground mb-4" />
-      ),
+      icon: Cloud,
       title: t("Features.feature4.title"),
       text: t("Features.feature4.text"),
     },
@@ -42,43 +31,46 @@ export default function Features() {
   return (
     <section
       id="features"
-      className="container mx-auto py-16 flex flex-col gap-10"
+      className="w-full bg-background text-foreground font-mono border-t border-border"
     >
-      <BlurFade delay={BLUR_FADE_DELAY * 11}>
-        <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <div className="space-y-2">
-            <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm" data-testid="features-title">
-              {t("Features.Title")}
+      <div className="px-4 sm:px-8 lg:px-12 py-16 lg:py-20">
+        <BlurFade delay={BLUR_FADE_DELAY * 11}>
+          <div className="flex flex-col space-y-3 max-w-3xl mb-10">
+            <div className="flex items-center gap-2 text-xs uppercase text-muted-foreground tracking-widest">
+              <Terminal className="w-3.5 h-3.5" />
+              <span>02 // {t("Features.Title")}</span>
             </div>
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl" data-testid="features-checkout">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif tracking-tight leading-none" data-testid="features-checkout">
               {t("Features.Checkout")}
             </h2>
-            <p className="prose max-w-full text-pretty font-sans text-lg text-secondary/80 dark:prose-invert" data-testid="features-description">
+            <p className="font-sans text-sm sm:text-base text-muted-foreground leading-relaxed max-w-xl" data-testid="features-description">
               {t("Features.Description")}
             </p>
           </div>
-        </div>
-      </BlurFade>
+        </BlurFade>
 
-      <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
-        {features.map((f, idx) => (
-          <AnimatedListItem key={idx}>
-            <Card
-              key={idx}
-              className={`relative overflow-hidden border-none shadow-none h-full`}
-            >
-              <MagicCard className="h-full m-0 p-0">
-                <CardHeader data-testid={`feature-${idx}-header`}>
-                  {f.icon}
-                  <CardTitle className="text-lg" data-testid={`feature-${idx}-title`}>{f.title}</CardTitle>
-                </CardHeader>
-                <CardContent className="text-muted-foreground" data-testid={`feature-${idx}-content`}>
+        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-px bg-border border border-border">
+          {features.map((f, idx) => {
+            const Icon = f.icon;
+            return (
+              <div
+                key={idx}
+                className="bg-card p-6 space-y-4"
+              >
+                <div className="flex items-center justify-between">
+                  <span className="inline-flex p-3 border border-border bg-background">
+                    <Icon strokeWidth={1.5} className="size-5 text-foreground" />
+                  </span>
+                  <span className="text-[10px] uppercase tracking-widest text-muted-foreground">0{idx + 1}</span>
+                </div>
+                <div className="text-lg font-serif tracking-tight" data-testid={`feature-${idx}-title`}>{f.title}</div>
+                <div className="font-sans text-sm text-muted-foreground leading-relaxed" data-testid={`feature-${idx}-content`}>
                   {f.text}
-                </CardContent>
-              </MagicCard>
-            </Card>
-          </AnimatedListItem>
-        ))}
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </section>
   );

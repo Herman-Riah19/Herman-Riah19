@@ -7,6 +7,7 @@ import { CardResume } from "@/components/card/card-resume";
 import { useLocale } from "next-intl";
 import { experiencesEn } from "@/model/resumeModelEn";
 import { useSafeMotion } from "@/hooks/useSafeMotion";
+import { Terminal } from "lucide-react";
 
 export const Resume = () => {
   const local = useLocale();
@@ -22,21 +23,23 @@ export const Resume = () => {
   }, [local]);
 
   return (
-    <section id="resume" className="mt-4">
-      <div className="flex min-h-0 flex-col gap-y-3 mt-4">
+    <section id="resume" className="w-full bg-background text-foreground font-mono border border-border">
+      <div className="p-6 sm:p-8">
         <BlurFade delay={BLUR_FADE_DELAY * 11} visibleByDefault={safeMotion}>
-          <div className="flex flex-col items-center justify-center space-y-4 text-center mb-6">
-            <div className="space-y-2">
-              <h2
-                className="text-3xl font-bold tracking-tighter sm:text-5xl"
-                data-testid="resume-title"
-              >
-                Experiences
-              </h2>
+          <div className="flex flex-col space-y-3 mb-6">
+            <div className="flex items-center gap-2 text-xs uppercase text-muted-foreground tracking-widest">
+              <Terminal className="w-3.5 h-3.5" />
+              <span>04 // Experience</span>
             </div>
+            <h2
+              className="font-serif text-3xl sm:text-4xl tracking-tight leading-none"
+              data-testid="resume-title"
+            >
+              Experiences
+            </h2>
           </div>
         </BlurFade>
-        <div data-testid="resume-content">
+        <div data-testid="resume-content" className="grid grid-cols-1 gap-px bg-border border border-border">
           {localExperiences.map((work, id) => (
             <BlurFade
               key={work.company}

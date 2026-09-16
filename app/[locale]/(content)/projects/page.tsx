@@ -9,10 +9,14 @@ export default async function ProjectPage (){
   const t = await getTranslations("Home");
 
   return (
-    <section className="flex flex-col gap-4">
+    <div className="w-full bg-background text-foreground font-mono">
       <Projects />
-      <HobieProject />
-      <LinkButton link={`/${locale}/about`} title={t("Resume")} />
-    </section>
+      <div className="px-4 sm:px-8 lg:px-12 pb-6">
+        <HobieProject />
+        <div className="py-6">
+          <LinkButton link={`/${locale}/about`} title={t("Resume")} />
+        </div>
+      </div>
+    </div>
   );
 };

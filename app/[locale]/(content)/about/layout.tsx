@@ -13,6 +13,6 @@ export default function AboutLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <div className="py-12 sm:py-24 px-6 max-w-6xl mx-auto">{children}</div>
+    <div className="w-full">{children}</div>
   );
 }

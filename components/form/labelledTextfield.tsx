@@ -20,10 +20,10 @@ export function LabelledTextField({
   ...registerProps
 }: ILabelledTextFieldProps) {
   return (
-    <div className="grid gap-2">
-      <Label className="text-sm text-primary font-medium">{label}</Label>
+    <div className="grid gap-2 font-mono">
+      <Label className="text-[10px] uppercase tracking-widest text-muted-foreground font-mono">{label}</Label>
       <Input placeholder={placeholder} type={type} {...registerProps} />
-      {error && <p className="text-sm text-destructive mt-1">{error}</p>}
+      {error && <p className="text-xs font-mono uppercase tracking-wider text-destructive mt-1">{error}</p>}
     </div>
   );
 }

@@ -15,7 +15,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { ArrowRight } from "lucide-react";
+import { ArrowUpRight, Terminal } from "lucide-react";
 import { toast } from "sonner";
 import { sendEmailAction } from "@/lib/mail-service"; 
 import { useTranslations } from "next-intl";
@@ -50,62 +50,73 @@ export function MailContact() {
   };
 
   return (
-    <section className="grid lg:grid-cols-2 gap-2">
-    <Card id="contact" className="h-full w-full shadow-xl max-w-6xl mx-auto mt-8">
-      <CardHeader className="flex flex-col justify-center items-center text-center">
-        <CardTitle className="text-2xl" data-testid="contact-title">{t("Title")}</CardTitle>
-        <CardDescription className="text-xl" data-testid="contact-subtitle">{t("Subtitle")}</CardDescription>
-      </CardHeader>
-      <CardContent className="w-full m-2">
-        <FormProvider {...formMethods}>
-          <form
-            action={handleSubmit} 
-            className="flex flex-col w-full gap-4 p-4"
-            data-testid="contact-form"
-          >
-            <LabelledTextField
-              label={t("Email")}
-              placeholder={t("Placeholder.Email")}
-              {...formMethods.register("email")}
-              data-testid="contact-email"
-            />
+    <section className="w-full bg-background text-foreground font-mono border-t border-border">
+      <div className="px-4 sm:px-8 lg:px-12 py-16 lg:py-20">
+        <div className="flex items-center gap-2 text-xs uppercase text-muted-foreground tracking-widest mb-3">
+          <Terminal className="w-3.5 h-3.5" />
+          <span>05 // CONTACT</span>
+        </div>
+        <div className="grid lg:grid-cols-2 gap-px bg-border border border-border">
+          <Card id="contact" className="h-full w-full rounded-none border-0 bg-card shadow-sm">
+            <CardHeader className="p-6 sm:p-8 border-b border-border">
+              <CardTitle className="font-serif text-3xl sm:text-4xl tracking-tight leading-none" data-testid="contact-title">{t("Title")}</CardTitle>
+              <CardDescription className="font-sans text-sm text-muted-foreground mt-2" data-testid="contact-subtitle">{t("Subtitle")}</CardDescription>
+            </CardHeader>
+            <CardContent className="p-6 sm:p-8">
+              <FormProvider {...formMethods}>
+                <form
+                  action={handleSubmit} 
+                  className="flex flex-col w-full gap-4"
+                  data-testid="contact-form"
+                >
+                  <LabelledTextField
+                    label={t("Email")}
+                    placeholder={t("Placeholder.Email")}
+                    {...formMethods.register("email")}
+                    data-testid="contact-email"
+                  />
 
-            <LabelledTextField
-              label={t("Subject")}
-              placeholder={t("Placeholder.Subject")}
-              {...formMethods.register("subject")}
-              data-testid="contact-subject"
-            />
+                  <LabelledTextField
+                    label={t("Subject")}
+                    placeholder={t("Placeholder.Subject")}
+                    {...formMethods.register("subject")}
+                    data-testid="contact-subject"
+                  />
 
-            <LabelledTextarea
-              label={t("Message")}
-              placeholder={t("Placeholder.Message")}
-              className="h-[80px]"
-              {...formMethods.register("message")}
-              data-testid="contact-message"
-            />
+                  <LabelledTextarea
+                    label={t("Message")}
+                    placeholder={t("Placeholder.Message")}
+                    className="h-[120px] rounded-none"
+                    {...formMethods.register("message")}
+                    data-testid="contact-message"
+                  />
 
-            <div className="flex">
-              <Button
-                type="submit"
-                variant="secondary"
-                className="p-6 rounded-full text-lg"
-                disabled={isPending}
-                data-testid="contact-submit"
-              >
-                <span className="bg-background rounded-full p-2">
-                  <ArrowRight className="stroke-foreground" />
-                </span>
-                {t("Send")}
-              </Button>
-            </div>
+                  <div className="flex pt-2">
+                    <Button
+                      type="submit"
+                      className="rounded-none font-mono text-xs uppercase tracking-wider h-11 px-6"
+                      disabled={isPending}
+                      data-testid="contact-submit"
+                    >
+                      <ArrowUpRight className="w-4 h-4 mr-2" />
+                      {t("Send")}
+                    </Button>
+                  </div>
 
-            {error && <p className="text-red-600 text-sm">{error}</p>}
-          </form>
-        </FormProvider>
-      </CardContent>
-    </Card>
-    <DottedMapContext />
+                  {error && <p className="font-mono text-xs uppercase tracking-wider text-destructive">{error}</p>}
+                </form>
+              </FormProvider>
+            </CardContent>
+          </Card>
+          <div className="bg-card p-2 flex">
+            <DottedMapContext />
+          </div>
+        </div>
+        <div className="flex items-center justify-between pt-4 mt-8 border-t border-border text-[10px] text-muted-foreground uppercase tracking-widest">
+          <div>UPLINK // 05</div>
+          <div>EDITION // 2026.1</div>
+        </div>
+      </div>
     </section>
   );
 }

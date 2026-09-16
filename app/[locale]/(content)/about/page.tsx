@@ -9,28 +9,25 @@ import { Education } from "@/components/container/education";
 import { Projects } from "@/components/container/project";
 import { HobieProject } from "@/components/container/hobieProject";
 import { Profile } from "@/components/container/profile";
-import { NeonGradientCard } from "@/components/magicui/neon-gradient-card";
 
 export default async function AboutPage() {
   return (
-    <div id="home">
-      <section className="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        <div className="md:col-span-1 md:sticky">
+    <div id="home" className="w-full bg-background text-foreground font-mono">
+      <div className="px-4 sm:px-8 lg:px-12 py-10 lg:py-14 grid sm:grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+        <div className="lg:col-span-4 xl:col-span-4">
           <Profile />
         </div>
-        <div className="md:col-span-2 lg:col-span-3 max-w-3xl flex flex-col gap-2">
+        <div className="lg:col-span-8 xl:col-span-8 flex flex-col gap-6 min-w-0">
           <Welcome />
           <InfoContact />
           <About />
           <ListTech />
           <Education />
           <Resume />
-          <NeonGradientCard>
-            <Projects />
-          </NeonGradientCard>
+          <Projects />
           <HobieProject />
         </div>
-      </section>
+      </div>
     </div>
   );
 }

@@ -7,7 +7,7 @@
     "Services": "UI/UX Integration · Web Developer · API Developer · AI Integration",
     "Slogan": "Got an idea in mind? Let’s make it real — and make it clean, fast, and just a little bit cooler than expected.",
     "Developper": "Full Stack Web Developer",
-    "Speciality": "I specialized in Next.js, TypeScript, Django and Flask",
+    "Speciality": "TypeScript, Python, agentic AI (Opencode) and monorepo / microservices specialist",
     "Resume": "Read more...",
     "Project": "My Projects",
     "Discover": "Discover",
@@ -28,8 +28,8 @@
         "text": "Creation of robust REST and GraphQL APIs with Node.js and NestJS."
       },
       "feature3": {
-        "title": "AI Integration",
-        "text": "Integration of AI models and services, including prompt engineering, model deployment, and API integrations (OpenAI, Hugging Face, etc.)."
+        "title": "Agentic AI & Opencode",
+        "text": "Autonomous agents with Opencode every day: skills design, commands, code rules and AGENTS.md, MCP/RAG and OpenAI / Hugging Face integrations."
       },
       "feature4": {
         "title": "DevOps & Cloud",
@@ -76,13 +76,17 @@
       }
     }
   },
+  "Blog": {
+    "Title": "Field notes",
+    "Description": "Hands-on notes on TypeScript, Python, agentic AI with Opencode (skills, commands, code rules) and monorepo / microservices architectures."
+  },
   "Welcome": {
     "Based": "Based in Nextjs",
     "Developper": "Full Stack Web Developper",
     "Presentation": "Hermann Christian RAZAFINDRANAIVO",
     "Slogan": "I am passionately driven to transform my ideas into functional programs that exceed expectations.",
     "AboutTitle": "About",
-    "About": "👋 Hi! I’m Hermann Christian RAZAFINDRANAIVO — a full-stack developer, graduated in Telecommunications in 2020, before realizing that building web apps excited me far more than debugging radio waves 😅. \n \n I quickly changed direction and dove into web development. I started with local projects to master tools like Next.js, TypeScript, Django, and Flask. The real turning point came in 2024 when I went freelance, enjoying remote work, diverse projects, and creative freedom. \n \n 💬 My motto? Plan before you code, structure before you make it work, and always write clean, maintainable code. A well-thought-out project saves time, headaches, and future-you will thank you."
+    "About": "Python Engineer / Developer focused on Data & Generative AI. Designer of high-performance RESTful APIs (FastAPI, PostgreSQL) and advanced RAG systems that bring the power of LLMs to targeted knowledge bases. Strong expertise in Web Scraping, data structuring and visualization, combined with rigorous software engineering based on Docker containerization. \n \n Full-Stack Developer & Software Architect specialized in modern web applications (TypeScript, Next.js) with polished UI/UX integration. I mostly code with Opencode, with strong command of skills, commands and code rules / AGENTS.md. My specialty: monorepo architectures (Turborepo, Nx, pnpm workspaces) and microservices (event-driven, REST/GraphQL, Docker). \n \n Curious, organized and solution-oriented, I combine empathy, teamwork and a passion for continuous learning to deliver clean, user-centered systems. Driven by innovation and continuous learning, I am always looking for new opportunities to push the boundaries of what is possible."
   },
   "Navbar": {
     "Home": "Home",

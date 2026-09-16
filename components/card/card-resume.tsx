@@ -8,9 +8,6 @@ import {
   CardFooter,
   CardHeader,
 } from "@/components/ui/card";
-import { cn } from "@/lib/utils";
-import { motion } from "framer-motion";
-import { ChevronRightIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -35,53 +32,48 @@ export const CardResume = ({
   description,
 }: ResumeCardProps) => {
   return (
-    <Card className="flex shadow-none border-none bg-transparent p-0 divide-y divide-dashed">
-      <div className="flex-none ml-0 mt-5">
-        <Avatar className="border size-12 md:m-auto sm:m-0 bg-primary dark:bg-foreground">
+    <Card className="flex gap-4 rounded-none shadow-none border-0 bg-card p-4 sm:p-5 font-mono">
+      <div className="flex-none">
+        <Avatar className="size-12 rounded-none border border-border bg-background">
           <AvatarImage
             src={logoUrl}
             alt={altText}
-            className="object-contain object-center h-full w-full"
+            className="object-contain object-center h-full w-full rounded-none"
           />
-          <AvatarFallback>{altText[0]}</AvatarFallback>
+          <AvatarFallback className="rounded-none">{altText[0]}</AvatarFallback>
         </Avatar>
       </div>
-      <div className="flex-grow ml-2 items-center flex-col group">
-        <CardHeader className="sm:m-0">
-          <div className="grid grid-cols-5 gap-x-2 text-base">
-            <h3 className="col-span-3 inline-flex items-start justify-start font-extrabold leading-none">
-              <span className="text-xl">{title}</span>
+      <div className="flex-grow min-w-0 flex-col group">
+        <CardHeader className="p-0">
+          <div className="flex items-start justify-between gap-3">
+            <h3 className="font-serif text-lg tracking-tight leading-none text-foreground">
+              {title}
             </h3>
-            <div className="col-span-2 text-lg sm:text-sm tabular-nums text-foreground text-right font-mono font-medium">
+            <div className="shrink-0 font-mono text-[10px] uppercase tracking-widest tabular-nums text-muted-foreground border border-border px-2 py-1 bg-background">
               {period}
             </div>
           </div>
-          {subtitle && <div className="font-medium text-lg text-secondary/70">{subtitle}</div>}
+          {subtitle && (
+            <div className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground mt-1">
+              {href ? <Link href={href} className="hover:text-foreground transition-colors">{subtitle}</Link> : subtitle}
+            </div>
+          )}
         </CardHeader>
-        <CardContent className="m-0 p-0">
+        <CardContent className="m-0 p-0 mt-2">
           {description && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{
-                opacity: 1,
-                height: "auto",
-              }}
-              transition={{
-                duration: 0.7,
-                ease: [0.16, 1, 0.3, 1],
-              }}
-              className="mt-0 text-secondary/80 text-md sm:text-sm dark:prose-invert"
+            <div
+              className="font-sans text-sm text-muted-foreground leading-relaxed"
               dangerouslySetInnerHTML={{ __html: description }}
             />
           )}
         </CardContent>
-        <CardFooter className="m-0 p-0 mt-2">
+        <CardFooter className="m-0 p-0 mt-3">
           {badges && (
-            <span className="flex flex-wrap gap-x-1 gap-y-1">
+            <span className="flex flex-wrap gap-px bg-border border border-border">
               {badges.map((badge, index) => (
                 <Badge
                   variant="secondary"
-                  className="align-middle text-xs"
+                  className="rounded-none border-0"
                   key={index}
                 >
                   {badge}

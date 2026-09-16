@@ -1,6 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import { Github } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
 interface Props {
@@ -21,32 +21,32 @@ export function CardHackathon({
   links,
 }: Props) {
   return (
-    <li className="relative ml-10 py-4">
-      <div className="absolute -left-16 top-2 flex items-center justify-center bg-white rounded-full">
-        <Avatar className="border size-12 m-auto">
-          <AvatarImage src={image} alt={title} className="object-contain" />
-          <AvatarFallback>{title}</AvatarFallback>
+    <li className="relative bg-card p-4 sm:p-5 pl-16 sm:pl-20 font-mono">
+      <div className="absolute left-4 sm:left-5 top-4 flex items-center justify-center bg-background border border-border p-1">
+        <Avatar className="size-10 rounded-none border-0">
+          <AvatarImage src={image} alt={title} className="object-contain rounded-none" />
+          <AvatarFallback className="rounded-none">{title[0]}</AvatarFallback>
         </Avatar>
       </div>
-      <div className="flex flex-1 flex-col justify-start gap-1">
+      <div className="flex flex-1 flex-col justify-start gap-1.5 min-w-0">
         {dates && (
-          <time className="text-xs font-medium text-secondary/70">{dates}</time>
+          <time className="text-[10px] uppercase tracking-widest text-muted-foreground">{dates}</time>
         )}
-        <h2 className="font-semibold leading-none">{title}</h2>
+        <h2 className="font-serif text-lg tracking-tight leading-none text-foreground">{title}</h2>
         {location && (
-          <p className="text-sm font-medium text-secondary/70">{location}</p>
+          <p className="text-[11px] font-mono uppercase tracking-wider text-muted-foreground">{location}</p>
         )}
         {description && (
           <span 
-            className="prose dark:prose-invert text-sm text-secondary/80"
+            className="font-sans text-sm text-muted-foreground leading-relaxed"
             dangerouslySetInnerHTML={{ __html: description }}/>
         )}
       </div>
-      <div className="mt-2 flex flex-row flex-wrap items-start gap-2">
+      <div className="mt-3 flex flex-row flex-wrap items-start gap-2">
         <Link href={links} >
-          <Badge title="Source code" className="flex gap-2">
-            <Github />
+          <Badge title="Source code" className="flex gap-2 rounded-none font-mono text-[10px] uppercase tracking-wider hover:bg-accent hover:text-accent-foreground transition-colors">
             Source code
+            <ArrowUpRight className="size-3.5" />
           </Badge>
         </Link>
       </div>

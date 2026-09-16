@@ -80,9 +80,14 @@ const markers = [
 
 export function DottedMapContext() {
   return (
-    <div className="relative h-full w-full overflow-hidden rounded-lg border mt-8 bg-background">
-      <div className="to-background absolute inset-0 bg-radial from-transparent to-70%" />
-      <DottedMap markers={markers} />
+    <div className="relative h-full w-full min-h-[320px] overflow-hidden rounded-none border border-border bg-background p-2">
+      <div className="relative h-full w-full overflow-hidden border border-border">
+        <DottedMap markers={markers} />
+      </div>
+      <div className="flex items-center justify-between pt-2 text-[10px] font-mono uppercase tracking-widest text-muted-foreground">
+        <span>MAP // TANA</span>
+        <span>-18.8792 / 47.5078</span>
+      </div>
     </div>
   )
 }

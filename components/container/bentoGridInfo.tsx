@@ -7,6 +7,7 @@ import { CardProfile } from "@/components/card/card-profile";
 import { DotPattern } from "@/components/magicui/dot-pattern";
 import { cn } from "@/lib/utils";
 import { Safari } from "@/components/magicui/safari";
+import { Terminal } from "lucide-react";
 
 const languages = [
   "typescript",
@@ -51,7 +52,7 @@ export const BentoGridInfo = () => {
       className: "col-span-3 lg:col-span-1 lg:row-span-2 h-[100vh] lg:h-full",
       cta: t("Email"),
       background: (
-        <div className="absolute left-14">
+        <div className="relative flex h-full w-full items-start justify-center overflow-hidden p-2">
           <CardProfile />
         </div>
       ),
@@ -63,8 +64,8 @@ export const BentoGridInfo = () => {
       className: "col-span-3 lg:col-span-2 lg:row-span-1",
       cta: t("Resume"),
       background: (
-        <div className="absolute flex h-[500px] w-full flex-col items-center justify-center overflow-hidden">
-          <span className="absolute top-0 pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center sm:text-6xl lg:text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
+        <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden">
+          <span className="absolute top-6 pointer-events-none whitespace-pre-wrap text-center font-serif text-5xl lg:text-7xl tracking-tight leading-none text-muted-foreground/60">
             {t("Developper")}
           </span>
           <OrbitingCircles iconSize={40}>
@@ -104,7 +105,7 @@ export const BentoGridInfo = () => {
       className: "col-span-3 lg:col-span-1 lg:row-span-1",
       cta: t("Discover"),
       background: (
-        <div className="absolute flex h-[300px] w-full min-w-[320px] flex-col items-center justify-center overflow-hidden">
+        <div className="relative flex h-[300px] w-full min-w-[320px] flex-col items-center justify-center overflow-hidden">
           <DotPattern
             className={cn(
               "m-0 p-0 w-full [mask-image:radial-gradient(300px_circle_at_center,white,transparent)]"
@@ -145,8 +146,8 @@ export const BentoGridInfo = () => {
       href: `/${locale}/blog`,
       cta: t("BlogDescription"),
       background: (
-        <div className="absolute flex size-full max-w-lg items-center justify-center overflow-hidden rounded-lg border bg-background px-40 pb-40 pt-8 md:pb-60">
-          <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
+        <div className="relative flex size-full max-w-lg items-center justify-center overflow-hidden border-b border-border bg-background px-40 pb-40 pt-8 md:pb-60">
+          <span className="pointer-events-none whitespace-pre-wrap text-center font-serif text-7xl tracking-tight leading-none text-muted-foreground/60">
             Blog
           </span>
           <Globe className="top-28" />
@@ -156,10 +157,22 @@ export const BentoGridInfo = () => {
   ];
 
   return (
-    <BentoGrid className="grid sm:w-auto lg:w-full grid-cols-3 gap-2 sm:m-2 lg:m-0 p-0">
-      {features.map((feature, idx) => (
-        <BentoCard key={idx} {...feature} />
-      ))}
-    </BentoGrid>
+    <section className="w-full bg-background text-foreground font-mono border-t border-border">
+      <div className="px-4 sm:px-8 lg:px-12 py-16 lg:py-20">
+        <div className="flex items-center gap-2 text-xs uppercase text-muted-foreground tracking-widest mb-3">
+          <Terminal className="w-3.5 h-3.5" />
+          <span>01 // SYSTEM OVERVIEW</span>
+        </div>
+        <BentoGrid className="grid sm:w-auto lg:w-full grid-cols-3 p-0">
+          {features.map((feature, idx) => (
+            <BentoCard key={idx} {...feature} />
+          ))}
+        </BentoGrid>
+        <div className="flex items-center justify-between pt-4 mt-4 border-t border-border text-[10px] text-muted-foreground uppercase tracking-widest">
+          <div>INDEX // 01-04</div>
+          <div>SYSTEM ACTIVE</div>
+        </div>
+      </div>
+    </section>
   );
 };

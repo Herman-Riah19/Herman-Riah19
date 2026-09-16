@@ -3,6 +3,8 @@
 import React, { useRef, useEffect, useState } from "react";
 import { m, LazyMotion, domAnimation, useAnimation, useReducedMotion } from "framer-motion";
 import { useSafeMotion } from "@/hooks/useSafeMotion";
+import { motion } from "motion/react";
+import { cn } from "@/lib/utils";
 interface VerticalScrollProps {
   children: React.ReactNode;
   className?: string;
@@ -63,3 +65,56 @@ export const VerticalScroll: React.FC<VerticalScrollProps> = ({ children, classN
     </LazyMotion>
   );
 };
+
+
+export function SlideInFromBottom({
+  children,
+  className,
+  delay = 0,
+  distance = 100,
+}: {
+  children: React.ReactNode;
+  className?: string;
+  delay?: number;
+  distance?: number;
+}) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: distance }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-100px" }}
+      transition={{ duration: 0.7, delay, ease: "easeOut" }}
+      className={cn(className)}
+    >
+      {children}
+    </motion.div>
+  );
+}
+
+export function BounceIn({
+  children,
+  className,
+  delay = 0,
+  duration = 0.6,
+}: {
+  children: React.ReactNode;
+  className?: string;
+  delay?: number;
+  duration?: number;
+}) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, scale: 0.3, y: 50 }}
+      whileInView={{ opacity: 1, scale: 1, y: 0 }}
+      viewport={{ once: true, margin: "-100px" }}
+      transition={{
+        duration,
+        delay,
+        ease: [0.68, -0.55, 0.265, 1.55],
+      }}
+      className={cn(className)}
+    >
+      {children}
+    </motion.div>
+  );
+}
