@@ -59,7 +59,7 @@ export const BlurFadeText = ({ text, className, variant, characterDelay = 0.03, 
   }
 
   return (
-    <div className="flex">
+    <div className="block min-w-0">
       <AnimatePresence>
         <motion.span
           initial={showImmediately ? "visible" : "hidden"}
@@ -71,7 +71,7 @@ export const BlurFadeText = ({ text, className, variant, characterDelay = 0.03, 
             delay,
             ease: "easeOut",
           }}
-          className={cn("inline-block", className)}
+          className={cn("inline break-words", className)}
         >
           {text}
         </motion.span>

@@ -66,7 +66,7 @@ export const HeroSection = () => {
                   <span>00 // SYSTEM DOSSIER</span>
                 </div>
 
-                <h1 className="text-4xl sm:text-6xl md:text-7xl font-serif tracking-tight text-foreground leading-none">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif tracking-tight text-foreground leading-none">
                   {t("Firstname")}{" "}
                   <span className="italic font-light text-muted-foreground block sm:inline">
                     {t("Lastname")}
