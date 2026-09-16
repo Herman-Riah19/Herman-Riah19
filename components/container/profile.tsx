@@ -44,7 +44,7 @@ export const Profile = () => {
               美
             </span>
             <img
-              src="/assets/image/profile.png"
+              src="/assets/image/portrait.jpg"
               alt="herman"
               data-testid="profile-image"
               className="relative h-full w-full object-cover object-top"
