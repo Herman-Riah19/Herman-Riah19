@@ -37,7 +37,7 @@ const navigation: {
     },
     {
       name: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/hermann-razafindranaivo-174378237/',
+      href: 'https://www.linkedin.com/in/hermann-razafindranaivo/',
       icon: (props: React.SVGProps<SVGSVGElement>) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path

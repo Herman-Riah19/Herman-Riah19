@@ -153,7 +153,7 @@ export const HeroSection = () => {
                     className="rounded-none w-10 h-10 text-muted-foreground hover:text-foreground"
                   >
                     <Link
-                      href="https://linkedin.com"
+                      href="https://www.linkedin.com/in/hermann-razafindranaivo/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
