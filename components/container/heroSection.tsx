@@ -171,12 +171,10 @@ export const HeroSection = () => {
             <SlideInFromBottom delay={0.3} className="w-full">
               <div className="relative w-full aspect-[4/5] max-w-sm lg:max-w-md mx-auto border border-border bg-card p-2 shadow-sm">
 
-                {/* Visual Circle Overlay */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-20 pointer-events-none">
                   <div className="w-[85%] h-[85%] rounded-full border border-border" />
                 </div>
 
-                {/* Kanji Overlay (Ryoku Vibe) */}
                 <span className="absolute top-4 right-4 text-xs font-serif text-muted-foreground/60 pointer-events-none z-10">
                   力
                 </span>
@@ -186,7 +184,7 @@ export const HeroSection = () => {
 
                 <div className="relative w-full h-full overflow-hidden">
                   <Image
-                    src="/assets/image/profile-remove.png"
+                    src="/assets/image/hero-portrait.jpg"
                     alt="Hero portrait"
                     fill
                     priority

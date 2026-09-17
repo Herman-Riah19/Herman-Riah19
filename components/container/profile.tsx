@@ -3,7 +3,6 @@
 import React from "react";
 import BlurFade from "@/components/container/blur-fade";
 import { BLUR_FADE_DELAY } from "@/lib/constant";
-import { Button } from "@/components/ui/button";
 import { EnvelopeClosedIcon } from "@radix-ui/react-icons";
 import { MapPin, Phone } from "lucide-react";
 import { NavbarProfile } from "@/components/navbar/navbarProfile";
@@ -44,10 +43,10 @@ export const Profile = () => {
               美
             </span>
             <img
-              src="/assets/image/portrait.jpg"
+              src="/assets/image/hero-portrait.jpg"
               alt="herman"
               data-testid="profile-image"
-              className="relative h-full w-full object-cover object-top"
+              className="relative h-full w-full object-cover object-container"
             />
           </div>
         </div>
