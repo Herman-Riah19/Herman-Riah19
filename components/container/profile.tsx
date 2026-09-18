@@ -15,7 +15,7 @@ export const Profile = () => {
     <BlurFade
       delay={BLUR_FADE_DELAY}
       visibleByDefault={safeMotion}
-      className="md:sticky md:top-24 flex flex-col"
+      className="md:sticky md:top-10 md:w-[25vw] flex flex-col"
     >
       <aside className="flex flex-col border border-border bg-card text-card-foreground shadow-sm font-mono overflow-hidden">
         <div className="flex items-center justify-between gap-2 border-b border-border px-4 py-3">
@@ -31,10 +31,10 @@ export const Profile = () => {
           </span>
         </div>
 
-        <div className="p-2">
-          <div className="relative w-full aspect-square overflow-hidden border border-border bg-background">
+        <div className="p-2 flex flex-col justify-center items-center">
+          <div className="relative md:h-[25vh] md:w-[12vw] aspect-square overflow-hidden border border-border bg-background">
             <div className="absolute inset-0 flex items-center justify-center opacity-20 pointer-events-none">
-              <div className="w-[85%] h-[85%] rounded-full border border-border" />
+              <div className="w-[35%] h-[50%] rounded-full border border-border" />
             </div>
             <span className="absolute top-3 right-3 text-xs font-serif text-muted-foreground/60 pointer-events-none z-10">
               力
@@ -97,7 +97,7 @@ export const Profile = () => {
           </a>
         </div>
 
-        <div className="p-3">
+        <div className="hidden md:block p-3">
           <div className="text-[10px] uppercase tracking-widest text-muted-foreground px-1 pb-2">
             Index // Nav
           </div>

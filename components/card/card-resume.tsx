@@ -18,7 +18,7 @@ interface ResumeCardProps {
   subtitle?: string;
   href?: string;
   badges?: readonly string[];
-  period: string;
+  period: React.ReactNode;
   description?: string;
 }
 export const CardResume = ({
@@ -45,11 +45,11 @@ export const CardResume = ({
       </div>
       <div className="flex-grow min-w-0 flex-col group">
         <CardHeader className="p-0">
-          <div className="flex items-start justify-between gap-3">
-            <h3 className="font-serif text-lg tracking-tight leading-none text-foreground">
+          <div className="flex items-center justify-between">
+            <h3 className="font-serif text-sm md:text-lg tracking-tight leading-none text-foreground">
               {title}
             </h3>
-            <div className="shrink-0 font-mono text-[10px] uppercase tracking-widest tabular-nums text-muted-foreground border border-border px-2 py-1 bg-background">
+            <div className="shrink-0 font-mono text-[10px] uppercase tracking-widest tabular-nums text-muted-foreground border border-border p-1 bg-background">
               {period}
             </div>
           </div>
@@ -59,7 +59,7 @@ export const CardResume = ({
             </div>
           )}
         </CardHeader>
-        <CardContent className="m-0 p-0 mt-2">
+        <CardContent className="-ml-10 md:m-0 p-0 mt-2">
           {description && (
             <div
               className="font-sans text-sm text-muted-foreground leading-relaxed"
@@ -67,7 +67,7 @@ export const CardResume = ({
             />
           )}
         </CardContent>
-        <CardFooter className="m-0 p-0 mt-3">
+        <CardFooter className="-ml-10 md:m-0 p-0 mt-3">
           {badges && (
             <span className="flex flex-wrap gap-px bg-border border border-border">
               {badges.map((badge, index) => (

@@ -51,7 +51,7 @@ const diplomes: Array<ResumeModel> = [
 
 const experiences: Array<ResumeModel> = [
   {
-    title: "Développeur Web Front End",
+    title: "Développeur Full Stack",
     start: "Juillet 2025",
     end: "Juin 2026",
     badges: ["Next.js", "React.js", "Shadcn UI", "Drupal", "Odoo", "GSAP"],

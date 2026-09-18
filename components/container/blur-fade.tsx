@@ -1,6 +1,5 @@
 "use client";
 
-import { useSafeMotion } from "@/hooks/useSafeMotion";
 import { AnimatePresence, motion, useInView, Variants } from "framer-motion";
 import { useRef } from "react";
 

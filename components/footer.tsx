@@ -58,7 +58,7 @@ const navigation: {
 
 export function Footer() {
   return (
-    <footer className="w-full bg-background text-foreground font-mono border-t border-border">
+    <footer id="footer" className="w-full bg-background text-foreground font-mono border-t border-border">
       <div className="px-4 sm:px-8 lg:px-12 pt-12 pb-8">
         <section id="social-links" className="w-full">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">

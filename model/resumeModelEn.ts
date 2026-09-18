@@ -51,8 +51,8 @@ const diplomasEn: Array<ResumeModel> = [
 
 const experiencesEn: Array<ResumeModel> = [
   {
-    title: "Frontend web Developer",
-    start: "2025-07-01",
+    title: "Full-Stack Developer",
+    start: "July 2025",
     end: "Now",
     badges: ["Next.js", "React.js", "Shadcn UI", "Drupal", "Odoo", "GSAP"],
     href: "/",

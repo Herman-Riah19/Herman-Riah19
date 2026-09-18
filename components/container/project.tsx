@@ -41,6 +41,7 @@ export const Projects = () => {
   }, [local, path]);
 
   const isProjectsPage = path === `/${local}/projects`;
+  const isAboutPage = path === `/${local}/about`;
 
   const filters = [
     { key: "all", label: t("FilterAll") },
@@ -108,7 +109,7 @@ export const Projects = () => {
           </div>
         )}
 
-        <div className="grid md:grid-cols-3 gap-px bg-border border border-border">
+        <div className={cn("grid gap-px bg-border border border-border", isAboutPage ? "md:grid-cols-2" : "md:grid-cols-3")}>
           {filteredProjects.map((project, id) => (
             <BlurFade
               key={project.title}
