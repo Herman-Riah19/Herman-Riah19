@@ -2,7 +2,6 @@ import React from "react";
 import { HeroSection } from "@/components/container/heroSection";
 import { BentoGridInfo } from "@/components/container/bentoGridInfo";
 import { About } from "@/components/container/about";
-import { Welcome } from "@/components/container/welcome";
 import { ListTech } from "@/components/container/listTech";
 import { ServicesSection } from "@/components/container/servicesSection";
 import { Projects } from "@/components/container/project";
@@ -26,8 +25,7 @@ export default function LandingPage() {
         <HeroSection />
         <BentoGridInfo />
         <section className="w-full border-t border-border">
-          <div className="px-4 sm:px-8 lg:px-12 py-16 lg:py-20 grid gap-6 lg:grid-cols-2 items-start">
-            <Welcome />
+          <div className="px-4 sm:px-8 lg:px-12 py-16 lg:py-20flex flex-row items-start">
             <About />
           </div>
         </section>

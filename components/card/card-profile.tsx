@@ -8,7 +8,7 @@ export const CardProfile = () => {
   const t = useTranslations("Welcome");
   return (
     <div className="flex flex-col w-full border border-border bg-card p-2 shadow-sm font-mono">
-      <div className="relative w-full overflow-hidden bg-background">
+      <div className="relative w-full overflow-hidden grayscale contrast-[1.2] group-hover:grayscale-0 transition-all duration-500">
         <img
           src={"/assets/image/portrait.jpg"}
           alt="profile"

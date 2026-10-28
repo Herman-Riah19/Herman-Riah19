@@ -182,13 +182,13 @@ export const HeroSection = () => {
                   美
                 </span>
 
-                <div className="relative w-full h-full overflow-hidden">
+                <div className="relative w-full h-full overflow-hidden grayscale contrast-[1.2] group-hover:grayscale-0 transition-all duration-500">
                   <Image
-                    src="/assets/image/hero-portrait.jpg"
+                    src="/assets/image/profile-remove.png"
                     alt="Hero portrait"
                     fill
                     priority
-                    className="object-cover"
+                    className="object-cover object-center"
                   />
                 </div>
               </div>
