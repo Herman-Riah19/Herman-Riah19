@@ -43,10 +43,10 @@ export const Profile = () => {
               美
             </span>
             <img
-              src="/assets/image/hero-portrait.jpg"
+              src="/assets/image/portrait.jpg"
               alt="herman"
               data-testid="profile-image"
-              className="relative h-full w-full object-cover object-container"
+              className="relative h-full w-full object-cover object-top"
             />
           </div>
         </div>
