@@ -100,19 +100,23 @@ export const Terminal = ({ children, className }: TerminalProps) => {
   return (
     <div
       className={cn(
-        "z-0 h-full w-full max-w-1/2 rounded-xl border border-border bg-background",
+        "z-0 h-full w-full rounded-xl border border-border bg-zinc-950 text-zinc-100 shadow-2xl overflow-hidden font-mono",
         className,
       )}
     >
-      <div className="flex flex-col gap-y-2 border-b border-border p-4">
-        <div className="flex flex-row gap-x-2">
-          <div className="h-2 w-2 rounded-full bg-red-500"></div>
-          <div className="h-2 w-2 rounded-full bg-yellow-500"></div>
-          <div className="h-2 w-2 rounded-full bg-green-500"></div>
+      <div className="flex items-center justify-between border-b border-zinc-800 px-4 py-3 bg-zinc-900/80">
+        <div className="flex flex-row items-center gap-x-2">
+          <div className="h-2.5 w-2.5 rounded-full bg-red-500/80"></div>
+          <div className="h-2.5 w-2.5 rounded-full bg-yellow-500/80"></div>
+          <div className="h-2.5 w-2.5 rounded-full bg-green-500/80"></div>
+        </div>
+        <div className="flex items-center gap-1.5 text-[10px] uppercase tracking-widest text-zinc-400">
+          <span className="inline-block h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span>agentic-coding // opencode-env</span>
         </div>
       </div>
-      <pre className="p-4">
-        <code className="grid gap-y-1 overflow-auto text-white">{children}</code>
+      <pre className="p-4 overflow-x-auto text-xs sm:text-sm leading-relaxed">
+        <code className="grid gap-y-1 text-zinc-200">{children}</code>
       </pre>
     </div>
   );

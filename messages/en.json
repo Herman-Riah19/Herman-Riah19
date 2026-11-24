@@ -4,7 +4,7 @@
     "Firstname": "Hermann Christian",
     "Lastname": "RAZAFINDRANAIVO",
     "Email": "hermanrazafinbdranaivo@gmail.com",
-    "Services": "UI/UX Integration · Web Developer · API Developer · AI Integration",
+    "Services": "Full Stack · Agentic Coding (Opencode) · Cloud & API Architectures",
     "Slogan": "Got an idea in mind? Let’s make it real — and make it clean, fast, and just a little bit cooler than expected.",
     "Developper": "Full Stack Web Developer",
     "Speciality": "TypeScript, Python, agentic AI (Opencode) and monorepo / microservices specialist",
@@ -16,24 +16,24 @@
     "Experiences": "Discover my professional information",
     "BlogDescription": "Discover my blog articles",
     "Features": {
-      "Title": "What I do",
-      "Checkout": "Complete service proposal",
-      "Description": "From audit to launch, I design fast, user-friendly, and SEO-optimized applications that combine performance, design, and visibility.",
+      "Title": "Expertise & Services",
+      "Checkout": "Software Engineering & Agentic Coding",
+      "Description": "From autonomous AI agent orchestration to scalable cloud architectures, I build high-performance systems crafted for production.",
       "feature1": {
-        "title": "Web Applications",
-        "text": "Development of modern and responsive interfaces with React and Next.js."
+        "title": "Agentic Coding & Autonomous AI",
+        "text": "Designing autonomous AI agents daily: MCP protocols, multi-agent swarms, code rules, automated generation workflows and self-healing tests."
       },
       "feature2": {
-        "title": "High-Performance APIs",
-        "text": "Creation of robust REST APIs and tRPC with Node.js/Bun and NestJS."
+        "title": "High-Performance Web Applications",
+        "text": "Modern and lightning-fast web interfaces with Next.js 15, React 19, and TypeScript. Core Web Vitals optimization, SSR/SSG and strict accessibility."
       },
       "feature3": {
-        "title": "Agentic AI & Opencode",
-        "text": "Autonomous agents with Opencode every day: skills design, commands, code rules and AGENTS.md, MCP/RAG and OpenAI / Hugging Face integrations."
+        "title": "Scalable APIs & Microservices",
+        "text": "Distributed architectures with NestJS, FastAPI, and Rust. Robust REST, GraphQL, and tRPC APIs, PostgreSQL, Redis, and event-driven patterns."
       },
       "feature4": {
-        "title": "DevOps & Cloud",
-        "text": "Deployment with Docker, CI/CD, hosting on AWS and Vercel."
+        "title": "DevOps, Cloud & CI/CD",
+        "text": "Docker containerization, GitHub Actions & GitLab CI/CD pipelines, AWS & Dokploy orchestration, and automated zero-downtime deployments."
       }
     },
     "Pricing": {

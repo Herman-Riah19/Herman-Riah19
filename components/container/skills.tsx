@@ -2,116 +2,97 @@
 
 import React from "react";
 import { useLocale } from "next-intl";
-import { Server, Code2, Layers, Database } from "lucide-react";
 import BlurFade from "@/components/container/blur-fade";
 import { BLUR_FADE_DELAY } from "@/lib/constant";
 import { useSafeMotion } from "@/hooks/useSafeMotion";
 import { cn } from "@/lib/utils";
+import {
+  ScrollVelocityContainer,
+  ScrollVelocityRow,
+} from "@/registry/magicui/scroll-based-velocity";
 
-type Level = "Expert" | "Avancé" | "Advanced" | "Intermédiaire" | "Intermediate";
-
-interface Skill {
+export interface TechStackItem {
   name: string;
-  level: number;
-  tag: Level | string;
-  note?: string;
+  slug: string;
+  category: string;
+  invertDark?: boolean;
 }
 
-const levelLabel = (level: number, isFr: boolean): string => {
-  if (level >= 90) return "Expert";
-  if (level >= 80) return isFr ? "Avancé" : "Advanced";
-  return isFr ? "Intermédiaire" : "Intermediate";
-};
-
-// Backend frameworks first
-const backendFrameworks: Skill[] = [
-  { name: "NestJS", level: 87, tag: "Expert", note: "Node.js backend" },
-  { name: "FastAPI", level: 84, tag: "Expert", note: "Python API" },
-  { name: "Django", level: 82, tag: "Expert", note: "Python full-stack" },
-  { name: "Flask", level: 80, tag: "Expert", note: "Python microservices" },
-  { name: "Rust", level: 75, tag: "Avancé", note: "Système / Backend" },
+export const STACK_ROW_A: TechStackItem[] = [
+  { name: "TypeScript", slug: "typescript", category: "Language" },
+  { name: "Next.js", slug: "nextdotjs", category: "Framework", invertDark: true },
+  { name: "Python", slug: "python", category: "Language" },
+  { name: "NestJS", slug: "nestjs", category: "Backend" },
+  { name: "React", slug: "react", category: "Frontend" },
+  { name: "Rust", slug: "rust", category: "Systems", invertDark: true },
+  { name: "FastAPI", slug: "fastapi", category: "Backend" },
+  { name: "Django", slug: "django", category: "Backend" },
+  { name: "Tailwind CSS", slug: "tailwindcss", category: "Styling" },
+  { name: "Node.js", slug: "nodedotjs", category: "Runtime" },
+  { name: "JavaScript", slug: "javascript", category: "Language" },
 ];
 
-// Frontend frameworks after
-const frontendFrameworks: Skill[] = [
-  { name: "Next.js", level: 94, tag: "Expert", note: "React framework" },
-  { name: "React", level: 90, tag: "Expert", note: "UI library" },
-  { name: "Tailwind CSS", level: 92, tag: "Expert", note: "Utility-first CSS" },
-  { name: "Framer Motion", level: 85, tag: "Avancé", note: "Animations" },
+export const STACK_ROW_B: TechStackItem[] = [
+  { name: "PostgreSQL", slug: "postgresql", category: "Database" },
+  { name: "Docker", slug: "docker", category: "DevOps" },
+  { name: "GraphQL", slug: "graphql", category: "API Design" },
+  { name: "Prisma", slug: "prisma", category: "ORM", invertDark: true },
+  { name: "AWS", slug: "amazonwebservices", category: "Cloud" },
+  { name: "Redis", slug: "redis", category: "Cache / DB" },
+  { name: "MongoDB", slug: "mongodb", category: "NoSQL" },
+  { name: "Flask", slug: "flask", category: "Microservices", invertDark: true },
+  { name: "Git", slug: "git", category: "Version Control" },
+  { name: "Linux", slug: "linux", category: "OS", invertDark: true },
+  { name: "Turborepo", slug: "turborepo", category: "Monorepo" },
 ];
 
-const languages: Skill[] = [
-  { name: "TypeScript", level: 95, tag: "Expert", note: "5+ ans — Next / Nest" },
-  { name: "Python", level: 92, tag: "Expert", note: "Django / Flask / FastAPI" },
-  { name: "JavaScript", level: 88, tag: "Avancé" },
-  { name: "HTML / CSS", level: 90, tag: "Expert", note: "Tailwind / SCSS" },
-  { name: "Rust", level: 75, tag: "Avancé", note: "Système / Backend" },
-];
-
-const architectures: Skill[] = [
-  { name: "Monorepo", level: 92, tag: "Expert", note: "Turborepo / Nx / pnpm" },
-  { name: "Microservices", level: 90, tag: "Expert", note: "Event-driven / Docker" },
-  { name: "REST / GraphQL", level: 88, tag: "Avancé", note: "API design" },
-  { name: "PostgreSQL / Prisma", level: 86, tag: "Avancé", note: "Database / ORM" },
-  { name: "CI/CD Docker AWS", level: 84, tag: "Avancé", note: "Deployment" },
-];
-
-function SkillRow({ skill, isFr }: { skill: Skill; isFr: boolean }) {
-  const label = skill.tag === "Avancé" || skill.tag === "Advanced" || skill.tag === "Intermédiaire" || skill.tag === "Intermediate"
-    ? levelLabel(skill.level, isFr)
-    : skill.tag;
-
+function TechCard({ item }: { item: TechStackItem }) {
   return (
-    <div className="py-4 border-b border-border/30 last:border-0">
-      <div className="flex items-baseline justify-between gap-2 mb-1">
-        <span className="font-mono text-sm uppercase tracking-wider text-foreground truncate">
-          {skill.name}
-        </span>
-        <span className="font-mono text-[10px] tabular-nums text-muted-foreground shrink-0">
-          {skill.level}%
-        </span>
-      </div>
-      <div className="h-1 w-full bg-border/30 overflow-hidden rounded-full">
-        <div
-          className="h-full bg-primary transition-all duration-500"
-          style={{ width: `${skill.level}%` }}
+    <div className="mx-3 inline-flex items-center gap-3.5 px-5 py-3.5 rounded-xl border border-border/80 bg-card/70 hover:bg-card hover:border-primary/50 transition-all duration-300 shadow-sm backdrop-blur-sm select-none group">
+      <div className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-border/50 bg-muted/40 p-2 group-hover:border-primary/40 group-hover:bg-primary/5 transition-colors">
+        <img
+          src={`https://cdn.simpleicons.org/${item.slug}`}
+          alt={item.name}
+          width={24}
+          height={24}
+          loading="lazy"
+          decoding="async"
+          className={cn(
+            "h-6 w-6 object-contain transition-transform duration-300 group-hover:scale-110",
+            item.invertDark && "dark:invert"
+          )}
         />
       </div>
-      <div className="mt-2 flex items-center justify-between gap-2">
-        <span className="font-mono text-[9px] uppercase tracking-widest text-muted-foreground">
-          {label}
+      <div className="flex flex-col text-left">
+        <span className="font-mono text-sm font-semibold tracking-tight text-foreground group-hover:text-primary transition-colors">
+          {item.name}
         </span>
-        {skill.note && (
-          <span className="font-mono text-[9px] text-muted-foreground/40 truncate max-w-[50%]">
-            {skill.note}
-          </span>
-        )}
+        <span className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">
+          {item.category}
+        </span>
       </div>
     </div>
   );
 }
 
-interface SkillBlockProps {
-  icon: React.ElementType;
-  index: string;
-  title: string;
-  items: Skill[];
-}
-
-function SkillBlock({ icon: Icon, index, title, items }: SkillBlockProps) {
+export function ScrollBasedVelocityImagesDemo() {
   return (
-    <div className="bg-card border border-border p-6 sm:p-8 rounded-none">
-      <div className="flex items-center gap-2 mb-6">
-        <Icon className="w-5 h-5 text-muted-foreground" />
-        <span className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
-          {index} // {title}
-        </span>
-      </div>
-      <div className="space-y-0">
-        {items.map((skill) => (
-          <SkillRow key={skill.name} skill={skill} isFr={true} />
-        ))}
-      </div>
+    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden py-8">
+      <ScrollVelocityContainer className="w-full">
+        <ScrollVelocityRow baseVelocity={6} direction={1} className="py-4">
+          {STACK_ROW_A.map((tech, idx) => (
+            <TechCard key={`demo-a-${tech.name}-${idx}`} item={tech} />
+          ))}
+        </ScrollVelocityRow>
+        <ScrollVelocityRow baseVelocity={6} direction={-1} className="py-4">
+          {STACK_ROW_B.map((tech, idx) => (
+            <TechCard key={`demo-b-${tech.name}-${idx}`} item={tech} />
+          ))}
+        </ScrollVelocityRow>
+      </ScrollVelocityContainer>
+
+      <div className="from-background pointer-events-none absolute inset-y-0 left-0 w-24 sm:w-1/4 bg-gradient-to-r to-transparent z-10" />
+      <div className="from-background pointer-events-none absolute inset-y-0 right-0 w-24 sm:w-1/4 bg-gradient-to-l to-transparent z-10" />
     </div>
   );
 }
@@ -141,31 +122,25 @@ export const Skills = () => {
           </div>
         </BlurFade>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-border border border-border" data-testid="tech-content">
-          <SkillBlock
-            icon={Server}
-            index="01"
-            title={isFr ? "Backend" : "Backend"}
-            items={backendFrameworks}
-          />
-          <SkillBlock
-            icon={Code2}
-            index="02"
-            title={isFr ? "Frontend" : "Frontend"}
-            items={frontendFrameworks}
-          />
-          <SkillBlock
-            icon={Layers}
-            index="03"
-            title={isFr ? "Langages" : "Languages"}
-            items={languages}
-          />
-          <SkillBlock
-            icon={Database}
-            index="04"
-            title={isFr ? "Architectures" : "Architecture"}
-            items={architectures}
-          />
+        <div
+          className="relative flex w-full flex-col items-center justify-center overflow-hidden py-4 border-y border-border/60 bg-muted/5"
+          data-testid="tech-content"
+        >
+          <ScrollVelocityContainer className="w-full">
+            <ScrollVelocityRow baseVelocity={6} direction={1} className="py-3">
+              {STACK_ROW_A.map((tech, idx) => (
+                <TechCard key={`skill-a-${tech.name}-${idx}`} item={tech} />
+              ))}
+            </ScrollVelocityRow>
+            <ScrollVelocityRow baseVelocity={6} direction={-1} className="py-3">
+              {STACK_ROW_B.map((tech, idx) => (
+                <TechCard key={`skill-b-${tech.name}-${idx}`} item={tech} />
+              ))}
+            </ScrollVelocityRow>
+          </ScrollVelocityContainer>
+
+          <div className="from-background pointer-events-none absolute inset-y-0 left-0 w-24 sm:w-1/4 bg-gradient-to-r to-transparent z-10" />
+          <div className="from-background pointer-events-none absolute inset-y-0 right-0 w-24 sm:w-1/4 bg-gradient-to-l to-transparent z-10" />
         </div>
 
         <div className="flex items-center justify-between pt-6 mt-8 border-t border-border text-[10px] text-muted-foreground uppercase tracking-widest">
