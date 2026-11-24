@@ -41,17 +41,7 @@ export const HeroSection = () => {
     <section className="relative w-full min-h-screen flex flex-col justify-between bg-background text-foreground font-mono overflow-hidden border-b border-border pt-20 pb-8">
       {/* Subtle Background Hexagon Pattern */}
       <HexagonPattern
-        width={48}
-        height={48}
-        hexagons={[
-          [2, 2],
-          [4, 1],
-          [6, 3],
-          [8, 2],
-          [10, 4],
-          [12, 1],
-          [14, 3],
-        ]}
+        gap={20} radius={40} x={-1} y={-1}
         className="mask-[radial-gradient(ellipse_70%_60%_at_50%_40%,white,transparent)] opacity-25 inset-0 -skew-y-3 pointer-events-none"
       />
 

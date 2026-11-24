@@ -82,17 +82,20 @@ export const ServicesSection = () => {
           {/* Card 0: Agentic Coding & Autonomous AI (Hero Feature - Large Banner) */}
           <div className="lg:col-span-12 xl:col-span-8 relative group rounded-2xl border border-border/80 bg-card p-6 sm:p-8 overflow-hidden shadow-sm flex flex-col justify-between space-y-6">
             <HexagonPattern
-              width={42}
-              height={42}
               hexagons={[
                 [1, 1],
-                [3, 2],
-                [5, 1],
-                [7, 3],
-                [9, 2],
-                [11, 4],
+                [4, 4],
+                [2, 2],
+                [3, 4],
+                [5, 4],
+                [8, 2],
+                [6, 3],
+                [8, 5],
+                [10, 10],
               ]}
-              className="mask-[radial-gradient(420px_circle_at_center,white,transparent)] opacity-40 inset-0 -skew-y-3"
+              className={cn(
+                "[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)]"
+              )}
             />
             <BorderBeam
               size={120}
